@@ -19,7 +19,8 @@ def _korean_text_score(text: str) -> int:
     hangul = sum(1 for char in text if "\uac00" <= char <= "\ud7a3")
     ascii_letters = sum(1 for char in text if char.isascii() and char.isalnum())
     whitespace = sum(1 for char in text if char.isspace())
-    mojibake_markers = sum(text.count(marker) for marker in ("�", "?", "Ã", "Â", "ì", "µ"))
+    # Characters commonly seen when Korean text is decoded with the wrong encoding.
+    mojibake_markers = sum(text.count(marker) for marker in ("�", "占", "횄", "횂", "챙", "쨉"))
     private_or_control = sum(
         1
         for char in text

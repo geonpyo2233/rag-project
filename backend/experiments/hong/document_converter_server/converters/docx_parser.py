@@ -28,4 +28,3 @@ def parse_docx_text(source_path: Path) -> str:
                 lines.append("\t".join(cells))
 
     return "\n".join(lines).strip()
-

@@ -43,7 +43,7 @@ def render_pdf_to_images(
 
     source_path = source_path.resolve()
     if source_path.suffix.lower() != ".pdf":
-        raise ValueError("PDF 렌더러는 .pdf 파일만 처리합니다.")
+        raise ValueError("PDF 렌더링은 .pdf 파일만 처리합니다.")
     if not source_path.exists():
         raise FileNotFoundError(f"PDF 파일을 찾을 수 없습니다: {source_path}")
     if scale <= 0:

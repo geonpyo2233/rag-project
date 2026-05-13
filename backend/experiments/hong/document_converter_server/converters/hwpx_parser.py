@@ -98,4 +98,3 @@ def parse_hwpx_text(source_path: Path) -> str:
                 logger.warning("Skipping malformed XML in HWPX: %s", name)
 
     return _normalize_text("\n\n".join(paragraphs))
-

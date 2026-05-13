@@ -47,4 +47,3 @@ async def save_upload_file(upload_file: UploadFile) -> Path:
 
     logger.info("Saved upload: %s (%s bytes)", target_path, total_size)
     return target_path
-
