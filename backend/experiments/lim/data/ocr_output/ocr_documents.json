@@ -1,0 +1,32 @@
+[
+  {
+    "page": 10,
+    "text": "|러군미능\n매\n굴\n(L\n계량화\n여부에\n따른\n분류\n(2)\n정성적 기법\n정의:분석자의 경험 및\n및 지식에>\n기초한 위험분석 방법\n손실크기를 측정할 수 없어서\n위험을 구간 및 기술변수\n(예:H:3,M:2,L:1)로 표현함\n종류:델파이법,시나리오법,순위결정법 등\n장점\n1\n정량화하기O\n어려운\n정보의 평가에 용이함\n용어의\n이해가\n쉬움\n분석의\n소요시간이\n짧을\n2\n단점\n2\n주관적 판단의\n남용\n여지가\n있을\n-\n비용-효과 분석이 어려움",
+    "source": "/Users/imgeonpyo/rag-project/backend/experiments/lim/data/raw_data/[교안_강의]11_보안위헙관리통제 part1_02회차.pdf"
+  },
+  {
+    "page": 11,
+    "text": "적정 보안수준보다도높게 혹은 낮게 보안통제를\n를 적용\n을 고려하지 않았기 때문에 조직 내에 부서별로\n조직의 특성을\n단점\nI 선택 가능\n필요한 보호대책의\n시간과 비용이 많이 들지 않고 모든 조직에서 기본적으로\n장점\nㄷ\n1\n선택함\n보호대책을\n일련의\n위하여\n정하고 이를 달성하기\n보호의 기본수준을\n대하여\n시스템에\n모든\n방식\n제공하는\n형태로지\n체크리스트\n보안대책의 세트를\n표준화된\n대하여\n시스템에\n모든\n기준선 접근법(BaselineApproach)\n(1)\n겨 적절한 접근방식 선택\n어야ㄷ통\n플 이근\n(Z\n매디러군의능",
+    "source": "/Users/imgeonpyo/rag-project/backend/experiments/lim/data/raw_data/[교안_강의]11_보안위헙관리통제 part1_02회차.pdf"
+  },
+  {
+    "page": 12,
+    "text": "위험관리\n개념\n3.위험분석\n석 방법론\n2)집\n접근방식에 따른\n(Z)\n|\n|z은융Y\n나 경험에 따라서\n위험을 분석하는\n방법\n장점\n1\n작은 조직에 비용-효과적임\n단점\n2\n위험을\n제대로\n평가하기\n어려움\n보호대책의\n선택\n및\n소요비용을\n도출하기 어려움\n합리적으로\n계속적으로\n반복되는\n보안관리의\n보안감사\n및\n사후관리가\n제한됨",
+    "source": "/Users/imgeonpyo/rag-project/backend/experiments/lim/data/raw_data/[교안_강의]11_보안위헙관리통제 part1_02회차.pdf"
+  },
+  {
+    "page": 13,
+    "text": "|러군미송\n매\n굴\n분류\n(3)상세위험\n접근법(Detailed Risk Approach)\n자산의\n가치를 측정하고\n자산에 대한\n|야이하\n를려\n결정하는\n방법\n조직의\n자산\n및\n보안요구사항을 구체적으로\n분석\n가장\n적절한\n대책을\n수립!\n장점\n1\n자산,위협,취약성의\n목록이 작성 및 검토되었으므로 이후 변경\n이 발생하였을 때 조직\n1내에\n적절한\n보안수준\n마련이\n이 가능함\n단점\n전문적인\n지식이\n필요함\n시간과\n노력이\n음\n|0\n움영",
+    "source": "/Users/imgeonpyo/rag-project/backend/experiments/lim/data/raw_data/[교안_강의]11_보안위헙관리통제 part1_02회차.pdf"
+  },
+  {
+    "page": 14,
+    "text": "위험관리\n개념\n위험분석\n3.\n방법론\n2)\n접근방식에 따른\n분류\n(4) 복합적\n접근법(Combined Approach)\n조직활동에 대해 필수적이고 위험이 높은\n시스템 식별\n별방법\n식별된\n시스템:상세위험\n접근법\n적용\n나머지\n시스템:기준선\n접근법\n적용\n장점\n1\n보안전략을\n구축할 수 있음\n빠르게\n상대적으로\n융를\n시스템을\n잘못 식별하였을\n경우\n자원의 낭비\n|발생\n가능성이\n있을\n썼",
+    "source": "/Users/imgeonpyo/rag-project/backend/experiments/lim/data/raw_data/[교안_강의]11_보안위헙관리통제 part1_02회차.pdf"
+  },
+  {
+    "page": 15,
+    "text": "뉴곰\n분석\n분석\n방법\n범위\n대책\n사항\n히는\n뉴곰\n뉴곰\n보호\n우려\n위험\n위험\n보안정책\n보안계획\nㅠT시스템\nㅠ\nYES\n위험수용\nNO\n위협평가\n선택\n평가\n대책\n위험\n취약성평가\n|\n|\n|\nFz\n제약\n1.위험관리 단계\n위험관리 프로세스",
+    "source": "/Users/imgeonpyo/rag-project/backend/experiments/lim/data/raw_data/[교안_강의]11_보안위헙관리통제 part1_02회차.pdf"
+  }
+]
