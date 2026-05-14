@@ -7,6 +7,10 @@ uploads/*
 
 temp/*
 !temp/.gitkeep
+temp/ocr_preprocessed/*
+!temp/ocr_preprocessed/.gitkeep
+temp/ocr_tiles/*
+!temp/ocr_tiles/.gitkeep
 
 output/pdf/*
 !output/pdf/.gitkeep
@@ -19,4 +23,5 @@ output/extracted_text/*
 
 output/logs/*
 !output/logs/.gitkeep
-
+output/ocr_visualizations/*
+!output/ocr_visualizations/.gitkeep
