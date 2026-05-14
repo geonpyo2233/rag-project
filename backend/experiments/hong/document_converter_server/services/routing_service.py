@@ -6,7 +6,7 @@ from typing import Any
 
 from config import LOG_FILE, TEXT_OUTPUT_DIR
 from converters.docx_parser import parse_docx_text
-from converters.hwp_converter import convert_hwp_to_pdf
+from converters.hwp_converter import convert_hwp_to_pdf, extract_hwp_bindata_images
 from converters.hwpx_parser import parse_hwpx_text
 from converters.image_converter import convert_image_to_pdf
 from converters.pdf_converter import render_pdf_to_images
@@ -189,11 +189,27 @@ def _hwp_direct_text_with_ocr_result(
     image_paths: list[Path],
 ) -> dict[str, Any]:
     direct_text = normalize_extracted_text(route.get("extracted_text") or "")
-    text_regions = _extract_pdf_text_regions(pdf_path)
-    ocr_result = run_paddle_ocr_on_images(
-        image_paths,
-        text_exclusion_regions=text_regions,
-    )
+    extracted_object_images = extract_hwp_bindata_images(source_path)
+    ocr_source = "bindata_images_only"
+
+    # Policy:
+    # - Direct text stays as the primary text output.
+    # - OCR is executed only for extracted HWP object images (BinData).
+    # - No PDF-render fallback OCR.
+    if extracted_object_images:
+        ocr_result = run_paddle_ocr_on_images(extracted_object_images)
+    else:
+        ocr_result = {
+            "engine": "paddleocr",
+            "lang": "korean",
+            "quality_mode": "accurate",
+            "page_count": 0,
+            "text": "",
+            "pages": [],
+            "visualization_paths": [],
+        }
+        ocr_source = "no_bindata_images"
+
     # Keep OCR as supplement only: lines already present in direct text are removed.
     ocr_text = _collect_ocr_supplement_text(direct_text, ocr_result)
 
@@ -211,12 +227,14 @@ def _hwp_direct_text_with_ocr_result(
         "conversion_type": route["strategy"],
         "pdf_path": str(pdf_path.resolve()),
         "image_paths": _paths_to_strings(image_paths),
+        "extracted_object_images": _paths_to_strings(extracted_object_images),
+        "ocr_source": ocr_source,
         "text_path": str(text_path.resolve()),
         "extracted_text": merged_text,
         "direct_text": direct_text,
         "ocr_text": ocr_text,
-        "ocr_required": True,
-        "ocr_status": "completed",
+        "ocr_required": bool(extracted_object_images),
+        "ocr_status": "completed" if extracted_object_images else "skipped_no_object_images",
         "ocr_result": ocr_result,
         "visualization_paths": ocr_result.get("visualization_paths", []),
     }

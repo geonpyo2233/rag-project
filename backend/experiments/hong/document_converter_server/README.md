@@ -93,3 +93,46 @@ Swagger UI:
 - 렌더 이미지: `output/images/`
 - OCR 시각화: `output/ocr_visualizations/`
 - 로그: `output/logs/server.log`
+
+---
+
+## 추가 변경사항 (최근 반영)
+
+### 1) HWP 처리 정책 고정
+
+- 목표: **텍스트는 direct extraction 그대로 사용**
+- OCR 대상: **HWP 내부 객체 이미지(BinData)만**
+- `hwp_direct_text_with_ocr`에서 PDF 렌더 전체 OCR fallback은 사용하지 않음
+
+동작 요약:
+
+- BinData 이미지가 있으면: 객체 이미지에만 OCR 수행
+- BinData 이미지가 없으면: OCR 스킵, direct text만 반환
+
+응답 필드:
+
+- `ocr_source`: `bindata_images_only` 또는 `no_bindata_images`
+- `extracted_object_images`: 객체 이미지 추출 경로 목록
+- `ocr_status`: 객체 OCR 수행 시 `completed`, 객체 없으면 `skipped_no_object_images`
+
+### 2) 텍스트 정규화 보강
+
+- direct text에 섞이는 반복 노이즈 패턴(예: `ྠĀ` 반복)을 후처리에서 제거
+- 목적: RAG 입력 텍스트 품질 안정화
+
+### 3) Ollama 후처리 임시 비활성화
+
+- 요청에 따라 현재 LLM(Ollama) 후처리는 비활성화
+- 변환 결과는 추출 텍스트(`extracted_text`)를 그대로 `final_text`로 사용
+
+현재 반환:
+
+- `llm_status = "disabled"`
+- `llm_error = "Ollama post-processing is temporarily disabled."`
+
+복구 방법:
+
+- `services/convert_service.py`의 주석 처리된 Ollama 블록 복원
+- 아래 import 재추가
+  - `from config import OLLAMA_ENABLED`
+  - `from services.llm_service import build_final_text_and_summary`

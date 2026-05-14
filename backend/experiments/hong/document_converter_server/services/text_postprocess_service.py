@@ -8,6 +8,8 @@ _LINE_ENDING_RE = re.compile(r"\r\n?|\u2028|\u2029")
 _HORIZONTAL_SPACE_RE = re.compile(r"[ \t\f\v]+")
 _BLANK_LINES_RE = re.compile(r"\n{3,}")
 _LINE_SPACE_RE = re.compile(r" *\n *")
+# Common mojibake separators observed in some HWP direct-text extracts.
+_MOJIBAKE_SEPARATOR_RE = re.compile(r"(?:[ྠĀ]\s*){2,}")
 
 
 def normalize_extracted_text(text: str) -> str:
@@ -16,6 +18,7 @@ def normalize_extracted_text(text: str) -> str:
         return ""
 
     normalized = html.unescape(text)
+    normalized = _MOJIBAKE_SEPARATOR_RE.sub(" ", normalized)
     normalized = _LINE_ENDING_RE.sub("\n", normalized)
     normalized = normalized.replace("\u00a0", " ")
     normalized = _HORIZONTAL_SPACE_RE.sub(" ", normalized)

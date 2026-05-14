@@ -264,6 +264,23 @@ def _ocr_image(ocr: Any, image_path: Path) -> list[dict[str, Any]]:
         raw_result = ocr.ocr(str(image_path), cls=OCR_USE_ANGLE_CLS)
     except TypeError:
         raw_result = ocr.ocr(str(image_path))
+    except Exception:
+        # Some extracted object images are not directly readable by OpenCV path IO.
+        # Retry via PIL->ndarray to keep OCR flow robust.
+        try:
+            from PIL import Image
+            import numpy as np
+
+            with Image.open(image_path) as image:
+                rgb = image.convert("RGB")
+                array = np.array(rgb)
+            try:
+                raw_result = ocr.ocr(array, cls=OCR_USE_ANGLE_CLS)
+            except TypeError:
+                raw_result = ocr.ocr(array)
+        except Exception:
+            logger.warning("Skipping unreadable OCR image: %s", image_path)
+            return []
     return _iter_ocr_lines(raw_result)
 
 

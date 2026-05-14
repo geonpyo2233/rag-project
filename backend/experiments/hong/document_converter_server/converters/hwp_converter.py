@@ -10,7 +10,7 @@ from typing import Any
 
 import olefile
 
-from config import HWP_TIMEOUT_SECONDS, PDF_OUTPUT_DIR, TEMP_DIR
+from config import HWP_TIMEOUT_SECONDS, IMAGE_OUTPUT_DIR, PDF_OUTPUT_DIR, TEMP_DIR
 from utils.file_utils import unique_path
 from utils.logger import get_logger
 
@@ -395,6 +395,76 @@ _HWP_GSO_CONTROL = 11
 
 # Common image file extensions stored inside BinData streams
 _IMAGE_STREAM_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp", ".gif", ".tif", ".tiff", ".wmf", ".emf"}
+
+
+def _detect_image_extension(data: bytes) -> str | None:
+    if len(data) < 8:
+        return None
+    if data.startswith(b"\x89PNG\r\n\x1a\n"):
+        return ".png"
+    if data.startswith(b"\xff\xd8\xff"):
+        return ".jpg"
+    if data.startswith(b"BM"):
+        return ".bmp"
+    if data.startswith((b"GIF87a", b"GIF89a")):
+        return ".gif"
+    if data.startswith((b"II*\x00", b"MM\x00*")):
+        return ".tif"
+    if data.startswith(b"\x01\x00\x09\x00\x00\x03"):
+        return ".wmf"
+    if data.startswith(b"\x01\x00\x00\x00") and b" EMF" in data[:128]:
+        return ".emf"
+    return None
+
+
+def _recover_image_like_bytes(raw: bytes) -> bytes:
+    candidates = [raw]
+    for mode in (-15, 15):
+        try:
+            candidates.append(zlib.decompress(raw, mode))
+        except Exception:
+            pass
+    for candidate in candidates:
+        if _detect_image_extension(candidate):
+            return candidate
+    return raw
+
+
+def extract_hwp_bindata_images(
+    source_path: Path,
+    output_root: Path = IMAGE_OUTPUT_DIR,
+) -> list[Path]:
+    """Extract image-like BinData objects from HWP into output/images/<doc_stem>/objects."""
+    source_path = Path(source_path).resolve()
+    if not olefile.isOleFile(str(source_path)):
+        return []
+
+    output_dir = output_root / source_path.stem / "objects"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    extracted: list[Path] = []
+
+    ole = olefile.OleFileIO(str(source_path))
+    try:
+        for entry in ole.listdir():
+            if len(entry) < 2 or entry[0] != "BinData":
+                continue
+
+            stream_name = entry[-1]
+            raw = ole.openstream(entry).read()
+            data = _recover_image_like_bytes(raw)
+            ext = _detect_image_extension(data)
+            if not ext:
+                continue
+
+            base = Path(stream_name).stem or stream_name
+            target = unique_path(output_dir / f"{base}{ext}")
+            target.write_bytes(data)
+            extracted.append(target)
+    finally:
+        ole.close()
+
+    logger.info("Extracted %s BinData image objects from %s", len(extracted), source_path)
+    return extracted
 
 
 def detect_hwp_has_images(source_path: Path) -> bool:

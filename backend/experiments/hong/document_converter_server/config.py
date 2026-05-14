@@ -37,6 +37,12 @@ OCR_TILE_HEIGHT = int(os.getenv("OCR_TILE_HEIGHT", "800"))
 OCR_TILE_OVERLAP = int(os.getenv("OCR_TILE_OVERLAP", "360"))
 OCR_TILE_MIN_HEIGHT = int(os.getenv("OCR_TILE_MIN_HEIGHT", "1200"))
 
+OLLAMA_ENABLED = os.getenv("OLLAMA_ENABLED", "false").lower() == "true"
+OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434").rstrip("/")
+OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3:8b")
+OLLAMA_TIMEOUT_SECONDS = int(os.getenv("OLLAMA_TIMEOUT_SECONDS", "120"))
+OLLAMA_MAX_INPUT_CHARS = int(os.getenv("OLLAMA_MAX_INPUT_CHARS", "12000"))
+
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO").upper()
 LOG_FILE = LOG_OUTPUT_DIR / "server.log"
 
