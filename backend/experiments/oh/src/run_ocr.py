@@ -1,7 +1,5 @@
 from pathlib import Path
-import os
 
-os.environ["FLAGS_use_mkldnn"] = "False"
 from paddleocr import PaddleOCR
 
 
