@@ -1,3 +1,5 @@
+#pptx 사용
+
 from pptx import Presentation
 
 # 하기 # 줄은 pptx 사용 예제입니다.
@@ -40,7 +42,7 @@ def extract_text_from_shape(shape, slide_items):
         table_text = '\n'.join(rows_text)  # 테이블 전체 텍스트를 결합
         slide_items.append((shape.left, shape.top, table_text))
 
-    # 그룹화된 개체 처리
+    # 그룹화된 개체 처리 33333
     if shape.shape_type == 6:  # MSO_SHAPE_TYPE.GROUP
         for grouped_shape in shape.shapes:
             extract_text_from_shape(grouped_shape, slide_items)
