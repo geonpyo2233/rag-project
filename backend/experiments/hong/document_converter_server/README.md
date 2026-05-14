@@ -1,56 +1,60 @@
 # Korean Document Converter Server
 
-FastAPI 기반 문서 변환 서버입니다. HWP/HWPX/PDF/DOCX/이미지 파일을 업로드하면 직접 텍스트를 추출하거나 OCR 처리를 위한 PDF/이미지로 변환합니다.
+FastAPI 기반 문서 변환 서버입니다.  
+`HWP / HWPX / PDF / DOCX / 이미지` 업로드 시, 문서 상태에 맞춰 직접 텍스트 추출 또는 OCR을 수행합니다.
 
-## 지원 형식
+## 핵심 동작
 
-| 형식 | 처리 방식 | 결과 |
-| --- | --- | --- |
-| HWP | 한컴오피스 COM 자동화 | 직접 텍스트 추출 후 PDF 변환 및 OCR 보완 |
-| HWPX | ZIP 내부 XML 직접 파싱 | UTF-8 텍스트 추출 |
-| PDF | PyMuPDF 직접 텍스트 추출 또는 렌더링 | 내장 텍스트 추출, 부족하면 OCR |
-| DOCX | python-docx 직접 파싱 | 문단/표 텍스트 추출 |
-| Image | PyMuPDF 변환 및 PaddleOCR | PDF 변환 후 OCR 텍스트 추출 |
+- 라우터(`router/document_router.py`)가 파일 유형/텍스트 품질을 보고 전략을 선택합니다.
+- HWP는 직접 텍스트 추출 성공 시 우선 사용하고, 필요할 때만 OCR을 보강합니다.
+- OCR 결과는 후처리/중복 제거를 거쳐 `output/extracted_text/*.txt`로 저장됩니다.
 
-## 폴더 구조
+## 지원 포맷
 
-```text
-document_converter_server/
-├── app.py
-├── config.py
-├── requirements.txt
-├── README.md
-├── api/
-│   └── routes.py
-├── converters/
-│   ├── hwp_converter.py
-│   ├── hwpx_parser.py
-│   ├── pdf_converter.py
-│   ├── docx_parser.py
-│   └── image_converter.py
-├── services/
-│   ├── convert_service.py
-│   ├── file_service.py
-│   ├── ocr_service.py
-│   └── routing_service.py
-├── router/
-│   └── document_router.py
-├── utils/
-│   ├── logger.py
-│   ├── file_utils.py
-│   └── response.py
-├── uploads/
-├── output/
-│   ├── pdf/
-│   ├── images/
-│   ├── extracted_text/
-│   └── logs/
-└── temp/
-```
+- `.hwp`
+- `.hwpx`
+- `.pdf`
+- `.docx`
+- 이미지: `.png`, `.jpg`, `.jpeg`, `.bmp`, `.tif`, `.tiff`
+
+## HWP 라우팅 전략 (최신)
+
+1. 직접 텍스트 추출 시도 (`extract_hwp_text`)
+   - OLE 파서 우선
+   - 실패 시 COM(`SaveAs("TEXT")`) fallback
+2. 추출 텍스트 길이가 `DIRECT_TEXT_MIN_CHARS` 이상이면 직접 텍스트 사용
+3. 이미지/객체가 감지되면 `hwp_direct_text_with_ocr`로 OCR 보강
+4. 직접 추출 실패 또는 텍스트 부족 시 `hwp_to_pdf_ocr_fallback`
+
+`route.metadata.reason_code` 예시:
+
+- `direct_extraction_success`
+- `image_or_scan_likely`
+- `text_not_found`
+- `direct_extraction_failed`
+
+## OCR 보강 방식
+
+- PDF 렌더링 후 PaddleOCR 수행
+- 타일 OCR(`OCR_TILE_MODE`) 지원
+- `hwp_direct_text_with_ocr`에서는:
+  - PDF 텍스트 레이어 영역과 겹치는 OCR 라인 제거
+  - 직접 추출 텍스트와 중복되는 OCR 라인 제거
+  - 품질 낮은 OCR 라인 필터링(confidence/문자비율 기반)
+- 최종 병합 포맷:
+  - `[DIRECT_TEXT]`
+  - `[OCR_TEXT]`
+
+## 주요 API
+
+- `GET /health`
+- `POST /convert`
+  - Form field:
+    - `file`: 업로드 파일
+    - `render_scale`(optional): PDF 렌더링 배율
+      - Swagger 설명: `6.25 (~450 DPI)`가 현재 기본값
 
 ## 실행 방법
-
-Windows 환경과 Python 3.10을 권장합니다. HWP 변환은 한컴오피스가 설치된 Windows에서만 동작합니다.
 
 ```powershell
 cd backend\experiments\hong\document_converter_server
@@ -60,119 +64,32 @@ pip install -r requirements.txt
 uvicorn app:app --host 0.0.0.0 --port 8000 --reload
 ```
 
-서버 실행 후 Swagger 문서는 아래 주소에서 확인할 수 있습니다.
+Swagger UI:
 
-```text
-http://localhost:8000/docs
-```
+- http://localhost:8000/docs
 
-상태 확인:
+## 기본 설정값 (`config.py`)
 
-```powershell
-curl http://localhost:8000/health
-```
+- `PDF_RENDER_SCALE=6.25`
+- `DIRECT_TEXT_MIN_CHARS=30`
+- `OCR_DROP_SCORE=0.4`
+- `OCR_QUALITY_MODE=accurate`
+- `OCR_TILE_MODE=true`
+- `OCR_TILE_HEIGHT=800`
+- `OCR_TILE_OVERLAP=360`
+- `OCR_TILE_MIN_HEIGHT=1200`
+- `HWP_TIMEOUT_SECONDS=120`
 
-## API 사용 예시
+## 자동화 스크립트
 
-```powershell
-curl -X POST "http://localhost:8000/convert" `
-  -F "file=@C:\docs\sample.hwpx" `
-  -F "render_scale=2.5"
-```
+한글 COM 자동화 보안 모듈 등록용 스크립트:
 
-응답 예시:
+- `scripts/setup_hwp_automation.ps1`
+- `scripts/setup_hwp_automation_oneclick.bat`
 
-```json
-{
-  "success": true,
-  "timestamp": "2026-05-13T00:00:00+00:00",
-  "data": {
-    "status": "converted",
-    "source_file": "C:\\...\\uploads\\sample_abcd1234.hwpx",
-    "source_extension": ".hwpx",
-    "conversion_type": "hwpx_xml_parser",
-    "text_path": "C:\\...\\output\\extracted_text\\sample_abcd1234.txt",
-    "extracted_text": "추출된 본문...",
-    "ocr_required": false
-  }
-}
-```
+## 출력 경로
 
-## 처리 흐름
-
-```text
-업로드 파일 검증
-→ uploads/ 저장
-→ 확장자별 처리 전략 결정
-→ 직접 텍스트 추출 또는 OCR fallback 실행
-→ output/extracted_text/에 텍스트 저장
-→ JSON 응답 반환
-```
-
-## 라우팅 전략
-
-| 형식 | 전략 |
-| --- | --- |
-| PDF | 내장 텍스트가 충분하면 직접 추출, 부족하면 페이지 이미지 렌더링 후 OCR |
-| HWPX | OCR 없이 ZIP 내부 XML 직접 파싱 |
-| DOCX | python-docx로 문단과 표 텍스트 직접 추출 |
-| HWP | 한컴오피스 COM으로 직접 텍스트 추출을 시도하고 PDF 변환 후 OCR로 보완 |
-| Image | 업로드 이미지를 PDF로 변환한 뒤 페이지 이미지로 렌더링하고 OCR 실행 |
-
-응답에는 선택된 전략 정보가 포함됩니다.
-
-```json
-{
-  "route": {
-    "strategy": "pdf_direct_text",
-    "reason": "PDF contains enough embedded text for direct extraction.",
-    "ocr_required": false,
-    "text_length": 1200,
-    "metadata": {
-      "threshold": 30
-    }
-  }
-}
-```
-
-OCR fallback이 실행되면 `ocr_status`는 `completed`가 되고, `ocr_result`에 PaddleOCR 결과가 포함됩니다.
-
-## 한컴오피스 COM 자동화
-
-HWP 변환은 `win32com.client.gencache.EnsureDispatch("HWPFrame.HwpObject")`를 사용합니다. 따라서 한컴오피스가 설치된 Windows 환경에서만 동작합니다.
-
-안정성을 위해 다음 처리를 포함합니다.
-
-- 변환 대상 파일 존재 여부 확인
-- COM 객체 생성 실패 예외 처리
-- HWP 창 숨김 처리 시도
-- `RegisterModule("FilePathCheckDLL", "FilePathCheckerModule")` 등록 시도
-- 변환 작업을 별도 child process에서 실행
-- timeout 초과 시 child process 종료
-- `Quit()` 및 `CoUninitialize()` 호출
-- 변환 결과 PDF의 존재 여부와 파일 크기 검증
-- `output/logs/server.log`에 로그 저장
-
-HWP timeout은 환경변수로 조정할 수 있습니다.
-
-```powershell
-$env:HWP_TIMEOUT_SECONDS="180"
-```
-
-## 주요 환경변수
-
-| 환경변수 | 기본값 | 설명 |
-| --- | --- | --- |
-| `MAX_UPLOAD_SIZE_MB` | `50` | 업로드 최대 크기 |
-| `HWP_TIMEOUT_SECONDS` | `120` | HWP COM 변환 timeout |
-| `PDF_RENDER_SCALE` | `2.0` | PyMuPDF 렌더링 배율 |
-| `PDF_IMAGE_FORMAT` | `png` | 출력 이미지 형식 |
-| `DIRECT_TEXT_MIN_CHARS` | `30` | 직접 추출 텍스트 사용 기준 |
-| `OCR_LANG` | `korean` | PaddleOCR 언어 설정 |
-| `LOG_LEVEL` | `INFO` | 로그 레벨 |
-
-## 운영 메모
-
-- HWP 변환 서버는 Windows 데스크톱 세션 또는 COM 자동화가 가능한 서버 환경에서 운영해야 합니다.
-- 한컴오피스 COM 자동화는 서비스 계정 권한, 보안 모듈, 팝업 창에 민감할 수 있습니다.
-- 실제 운영에서는 변환 서버와 OCR 서버를 분리하고, 큐 기반 worker 구조로 확장하는 구성을 권장합니다.
+- 변환 텍스트: `output/extracted_text/`
+- 렌더 이미지: `output/images/`
+- OCR 시각화: `output/ocr_visualizations/`
+- 로그: `output/logs/server.log`

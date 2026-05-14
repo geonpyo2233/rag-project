@@ -20,7 +20,7 @@ async def convert(
     file: Annotated[UploadFile, File(description="hwp, hwpx, pdf, docx, or image file")],
     render_scale: Annotated[
         float | None,
-        Form(description="PDF rendering scale. 2.0 is a practical default for OCR pipelines."),
+        Form(description="PDF rendering scale. 6.25 (~450 DPI) is the current default for OCR pipelines."),
     ] = None,
 ) -> dict:
     """Upload a document and convert it into OCR-ready or text-extracted output."""
