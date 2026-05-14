@@ -13,6 +13,7 @@ from langchain_core.prompts import PromptTemplate
 base_dir = "/Users/imgeonpyo/rag-project/backend/experiments/lim"
 # 벡터 를 저장한 폴더
 chroma_dir = f"{base_dir}/data/chroma_db"
+json_path = f"{base_dir}/data/ocr_output/ocr_documents.json"
 
 print('준비중')
 # 허깅페이스에서 한국어 임베딩 모델을 로드 
@@ -27,20 +28,16 @@ print('준완\n')
 # 질문을 받아 답변을 돌려주는 함수
 def ask(query) :
     # Chroma DB에서 질문이랑 가장 유사한 청크 3개를 찾아온다
-    docs = vectorstore.similarity_search(query, k=3)
-
-    # 3개 가져온 청크를 긴 텍스트로 합쳐 문서화 시킴
-    context = '\n\n'.join([doc.page_content for doc in docs])
+    all_pages = json.load(open(json_path, 'r', encoding='utf-8'))
+    context = '\n\n'.join([p['text'] for p in all_pages])
 
     # LLM한테 보낼 최종 텍스트
-    prompt = f""" 문서 내용을 참고해서 질문에 답변해줘
-    문서에 없는 내용이면 '문서에서 찾을 수 없습니다'라고 해줘
+    prompt = f""" 아래 문서 전체 내용을 빠짐없이 요약해줘.
 
     [문서 내용]
     {context}
 
-    [질문]
-    {query}
+   
 
     [답변]
 """
