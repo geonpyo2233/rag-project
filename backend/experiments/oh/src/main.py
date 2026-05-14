@@ -1,11 +1,15 @@
 from pathlib import Path
 
 from check_file import check_input_file
+from convert_pdf import convert_docx_to_pdf
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 DATA_DIR = BASE_DIR / "data"
+
+OUTPUT_DIR = BASE_DIR / "output"
+PDF_DIR = OUTPUT_DIR / "pdf"
 
 
 def main():
@@ -13,8 +17,13 @@ def main():
 
     selected_file = check_input_file(DATA_DIR)
 
-    print("\n===== STEP 01 COMPLETE =====")
-    print(f"테스트 파일: {selected_file.name}")
+    pdf_path = convert_docx_to_pdf(
+        selected_file,
+        PDF_DIR
+    )
+
+    print("\n===== STEP 02 COMPLETE =====")
+    print(f"PDF 파일: {pdf_path.name}")
 
 
 if __name__ == "__main__":
