@@ -2,15 +2,17 @@ import pdfplumber
 from pdf2image import convert_from_path
 from paddleocr import PaddleOCR
 import json
+import numpy as np
 
-pdf_path = '/Users/imgeonpyo/rag-project/backend/experiments/lim/data/raw_data/[교안_강의]11_보안위헙관리통제 part1_02회차.pdf'
+pdf_path = r"C:\Users\2class_13\RAG_project\rag-project\backend\experiments\lim\data\test.pdf"
 threshold = 50
-output = 'output.json'
+output = r'C:\Users\2class_13\RAG_project\rag-project\backend\experiments\lim\data\ocr_output\test\output.json'
 
 ocr = PaddleOCR(use_angle_cls = True, lang = 'korean')
 
 def get_text_by_ocr(image):
-    result = ocr.ocr(image, cls=True)
+    image_np = np.array(image)
+    result = ocr.ocr(image_np, cls=True)
 
     texts = []
     for block in result:
@@ -24,7 +26,7 @@ results = []
 
 with pdfplumber.open(pdf_path) as pdf:
     for i, page in enumerate(pdf.pages):
-        text = page.extract_text or ""
+        text = page.extract_text() or ""
 
         if len(text.strip()) >= threshold:
             method = 'text'

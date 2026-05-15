@@ -10,11 +10,11 @@ from langchain_community.embeddings import HuggingFaceBgeEmbeddings
 from langchain_community.vectorstores import Chroma
 
 # 매번 긴 경로를 작성하기 귀찮아 변수에 저장
-base_dir   = "/Users/imgeonpyo/rag-project/backend/experiments/lim"
 # document할 파일 경로
-json_path  = f"{base_dir}/data/ocr_output/ocr_documents.json"
 # 벡터 DB 저장할 경로
-chroma_dir = f"{base_dir}/data/chroma_db"
+base_dir   = r"C:\Users\2class_13\RAG_project\rag-project\backend\experiments\lim"
+json_path  = r"C:\Users\2class_13\RAG_project\rag-project\backend\experiments\lim\data\ocr_output\test\output.json"
+chroma_dir = f"{base_dir}\data\chroma_db"
 
 # open(json_path, 'r') -> JSON파일을 읽기 모드로 열기
 # encoding='utf-8' -> 한국어 깨짐 방지
@@ -28,10 +28,11 @@ docs = []
 # JSON에서 페이지 하나씩 꺼내 반복
 for page_data in all_page_texts:
     doc = Document( # LangChain의 문서 객체
-        page_content=page_data['text'], # 실제 텍스트 내용을 page_content에 저장
+        page_content=page_data['content'], # 실제 텍스트 내용을 page_content에 저장
         metadata = { # 텍스트의 부가정보 page와 socurce가 있어 이거 몇페이지야? 할 때 쓰는 정보
-            'page' : page_data['page'],
-            'source' : page_data['source']
+            'source': page_data.get('source', 'security_part1_02.pdf'),  # 없으면 기본값
+            'page': page_data['page'],
+            'method': page_data['method'],
         }
     )
     docs.append(doc) # 페이지 하나씩 돌아가면 리스트에 넣음
@@ -55,7 +56,7 @@ vectorstore = Chroma.from_documents(chunks, embeddings, persist_directory=chroma
 print(f'Chroma 저장 완료')
 
 # 유사도 검색 질문을 정하고 similartiy_search를 통해 가장 비슷한 벡터 3청크 찾기
-query = '문서 요약해줘'
+query = '동물을 경품으로 주는행위를 뭐라고 규정해?'
 results = vectorstore.similarity_search(query, k=3)
 
 print(f'\n=============검색결과=============')

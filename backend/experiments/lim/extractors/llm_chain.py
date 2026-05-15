@@ -9,11 +9,9 @@ from langchain_community.llms import Ollama
 # 프롬프트 템플릿을 만드는 도구 현재는 사용 안함
 from langchain_core.prompts import PromptTemplate
 
-# 경로 설정 베이스라인
-base_dir = "/Users/imgeonpyo/rag-project/backend/experiments/lim"
-# 벡터 를 저장한 폴더
-chroma_dir = f"{base_dir}/data/chroma_db"
-json_path = f"{base_dir}/data/ocr_output/ocr_documents.json"
+base_dir   = r"C:\Users\2class_13\RAG_project\rag-project\backend\experiments\lim"
+json_path  = r"C:\Users\2class_13\RAG_project\rag-project\backend\experiments\lim\data\ocr_output\test\output.json"
+chroma_dir = f"{base_dir}\data\chroma_db"
 
 print('준비중')
 # 허깅페이스에서 한국어 임베딩 모델을 로드 
@@ -29,10 +27,11 @@ print('준완\n')
 def ask(query) :
     # Chroma DB에서 질문이랑 가장 유사한 청크 3개를 찾아온다
     all_pages = json.load(open(json_path, 'r', encoding='utf-8'))
-    context = '\n\n'.join([p['text'] for p in all_pages])
+    context = '\n\n'.join([p['content'] for p in all_pages])
 
     # LLM한테 보낼 최종 텍스트
-    prompt = f""" 아래 문서 전체 내용을 빠짐없이 요약해줘.
+    prompt = f""" 아래 문서 전체 내용을 빠짐없이 요약해주고 + 카테고리 : 예를들어) 축구 
+                이런식으로 정리해줘
 
     [문서 내용]
     {context}

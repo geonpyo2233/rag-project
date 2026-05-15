@@ -1,33 +1,2513 @@
 [
   {
-    "page": 10,
-    "text": "|러군미능",
-    "score": 0.6267
+    "page": 1,
+    "text": "보안위협관리통제",
+    "score": 0.9996
   },
   {
-    "page": 10,
-    "text": "매",
-    "score": 0.7243
+    "page": 1,
+    "text": "보안위협",
+    "score": 0.9999
   },
   {
-    "page": 10,
-    "text": "ㄷ",
-    "score": 0.4868
+    "page": 1,
+    "text": "탐지하가",
+    "score": 0.8831
   },
   {
-    "page": 10,
+    "page": 1,
+    "text": "Part",
+    "score": 0.9777
+  },
+  {
+    "page": 1,
+    "text": "개요",
+    "score": 0.9992
+  },
+  {
+    "page": 1,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 1,
+    "text": "-h",
+    "score": 0.6084
+  },
+  {
+    "page": 1,
+    "text": "것",
+    "score": 0.5093
+  },
+  {
+    "page": 1,
+    "text": "-",
+    "score": 0.6746
+  },
+  {
+    "page": 1,
+    "text": "Wanthe",
+    "score": 0.5998
+  },
+  {
+    "page": 1,
+    "text": "ehte",
+    "score": 0.6484
+  },
+  {
+    "page": 1,
+    "text": "erye",
+    "score": 0.6464
+  },
+  {
+    "page": 1,
+    "text": "-",
+    "score": 0.7329
+  },
+  {
+    "page": 1,
+    "text": "-",
+    "score": 0.8314
+  },
+  {
+    "page": 1,
+    "text": "75%",
+    "score": 0.6813
+  },
+  {
+    "page": 1,
+    "text": "50",
+    "score": 0.5584
+  },
+  {
+    "page": 1,
+    "text": "25로",
+    "score": 0.7349
+  },
+  {
+    "page": 1,
+    "text": "한국기술교육대학교",
+    "score": 0.9997
+  },
+  {
+    "page": 1,
+    "text": "|",
+    "score": 0.9551
+  },
+  {
+    "page": 1,
+    "text": "온라인평생교육원",
+    "score": 0.9874
+  },
+  {
+    "page": 1,
+    "text": "0티",
+    "score": 0.9464
+  },
+  {
+    "page": 2,
+    "text": "학습내용",
+    "score": 0.9996
+  },
+  {
+    "page": 2,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 2,
+    "text": "개념",
+    "score": 1.0
+  },
+  {
+    "page": 2,
+    "text": "0",
+    "score": 0.9812
+  },
+  {
+    "page": 2,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 2,
+    "text": "프로세스",
+    "score": 0.9998
+  },
+  {
+    "page": 2,
+    "text": "0",
+    "score": 0.6416
+  },
+  {
+    "page": 2,
+    "text": "학습목표",
+    "score": 0.9998
+  },
+  {
+    "page": 2,
+    "text": "위험관리에",
+    "score": 1.0
+  },
+  {
+    "page": 2,
+    "text": "대한",
+    "score": 1.0
+  },
+  {
+    "page": 2,
+    "text": "기본개념을",
+    "score": 0.9999
+  },
+  {
+    "page": 2,
+    "text": "설명할",
+    "score": 1.0
+  },
+  {
+    "page": 2,
+    "text": "0",
+    "score": 0.7989
+  },
+  {
+    "page": 2,
+    "text": "수",
+    "score": 1.0
+  },
+  {
+    "page": 2,
+    "text": "있다",
+    "score": 1.0
+  },
+  {
+    "page": 2,
+    "text": "-",
+    "score": 0.8507
+  },
+  {
+    "page": 2,
+    "text": "프로세스",
+    "score": 0.9997
+  },
+  {
+    "page": 2,
+    "text": "별",
+    "score": 1.0
+  },
+  {
+    "page": 2,
+    "text": "단계의",
+    "score": 1.0
+  },
+  {
+    "page": 2,
+    "text": "0",
+    "score": 0.5187
+  },
+  {
+    "page": 2,
+    "text": "특징을",
+    "score": 0.9956
+  },
+  {
+    "page": 2,
+    "text": "설명할",
+    "score": 1.0
+  },
+  {
+    "page": 2,
+    "text": "수",
+    "score": 0.9994
+  },
+  {
+    "page": 2,
+    "text": "있다",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "개념",
+    "score": 0.9999
+  },
+  {
+    "page": 3,
+    "text": "Oh+",
+    "score": 0.5922
+  },
+  {
+    "page": 3,
+    "text": "위험관리셰<",
+    "score": 0.801
+  },
+  {
+    "page": 3,
+    "text": "Management?",
+    "score": 0.958
+  },
+  {
+    "page": 3,
+    "text": "정의",
+    "score": 0.9999
+  },
+  {
+    "page": 3,
+    "text": "물리적",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "위협에만",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "적용이",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "되었음",
+    "score": 0.9991
+  },
+  {
+    "page": 3,
+    "text": "과거초기의",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "위험분석은",
+    "score": 0.9999
+  },
+  {
+    "page": 3,
+    "text": "일반적으로",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "위협의",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "발생",
+    "score": 0.9999
+  },
+  {
+    "page": 3,
+    "text": "가능성에",
+    "score": 0.9999
+  },
+  {
+    "page": 3,
+    "text": "따른",
+    "score": 0.9999
+  },
+  {
+    "page": 3,
+    "text": "잠재적인",
+    "score": 0.9998
+  },
+  {
+    "page": 3,
+    "text": "손실을",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "계산하는",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "것으로",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "사용되었음",
+    "score": 0.9977
+  },
+  {
+    "page": 3,
+    "text": "이것을",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "산업에서",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "채택하여",
+    "score": 0.9999
+  },
+  {
+    "page": 3,
+    "text": "위험의",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "보험",
+    "score": 0.9999
+  },
+  {
+    "page": 3,
+    "text": "개념을",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "정립하였음",
+    "score": 0.9993
+  },
+  {
+    "page": 3,
     "text": "이",
-    "score": 0.3591
+    "score": 0.9999
+  },
+  {
+    "page": 3,
+    "text": "개념이",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "분야에",
+    "score": 0.9999
+  },
+  {
+    "page": 3,
+    "text": "||",
+    "score": 0.6257
+  },
+  {
+    "page": 3,
+    "text": "적용되었음",
+    "score": 0.9989
+  },
+  {
+    "page": 3,
+    "text": "1]",
+    "score": 0.9102
+  },
+  {
+    "page": 3,
+    "text": "위험관리이s",
+    "score": 0.7286
+  },
+  {
+    "page": 3,
+    "text": "Management?",
+    "score": 0.9536
+  },
+  {
+    "page": 3,
+    "text": "조직의",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "자산에",
+    "score": 0.9999
+  },
+  {
+    "page": 3,
+    "text": "대한",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "위험을",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "감수할",
+    "score": 0.9998
+  },
+  {
+    "page": 3,
+    "text": "있는",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "수준으로",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "유지하기",
+    "score": 0.9998
+  },
+  {
+    "page": 3,
+    "text": "위하여",
+    "score": 0.9999
+  },
+  {
+    "page": 3,
+    "text": "수",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "자산에",
+    "score": 0.9999
+  },
+  {
+    "page": 3,
+    "text": "대한",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "이러한",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "위협으로부터",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "자산을",
+    "score": 0.9999
+  },
+  {
+    "page": 3,
+    "text": "위한",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "위협을",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "분석하고",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "보호하기",
+    "score": 0.9999
+  },
+  {
+    "page": 3,
+    "text": "비용",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "대비",
+    "score": 0.9952
+  },
+  {
+    "page": 3,
+    "text": "효과적인",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "보호대책을",
+    "score": 0.9994
+  },
+  {
+    "page": 3,
+    "text": "마련하는",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "일련의",
+    "score": 0.9999
+  },
+  {
+    "page": 3,
+    "text": "과정",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "2]",
+    "score": 0.883
+  },
+  {
+    "page": 3,
+    "text": "위험관리의",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "과정",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "전략과계획수립",
+    "score": 0.9999
+  },
+  {
+    "page": 3,
+    "text": "위협",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "구성요소",
+    "score": 0.9846
+  },
+  {
+    "page": 3,
+    "text": "분석",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "위험을",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "식별하는",
+    "score": 0.9998
+  },
+  {
+    "page": 3,
+    "text": "단계",
+    "score": 0.999
+  },
+  {
+    "page": 3,
+    "text": "위험분석",
+    "score": 0.9999
+  },
+  {
+    "page": 3,
+    "text": "분석에",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "기초하여",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "위험",
+    "score": 0.9998
+  },
+  {
+    "page": 3,
+    "text": "평가",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "위험평가",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "위험의",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "규모를",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "결정하는",
+    "score": 0.9999
+  },
+  {
+    "page": 3,
+    "text": "단계",
+    "score": 0.9999
+  },
+  {
+    "page": 3,
+    "text": "필요한",
+    "score": 0.9999
+  },
+  {
+    "page": 3,
+    "text": "보호대책",
+    "score": 0.9829
+  },
+  {
+    "page": 3,
+    "text": "선정",
+    "score": 0.9999
+  },
+  {
+    "page": 3,
+    "text": "정보보호계획수립",
+    "score": 0.988
+  },
+  {
+    "page": 3,
+    "text": "새로이",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "필요한",
+    "score": 1.0
+  },
+  {
+    "page": 3,
+    "text": "대응책을",
+    "score": 0.9661
+  },
+  {
+    "page": 3,
+    "text": "식별하는",
+    "score": 0.9999
+  },
+  {
+    "page": 3,
+    "text": "단계",
+    "score": 0.9999
+  },
+  {
+    "page": 3,
+    "text": "보호대책",
+    "score": 0.9918
+  },
+  {
+    "page": 3,
+    "text": "구현계획",
+    "score": 0.9999
+  },
+  {
+    "page": 3,
+    "text": "수립",
+    "score": 0.9998
+  },
+  {
+    "page": 3,
+    "text": "3",
+    "score": 0.9477
+  },
+  {
+    "page": 4,
+    "text": "개념",
+    "score": 0.9999
+  },
+  {
+    "page": 4,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 4,
+    "text": "아h",
+    "score": 0.5384
+  },
+  {
+    "page": 4,
+    "text": "위험의",
+    "score": 1.0
+  },
+  {
+    "page": 4,
+    "text": "2",
+    "score": 0.9998
+  },
+  {
+    "page": 4,
+    "text": "개념",
+    "score": 0.9999
+  },
+  {
+    "page": 4,
+    "text": "Risk",
+    "score": 0.9982
+  },
+  {
+    "page": 4,
+    "text": "1[자산",
+    "score": 0.9011
+  },
+  {
+    "page": 4,
+    "text": "위협",
+    "score": 0.9999
+  },
+  {
+    "page": 4,
+    "text": "-",
+    "score": 0.8614
+  },
+  {
+    "page": 4,
+    "text": "취약성]",
+    "score": 0.9621
+  },
+  {
+    "page": 4,
+    "text": "위험의",
+    "score": 1.0
+  },
+  {
+    "page": 4,
+    "text": "크기르",
+    "score": 0.7976
+  },
+  {
+    "page": 4,
+    "text": "발생가능성",
+    "score": 1.0
+  },
+  {
+    "page": 4,
+    "text": "손실",
+    "score": 1.0
+  },
+  {
+    "page": 4,
+    "text": "[예]",
+    "score": 0.9997
+  },
+  {
+    "page": 4,
+    "text": "주사위를",
+    "score": 0.9998
+  },
+  {
+    "page": 4,
+    "text": "던져",
+    "score": 0.9985
+  },
+  {
+    "page": 4,
+    "text": "6이",
+    "score": 0.9969
+  },
+  {
+    "page": 4,
+    "text": "나오면",
+    "score": 1.0
+  },
+  {
+    "page": 4,
+    "text": "600원을",
+    "score": 0.997
+  },
+  {
+    "page": 4,
+    "text": "얻는다고",
+    "score": 1.0
+  },
+  {
+    "page": 4,
+    "text": "가정을",
+    "score": 0.9999
+  },
+  {
+    "page": 4,
+    "text": "해",
+    "score": 0.9999
+  },
+  {
+    "page": 4,
+    "text": "보죠",
+    "score": 0.9994
+  },
+  {
+    "page": 4,
+    "text": "6이",
+    "score": 0.9997
+  },
+  {
+    "page": 4,
+    "text": "나올",
+    "score": 0.9998
+  },
+  {
+    "page": 4,
+    "text": "확률은",
+    "score": 0.9894
+  },
+  {
+    "page": 4,
+    "text": "1/6이기",
+    "score": 0.9968
+  },
+  {
+    "page": 4,
+    "text": "때문에",
+    "score": 1.0
+  },
+  {
+    "page": 4,
+    "text": "1/6",
+    "score": 0.998
+  },
+  {
+    "page": 4,
+    "text": "600원",
+    "score": 0.9974
+  },
+  {
+    "page": 4,
+    "text": "100원",
+    "score": 1.0
+  },
+  {
+    "page": 4,
+    "text": "이므로",
+    "score": 0.9999
+  },
+  {
+    "page": 4,
+    "text": "-",
+    "score": 0.7756
+  },
+  {
+    "page": 4,
+    "text": "기댓값은",
+    "score": 0.9459
+  },
+  {
+    "page": 4,
+    "text": "00원이",
+    "score": 0.9972
+  },
+  {
+    "page": 4,
+    "text": "된",
+    "score": 0.516
+  },
+  {
+    "page": 4,
+    "text": "손실발생",
+    "score": 1.0
+  },
+  {
+    "page": 4,
+    "text": "손실의",
+    "score": 1.0
+  },
+  {
+    "page": 4,
+    "text": "위험",
+    "score": 0.9998
+  },
+  {
+    "page": 4,
+    "text": "가능성",
+    "score": 0.9999
+  },
+  {
+    "page": 4,
+    "text": "정도",
+    "score": 1.0
+  },
+  {
+    "page": 4,
+    "text": "위험은",
+    "score": 0.9999
+  },
+  {
+    "page": 4,
+    "text": "손실을",
+    "score": 1.0
+  },
+  {
+    "page": 4,
+    "text": "미치는",
+    "score": 0.9998
+  },
+  {
+    "page": 4,
+    "text": "사건이",
+    "score": 0.9999
+  },
+  {
+    "page": 4,
+    "text": "발생할",
+    "score": 1.0
+  },
+  {
+    "page": 4,
+    "text": "가능성과",
+    "score": 0.9999
+  },
+  {
+    "page": 4,
+    "text": "그때",
+    "score": 1.0
+  },
+  {
+    "page": 4,
+    "text": "발생하는",
+    "score": 1.0
+  },
+  {
+    "page": 4,
+    "text": "손실의",
+    "score": 1.0
+  },
+  {
+    "page": 4,
+    "text": "정도의",
+    "score": 1.0
+  },
+  {
+    "page": 4,
+    "text": "곱으로",
+    "score": 1.0
+  },
+  {
+    "page": 4,
+    "text": "평가될",
+    "score": 1.0
+  },
+  {
+    "page": 4,
+    "text": "수",
+    "score": 1.0
+  },
+  {
+    "page": 4,
+    "text": "있음",
+    "score": 0.9997
+  },
+  {
+    "page": 5,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 5,
+    "text": "개념",
+    "score": 0.9999
+  },
+  {
+    "page": 5,
+    "text": "위험의",
+    "score": 1.0
+  },
+  {
+    "page": 5,
+    "text": "개념",
+    "score": 0.9999
+  },
+  {
+    "page": 5,
+    "text": "2",
+    "score": 0.9999
+  },
+  {
+    "page": 5,
+    "text": "'정의",
+    "score": 0.842
+  },
+  {
+    "page": 5,
+    "text": "조직이",
+    "score": 1.0
+  },
+  {
+    "page": 5,
+    "text": "보호해야",
+    "score": 1.0
+  },
+  {
+    "page": 5,
+    "text": "할",
+    "score": 1.0
+  },
+  {
+    "page": 5,
+    "text": "대상",
+    "score": 0.9999
+  },
+  {
+    "page": 5,
+    "text": "자산",
+    "score": 0.9997
+  },
+  {
+    "page": 5,
+    "text": "'종류",
+    "score": 0.991
+  },
+  {
+    "page": 5,
+    "text": "정보",
+    "score": 0.9999
+  },
+  {
+    "page": 5,
+    "text": "하드웨어",
+    "score": 0.9996
+  },
+  {
+    "page": 5,
+    "text": "소프트웨어",
+    "score": 0.9993
+  },
+  {
+    "page": 5,
+    "text": "시설",
+    "score": 0.9999
+  },
+  {
+    "page": 5,
+    "text": "등",
+    "score": 0.9991
+  },
+  {
+    "page": 5,
+    "text": "Asset]",
+    "score": 0.9136
+  },
+  {
+    "page": 5,
+    "text": "'특징",
+    "score": 0.8577
+  },
+  {
+    "page": 5,
+    "text": "관련",
+    "score": 1.0
+  },
+  {
+    "page": 5,
+    "text": "인력",
+    "score": 0.9999
+  },
+  {
+    "page": 5,
+    "text": "기업",
+    "score": 0.9999
+  },
+  {
+    "page": 5,
+    "text": "이미지",
+    "score": 0.9999
+  },
+  {
+    "page": 5,
+    "text": "등의",
+    "score": 1.0
+  },
+  {
+    "page": 5,
+    "text": "무형자산",
+    "score": 0.9996
+  },
+  {
+    "page": 5,
+    "text": "포함",
+    "score": 1.0
+  },
+  {
+    "page": 5,
+    "text": "취약성",
+    "score": 0.9999
+  },
+  {
+    "page": 5,
+    "text": "\"정의",
+    "score": 0.8623
+  },
+  {
+    "page": 5,
+    "text": "자산의",
+    "score": 1.0
+  },
+  {
+    "page": 5,
+    "text": "잠재적",
+    "score": 0.9996
+  },
+  {
+    "page": 5,
+    "text": "속성이나",
+    "score": 1.0
+  },
+  {
+    "page": 5,
+    "text": "처한",
+    "score": 0.9995
+  },
+  {
+    "page": 5,
+    "text": "환경",
+    "score": 1.0
+  },
+  {
+    "page": 5,
+    "text": "Vulnerab",
+    "score": 0.9986
+  },
+  {
+    "page": 5,
+    "text": "\"위협의",
+    "score": 0.8753
+  },
+  {
+    "page": 5,
+    "text": "이용",
+    "score": 1.0
+  },
+  {
+    "page": 5,
+    "text": "대상",
+    "score": 0.9999
+  },
+  {
+    "page": 5,
+    "text": "관리적",
+    "score": 1.0
+  },
+  {
+    "page": 5,
+    "text": "물리적'",
+    "score": 0.8596
+  },
+  {
+    "page": 5,
+    "text": "기술적",
+    "score": 1.0
+  },
+  {
+    "page": 5,
+    "text": "약점",
+    "score": 0.9997
+  },
+  {
+    "page": 5,
+    "text": "ility",
+    "score": 0.9394
+  },
+  {
+    "page": 5,
+    "text": "위협",
+    "score": 1.0
+  },
+  {
+    "page": 5,
+    "text": "\"정의",
+    "score": 0.8659
+  },
+  {
+    "page": 5,
+    "text": "자산에",
+    "score": 0.9999
+  },
+  {
+    "page": 5,
+    "text": "손실을",
+    "score": 1.0
+  },
+  {
+    "page": 5,
+    "text": "초래할",
+    "score": 0.9999
+  },
+  {
+    "page": 5,
+    "text": "수",
+    "score": 1.0
+  },
+  {
+    "page": 5,
+    "text": "있는",
+    "score": 1.0
+  },
+  {
+    "page": 5,
+    "text": "원치",
+    "score": 1.0
+  },
+  {
+    "page": 5,
+    "text": "않는",
+    "score": 1.0
+  },
+  {
+    "page": 5,
+    "text": "사건의",
+    "score": 1.0
+  },
+  {
+    "page": 5,
+    "text": "Threat?",
+    "score": 0.9156
+  },
+  {
+    "page": 5,
+    "text": "잠재적인",
+    "score": 0.9998
+  },
+  {
+    "page": 5,
+    "text": "원인이나",
+    "score": 0.9999
+  },
+  {
+    "page": 5,
+    "text": "행위자",
+    "score": 0.9999
+  },
+  {
+    "page": 6,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 6,
+    "text": "개념",
+    "score": 0.9999
+  },
+  {
+    "page": 6,
+    "text": "아h",
+    "score": 0.5384
+  },
+  {
+    "page": 6,
+    "text": "위험의",
+    "score": 1.0
+  },
+  {
+    "page": 6,
+    "text": "2",
+    "score": 0.9995
+  },
+  {
+    "page": 6,
+    "text": "개념",
+    "score": 0.9999
+  },
+  {
+    "page": 6,
+    "text": "1]",
+    "score": 0.877
+  },
+  {
+    "page": 6,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 6,
+    "text": "측면에서의",
+    "score": 0.9976
+  },
+  {
+    "page": 6,
+    "text": "취약성과",
+    "score": 0.9996
+  },
+  {
+    "page": 6,
+    "text": "위협이란?",
+    "score": 0.9992
+  },
+  {
+    "page": 6,
+    "text": "[1]",
+    "score": 0.9919
+  },
+  {
+    "page": 6,
+    "text": "취약성Vulnerability",
+    "score": 0.9554
+  },
+  {
+    "page": 6,
+    "text": "정의",
+    "score": 0.9998
+  },
+  {
+    "page": 6,
+    "text": "자산이",
+    "score": 0.9999
+  },
+  {
+    "page": 6,
+    "text": "가지고",
+    "score": 1.0
+  },
+  {
+    "page": 6,
+    "text": "있는",
+    "score": 1.0
+  },
+  {
+    "page": 6,
+    "text": "약점",
+    "score": 0.9999
+  },
+  {
+    "page": 6,
+    "text": "취약성",
+    "score": 0.9998
+  },
+  {
+    "page": 6,
+    "text": "자체로",
+    "score": 1.0
+  },
+  {
+    "page": 6,
+    "text": "인해서는",
+    "score": 1.0
+  },
+  {
+    "page": 6,
+    "text": "위험을",
+    "score": 1.0
+  },
+  {
+    "page": 6,
+    "text": "발생시키지",
+    "score": 0.9998
+  },
+  {
+    "page": 6,
+    "text": "않음",
+    "score": 0.996
+  },
+  {
+    "page": 6,
+    "text": "2]",
+    "score": 0.9511
+  },
+  {
+    "page": 6,
+    "text": "위협Threat",
+    "score": 0.999
+  },
+  {
+    "page": 6,
+    "text": "정의",
+    "score": 1.0
+  },
+  {
+    "page": 6,
+    "text": "외부의",
+    "score": 0.9999
+  },
+  {
+    "page": 6,
+    "text": "공격",
+    "score": 1.0
+  },
+  {
+    "page": 6,
+    "text": "가능성",
+    "score": 0.9999
+  },
+  {
+    "page": 6,
+    "text": "취약성",
+    "score": 0.9997
+  },
+  {
+    "page": 6,
+    "text": "위협",
+    "score": 1.0
+  },
+  {
+    "page": 6,
+    "text": "'위험'",
+    "score": 0.9452
+  },
+  {
+    "page": 6,
+    "text": "발생",
+    "score": 0.9999
+  },
+  {
+    "page": 6,
+    "text": "+",
+    "score": 0.9989
+  },
+  {
+    "page": 6,
+    "text": "-",
+    "score": 0.9242
+  },
+  {
+    "page": 6,
+    "text": "취약한",
+    "score": 0.9999
+  },
+  {
+    "page": 6,
+    "text": "부분에",
+    "score": 1.0
+  },
+  {
+    "page": 6,
+    "text": "위협요소가",
+    "score": 0.9999
+  },
+  {
+    "page": 6,
+    "text": "정보자산의",
+    "score": 0.9999
+  },
+  {
+    "page": 6,
+    "text": "발생하여",
+    "score": 1.0
+  },
+  {
+    "page": 6,
+    "text": "위험",
+    "score": 0.9998
+  },
+  {
+    "page": 6,
+    "text": "자산의",
+    "score": 1.0
+  },
+  {
+    "page": 6,
+    "text": "손실",
+    "score": 0.9999
+  },
+  {
+    "page": 6,
+    "text": "손상을",
+    "score": 1.0
+  },
+  {
+    "page": 6,
+    "text": "유발하는",
+    "score": 1.0
+  },
+  {
+    "page": 6,
+    "text": "잠재성",
+    "score": 0.9996
+  },
+  {
+    "page": 6,
+    "text": "위협에",
+    "score": 0.9999
+  },
+  {
+    "page": 6,
+    "text": "대응하여",
+    "score": 0.9939
+  },
+  {
+    "page": 6,
+    "text": "자산을",
+    "score": 0.9999
+  },
+  {
+    "page": 6,
+    "text": "보호하기",
+    "score": 0.9999
+  },
+  {
+    "page": 6,
+    "text": "위한",
+    "score": 1.0
+  },
+  {
+    "page": 6,
+    "text": "관리적",
+    "score": 1.0
+  },
+  {
+    "page": 6,
+    "text": "정보보호대책",
+    "score": 0.9992
+  },
+  {
+    "page": 6,
+    "text": "물리적",
+    "score": 1.0
+  },
+  {
+    "page": 6,
+    "text": "기술적",
+    "score": 0.9999
+  },
+  {
+    "page": 6,
+    "text": "대책",
+    "score": 0.9931
+  },
+  {
+    "page": 6,
+    "text": "잔여위험",
+    "score": 0.9993
+  },
+  {
+    "page": 6,
+    "text": "정보보호대책을",
+    "score": 0.9996
+  },
+  {
+    "page": 6,
+    "text": "구현한",
+    "score": 0.9998
+  },
+  {
+    "page": 6,
+    "text": "후",
+    "score": 1.0
+  },
+  {
+    "page": 6,
+    "text": "남아있는",
+    "score": 1.0
+  },
+  {
+    "page": 6,
+    "text": "위험",
+    "score": 0.9999
+  },
+  {
+    "page": 6,
+    "text": "-o",
+    "score": 0.7831
+  },
+  {
+    "page": 7,
+    "text": "개념",
+    "score": 0.9999
+  },
+  {
+    "page": 7,
+    "text": "Oh?",
+    "score": 0.7787
+  },
+  {
+    "page": 7,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 7,
+    "text": "위험의",
+    "score": 1.0
+  },
+  {
+    "page": 7,
+    "text": "2",
+    "score": 0.9995
+  },
+  {
+    "page": 7,
+    "text": "개념",
+    "score": 0.9999
+  },
+  {
+    "page": 7,
+    "text": "공격",
+    "score": 1.0
+  },
+  {
+    "page": 7,
+    "text": "위협",
+    "score": 0.9998
+  },
+  {
+    "page": 7,
+    "text": "취약성",
+    "score": 0.9998
+  },
+  {
+    "page": 7,
+    "text": "도츠",
+    "score": 0.6746
+  },
+  {
+    "page": 7,
+    "text": "방어대상",
+    "score": 0.9998
+  },
+  {
+    "page": 7,
+    "text": "증가",
+    "score": 0.9179
+  },
+  {
+    "page": 7,
+    "text": "증가",
+    "score": 0.9972
+  },
+  {
+    "page": 7,
+    "text": "보안",
+    "score": 0.9998
+  },
+  {
+    "page": 7,
+    "text": "감소",
+    "score": 0.9998
+  },
+  {
+    "page": 7,
+    "text": "위험",
+    "score": 0.9999
+  },
+  {
+    "page": 7,
+    "text": "자산",
+    "score": 0.9999
+  },
+  {
+    "page": 7,
+    "text": "대책",
+    "score": 0.9979
+  },
+  {
+    "page": 7,
+    "text": "현시",
+    "score": 0.9999
+  },
+  {
+    "page": 7,
+    "text": "증가",
+    "score": 0.9998
+  },
+  {
+    "page": 7,
+    "text": "충족",
+    "score": 0.9999
+  },
+  {
+    "page": 7,
+    "text": "보유",
+    "score": 0.9138
+  },
+  {
+    "page": 7,
+    "text": "보안요구",
+    "score": 0.9996
+  },
+  {
+    "page": 7,
+    "text": "가치",
+    "score": 1.0
+  },
+  {
+    "page": 7,
+    "text": "사항",
+    "score": 0.9998
+  },
+  {
+    "page": 7,
+    "text": "사업영향]",
+    "score": 0.9073
+  },
+  {
+    "page": 7,
+    "text": "정보보호대책",
+    "score": 0.988
+  },
+  {
+    "page": 7,
+    "text": "위협을",
+    "score": 1.0
+  },
+  {
+    "page": 7,
+    "text": "방어함으로써",
+    "score": 1.0
+  },
+  {
+    "page": 7,
+    "text": "위험을",
+    "score": 1.0
+  },
+  {
+    "page": 7,
+    "text": "감소시키는",
+    "score": 0.9999
+  },
+  {
+    "page": 7,
+    "text": "것",
+    "score": 1.0
+  },
+  {
+    "page": 7,
+    "text": "-",
+    "score": 0.8136
+  },
+  {
+    "page": 7,
+    "text": "체계적인",
+    "score": 1.0
+  },
+  {
+    "page": 7,
+    "text": "과정",
+    "score": 1.0
+  },
+  {
+    "page": 7,
+    "text": "없이",
+    "score": 1.0
+  },
+  {
+    "page": 7,
+    "text": "위험분석",
+    "score": 0.9999
+  },
+  {
+    "page": 7,
+    "text": "보호대책",
+    "score": 0.9989
+  },
+  {
+    "page": 7,
+    "text": "수립할",
+    "score": 1.0
+  },
+  {
+    "page": 7,
+    "text": "경우?",
+    "score": 1.0
+  },
+  {
+    "page": 7,
+    "text": "'취약성과",
+    "score": 0.9338
+  },
+  {
+    "page": 7,
+    "text": "위협에",
+    "score": 1.0
+  },
+  {
+    "page": 7,
+    "text": "대한",
+    "score": 1.0
+  },
+  {
+    "page": 7,
+    "text": "우선순위가",
+    "score": 0.9965
+  },
+  {
+    "page": 7,
+    "text": "설정되지",
+    "score": 1.0
+  },
+  {
+    "page": 7,
+    "text": "못해서",
+    "score": 1.0
+  },
+  {
+    "page": 7,
+    "text": "불필요하거나",
+    "score": 0.9998
+  },
+  {
+    "page": 7,
+    "text": "과도한",
+    "score": 1.0
+  },
+  {
+    "page": 7,
+    "text": "투자",
+    "score": 0.9998
+  },
+  {
+    "page": 7,
+    "text": "발생",
+    "score": 0.9998
+  },
+  {
+    "page": 7,
+    "text": "보호대책을",
+    "score": 0.9994
+  },
+  {
+    "page": 7,
+    "text": "불구하고",
+    "score": 1.0
+  },
+  {
+    "page": 7,
+    "text": "위협에",
+    "score": 1.0
+  },
+  {
+    "page": 7,
+    "text": "대처하지",
+    "score": 0.9998
+  },
+  {
+    "page": 7,
+    "text": "못하는",
+    "score": 1.0
+  },
+  {
+    "page": 7,
+    "text": "수립하였음에도",
+    "score": 0.9999
+  },
+  {
+    "page": 7,
+    "text": "경우",
+    "score": 1.0
+  },
+  {
+    "page": 7,
+    "text": "발생",
+    "score": 0.9999
+  },
+  {
+    "page": 7,
+    "text": "/-",
+    "score": 0.6323
+  },
+  {
+    "page": 8,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 8,
+    "text": "개념",
+    "score": 0.9999
+  },
+  {
+    "page": 8,
+    "text": "3",
+    "score": 0.803
+  },
+  {
+    "page": 8,
+    "text": "위험분석",
+    "score": 1.0
+  },
+  {
+    "page": 8,
+    "text": "방법론",
+    "score": 1.0
+  },
+  {
+    "page": 8,
+    "text": "과학적이고",
+    "score": 0.9999
+  },
+  {
+    "page": 8,
+    "text": "정형적인",
+    "score": 0.9998
+  },
+  {
+    "page": 8,
+    "text": "과정으로",
+    "score": 1.0
+  },
+  {
+    "page": 8,
+    "text": "위험을",
+    "score": 1.0
+  },
+  {
+    "page": 8,
+    "text": "알아내고",
+    "score": 0.9999
+  },
+  {
+    "page": 8,
+    "text": "측정하려는",
+    "score": 0.9991
+  },
+  {
+    "page": 8,
+    "text": "방법을",
+    "score": 1.0
+  },
+  {
+    "page": 8,
+    "text": "제시함",
+    "score": 0.9999
+  },
+  {
+    "page": 8,
+    "text": "방법론",
+    "score": 1.0
+  },
+  {
+    "page": 8,
+    "text": "자체는",
+    "score": 1.0
+  },
+  {
+    "page": 8,
+    "text": "전",
+    "score": 0.9997
+  },
+  {
+    "page": 8,
+    "text": "세계적으로",
+    "score": 1.0
+  },
+  {
+    "page": 8,
+    "text": "아주",
+    "score": 0.9999
+  },
+  {
+    "page": 8,
+    "text": "다양한",
+    "score": 0.9998
+  },
+  {
+    "page": 8,
+    "text": "방법론들이",
+    "score": 1.0
+  },
+  {
+    "page": 8,
+    "text": "존재함",
+    "score": 0.9999
+  },
+  {
+    "page": 8,
+    "text": "하는",
+    "score": 1.0
+  },
+  {
+    "page": 8,
+    "text": "위험분석을",
+    "score": 1.0
+  },
+  {
+    "page": 8,
+    "text": "수행하고자",
+    "score": 0.9998
+  },
+  {
+    "page": 8,
+    "text": "대상",
+    "score": 0.9999
+  },
+  {
+    "page": 8,
+    "text": "조직및",
+    "score": 0.9967
+  },
+  {
+    "page": 8,
+    "text": "'특징'",
+    "score": 0.8849
+  },
+  {
+    "page": 8,
+    "text": "요구사항",
+    "score": 0.9999
+  },
+  {
+    "page": 8,
+    "text": "수행기간",
+    "score": 1.0
+  },
+  {
+    "page": 8,
+    "text": "상황과",
+    "score": 1.0
+  },
+  {
+    "page": 8,
+    "text": "여건을",
+    "score": 1.0
+  },
+  {
+    "page": 8,
+    "text": "적정한",
+    "score": 0.9999
+  },
+  {
+    "page": 8,
+    "text": "방법론을",
+    "score": 1.0
+  },
+  {
+    "page": 8,
+    "text": "등",
+    "score": 0.9994
+  },
+  {
+    "page": 8,
+    "text": "고려하여",
+    "score": 1.0
+  },
+  {
+    "page": 8,
+    "text": "선택하여",
+    "score": 0.9999
+  },
+  {
+    "page": 8,
+    "text": "적용함",
+    "score": 0.9998
+  },
+  {
+    "page": 8,
+    "text": "8",
+    "score": 0.9929
+  },
+  {
+    "page": 9,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "개념",
+    "score": 0.9999
+  },
+  {
+    "page": 9,
+    "text": "Oh?",
+    "score": 0.7787
+  },
+  {
+    "page": 9,
+    "text": "3",
+    "score": 0.803
+  },
+  {
+    "page": 9,
+    "text": "위험분석",
+    "score": 0.9999
+  },
+  {
+    "page": 9,
+    "text": "방법론",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "1]",
+    "score": 0.877
+  },
+  {
+    "page": 9,
+    "text": "계량화",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "여부에",
+    "score": 0.9999
+  },
+  {
+    "page": 9,
+    "text": "따른분류",
+    "score": 0.9997
+  },
+  {
+    "page": 9,
+    "text": "[1]",
+    "score": 0.8779
+  },
+  {
+    "page": 9,
+    "text": "정량적",
+    "score": 0.9989
+  },
+  {
+    "page": 9,
+    "text": "기법",
+    "score": 0.9999
+  },
+  {
+    "page": 9,
+    "text": "정의",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "손실",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "및",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "위험의",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "크기를",
+    "score": 0.9999
+  },
+  {
+    "page": 9,
+    "text": "금액으로",
+    "score": 0.9996
+  },
+  {
+    "page": 9,
+    "text": "나타내는기법",
+    "score": 0.9996
+  },
+  {
+    "page": 9,
+    "text": "종류과거자료",
+    "score": 0.9983
+  },
+  {
+    "page": 9,
+    "text": "접근법",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "수학공식",
+    "score": 0.9998
+  },
+  {
+    "page": 9,
+    "text": "접근법",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "확률분포",
+    "score": 0.9988
+  },
+  {
+    "page": 9,
+    "text": "추정법등",
+    "score": 0.9988
+  },
+  {
+    "page": 9,
+    "text": "-",
+    "score": 0.5598
+  },
+  {
+    "page": 9,
+    "text": "[위험'을",
+    "score": 0.9997
+  },
+  {
+    "page": 9,
+    "text": "정량적으로",
+    "score": 0.9999
+  },
+  {
+    "page": 9,
+    "text": "표현하는",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "예시]",
+    "score": 0.9991
+  },
+  {
+    "page": 9,
+    "text": "조직의",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "연간",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "예상",
+    "score": 0.9992
+  },
+  {
+    "page": 9,
+    "text": "손실액Anua",
+    "score": 0.8308
+  },
+  {
+    "page": 9,
+    "text": "Loss",
+    "score": 0.9378
+  },
+  {
+    "page": 9,
+    "text": "Expectancy",
+    "score": 0.9998
+  },
+  {
+    "page": 9,
+    "text": "특정",
+    "score": 0.9996
+  },
+  {
+    "page": 9,
+    "text": "사건에",
+    "score": 0.9999
+  },
+  {
+    "page": 9,
+    "text": "대한",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "위험의",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "정도",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "해킹에",
+    "score": 0.9977
+  },
+  {
+    "page": 9,
+    "text": "따른",
+    "score": 0.9998
+  },
+  {
+    "page": 9,
+    "text": "위험이",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "높다",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "등으로",
+    "score": 0.9999
+  },
+  {
+    "page": 9,
+    "text": "표현될",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "수도",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "있음",
+    "score": 0.9998
+  },
+  {
+    "page": 9,
+    "text": "0",
+    "score": 0.9838
+  },
+  {
+    "page": 9,
+    "text": "장점",
+    "score": 0.9999
+  },
+  {
+    "page": 9,
+    "text": "자료의",
+    "score": 0.9999
+  },
+  {
+    "page": 9,
+    "text": "사용으로",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "비용",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "효과",
+    "score": 0.9996
+  },
+  {
+    "page": 9,
+    "text": "분석",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "예산",
+    "score": 0.9994
+  },
+  {
+    "page": 9,
+    "text": "용이함",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "정량화된",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "및",
+    "score": 0.9999
+  },
+  {
+    "page": 9,
+    "text": "계획이",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "수리적",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "방법의",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "사용으로",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "계산이",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "논리적임",
+    "score": 0.9999
+  },
+  {
+    "page": 9,
+    "text": "2",
+    "score": 0.9998
+  },
+  {
+    "page": 9,
+    "text": "단점",
+    "score": 0.9998
+  },
+  {
+    "page": 9,
+    "text": "정확한",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "정량화",
+    "score": 0.9999
+  },
+  {
+    "page": 9,
+    "text": "수치를",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "구하기가",
+    "score": 0.9999
+  },
+  {
+    "page": 9,
+    "text": "어려움",
+    "score": 0.9999
+  },
+  {
+    "page": 9,
+    "text": "수리계산에",
+    "score": 0.9999
+  },
+  {
+    "page": 9,
+    "text": "많은",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "시간과",
+    "score": 1.0
+  },
+  {
+    "page": 9,
+    "text": "노력이",
+    "score": 0.9996
+  },
+  {
+    "page": 9,
+    "text": "필요함",
+    "score": 0.9999
+  },
+  {
+    "page": 9,
+    "text": "9",
+    "score": 0.9999
   },
   {
     "page": 10,
-    "text": "굴",
-    "score": 0.8276
+    "text": "위험관리",
+    "score": 1.0
   },
   {
     "page": 10,
-    "text": "(L",
-    "score": 0.6427
+    "text": "개념",
+    "score": 0.9999
+  },
+  {
+    "page": 10,
+    "text": "아h",
+    "score": 0.5384
+  },
+  {
+    "page": 10,
+    "text": "3",
+    "score": 0.803
+  },
+  {
+    "page": 10,
+    "text": "위험분석",
+    "score": 0.9999
+  },
+  {
+    "page": 10,
+    "text": "방법론",
+    "score": 1.0
+  },
+  {
+    "page": 10,
+    "text": "1]",
+    "score": 0.877
   },
   {
     "page": 10,
@@ -37,77 +2517,172 @@
   {
     "page": 10,
     "text": "여부에",
-    "score": 0.9998
-  },
-  {
-    "page": 10,
-    "text": "따른",
     "score": 0.9999
   },
   {
     "page": 10,
-    "text": "분류",
+    "text": "따른분류",
+    "score": 0.9997
+  },
+  {
+    "page": 10,
+    "text": "2]",
+    "score": 0.9854
+  },
+  {
+    "page": 10,
+    "text": "정성적기법",
     "score": 1.0
   },
   {
     "page": 10,
-    "text": "(2)",
-    "score": 0.9963
+    "text": "정의",
+    "score": 1.0
   },
   {
     "page": 10,
-    "text": "정성적 기법",
-    "score": 0.9945
+    "text": "분석자의",
+    "score": 1.0
   },
   {
     "page": 10,
-    "text": "정의:분석자의 경험 및",
-    "score": 0.9825
+    "text": "경험",
+    "score": 1.0
   },
   {
     "page": 10,
-    "text": "및 지식에>",
-    "score": 0.8917
+    "text": "및",
+    "score": 1.0
   },
   {
     "page": 10,
-    "text": "기초한 위험분석 방법",
-    "score": 0.9968
+    "text": "지식에",
+    "score": 1.0
   },
   {
     "page": 10,
-    "text": "손실크기를 측정할 수 없어서",
-    "score": 0.9982
+    "text": "기초한",
+    "score": 1.0
   },
   {
     "page": 10,
-    "text": "위험을 구간 및 기술변수",
-    "score": 0.9916
+    "text": "위험분석",
+    "score": 1.0
   },
   {
     "page": 10,
-    "text": "(예:H:3,M:2,L:1)로 표현함",
-    "score": 0.99
+    "text": "방법",
+    "score": 1.0
   },
   {
     "page": 10,
-    "text": "종류:델파이법,시나리오법,순위결정법 등",
-    "score": 0.999
+    "text": "손실크기를",
+    "score": 0.9998
+  },
+  {
+    "page": 10,
+    "text": "측정할",
+    "score": 0.9999
+  },
+  {
+    "page": 10,
+    "text": "수",
+    "score": 1.0
+  },
+  {
+    "page": 10,
+    "text": "없어서",
+    "score": 1.0
+  },
+  {
+    "page": 10,
+    "text": "위험을",
+    "score": 1.0
+  },
+  {
+    "page": 10,
+    "text": "구간",
+    "score": 1.0
+  },
+  {
+    "page": 10,
+    "text": "및",
+    "score": 0.9999
+  },
+  {
+    "page": 10,
+    "text": "기술변수",
+    "score": 0.9999
+  },
+  {
+    "page": 10,
+    "text": "-",
+    "score": 0.8398
+  },
+  {
+    "page": 10,
+    "text": "[예:",
+    "score": 0.9634
+  },
+  {
+    "page": 10,
+    "text": "표현함",
+    "score": 0.9998
+  },
+  {
+    "page": 10,
+    "text": "H:3",
+    "score": 0.9983
+  },
+  {
+    "page": 10,
+    "text": "M:2",
+    "score": 0.9972
+  },
+  {
+    "page": 10,
+    "text": "ㄴ:1>로",
+    "score": 0.7333
+  },
+  {
+    "page": 10,
+    "text": "종류",
+    "score": 0.9985
+  },
+  {
+    "page": 10,
+    "text": "델파이법",
+    "score": 0.9749
+  },
+  {
+    "page": 10,
+    "text": "시나리오법",
+    "score": 0.9997
+  },
+  {
+    "page": 10,
+    "text": "순위결정법",
+    "score": 1.0
+  },
+  {
+    "page": 10,
+    "text": "등",
+    "score": 0.9979
+  },
+  {
+    "page": 10,
+    "text": "0",
+    "score": 0.9977
   },
   {
     "page": 10,
     "text": "장점",
-    "score": 0.9994
+    "score": 1.0
   },
   {
     "page": 10,
-    "text": "1",
-    "score": 0.9993
-  },
-  {
-    "page": 10,
-    "text": "정량화하기O",
-    "score": 0.9163
+    "text": "정량화하기",
+    "score": 0.9999
   },
   {
     "page": 10,
@@ -116,33 +2691,33 @@
   },
   {
     "page": 10,
-    "text": "정보의 평가에 용이함",
-    "score": 0.9879
-  },
-  {
-    "page": 10,
-    "text": "용어의",
-    "score": 0.9999
-  },
-  {
-    "page": 10,
-    "text": "이해가",
+    "text": "정보의",
     "score": 1.0
   },
   {
     "page": 10,
+    "text": "평가에",
+    "score": 1.0
+  },
+  {
+    "page": 10,
+    "text": "용이함",
+    "score": 0.9999
+  },
+  {
+    "page": 10,
+    "text": "용어의",
+    "score": 1.0
+  },
+  {
+    "page": 10,
+    "text": "이해가",
+    "score": 0.9999
+  },
+  {
+    "page": 10,
     "text": "쉬움",
-    "score": 0.9995
-  },
-  {
-    "page": 10,
-    "text": "",
-    "score": 0.0
-  },
-  {
-    "page": 10,
-    "text": "(i)",
-    "score": 0.5299
+    "score": 0.9994
   },
   {
     "page": 10,
@@ -152,17 +2727,17 @@
   {
     "page": 10,
     "text": "소요시간이",
-    "score": 1.0
+    "score": 0.9998
   },
   {
     "page": 10,
-    "text": "짧을",
-    "score": 0.9833
+    "text": "짧음",
+    "score": 0.9992
   },
   {
     "page": 10,
     "text": "2",
-    "score": 0.9699
+    "score": 0.9999
   },
   {
     "page": 10,
@@ -171,18 +2746,18 @@
   },
   {
     "page": 10,
-    "text": "2",
-    "score": 0.9693
+    "text": "주관적",
+    "score": 1.0
   },
   {
     "page": 10,
-    "text": "주관적 판단의",
-    "score": 0.9897
+    "text": "판단의",
+    "score": 0.9998
   },
   {
     "page": 10,
     "text": "남용",
-    "score": 0.9997
+    "score": 1.0
   },
   {
     "page": 10,
@@ -191,128 +2766,333 @@
   },
   {
     "page": 10,
-    "text": "있을",
-    "score": 0.8259
+    "text": "있음",
+    "score": 1.0
   },
   {
     "page": 10,
-    "text": "-",
-    "score": 0.9677
+    "text": "비용효과",
+    "score": 0.9999
   },
   {
     "page": 10,
-    "text": "썼",
-    "score": 0.5659
+    "text": "분석이",
+    "score": 1.0
   },
   {
     "page": 10,
-    "text": "비용-효과 분석이 어려움",
-    "score": 0.955
+    "text": "어려움",
+    "score": 1.0
+  },
+  {
+    "page": 10,
+    "text": "-10-",
+    "score": 0.9965
   },
   {
     "page": 11,
-    "text": "적정 보안수준보다도높게 혹은 낮게 보안통제를",
-    "score": 0.941
+    "text": "위험관리",
+    "score": 1.0
   },
   {
     "page": 11,
-    "text": "를 적용",
-    "score": 0.9032
-  },
-  {
-    "page": 11,
-    "text": "을 고려하지 않았기 때문에 조직 내에 부서별로",
-    "score": 0.9767
-  },
-  {
-    "page": 11,
-    "text": "조직의 특성을",
-    "score": 0.9977
-  },
-  {
-    "page": 11,
-    "text": "단점",
+    "text": "개념",
     "score": 0.9999
   },
   {
     "page": 11,
-    "text": "2",
-    "score": 0.5387
+    "text": "Oh?",
+    "score": 0.7787
   },
   {
     "page": 11,
-    "text": "I 선택 가능",
-    "score": 0.878
+    "text": "3",
+    "score": 0.9999
   },
   {
     "page": 11,
-    "text": "필요한 보호대책의",
-    "score": 0.9918
+    "text": "위험분석",
+    "score": 1.0
   },
   {
     "page": 11,
-    "text": "시간과 비용이 많이 들지 않고 모든 조직에서 기본적으로",
-    "score": 0.9935
+    "text": "방법론",
+    "score": 1.0
   },
   {
     "page": 11,
-    "text": "장점",
+    "text": "2]",
+    "score": 0.9428
+  },
+  {
+    "page": 11,
+    "text": "접근방식에",
+    "score": 1.0
+  },
+  {
+    "page": 11,
+    "text": "따른",
+    "score": 0.9999
+  },
+  {
+    "page": 11,
+    "text": "분류",
+    "score": 0.9997
+  },
+  {
+    "page": 11,
+    "text": "위험분석",
+    "score": 1.0
+  },
+  {
+    "page": 11,
+    "text": "및",
     "score": 0.9993
   },
   {
     "page": 11,
-    "text": "ㄷ",
-    "score": 0.9874
+    "text": "평가",
+    "score": 1.0
   },
   {
     "page": 11,
-    "text": "1",
-    "score": 0.9986
-  },
-  {
-    "page": 11,
-    "text": "선택함",
+    "text": "대상",
     "score": 0.9999
   },
   {
     "page": 11,
-    "text": "보호대책을",
+    "text": "조직의",
+    "score": 1.0
+  },
+  {
+    "page": 11,
+    "text": "보안요구사항",
+    "score": 0.9999
+  },
+  {
+    "page": 11,
+    "text": "가용자원",
+    "score": 0.9987
+  },
+  {
+    "page": 11,
+    "text": "전문",
+    "score": 0.9998
+  },
+  {
+    "page": 11,
+    "text": "인력",
+    "score": 0.9999
+  },
+  {
+    "page": 11,
+    "text": "기간",
+    "score": 1.0
+  },
+  {
+    "page": 11,
+    "text": "예산",
+    "score": 0.9989
+  },
+  {
+    "page": 11,
+    "text": "등]",
+    "score": 0.8534
+  },
+  {
+    "page": 11,
+    "text": "규모",
+    "score": 1.0
+  },
+  {
+    "page": 11,
+    "text": "등을",
+    "score": 0.9999
+  },
+  {
+    "page": 11,
+    "text": "고려하여",
+    "score": 0.9999
+  },
+  {
+    "page": 11,
+    "text": "적절한",
+    "score": 0.9999
+  },
+  {
+    "page": 11,
+    "text": "접근방식",
+    "score": 0.9999
+  },
+  {
+    "page": 11,
+    "text": "선택",
+    "score": 1.0
+  },
+  {
+    "page": 11,
+    "text": "[1]",
+    "score": 0.8481
+  },
+  {
+    "page": 11,
+    "text": "기준선",
+    "score": 0.9981
+  },
+  {
+    "page": 11,
+    "text": "접근법<Baseline",
+    "score": 0.9525
+  },
+  {
+    "page": 11,
+    "text": "Approach?",
+    "score": 0.991
+  },
+  {
+    "page": 11,
+    "text": "모든",
+    "score": 1.0
+  },
+  {
+    "page": 11,
+    "text": "시스템에",
+    "score": 0.9999
+  },
+  {
+    "page": 11,
+    "text": "대하여",
+    "score": 0.9999
+  },
+  {
+    "page": 11,
+    "text": "보안대책의",
+    "score": 0.9989
+  },
+  {
+    "page": 11,
+    "text": "세트를",
+    "score": 0.9998
+  },
+  {
+    "page": 11,
+    "text": "표준화된",
+    "score": 0.9992
+  },
+  {
+    "page": 11,
+    "text": "체크리스트",
+    "score": 0.9998
+  },
+  {
+    "page": 11,
+    "text": "형태로",
+    "score": 1.0
+  },
+  {
+    "page": 11,
+    "text": "제공하는",
+    "score": 0.9998
+  },
+  {
+    "page": 11,
+    "text": "방식",
+    "score": 1.0
+  },
+  {
+    "page": 11,
+    "text": "모든",
+    "score": 1.0
+  },
+  {
+    "page": 11,
+    "text": "시스템에",
+    "score": 1.0
+  },
+  {
+    "page": 11,
+    "text": "대하여",
+    "score": 0.9999
+  },
+  {
+    "page": 11,
+    "text": "보호의",
+    "score": 1.0
+  },
+  {
+    "page": 11,
+    "text": "기본수준을",
+    "score": 0.9998
+  },
+  {
+    "page": 11,
+    "text": "정하고",
+    "score": 1.0
+  },
+  {
+    "page": 11,
+    "text": "이를",
+    "score": 1.0
+  },
+  {
+    "page": 11,
+    "text": "달성하기",
+    "score": 0.9999
+  },
+  {
+    "page": 11,
+    "text": "위하여",
     "score": 0.9999
   },
   {
     "page": 11,
     "text": "일련의",
-    "score": 0.9998
+    "score": 0.9999
   },
   {
     "page": 11,
-    "text": "위하여",
-    "score": 0.9998
+    "text": "보호대책을",
+    "score": 0.9983
   },
   {
     "page": 11,
-    "text": "",
-    "score": 0.0
-  },
-  {
-    "page": 11,
-    "text": "정하고 이를 달성하기",
-    "score": 0.9825
-  },
-  {
-    "page": 11,
-    "text": "보호의 기본수준을",
-    "score": 0.9876
-  },
-  {
-    "page": 11,
-    "text": "대하여",
-    "score": 0.9998
-  },
-  {
-    "page": 11,
-    "text": "시스템에",
+    "text": "선택함",
     "score": 1.0
+  },
+  {
+    "page": 11,
+    "text": "0",
+    "score": 0.9976
+  },
+  {
+    "page": 11,
+    "text": "장점",
+    "score": 0.9999
+  },
+  {
+    "page": 11,
+    "text": "시간과",
+    "score": 1.0
+  },
+  {
+    "page": 11,
+    "text": "비용이",
+    "score": 1.0
+  },
+  {
+    "page": 11,
+    "text": "많이",
+    "score": 1.0
+  },
+  {
+    "page": 11,
+    "text": "들지",
+    "score": 0.9997
+  },
+  {
+    "page": 11,
+    "text": "않고",
+    "score": 0.9998
   },
   {
     "page": 11,
@@ -321,108 +3101,118 @@
   },
   {
     "page": 11,
-    "text": "",
-    "score": 0.0
-  },
-  {
-    "page": 11,
-    "text": "방식",
-    "score": 0.9998
-  },
-  {
-    "page": 11,
-    "text": "제공하는",
+    "text": "조직에서",
     "score": 1.0
   },
   {
     "page": 11,
-    "text": "형태로지",
-    "score": 0.9612
+    "text": "기본적으로",
+    "score": 1.0
   },
   {
     "page": 11,
-    "text": "체크리스트",
+    "text": "필요한",
     "score": 0.9999
   },
   {
     "page": 11,
-    "text": "보안대책의 세트를",
-    "score": 0.9991
+    "text": "보호대책의",
+    "score": 0.9997
   },
   {
     "page": 11,
-    "text": "표준화된",
+    "text": "선택가능",
+    "score": 1.0
+  },
+  {
+    "page": 11,
+    "text": "2",
     "score": 0.9999
   },
   {
     "page": 11,
-    "text": "대하여",
+    "text": "단점",
+    "score": 0.9997
+  },
+  {
+    "page": 11,
+    "text": "조직의",
+    "score": 0.9999
+  },
+  {
+    "page": 11,
+    "text": "특성을",
+    "score": 1.0
+  },
+  {
+    "page": 11,
+    "text": "고려하지",
+    "score": 1.0
+  },
+  {
+    "page": 11,
+    "text": "않았기",
+    "score": 0.9998
+  },
+  {
+    "page": 11,
+    "text": "때문에",
+    "score": 1.0
+  },
+  {
+    "page": 11,
+    "text": "조직",
+    "score": 1.0
+  },
+  {
+    "page": 11,
+    "text": "내에",
+    "score": 1.0
+  },
+  {
+    "page": 11,
+    "text": "부서별로",
+    "score": 1.0
+  },
+  {
+    "page": 11,
+    "text": "적정",
     "score": 0.9996
   },
   {
     "page": 11,
-    "text": "",
-    "score": 0.0
+    "text": "보안수준보다도",
+    "score": 0.9999
   },
   {
     "page": 11,
-    "text": "시스템에",
+    "text": "높게",
     "score": 1.0
   },
   {
     "page": 11,
-    "text": "모든",
-    "score": 1.0
+    "text": "혹은",
+    "score": 0.9998
   },
   {
     "page": 11,
-    "text": "기준선 접근법(BaselineApproach)",
-    "score": 0.9974
+    "text": "낯게",
+    "score": 0.7828
   },
   {
     "page": 11,
-    "text": "(1)",
-    "score": 0.9972
+    "text": "보안통제를",
+    "score": 0.9999
   },
   {
     "page": 11,
-    "text": "겨 적절한 접근방식 선택",
-    "score": 0.9506
+    "text": "적용",
+    "score": 0.9999
   },
   {
     "page": 11,
-    "text": "어야ㄷ통",
-    "score": 0.6018
-  },
-  {
-    "page": 11,
-    "text": "그이담 을위 지)",
-    "score": 0.3468
-  },
-  {
-    "page": 11,
-    "text": "융연 위연위위연위방위기",
-    "score": 0.5247
-  },
-  {
-    "page": 11,
-    "text": "플 이근",
-    "score": 0.6645
-  },
-  {
-    "page": 11,
-    "text": "(Z",
-    "score": 0.8522
-  },
-  {
-    "page": 11,
-    "text": "방능 ",
-    "score": 0.2935
-  },
-  {
-    "page": 11,
-    "text": "매디러군의능",
-    "score": 0.6953
+    "text": "-11-",
+    "score": 0.9658
   },
   {
     "page": 12,
@@ -436,108 +3226,163 @@
   },
   {
     "page": 12,
-    "text": "3.위험분석",
+    "text": "3",
+    "score": 0.803
+  },
+  {
+    "page": 12,
+    "text": "위험분석",
+    "score": 1.0
+  },
+  {
+    "page": 12,
+    "text": "방법론",
+    "score": 1.0
+  },
+  {
+    "page": 12,
+    "text": "2]",
+    "score": 0.9487
+  },
+  {
+    "page": 12,
+    "text": "접근방식에",
+    "score": 1.0
+  },
+  {
+    "page": 12,
+    "text": "따른",
+    "score": 0.9997
+  },
+  {
+    "page": 12,
+    "text": "분류",
     "score": 0.9999
   },
   {
     "page": 12,
-    "text": "석 방법론",
-    "score": 0.8075
+    "text": "[2]",
+    "score": 0.9923
   },
   {
     "page": 12,
-    "text": "2)집",
-    "score": 0.8733
+    "text": "전문가",
+    "score": 0.9999
   },
   {
     "page": 12,
-    "text": "접근방식에 따른",
-    "score": 0.9978
+    "text": "판단법Qnformal",
+    "score": 0.9162
   },
   {
     "page": 12,
-    "text": "끌곰를",
-    "score": 0.5817
+    "text": "Approach?",
+    "score": 0.9764
   },
   {
     "page": 12,
-    "text": "(Z)",
-    "score": 0.8821
+    "text": "정형화된",
+    "score": 0.9997
   },
   {
     "page": 12,
-    "text": "(t",
-    "score": 0.4419
+    "text": "방법을",
+    "score": 1.0
   },
   {
     "page": 12,
-    "text": "로러",
-    "score": 0.1153
+    "text": "사용하지",
+    "score": 0.9999
   },
   {
     "page": 12,
-    "text": "|",
-    "score": 0.7626
+    "text": "않고",
+    "score": 1.0
   },
   {
     "page": 12,
-    "text": "|z은융Y",
-    "score": 0.6817
+    "text": "전문가의",
+    "score": 0.9999
   },
   {
     "page": 12,
-    "text": "나 경험에 따라서",
-    "score": 0.9565
+    "text": "지식과",
+    "score": 1.0
   },
   {
     "page": 12,
-    "text": "위험을 분석하는",
-    "score": 0.9944
+    "text": "경험에",
+    "score": 1.0
+  },
+  {
+    "page": 12,
+    "text": "따라서",
+    "score": 1.0
+  },
+  {
+    "page": 12,
+    "text": "위험을",
+    "score": 1.0
+  },
+  {
+    "page": 12,
+    "text": "분석하는",
+    "score": 1.0
   },
   {
     "page": 12,
     "text": "방법",
-    "score": 0.9999
+    "score": 1.0
+  },
+  {
+    "page": 12,
+    "text": "0",
+    "score": 0.998
   },
   {
     "page": 12,
     "text": "장점",
-    "score": 0.9992
+    "score": 0.9999
   },
   {
     "page": 12,
-    "text": "1",
-    "score": 0.999
+    "text": "작은",
+    "score": 0.9998
   },
   {
     "page": 12,
-    "text": "작은 조직에 비용-효과적임",
-    "score": 0.9821
+    "text": "조직에",
+    "score": 1.0
   },
   {
     "page": 12,
-    "text": "단점",
+    "text": "비용효과적임",
     "score": 0.9998
   },
   {
     "page": 12,
     "text": "2",
-    "score": 0.9743
+    "score": 1.0
+  },
+  {
+    "page": 12,
+    "text": "단점",
+    "score": 0.9996
   },
   {
     "page": 12,
     "text": "위험을",
-    "score": 0.9998
+    "score": 1.0
   },
   {
     "page": 12,
     "text": "제대로",
-    "score": 0.9999
+    "score": 1.0
   },
   {
     "page": 12,
     "text": "평가하기",
-    "score": 0.9999
+    "score": 1.0
   },
   {
     "page": 12,
@@ -547,17 +3392,7 @@
   {
     "page": 12,
     "text": "보호대책의",
-    "score": 0.9999
-  },
-  {
-    "page": 12,
-    "text": "선택",
-    "score": 0.9998
-  },
-  {
-    "page": 12,
-    "text": "및",
-    "score": 1.0
+    "score": 0.9997
   },
   {
     "page": 12,
@@ -566,13 +3401,28 @@
   },
   {
     "page": 12,
-    "text": "도출하기 어려움",
-    "score": 0.9975
+    "text": "선택",
+    "score": 1.0
+  },
+  {
+    "page": 12,
+    "text": "및",
+    "score": 1.0
   },
   {
     "page": 12,
     "text": "합리적으로",
     "score": 1.0
+  },
+  {
+    "page": 12,
+    "text": "도출하기",
+    "score": 0.9999
+  },
+  {
+    "page": 12,
+    "text": "어려움",
+    "score": 0.9999
   },
   {
     "page": 12,
@@ -587,137 +3437,257 @@
   {
     "page": 12,
     "text": "보안관리의",
-    "score": 1.0
+    "score": 0.9997
   },
   {
     "page": 12,
     "text": "보안감사",
-    "score": 0.9999
+    "score": 0.9998
   },
   {
     "page": 12,
     "text": "및",
-    "score": 1.0
+    "score": 0.9995
   },
   {
     "page": 12,
     "text": "사후관리가",
-    "score": 0.9999
+    "score": 0.9998
   },
   {
     "page": 12,
     "text": "제한됨",
-    "score": 0.9998
+    "score": 0.9956
+  },
+  {
+    "page": 12,
+    "text": "12",
+    "score": 0.9976
   },
   {
     "page": 13,
-    "text": "|러군미송",
-    "score": 0.6497
-  },
-  {
-    "page": 13,
-    "text": "매",
-    "score": 0.7412
-  },
-  {
-    "page": 13,
-    "text": "N이'",
-    "score": 0.2988
-  },
-  {
-    "page": 13,
-    "text": "굴",
-    "score": 0.8128
-  },
-  {
-    "page": 13,
-    "text": "",
-    "score": 0.0
-  },
-  {
-    "page": 13,
-    "text": "글이근",
-    "score": 0.5872
-  },
-  {
-    "page": 13,
-    "text": "분류",
-    "score": 0.9998
-  },
-  {
-    "page": 13,
-    "text": "(3)상세위험",
-    "score": 0.9998
-  },
-  {
-    "page": 13,
-    "text": "접근법(Detailed Risk Approach)",
-    "score": 0.9906
-  },
-  {
-    "page": 13,
-    "text": "자산의",
-    "score": 0.9998
-  },
-  {
-    "page": 13,
-    "text": "가치를 측정하고",
-    "score": 0.9991
-  },
-  {
-    "page": 13,
-    "text": "자산에 대한",
-    "score": 0.9796
-  },
-  {
-    "page": 13,
-    "text": "|야이하",
-    "score": 0.6294
-  },
-  {
-    "page": 13,
-    "text": "장술출",
-    "score": 0.3124
-  },
-  {
-    "page": 13,
-    "text": "",
-    "score": 0.0
-  },
-  {
-    "page": 13,
-    "text": "|어을뉴곰",
-    "score": 0.5998
-  },
-  {
-    "page": 13,
-    "text": "|아의ㅎ",
-    "score": 0.5598
-  },
-  {
-    "page": 13,
-    "text": "를려",
-    "score": 0.6068
-  },
-  {
-    "page": 13,
-    "text": "결정하는",
+    "text": "위험관리",
     "score": 1.0
   },
   {
     "page": 13,
-    "text": "방법",
+    "text": "개념",
     "score": 0.9999
   },
   {
     "page": 13,
-    "text": "조직의",
+    "text": "아h",
+    "score": 0.5384
+  },
+  {
+    "page": 13,
+    "text": "3",
+    "score": 0.803
+  },
+  {
+    "page": 13,
+    "text": "위험분석",
+    "score": 1.0
+  },
+  {
+    "page": 13,
+    "text": "방법론",
+    "score": 1.0
+  },
+  {
+    "page": 13,
+    "text": "2]",
+    "score": 0.9428
+  },
+  {
+    "page": 13,
+    "text": "접근방식에",
+    "score": 1.0
+  },
+  {
+    "page": 13,
+    "text": "따른",
+    "score": 0.9997
+  },
+  {
+    "page": 13,
+    "text": "분류",
+    "score": 0.9997
+  },
+  {
+    "page": 13,
+    "text": "Risk",
+    "score": 0.9558
+  },
+  {
+    "page": 13,
+    "text": "[3]",
+    "score": 0.9216
+  },
+  {
+    "page": 13,
+    "text": "상세위험",
+    "score": 0.9999
+  },
+  {
+    "page": 13,
+    "text": "접근법Detailed",
+    "score": 0.9955
+  },
+  {
+    "page": 13,
+    "text": "Approach?",
+    "score": 0.9912
+  },
+  {
+    "page": 13,
+    "text": "자산의",
+    "score": 0.9999
+  },
+  {
+    "page": 13,
+    "text": "가치를",
+    "score": 1.0
+  },
+  {
+    "page": 13,
+    "text": "측정하고",
+    "score": 0.9999
+  },
+  {
+    "page": 13,
+    "text": "자산에",
+    "score": 0.9999
+  },
+  {
+    "page": 13,
+    "text": "대한",
+    "score": 1.0
+  },
+  {
+    "page": 13,
+    "text": "위협의",
+    "score": 1.0
+  },
+  {
+    "page": 13,
+    "text": "정도와",
+    "score": 1.0
+  },
+  {
+    "page": 13,
+    "text": "취약성을",
+    "score": 0.9999
+  },
+  {
+    "page": 13,
+    "text": "분석하여",
+    "score": 0.9999
+  },
+  {
+    "page": 13,
+    "text": "위험의",
+    "score": 1.0
+  },
+  {
+    "page": 13,
+    "text": "정도를",
     "score": 0.9998
   },
   {
     "page": 13,
+    "text": "결정하는",
+    "score": 0.9999
+  },
+  {
+    "page": 13,
+    "text": "방법",
+    "score": 1.0
+  },
+  {
+    "page": 13,
+    "text": "조직의",
+    "score": 1.0
+  },
+  {
+    "page": 13,
     "text": "자산",
-    "score": 0.9996
+    "score": 0.9999
+  },
+  {
+    "page": 13,
+    "text": "및",
+    "score": 0.9975
+  },
+  {
+    "page": 13,
+    "text": "보안요구사항을",
+    "score": 0.9999
+  },
+  {
+    "page": 13,
+    "text": "구체적으로",
+    "score": 1.0
+  },
+  {
+    "page": 13,
+    "text": "분석",
+    "score": 1.0
+  },
+  {
+    "page": 13,
+    "text": "5가장",
+    "score": 0.949
+  },
+  {
+    "page": 13,
+    "text": "적절한",
+    "score": 0.9998
+  },
+  {
+    "page": 13,
+    "text": "대책을",
+    "score": 0.9994
+  },
+  {
+    "page": 13,
+    "text": "수립!",
+    "score": 0.9963
+  },
+  {
+    "page": 13,
+    "text": "0",
+    "score": 0.9937
+  },
+  {
+    "page": 13,
+    "text": "장점",
+    "score": 0.9999
+  },
+  {
+    "page": 13,
+    "text": "자산",
+    "score": 0.9999
+  },
+  {
+    "page": 13,
+    "text": "위협",
+    "score": 0.9998
+  },
+  {
+    "page": 13,
+    "text": "취약성의",
+    "score": 0.9999
+  },
+  {
+    "page": 13,
+    "text": "목록이",
+    "score": 0.9985
+  },
+  {
+    "page": 13,
+    "text": "작성",
+    "score": 0.9999
   },
   {
     "page": 13,
@@ -726,103 +3696,73 @@
   },
   {
     "page": 13,
-    "text": "보안요구사항을 구체적으로",
-    "score": 0.9995
-  },
-  {
-    "page": 13,
-    "text": "분석",
-    "score": 0.9999
-  },
-  {
-    "page": 13,
-    "text": "가장",
-    "score": 0.9998
-  },
-  {
-    "page": 13,
-    "text": "적절한",
+    "text": "검토되었으므로",
     "score": 0.9984
   },
   {
     "page": 13,
-    "text": "대책을",
+    "text": "이후",
     "score": 1.0
   },
   {
     "page": 13,
-    "text": "수립!",
+    "text": "변경",
+    "score": 1.0
+  },
+  {
+    "page": 13,
+    "text": "발생하였을",
+    "score": 1.0
+  },
+  {
+    "page": 13,
+    "text": "때",
+    "score": 1.0
+  },
+  {
+    "page": 13,
+    "text": "조직",
+    "score": 1.0
+  },
+  {
+    "page": 13,
+    "text": "내에",
+    "score": 1.0
+  },
+  {
+    "page": 13,
+    "text": "이",
     "score": 0.9996
   },
   {
     "page": 13,
-    "text": "",
-    "score": 0.0
-  },
-  {
-    "page": 13,
-    "text": "장점",
-    "score": 0.9992
-  },
-  {
-    "page": 13,
-    "text": "1",
-    "score": 0.9994
-  },
-  {
-    "page": 13,
-    "text": "자산,위협,취약성의",
-    "score": 0.9994
-  },
-  {
-    "page": 13,
-    "text": "목록이 작성 및 검토되었으므로 이후 변경",
-    "score": 0.9905
-  },
-  {
-    "page": 13,
-    "text": "이 발생하였을 때 조직",
-    "score": 0.9532
-  },
-  {
-    "page": 13,
-    "text": "1내에",
-    "score": 0.797
-  },
-  {
-    "page": 13,
     "text": "적절한",
-    "score": 0.9977
+    "score": 0.9999
   },
   {
     "page": 13,
     "text": "보안수준",
-    "score": 0.9999
+    "score": 0.9997
   },
   {
     "page": 13,
     "text": "마련이",
+    "score": 1.0
+  },
+  {
+    "page": 13,
+    "text": "가능함",
     "score": 0.9999
   },
   {
     "page": 13,
-    "text": "이 가능함",
-    "score": 0.9699
-  },
-  {
-    "page": 13,
-    "text": "",
-    "score": 0.0
-  },
-  {
-    "page": 13,
-    "text": "단점",
+    "text": "2",
     "score": 0.9998
   },
   {
     "page": 13,
-    "text": "②",
-    "score": 0.5641
+    "text": "단점",
+    "score": 0.9999
   },
   {
     "page": 13,
@@ -832,7 +3772,7 @@
   {
     "page": 13,
     "text": "지식이",
-    "score": 0.9999
+    "score": 1.0
   },
   {
     "page": 13,
@@ -847,27 +3787,22 @@
   {
     "page": 13,
     "text": "노력이",
+    "score": 0.9998
+  },
+  {
+    "page": 13,
+    "text": "많이",
     "score": 1.0
   },
   {
     "page": 13,
-    "text": "음",
-    "score": 0.7336
+    "text": "소요됨",
+    "score": 0.9992
   },
   {
     "page": 13,
-    "text": "|0",
-    "score": 0.9337
-  },
-  {
-    "page": 13,
-    "text": "움영",
-    "score": 0.7191
-  },
-  {
-    "page": 13,
-    "text": "",
-    "score": 0.0
+    "text": "-13-",
+    "score": 0.8549
   },
   {
     "page": 14,
@@ -877,17 +3812,22 @@
   {
     "page": 14,
     "text": "개념",
-    "score": 1.0
-  },
-  {
-    "page": 14,
-    "text": "위험분석",
     "score": 0.9999
   },
   {
     "page": 14,
-    "text": "3.",
-    "score": 0.9748
+    "text": "아h",
+    "score": 0.5384
+  },
+  {
+    "page": 14,
+    "text": "3",
+    "score": 0.803
+  },
+  {
+    "page": 14,
+    "text": "위험분석",
+    "score": 1.0
   },
   {
     "page": 14,
@@ -896,158 +3836,218 @@
   },
   {
     "page": 14,
-    "text": "",
-    "score": 0.0
+    "text": "2]",
+    "score": 0.9428
   },
   {
     "page": 14,
-    "text": "2)",
-    "score": 0.9993
+    "text": "접근방식에",
+    "score": 1.0
   },
   {
     "page": 14,
-    "text": "접근방식에 따른",
-    "score": 0.9983
+    "text": "따른",
+    "score": 0.9997
   },
   {
     "page": 14,
     "text": "분류",
+    "score": 0.9997
+  },
+  {
+    "page": 14,
+    "text": "[4]",
+    "score": 0.9185
+  },
+  {
+    "page": 14,
+    "text": "복합적",
     "score": 1.0
   },
   {
     "page": 14,
-    "text": "(4) 복합적",
-    "score": 0.9597
+    "text": "접근법[Combined",
+    "score": 0.993
   },
   {
     "page": 14,
-    "text": "접근법(Combined Approach)",
-    "score": 0.9793
+    "text": "Approach?",
+    "score": 0.9935
   },
   {
     "page": 14,
-    "text": "조직활동에 대해 필수적이고 위험이 높은",
-    "score": 0.9881
+    "text": "조직활동에",
+    "score": 0.9999
   },
   {
     "page": 14,
-    "text": "시스템 식별",
-    "score": 0.9649
+    "text": "대해",
+    "score": 1.0
   },
   {
     "page": 14,
-    "text": "별방법",
-    "score": 0.9289
+    "text": "필수적이고",
+    "score": 1.0
+  },
+  {
+    "page": 14,
+    "text": "위험이",
+    "score": 1.0
+  },
+  {
+    "page": 14,
+    "text": "높은",
+    "score": 1.0
+  },
+  {
+    "page": 14,
+    "text": "시스템",
+    "score": 0.9999
+  },
+  {
+    "page": 14,
+    "text": "식별",
+    "score": 0.9999
+  },
+  {
+    "page": 14,
+    "text": "방법",
+    "score": 1.0
   },
   {
     "page": 14,
     "text": "식별된",
-    "score": 1.0
+    "score": 0.9999
   },
   {
     "page": 14,
-    "text": "시스템:상세위험",
-    "score": 0.9995
+    "text": "시스템",
+    "score": 0.9999
   },
   {
     "page": 14,
-    "text": "접근법",
-    "score": 0.9991
-  },
-  {
-    "page": 14,
-    "text": "적용",
+    "text": "상세위험",
     "score": 0.9998
   },
   {
     "page": 14,
-    "text": "",
-    "score": 0.0
+    "text": "접근법",
+    "score": 1.0
+  },
+  {
+    "page": 14,
+    "text": "적용",
+    "score": 0.9999
   },
   {
     "page": 14,
     "text": "나머지",
-    "score": 1.0
+    "score": 0.9999
   },
   {
     "page": 14,
-    "text": "시스템:기준선",
-    "score": 0.9953
+    "text": "시스템:",
+    "score": 0.8205
+  },
+  {
+    "page": 14,
+    "text": "기준선",
+    "score": 0.9994
   },
   {
     "page": 14,
     "text": "접근법",
-    "score": 0.9993
+    "score": 1.0
   },
   {
     "page": 14,
     "text": "적용",
-    "score": 0.9998
+    "score": 0.9999
+  },
+  {
+    "page": 14,
+    "text": "0",
+    "score": 0.9976
   },
   {
     "page": 14,
     "text": "장점",
-    "score": 0.9992
-  },
-  {
-    "page": 14,
-    "text": "1",
-    "score": 0.9987
+    "score": 1.0
   },
   {
     "page": 14,
     "text": "보안전략을",
-    "score": 0.9999
-  },
-  {
-    "page": 14,
-    "text": "구축할 수 있음",
-    "score": 0.9455
+    "score": 0.9997
   },
   {
     "page": 14,
     "text": "빠르게",
-    "score": 0.9999
+    "score": 0.9988
   },
   {
     "page": 14,
-    "text": "",
-    "score": 0.0
+    "text": "구축할",
+    "score": 1.0
+  },
+  {
+    "page": 14,
+    "text": "수",
+    "score": 1.0
+  },
+  {
+    "page": 14,
+    "text": "있음",
+    "score": 0.9998
+  },
+  {
+    "page": 14,
+    "text": "시간과",
+    "score": 1.0
+  },
+  {
+    "page": 14,
+    "text": "노력을",
+    "score": 0.9996
+  },
+  {
+    "page": 14,
+    "text": "효율적으로",
+    "score": 1.0
   },
   {
     "page": 14,
     "text": "상대적으로",
-    "score": 0.9993
+    "score": 1.0
   },
   {
     "page": 14,
-    "text": "굴이누룡후 릉릭|",
-    "score": 0.4838
+    "text": "활용가능",
+    "score": 1.0
   },
   {
     "page": 14,
-    "text": "융를",
-    "score": 0.8103
+    "text": "2",
+    "score": 0.9995
   },
   {
     "page": 14,
-    "text": "윽(",
-    "score": 0.2869
+    "text": "단점",
+    "score": 0.9995
   },
   {
     "page": 14,
-    "text": "",
-    "score": 0.0
+    "text": "위험이",
+    "score": 1.0
   },
   {
     "page": 14,
-    "text": "②",
-    "score": 0.1666
+    "text": "필수적이고",
+    "score": 0.9999
   },
   {
     "page": 14,
-    "text": "공품 이하데야륨",
-    "score": 0.3743
+    "text": "높은",
+    "score": 1.0
   },
   {
     "page": 14,
@@ -1056,8 +4056,13 @@
   },
   {
     "page": 14,
-    "text": "잘못 식별하였을",
-    "score": 0.9955
+    "text": "잘못",
+    "score": 1.0
+  },
+  {
+    "page": 14,
+    "text": "식별하였을",
+    "score": 0.9982
   },
   {
     "page": 14,
@@ -1066,78 +4071,83 @@
   },
   {
     "page": 14,
-    "text": "−",
-    "score": 0.2179
+    "text": "자원의",
+    "score": 0.9999
   },
   {
     "page": 14,
-    "text": "자원의 낭비",
-    "score": 0.9595
+    "text": "낭비",
+    "score": 0.9968
   },
   {
     "page": 14,
-    "text": "|발생",
-    "score": 0.9469
+    "text": "발생",
+    "score": 0.9998
   },
   {
     "page": 14,
     "text": "가능성이",
+    "score": 0.9999
+  },
+  {
+    "page": 14,
+    "text": "있음",
+    "score": 0.9992
+  },
+  {
+    "page": 14,
+    "text": "14",
+    "score": 0.9996
+  },
+  {
+    "page": 15,
+    "text": "프로세스",
+    "score": 0.9995
+  },
+  {
+    "page": 15,
+    "text": "위험관리",
+    "score": 0.9999
+  },
+  {
+    "page": 15,
+    "text": "위험관리",
     "score": 1.0
   },
   {
-    "page": 14,
-    "text": "있을",
-    "score": 0.8133
-  },
-  {
-    "page": 14,
-    "text": "썼",
-    "score": 0.6337
+    "page": 15,
+    "text": "단계",
+    "score": 0.9984
   },
   {
     "page": 15,
-    "text": "",
-    "score": 0.0
+    "text": "제약",
+    "score": 1.0
   },
   {
     "page": 15,
-    "text": "&고",
-    "score": 0.4356
+    "text": "자산가치의존도평가",
+    "score": 0.9822
   },
   {
     "page": 15,
-    "text": "R국",
-    "score": 0.278
+    "text": "조건",
+    "score": 1.0
   },
   {
     "page": 15,
-    "text": "뉴곰",
-    "score": 0.7303
+    "text": "검토",
+    "score": 0.9999
   },
   {
     "page": 15,
-    "text": "원고",
-    "score": 0.2903
-  },
-  {
-    "page": 15,
-    "text": "뉴곰",
-    "score": 0.5999
-  },
-  {
-    "page": 15,
-    "text": "분석",
-    "score": 0.9998
-  },
-  {
-    "page": 15,
-    "text": "분석",
-    "score": 0.9998
-  },
-  {
-    "page": 15,
-    "text": "방법",
+    "text": "자산",
     "score": 0.9997
+  },
+  {
+    "page": 15,
+    "text": "기본보안대책평가",
+    "score": 0.9999
   },
   {
     "page": 15,
@@ -1146,68 +4156,58 @@
   },
   {
     "page": 15,
+    "text": "식별",
+    "score": 1.0
+  },
+  {
+    "page": 15,
+    "text": "취약성평가",
+    "score": 0.9999
+  },
+  {
+    "page": 15,
+    "text": "위험",
+    "score": 0.9996
+  },
+  {
+    "page": 15,
     "text": "대책",
+    "score": 0.9947
+  },
+  {
+    "page": 15,
+    "text": "평가",
     "score": 1.0
   },
   {
     "page": 15,
-    "text": "사항",
+    "text": "선택",
     "score": 1.0
   },
   {
     "page": 15,
-    "text": "내희ㅎ",
-    "score": 0.5106
+    "text": "위협평가",
+    "score": 1.0
   },
   {
     "page": 15,
-    "text": "히는",
-    "score": 0.6929
+    "text": "No",
+    "score": 0.987
   },
   {
     "page": 15,
-    "text": "ㅎ",
-    "score": 0.4476
+    "text": "위험수용",
+    "score": 1.0
   },
   {
     "page": 15,
-    "text": "저",
-    "score": 0.1744
+    "text": "YEs",
+    "score": 0.7283
   },
   {
     "page": 15,
-    "text": "뉴곰",
-    "score": 0.7493
-  },
-  {
-    "page": 15,
-    "text": "뉴곰",
-    "score": 0.7322
-  },
-  {
-    "page": 15,
-    "text": "보호",
-    "score": 0.9939
-  },
-  {
-    "page": 15,
-    "text": "우려",
-    "score": 0.9998
-  },
-  {
-    "page": 15,
-    "text": "위험",
-    "score": 0.9997
-  },
-  {
-    "page": 15,
-    "text": "위험",
-    "score": 0.9997
-  },
-  {
-    "page": 15,
-    "text": "보안정책",
-    "score": 0.9998
+    "text": "뜨시스템",
+    "score": 0.8524
   },
   {
     "page": 15,
@@ -1216,137 +4216,4517 @@
   },
   {
     "page": 15,
-    "text": "ㅠT시스템",
-    "score": 0.8594
-  },
-  {
-    "page": 15,
-    "text": "ㅠ",
-    "score": 0.6204
-  },
-  {
-    "page": 15,
-    "text": "YES",
-    "score": 0.9991
-  },
-  {
-    "page": 15,
-    "text": "위험수용",
-    "score": 0.9989
-  },
-  {
-    "page": 15,
-    "text": "NO",
-    "score": 0.9514
-  },
-  {
-    "page": 15,
-    "text": "위협평가",
-    "score": 0.9996
-  },
-  {
-    "page": 15,
-    "text": "선택",
-    "score": 0.9997
-  },
-  {
-    "page": 15,
-    "text": "평가",
-    "score": 0.9995
-  },
-  {
-    "page": 15,
-    "text": "대책",
-    "score": 1.0
+    "text": "보안정책",
+    "score": 0.9412
   },
   {
     "page": 15,
     "text": "위험",
-    "score": 0.9997
-  },
-  {
-    "page": 15,
-    "text": "취약성평가",
-    "score": 0.9998
-  },
-  {
-    "page": 15,
-    "text": "|",
-    "score": 0.5697
-  },
-  {
-    "page": 15,
-    "text": "|",
-    "score": 0.9732
-  },
-  {
-    "page": 15,
-    "text": "-",
-    "score": 0.4327
-  },
-  {
-    "page": 15,
-    "text": "",
-    "score": 0.0
-  },
-  {
-    "page": 15,
-    "text": "|",
-    "score": 0.8135
-  },
-  {
-    "page": 15,
-    "text": "",
-    "score": 0.0
-  },
-  {
-    "page": 15,
-    "text": "|",
-    "score": 0.5878
-  },
-  {
-    "page": 15,
-    "text": "|",
-    "score": 0.6654
-  },
-  {
-    "page": 15,
-    "text": "",
-    "score": 0.0
-  },
-  {
-    "page": 15,
-    "text": "",
-    "score": 0.0
-  },
-  {
-    "page": 15,
-    "text": "¶",
-    "score": 0.3057
-  },
-  {
-    "page": 15,
-    "text": "Fz",
-    "score": 0.6465
-  },
-  {
-    "page": 15,
-    "text": "\\육저",
-    "score": 0.2481
-  },
-  {
-    "page": 15,
-    "text": "제약",
     "score": 0.9999
   },
   {
     "page": 15,
-    "text": "1.위험관리 단계",
-    "score": 0.9952
+    "text": "위험",
+    "score": 0.9999
   },
   {
     "page": 15,
-    "text": "위험관리 프로세스",
+    "text": "우려",
+    "score": 1.0
+  },
+  {
+    "page": 15,
+    "text": "보호",
+    "score": 0.9999
+  },
+  {
+    "page": 15,
+    "text": "분석",
+    "score": 1.0
+  },
+  {
+    "page": 15,
+    "text": "분석",
+    "score": 1.0
+  },
+  {
+    "page": 15,
+    "text": "자산",
+    "score": 0.9997
+  },
+  {
+    "page": 15,
+    "text": "위협",
+    "score": 0.9999
+  },
+  {
+    "page": 15,
+    "text": "취약성",
+    "score": 0.9995
+  },
+  {
+    "page": 15,
+    "text": "위험도",
+    "score": 1.0
+  },
+  {
+    "page": 15,
+    "text": "사항",
+    "score": 0.9999
+  },
+  {
+    "page": 15,
+    "text": "대책",
+    "score": 0.9974
+  },
+  {
+    "page": 15,
+    "text": "범위",
+    "score": 1.0
+  },
+  {
+    "page": 15,
+    "text": "방법",
+    "score": 1.0
+  },
+  {
+    "page": 15,
+    "text": "분석",
+    "score": 1.0
+  },
+  {
+    "page": 15,
+    "text": "분석",
+    "score": 1.0
+  },
+  {
+    "page": 15,
+    "text": "분석",
+    "score": 1.0
+  },
+  {
+    "page": 15,
+    "text": "산정",
+    "score": 0.9999
+  },
+  {
+    "page": 15,
+    "text": "분석",
+    "score": 1.0
+  },
+  {
+    "page": 15,
+    "text": "선정",
+    "score": 0.9996
+  },
+  {
+    "page": 15,
+    "text": "선정",
+    "score": 0.9999
+  },
+  {
+    "page": 15,
+    "text": "정의",
+    "score": 1.0
+  },
+  {
+    "page": 15,
+    "text": "-15-",
+    "score": 0.9983
+  },
+  {
+    "page": 16,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 16,
+    "text": "프로세스",
+    "score": 0.9992
+  },
+  {
+    "page": 16,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 16,
+    "text": "단계",
+    "score": 0.9987
+  },
+  {
+    "page": 16,
+    "text": "범위",
+    "score": 1.0
+  },
+  {
+    "page": 16,
+    "text": "1>",
+    "score": 0.7783
+  },
+  {
+    "page": 16,
+    "text": "위험분적",
+    "score": 0.9936
+  },
+  {
+    "page": 16,
+    "text": "선정",
+    "score": 0.9998
+  },
+  {
+    "page": 16,
+    "text": "내용",
+    "score": 1.0
+  },
+  {
+    "page": 16,
+    "text": "업무조직위치자산밑기술적",
+    "score": 0.9729
+  },
+  {
+    "page": 16,
+    "text": "특성에",
+    "score": 1.0
+  },
+  {
+    "page": 16,
+    "text": "따라",
+    "score": 1.0
+  },
+  {
+    "page": 16,
+    "text": "위험분석",
+    "score": 1.0
+  },
+  {
+    "page": 16,
+    "text": "범위선정",
+    "score": 0.9999
+  },
+  {
+    "page": 16,
+    "text": "조직의",
+    "score": 1.0
+  },
+  {
+    "page": 16,
+    "text": "사업서비스에",
+    "score": 0.9998
+  },
+  {
+    "page": 16,
+    "text": "영향을출수있는",
+    "score": 0.9949
+  },
+  {
+    "page": 16,
+    "text": "핵심자산",
+    "score": 0.9999
+  },
+  {
+    "page": 16,
+    "text": "방법",
+    "score": 1.0
+  },
+  {
+    "page": 16,
+    "text": "<임직원",
+    "score": 0.8424
+  },
+  {
+    "page": 16,
+    "text": "정보시스템",
+    "score": 0.9994
+  },
+  {
+    "page": 16,
+    "text": "정보",
+    "score": 1.0
+  },
+  {
+    "page": 16,
+    "text": "시설등유",
+    "score": 0.9519
+  },
+  {
+    "page": 16,
+    "text": "무형의",
+    "score": 1.0
+  },
+  {
+    "page": 16,
+    "text": "핵심자산]",
+    "score": 0.9642
+  },
+  {
+    "page": 16,
+    "text": "포함시킴",
+    "score": 0.9998
+  },
+  {
+    "page": 16,
+    "text": "주요",
+    "score": 0.9998
+  },
+  {
+    "page": 16,
+    "text": "서비스사업]",
+    "score": 0.9214
+  },
+  {
+    "page": 16,
+    "text": "현황",
+    "score": 1.0
+  },
+  {
+    "page": 16,
+    "text": "등",
+    "score": 0.9978
+  },
+  {
+    "page": 16,
+    "text": "예",
+    "score": 0.9998
+  },
+  {
+    "page": 16,
+    "text": "주요",
+    "score": 0.9999
+  },
+  {
+    "page": 16,
+    "text": "정보통신",
+    "score": 0.9999
+  },
+  {
+    "page": 16,
+    "text": "설비의",
+    "score": 0.9998
+  },
+  {
+    "page": 16,
+    "text": "목록과",
+    "score": 0.9998
+  },
+  {
+    "page": 16,
+    "text": "시스템",
+    "score": 0.9999
+  },
+  {
+    "page": 16,
+    "text": "및",
+    "score": 0.9999
+  },
+  {
+    "page": 16,
+    "text": "네트워크",
+    "score": 0.9997
+  },
+  {
+    "page": 16,
+    "text": "구성도",
+    "score": 1.0
+  },
+  {
+    "page": 16,
+    "text": "기업이",
+    "score": 1.0
+  },
+  {
+    "page": 16,
+    "text": "내부감사이력등",
+    "score": 0.9989
+  },
+  {
+    "page": 16,
+    "text": "준수해야",
+    "score": 0.9921
+  },
+  {
+    "page": 16,
+    "text": "할",
+    "score": 1.0
+  },
+  {
+    "page": 16,
+    "text": "법적",
+    "score": 0.9998
+  },
+  {
+    "page": 16,
+    "text": "요구사항",
+    "score": 0.9998
+  },
+  {
+    "page": 16,
+    "text": "현황",
+    "score": 1.0
+  },
+  {
+    "page": 16,
+    "text": "정책지침'",
+    "score": 0.935
+  },
+  {
+    "page": 16,
+    "text": "절차",
+    "score": 0.9997
+  },
+  {
+    "page": 16,
+    "text": "기록",
+    "score": 1.0
+  },
+  {
+    "page": 16,
+    "text": "밑로그등",
+    "score": 0.8953
+  },
+  {
+    "page": 16,
+    "text": "주요문서목록",
+    "score": 0.9996
+  },
+  {
+    "page": 16,
+    "text": "-16",
+    "score": 0.8346
+  },
+  {
+    "page": 17,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "프로세스",
+    "score": 0.9992
+  },
+  {
+    "page": 17,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "단계",
+    "score": 0.9984
+  },
+  {
+    "page": 17,
+    "text": "2위험분석",
+    "score": 0.9999
+  },
+  {
+    "page": 17,
+    "text": "방법",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "정의",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "영역에",
+    "score": 0.9998
+  },
+  {
+    "page": 17,
+    "text": "내용",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "관리적기술적물리적",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "법적분야등",
+    "score": 0.9953
+  },
+  {
+    "page": 17,
+    "text": "조직의전",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "대한위험식별",
+    "score": 0.9999
+  },
+  {
+    "page": 17,
+    "text": "밑평가가가능하도록",
+    "score": 0.98
+  },
+  {
+    "page": 17,
+    "text": "각영역별특성을",
+    "score": 0.9998
+  },
+  {
+    "page": 17,
+    "text": "반영하여",
+    "score": 0.9997
+  },
+  {
+    "page": 17,
+    "text": "방법",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "선정",
+    "score": 0.9999
+  },
+  {
+    "page": 17,
+    "text": "관리적",
+    "score": 0.9999
+  },
+  {
+    "page": 17,
+    "text": "물리적",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "법적",
+    "score": 0.9999
+  },
+  {
+    "page": 17,
+    "text": "분야의",
+    "score": 0.9999
+  },
+  {
+    "page": 17,
+    "text": "방법론",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "예",
+    "score": 0.9997
+  },
+  {
+    "page": 17,
+    "text": "베이스라인",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "접근법",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "적용",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "기술적분야의",
+    "score": 0.9999
+  },
+  {
+    "page": 17,
+    "text": "방법론",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "상세위험분석",
+    "score": 0.9999
+  },
+  {
+    "page": 17,
+    "text": "또는",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "복합적",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "접근법",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "적용",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "핵심자산에",
+    "score": 0.9999
+  },
+  {
+    "page": 17,
+    "text": "대한기술적위험분석",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "상세",
+    "score": 0.9998
+  },
+  {
+    "page": 17,
+    "text": "위험분석자산",
+    "score": 0.9999
+  },
+  {
+    "page": 17,
+    "text": "중요도",
+    "score": 0.9998
+  },
+  {
+    "page": 17,
+    "text": "위협",
+    "score": 0.9999
+  },
+  {
+    "page": 17,
+    "text": "취약성]",
+    "score": 0.9336
+  },
+  {
+    "page": 17,
+    "text": "수행",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "외부전문가활용",
+    "score": 0.9999
+  },
+  {
+    "page": 17,
+    "text": "전문가별로",
+    "score": 0.9999
+  },
+  {
+    "page": 17,
+    "text": "위험관리",
+    "score": 0.9999
+  },
+  {
+    "page": 17,
+    "text": "방법론이",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "변경되는",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "것",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "방지",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "'조직내",
+    "score": 0.9273
+  },
+  {
+    "page": 17,
+    "text": "정의된",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "위험관리방법론에",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "따라",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "자문",
+    "score": 1.0
+  },
+  {
+    "page": 17,
+    "text": "받음",
+    "score": 0.9996
+  },
+  {
+    "page": 17,
+    "text": "17-",
+    "score": 0.9089
+  },
+  {
+    "page": 18,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "프로세스",
+    "score": 0.9992
+  },
+  {
+    "page": 18,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "단계",
+    "score": 0.9987
+  },
+  {
+    "page": 18,
+    "text": "3]자산분석",
+    "score": 0.8756
+  },
+  {
+    "page": 18,
+    "text": "조직의",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "업무와",
+    "score": 0.9991
+  },
+  {
+    "page": 18,
+    "text": "연관된",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "정보",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "및",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "정보시스템을",
+    "score": 0.9999
+  },
+  {
+    "page": 18,
+    "text": "포함하는",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "내용",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "정보자산을",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "식별하고",
+    "score": 0.9976
+  },
+  {
+    "page": 18,
+    "text": "해당",
+    "score": 0.9999
+  },
+  {
+    "page": 18,
+    "text": "자산의",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "기밀성",
+    "score": 0.9995
+  },
+  {
+    "page": 18,
+    "text": "무결성",
+    "score": 0.9997
+  },
+  {
+    "page": 18,
+    "text": "가용성이",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "상실되었을",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "때의",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "결과가",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "조직에",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "미칠",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "수있는",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "-",
+    "score": 0.8246
+  },
+  {
+    "page": 18,
+    "text": "영향을",
+    "score": 0.9999
+  },
+  {
+    "page": 18,
+    "text": "고려하여",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "가치",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "평가",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "관련응용",
+    "score": 0.9878
+  },
+  {
+    "page": 18,
+    "text": "서비스또는",
+    "score": 0.9856
+  },
+  {
+    "page": 18,
+    "text": "업무의",
+    "score": 0.9936
+  },
+  {
+    "page": 18,
+    "text": "가용성중요도중",
+    "score": 0.9995
+  },
+  {
+    "page": 18,
+    "text": "-",
+    "score": 0.8443
+  },
+  {
+    "page": 18,
+    "text": "가장",
+    "score": 0.9997
+  },
+  {
+    "page": 18,
+    "text": "높은",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "것을",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "따라결정",
+    "score": 0.9999
+  },
+  {
+    "page": 18,
+    "text": "기밀성",
+    "score": 0.9998
+  },
+  {
+    "page": 18,
+    "text": "무결성",
+    "score": 0.9998
+  },
+  {
+    "page": 18,
+    "text": "가용성",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "데이터에",
+    "score": 0.9994
+  },
+  {
+    "page": 18,
+    "text": "의해",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "결정",
+    "score": 0.9999
+  },
+  {
+    "page": 18,
+    "text": "서비스에",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "의해",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "결정",
+    "score": 0.9999
+  },
+  {
+    "page": 18,
+    "text": "자산에",
+    "score": 0.9999
+  },
+  {
+    "page": 18,
+    "text": "관련된",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "데이터의",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "기밀성과",
+    "score": 0.9999
+  },
+  {
+    "page": 18,
+    "text": "무결성",
+    "score": 0.9998
+  },
+  {
+    "page": 18,
+    "text": "결정이",
+    "score": 0.9999
+  },
+  {
+    "page": 18,
+    "text": "중요도",
+    "score": 0.9998
+  },
+  {
+    "page": 18,
+    "text": "중가장높은",
+    "score": 0.9717
+  },
+  {
+    "page": 18,
+    "text": "것을",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "모호한",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "경우",
+    "score": 1.0
+  },
+  {
+    "page": 18,
+    "text": "-",
+    "score": 0.8576
+  },
+  {
+    "page": 18,
+    "text": "따름",
+    "score": 0.9994
+  },
+  {
+    "page": 18,
+    "text": "-18",
+    "score": 0.8621
+  },
+  {
+    "page": 19,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 19,
+    "text": "프로세스",
+    "score": 0.9992
+  },
+  {
+    "page": 19,
+    "text": "위험관리",
+    "score": 0.9999
+  },
+  {
+    "page": 19,
+    "text": "단계",
+    "score": 0.9984
+  },
+  {
+    "page": 19,
+    "text": "4]",
+    "score": 0.9157
+  },
+  {
+    "page": 19,
+    "text": "위협분석",
+    "score": 1.0
+  },
+  {
+    "page": 19,
+    "text": "자산에",
+    "score": 0.9999
+  },
+  {
+    "page": 19,
+    "text": "대한",
+    "score": 1.0
+  },
+  {
+    "page": 19,
+    "text": "위협의",
+    "score": 1.0
+  },
+  {
+    "page": 19,
+    "text": "식별",
+    "score": 0.9999
+  },
+  {
+    "page": 19,
+    "text": "및",
+    "score": 0.9998
+  },
+  {
+    "page": 19,
+    "text": "발생",
+    "score": 0.9999
+  },
+  {
+    "page": 19,
+    "text": "가능성",
+    "score": 1.0
+  },
+  {
+    "page": 19,
+    "text": "정도를",
+    "score": 0.9999
+  },
+  {
+    "page": 19,
+    "text": "인터뷰",
+    "score": 0.9999
+  },
+  {
+    "page": 19,
+    "text": "내용",
+    "score": 1.0
+  },
+  {
+    "page": 19,
+    "text": "실사를",
+    "score": 0.9983
+  },
+  {
+    "page": 19,
+    "text": "통하여",
+    "score": 1.0
+  },
+  {
+    "page": 19,
+    "text": "측정함",
+    "score": 0.9979
+  },
+  {
+    "page": 19,
+    "text": "또는",
+    "score": 1.0
+  },
+  {
+    "page": 19,
+    "text": "환경적",
+    "score": 1.0
+  },
+  {
+    "page": 19,
+    "text": "요인",
+    "score": 0.9998
+  },
+  {
+    "page": 19,
+    "text": "자연재해",
+    "score": 0.9995
+  },
+  {
+    "page": 19,
+    "text": "장비",
+    "score": 0.999
+  },
+  {
+    "page": 19,
+    "text": "고장",
+    "score": 0.9998
+  },
+  {
+    "page": 19,
+    "text": "등",
+    "score": 0.9994
+  },
+  {
+    "page": 19,
+    "text": "위협",
+    "score": 0.9997
+  },
+  {
+    "page": 19,
+    "text": "의도적인",
+    "score": 1.0
+  },
+  {
+    "page": 19,
+    "text": "위협",
+    "score": 1.0
+  },
+  {
+    "page": 19,
+    "text": "인간적",
+    "score": 1.0
+  },
+  {
+    "page": 19,
+    "text": "요인",
+    "score": 0.9999
+  },
+  {
+    "page": 19,
+    "text": "우연한",
+    "score": 0.9999
+  },
+  {
+    "page": 19,
+    "text": "위협",
+    "score": 1.0
+  },
+  {
+    "page": 19,
+    "text": "위협이",
+    "score": 1.0
+  },
+  {
+    "page": 19,
+    "text": "발생했다고",
+    "score": 0.9999
+  },
+  {
+    "page": 19,
+    "text": "반드시",
+    "score": 0.9998
+  },
+  {
+    "page": 19,
+    "text": "피해가",
+    "score": 1.0
+  },
+  {
+    "page": 19,
+    "text": "발생하는",
+    "score": 1.0
+  },
+  {
+    "page": 19,
+    "text": "것은",
+    "score": 0.9997
+  },
+  {
+    "page": 19,
+    "text": "아니며",
+    "score": 1.0
+  },
+  {
+    "page": 19,
+    "text": "자산이",
+    "score": 0.9999
+  },
+  {
+    "page": 19,
+    "text": "위협에",
+    "score": 1.0
+  },
+  {
+    "page": 19,
+    "text": "취약한지'",
+    "score": 0.9262
+  },
+  {
+    "page": 19,
+    "text": "그취약성을",
+    "score": 0.9999
+  },
+  {
+    "page": 19,
+    "text": "그",
+    "score": 1.0
+  },
+  {
+    "page": 19,
+    "text": "보호할",
+    "score": 1.0
+  },
+  {
+    "page": 19,
+    "text": "대책이",
+    "score": 0.9994
+  },
+  {
+    "page": 19,
+    "text": "있는지'에",
+    "score": 0.9939
+  },
+  {
+    "page": 19,
+    "text": "따라",
+    "score": 1.0
+  },
+  {
+    "page": 19,
+    "text": "달라지게됨",
+    "score": 0.9943
+  },
+  {
+    "page": 19,
+    "text": "많이",
+    "score": 0.9999
+  },
+  {
+    "page": 19,
+    "text": "발생하는",
+    "score": 1.0
+  },
+  {
+    "page": 19,
+    "text": "위협을",
+    "score": 1.0
+  },
+  {
+    "page": 19,
+    "text": "중심으로",
+    "score": 0.9999
+  },
+  {
+    "page": 19,
+    "text": "담당자",
+    "score": 0.9997
+  },
+  {
+    "page": 19,
+    "text": "및",
+    "score": 1.0
+  },
+  {
+    "page": 19,
+    "text": "책임자가",
+    "score": 0.9996
+  },
+  {
+    "page": 19,
+    "text": "우려하는",
+    "score": 1.0
+  },
+  {
+    "page": 19,
+    "text": "위협을",
+    "score": 1.0
+  },
+  {
+    "page": 19,
+    "text": "추가적으로",
+    "score": 1.0
+  },
+  {
+    "page": 19,
+    "text": "고려해보자!",
+    "score": 0.9989
+  },
+  {
+    "page": 19,
+    "text": "-19-",
+    "score": 0.9919
+  },
+  {
+    "page": 20,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "프로세스",
+    "score": 0.9992
+  },
+  {
+    "page": 20,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "단계",
+    "score": 0.9991
+  },
+  {
+    "page": 20,
+    "text": "5]취약성",
+    "score": 0.9021
+  },
+  {
+    "page": 20,
+    "text": "분석",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "식별된",
+    "score": 0.9999
+  },
+  {
+    "page": 20,
+    "text": "위협에",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "대하여",
+    "score": 0.9999
+  },
+  {
+    "page": 20,
+    "text": "자산이",
+    "score": 0.9998
+  },
+  {
+    "page": 20,
+    "text": "어느",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "내용",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "정도",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "취약한가를",
+    "score": 0.999
+  },
+  {
+    "page": 20,
+    "text": "인터뷰",
+    "score": 0.9998
+  },
+  {
+    "page": 20,
+    "text": "또는",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "실사를",
+    "score": 0.9998
+  },
+  {
+    "page": 20,
+    "text": "통하여",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "판명함",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "'자산의",
+    "score": 0.977
+  },
+  {
+    "page": 20,
+    "text": "잠재적",
+    "score": 0.9997
+  },
+  {
+    "page": 20,
+    "text": "속성으로서",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "위협의",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "이용",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "대상이",
+    "score": 0.9999
+  },
+  {
+    "page": 20,
+    "text": "취약성",
+    "score": 0.9999
+  },
+  {
+    "page": 20,
+    "text": "되는",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "것",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "'자산에",
+    "score": 0.9526
+  },
+  {
+    "page": 20,
+    "text": "취약성이",
+    "score": 0.9999
+  },
+  {
+    "page": 20,
+    "text": "없다면",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "위협이",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "발생해도",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "손실이",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "나타나지",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "않음",
+    "score": 0.998
+  },
+  {
+    "page": 20,
+    "text": "발생할",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "자산에",
+    "score": 0.9999
+  },
+  {
+    "page": 20,
+    "text": "자산의",
+    "score": 0.9999
+  },
+  {
+    "page": 20,
+    "text": "가치와",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "특정",
+    "score": 0.9979
+  },
+  {
+    "page": 20,
+    "text": "위협이",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "때",
+    "score": 0.9999
+  },
+  {
+    "page": 20,
+    "text": "특정",
+    "score": 0.9988
+  },
+  {
+    "page": 20,
+    "text": "방법",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "관련하여",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "어느",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "정도의",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "피해가",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "발생할",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "지를",
+    "score": 0.9999
+  },
+  {
+    "page": 20,
+    "text": "취약성",
+    "score": 0.9998
+  },
+  {
+    "page": 20,
+    "text": "노출",
+    "score": 0.9999
+  },
+  {
+    "page": 20,
+    "text": "정도라는",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "값으로",
+    "score": 1.0
+  },
+  {
+    "page": 20,
+    "text": "나타냄",
+    "score": 0.9979
+  },
+  {
+    "page": 20,
+    "text": "20",
+    "score": 0.9998
+  },
+  {
+    "page": 21,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "프로세스",
+    "score": 0.9992
+  },
+  {
+    "page": 21,
+    "text": "아h",
+    "score": 0.5384
+  },
+  {
+    "page": 21,
+    "text": "위험관리",
+    "score": 0.9999
+  },
+  {
+    "page": 21,
+    "text": "단계",
+    "score": 0.9986
+  },
+  {
+    "page": 21,
+    "text": "6]",
+    "score": 0.8272
+  },
+  {
+    "page": 21,
+    "text": "우려사항",
+    "score": 0.9996
+  },
+  {
+    "page": 21,
+    "text": "분석",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "위협과",
+    "score": 0.9958
+  },
+  {
+    "page": 21,
+    "text": "취약성의",
+    "score": 0.9999
+  },
+  {
+    "page": 21,
+    "text": "구분이",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "내용",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "어려운",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "경우는",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "우려사항이라는",
+    "score": 0.9999
+  },
+  {
+    "page": 21,
+    "text": "용어의",
+    "score": 0.9999
+  },
+  {
+    "page": 21,
+    "text": "정의로서",
+    "score": 0.9999
+  },
+  {
+    "page": 21,
+    "text": "이용가능",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "자산의",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "보호",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "요구사항이",
+    "score": 0.9997
+  },
+  {
+    "page": 21,
+    "text": "낯을",
+    "score": 0.9849
+  },
+  {
+    "page": 21,
+    "text": "경우",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "방법",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "대책이",
+    "score": 0.9982
+  },
+  {
+    "page": 21,
+    "text": "없음에도",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "취약성이",
+    "score": 0.9998
+  },
+  {
+    "page": 21,
+    "text": "낮다고",
+    "score": 0.984
+  },
+  {
+    "page": 21,
+    "text": "평가",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "자산의",
+    "score": 0.9999
+  },
+  {
+    "page": 21,
+    "text": "가치가높을경우",
+    "score": 0.9999
+  },
+  {
+    "page": 21,
+    "text": "대책이",
+    "score": 0.9994
+  },
+  {
+    "page": 21,
+    "text": "존재함에도",
+    "score": 0.9971
+  },
+  {
+    "page": 21,
+    "text": "취약성이",
+    "score": 0.9998
+  },
+  {
+    "page": 21,
+    "text": "높다라고",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "평가",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "이러한",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "경향을",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "고려하여",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "위협과",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "취약성을",
+    "score": 0.9999
+  },
+  {
+    "page": 21,
+    "text": "통합적으로",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "평가",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "가능성",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "설명",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "예",
+    "score": 0.9997
+  },
+  {
+    "page": 21,
+    "text": "높음",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "어떠한문제점이",
+    "score": 0.9998
+  },
+  {
+    "page": 21,
+    "text": "나타날",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "가능성이",
+    "score": 0.9999
+  },
+  {
+    "page": 21,
+    "text": "높다",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "중간",
+    "score": 0.9985
+  },
+  {
+    "page": 21,
+    "text": "어떠한문제점이",
+    "score": 0.9998
+  },
+  {
+    "page": 21,
+    "text": "어느",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "정도",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "나타날",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "가능성이",
+    "score": 0.9999
+  },
+  {
+    "page": 21,
+    "text": "있다",
+    "score": 0.9893
+  },
+  {
+    "page": 21,
+    "text": "낮음",
+    "score": 0.8427
+  },
+  {
+    "page": 21,
+    "text": "어떠한",
+    "score": 0.9993
+  },
+  {
+    "page": 21,
+    "text": "문제점이",
+    "score": 0.9999
+  },
+  {
+    "page": 21,
+    "text": "나타날",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "가능성이",
+    "score": 0.9998
+  },
+  {
+    "page": 21,
+    "text": "거의",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "없다",
+    "score": 1.0
+  },
+  {
+    "page": 21,
+    "text": "21-",
+    "score": 0.9908
+  },
+  {
+    "page": 22,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "프로세스",
+    "score": 0.9992
+  },
+  {
+    "page": 22,
+    "text": "아h",
+    "score": 0.5384
+  },
+  {
+    "page": 22,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "단계",
+    "score": 0.9986
+  },
+  {
+    "page": 22,
+    "text": "7위험도",
+    "score": 0.9995
+  },
+  {
+    "page": 22,
+    "text": "산정",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "식별된",
+    "score": 0.9999
+  },
+  {
+    "page": 22,
+    "text": "내용",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "자산",
+    "score": 0.9999
+  },
+  {
+    "page": 22,
+    "text": "위협",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "및",
+    "score": 0.9994
+  },
+  {
+    "page": 22,
+    "text": "취약성을",
+    "score": 0.9999
+  },
+  {
+    "page": 22,
+    "text": "기준으로",
+    "score": 0.9999
+  },
+  {
+    "page": 22,
+    "text": "위험도를",
+    "score": 0.9998
+  },
+  {
+    "page": 22,
+    "text": "산출하고",
+    "score": 0.9999
+  },
+  {
+    "page": 22,
+    "text": "기존의보호대책을",
+    "score": 0.9995
+  },
+  {
+    "page": 22,
+    "text": "파악함",
+    "score": 0.9997
+  },
+  {
+    "page": 22,
+    "text": "해당",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "정보자산의",
+    "score": 0.9999
+  },
+  {
+    "page": 22,
+    "text": "가치와",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "위협",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "및",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "취약성의",
+    "score": 0.9999
+  },
+  {
+    "page": 22,
+    "text": "정도에",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "방법",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "따라",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "기밀성무결성",
+    "score": 0.9994
+  },
+  {
+    "page": 22,
+    "text": "가용성",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "손상에",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "따른",
+    "score": 0.9952
+  },
+  {
+    "page": 22,
+    "text": "잠재적",
+    "score": 0.9996
+  },
+  {
+    "page": 22,
+    "text": "손실의",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "규모",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "평가",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "0",
+    "score": 0.9953
+  },
+  {
+    "page": 22,
+    "text": "정량적",
+    "score": 0.9997
+  },
+  {
+    "page": 22,
+    "text": "방식",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "산출방법",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "자산",
+    "score": 0.9999
+  },
+  {
+    "page": 22,
+    "text": "수에",
+    "score": 0.6504
+  },
+  {
+    "page": 22,
+    "text": "대한위협",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "7가연간",
+    "score": 0.9346
+  },
+  {
+    "page": 22,
+    "text": "발생시킬수",
+    "score": 0.9995
+  },
+  {
+    "page": 22,
+    "text": "있는",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "연간",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "예산손실",
+    "score": 0.9995
+  },
+  {
+    "page": 22,
+    "text": "자산소의가치원",
+    "score": 0.9239
+  },
+  {
+    "page": 22,
+    "text": "위협",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "7의",
+    "score": 0.9735
+  },
+  {
+    "page": 22,
+    "text": "연간",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "발생횟수*",
+    "score": 0.8333
+  },
+  {
+    "page": 22,
+    "text": "7에대한스의취약성[%]",
+    "score": 0.8739
+  },
+  {
+    "page": 22,
+    "text": "자산의가치금액",
+    "score": 0.9996
+  },
+  {
+    "page": 22,
+    "text": "위협연간발생횟수",
+    "score": 0.9799
+  },
+  {
+    "page": 22,
+    "text": "취약성%로평가",
+    "score": 0.9959
+  },
+  {
+    "page": 22,
+    "text": "2",
+    "score": 0.9701
+  },
+  {
+    "page": 22,
+    "text": "정성적",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "방식",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "산출방법자산",
+    "score": 0.9999
+  },
+  {
+    "page": 22,
+    "text": "위협",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "취약성의",
+    "score": 0.9999
+  },
+  {
+    "page": 22,
+    "text": "값을",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "곱하거나",
+    "score": 0.9992
+  },
+  {
+    "page": 22,
+    "text": "더함",
+    "score": 0.9955
+  },
+  {
+    "page": 22,
+    "text": "방법론에",
+    "score": 0.9999
+  },
+  {
+    "page": 22,
+    "text": "따라",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "약간의",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "차이는",
+    "score": 1.0
+  },
+  {
+    "page": 22,
+    "text": "있음]",
+    "score": 0.9763
+  },
+  {
+    "page": 22,
+    "text": "22",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "프로세스",
+    "score": 0.9998
+  },
+  {
+    "page": 23,
+    "text": "아h",
+    "score": 0.5384
+  },
+  {
+    "page": 23,
+    "text": "단계",
+    "score": 0.9989
+  },
+  {
+    "page": 23,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "|",
+    "score": 0.9941
+  },
+  {
+    "page": 23,
+    "text": "8]",
+    "score": 0.8787
+  },
+  {
+    "page": 23,
+    "text": "보호대책",
+    "score": 0.9517
+  },
+  {
+    "page": 23,
+    "text": "선정",
+    "score": 0.9999
+  },
+  {
+    "page": 23,
+    "text": "내용",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "위험도",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "평가결과를",
+    "score": 0.9999
+  },
+  {
+    "page": 23,
+    "text": "토대로",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "해당",
+    "score": 0.9999
+  },
+  {
+    "page": 23,
+    "text": "위험도를",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "수용가능한",
+    "score": 0.9999
+  },
+  {
+    "page": 23,
+    "text": "위험수준까지",
+    "score": 0.9987
+  },
+  {
+    "page": 23,
+    "text": "낮추기",
+    "score": 0.8447
+  },
+  {
+    "page": 23,
+    "text": "위한",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "보호대책",
+    "score": 0.9977
+  },
+  {
+    "page": 23,
+    "text": "선정",
+    "score": 0.9999
+  },
+  {
+    "page": 23,
+    "text": "방법",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "식별된",
+    "score": 0.9999
+  },
+  {
+    "page": 23,
+    "text": "위험과",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "각위험도",
+    "score": 0.9999
+  },
+  {
+    "page": 23,
+    "text": "검토",
+    "score": 0.9996
+  },
+  {
+    "page": 23,
+    "text": "위험을",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "받아들이고",
+    "score": 0.9999
+  },
+  {
+    "page": 23,
+    "text": "비용을",
+    "score": 0.9998
+  },
+  {
+    "page": 23,
+    "text": "감수하는것",
+    "score": 0.9972
+  },
+  {
+    "page": 23,
+    "text": "수용가능한",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "목표",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "위험수준",
+    "score": 0.9998
+  },
+  {
+    "page": 23,
+    "text": "DoA:",
+    "score": 0.9988
+  },
+  {
+    "page": 23,
+    "text": "Degree",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "Assurance",
+    "score": 0.9999
+  },
+  {
+    "page": 23,
+    "text": "결정",
+    "score": 0.9998
+  },
+  {
+    "page": 23,
+    "text": "이f",
+    "score": 0.6574
+  },
+  {
+    "page": 23,
+    "text": "목표",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "위험수준을",
+    "score": 0.9996
+  },
+  {
+    "page": 23,
+    "text": "초과하는",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "위험",
+    "score": 0.9999
+  },
+  {
+    "page": 23,
+    "text": "식별",
+    "score": 0.9999
+  },
+  {
+    "page": 23,
+    "text": "있는",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "1000원의",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "가치가",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "자산을",
+    "score": 0.9999
+  },
+  {
+    "page": 23,
+    "text": "보호하기",
+    "score": 0.9999
+  },
+  {
+    "page": 23,
+    "text": "위해서",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "예",
+    "score": 0.9993
+  },
+  {
+    "page": 23,
+    "text": "2000원을",
+    "score": 0.9999
+  },
+  {
+    "page": 23,
+    "text": "투자하는",
+    "score": 0.9998
+  },
+  {
+    "page": 23,
+    "text": "비효율적!",
+    "score": 0.9954
+  },
+  {
+    "page": 23,
+    "text": "것은",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "감소를",
+    "score": 0.9994
+  },
+  {
+    "page": 23,
+    "text": "목표로",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "전략을",
+    "score": 0.9999
+  },
+  {
+    "page": 23,
+    "text": "것이",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "고려사항",
+    "score": 0.9991
+  },
+  {
+    "page": 23,
+    "text": "위험수준",
+    "score": 0.9961
+  },
+  {
+    "page": 23,
+    "text": "수립하는",
+    "score": 0.9995
+  },
+  {
+    "page": 23,
+    "text": "일반적",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "위험수용",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "위험을",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "받아들이고비용을감수함",
+    "score": 0.9998
+  },
+  {
+    "page": 23,
+    "text": "위험감소",
+    "score": 0.9996
+  },
+  {
+    "page": 23,
+    "text": "위험을",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "감소시킬수있는대책을채택하여",
+    "score": 0.9995
+  },
+  {
+    "page": 23,
+    "text": "구현함",
+    "score": 0.9998
+  },
+  {
+    "page": 23,
+    "text": "-",
+    "score": 0.6231
+  },
+  {
+    "page": 23,
+    "text": "위험회피",
+    "score": 0.9998
+  },
+  {
+    "page": 23,
+    "text": "위험이존재하는프로세스나사업을포기함",
+    "score": 0.9996
+  },
+  {
+    "page": 23,
+    "text": "위험전가",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "잠재적",
+    "score": 0.9992
+  },
+  {
+    "page": 23,
+    "text": "비용을제3자에게이전하거나할당함",
+    "score": 0.9869
+  },
+  {
+    "page": 23,
+    "text": "'이후의",
+    "score": 0.929
+  },
+  {
+    "page": 23,
+    "text": "원활한",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "운영을",
+    "score": 0.9999
+  },
+  {
+    "page": 23,
+    "text": "위해각단계별로",
+    "score": 0.9999
+  },
+  {
+    "page": 23,
+    "text": "관련자들의",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "이해와",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "동의를",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "얻는",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "것이",
+    "score": 1.0
+  },
+  {
+    "page": 23,
+    "text": "필수적!'",
+    "score": 0.9777
+  },
+  {
+    "page": 23,
+    "text": "23",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "Oh+",
+    "score": 0.5922
+  },
+  {
+    "page": 24,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "프로세스",
+    "score": 0.9992
+  },
+  {
+    "page": 24,
+    "text": "정보보호",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "계획",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "수립",
+    "score": 0.9998
+  },
+  {
+    "page": 24,
+    "text": "2",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "프로젝트",
+    "score": 0.9993
+  },
+  {
+    "page": 24,
+    "text": "구성",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "|",
+    "score": 0.9911
+  },
+  {
+    "page": 24,
+    "text": "위험수준의",
+    "score": 0.9994
+  },
+  {
+    "page": 24,
+    "text": "감소를",
+    "score": 0.9996
+  },
+  {
+    "page": 24,
+    "text": "위해",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "선정한",
+    "score": 0.9997
+  },
+  {
+    "page": 24,
+    "text": "정보보호대책을",
+    "score": 0.9996
+  },
+  {
+    "page": 24,
+    "text": "위험처리의",
+    "score": 0.9919
+  },
+  {
+    "page": 24,
+    "text": "시급성",
+    "score": 0.9999
+  },
+  {
+    "page": 24,
+    "text": "예산",
+    "score": 0.9999
+  },
+  {
+    "page": 24,
+    "text": "구현에",
+    "score": 0.9997
+  },
+  {
+    "page": 24,
+    "text": "요구되는",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "할당",
+    "score": 0.9999
+  },
+  {
+    "page": 24,
+    "text": "기간에",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "따라",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "우선순위를",
+    "score": 0.9986
+  },
+  {
+    "page": 24,
+    "text": "정하고",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "계획을",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "수립하여",
+    "score": 0.9999
+  },
+  {
+    "page": 24,
+    "text": "지속적으로",
+    "score": 0.9999
+  },
+  {
+    "page": 24,
+    "text": "관리",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "수행",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "[1]",
+    "score": 0.9028
+  },
+  {
+    "page": 24,
+    "text": "유사",
+    "score": 0.9999
+  },
+  {
+    "page": 24,
+    "text": "대책의",
+    "score": 0.9991
+  },
+  {
+    "page": 24,
+    "text": "종류",
+    "score": 0.9958
+  },
+  {
+    "page": 24,
+    "text": "0",
+    "score": 0.9925
+  },
+  {
+    "page": 24,
+    "text": "즉시",
+    "score": 0.9976
+  },
+  {
+    "page": 24,
+    "text": "교정",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "가능한",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "취약성",
+    "score": 0.9997
+  },
+  {
+    "page": 24,
+    "text": "제거",
+    "score": 0.9986
+  },
+  {
+    "page": 24,
+    "text": "내용",
+    "score": 0.9998
+  },
+  {
+    "page": 24,
+    "text": "빠른",
+    "score": 0.9985
+  },
+  {
+    "page": 24,
+    "text": "시간",
+    "score": 0.9999
+  },
+  {
+    "page": 24,
+    "text": "내에",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "처리할수",
+    "score": 0.9999
+  },
+  {
+    "page": 24,
+    "text": "있는",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "사항들",
+    "score": 0.9999
+  },
+  {
+    "page": 24,
+    "text": "종류",
+    "score": 0.9988
+  },
+  {
+    "page": 24,
+    "text": "시스템이나",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "장비의구성",
+    "score": 0.9999
+  },
+  {
+    "page": 24,
+    "text": "설정",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "변경",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "파일",
+    "score": 0.9999
+  },
+  {
+    "page": 24,
+    "text": "등의",
+    "score": 0.9999
+  },
+  {
+    "page": 24,
+    "text": "권한",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "변경",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "취약한",
+    "score": 0.9999
+  },
+  {
+    "page": 24,
+    "text": "패스워드",
+    "score": 0.9888
+  },
+  {
+    "page": 24,
+    "text": "변경등",
+    "score": 0.9927
+  },
+  {
+    "page": 24,
+    "text": "-",
+    "score": 0.7802
+  },
+  {
+    "page": 24,
+    "text": "고려사항변경에",
+    "score": 0.9976
+  },
+  {
+    "page": 24,
+    "text": "따른영향등",
+    "score": 0.9938
+  },
+  {
+    "page": 24,
+    "text": "2",
+    "score": 0.9988
+  },
+  {
+    "page": 24,
+    "text": "정책밑절차수립",
+    "score": 0.9877
+  },
+  {
+    "page": 24,
+    "text": "내용'",
+    "score": 0.8211
+  },
+  {
+    "page": 24,
+    "text": "정책을",
+    "score": 0.9999
+  },
+  {
+    "page": 24,
+    "text": "'우선'",
+    "score": 0.9403
+  },
+  {
+    "page": 24,
+    "text": "수립하고",
+    "score": 0.9999
+  },
+  {
+    "page": 24,
+    "text": "이를",
+    "score": 0.9741
+  },
+  {
+    "page": 24,
+    "text": "준수하기",
+    "score": 0.9994
+  },
+  {
+    "page": 24,
+    "text": "위한",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "절차를",
+    "score": 0.9996
+  },
+  {
+    "page": 24,
+    "text": "마련",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "특징",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "다른",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "업무보다",
+    "score": 0.9999
+  },
+  {
+    "page": 24,
+    "text": "높은",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "우선순위를가짐",
+    "score": 0.999
+  },
+  {
+    "page": 24,
+    "text": "-",
+    "score": 0.7326
+  },
+  {
+    "page": 24,
+    "text": "'이후의",
+    "score": 0.9846
+  },
+  {
+    "page": 24,
+    "text": "원활한",
+    "score": 0.9999
+  },
+  {
+    "page": 24,
+    "text": "운영을",
+    "score": 0.9999
+  },
+  {
+    "page": 24,
+    "text": "위해",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "단계별로",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "관련자들의",
+    "score": 0.9999
+  },
+  {
+    "page": 24,
+    "text": "이해와",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "&",
+    "score": 0.6323
+  },
+  {
+    "page": 24,
+    "text": "동의를",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "얻는",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "것이",
+    "score": 1.0
+  },
+  {
+    "page": 24,
+    "text": "필수적!",
+    "score": 0.9988
+  },
+  {
+    "page": 24,
+    "text": "24",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "프로세스",
+    "score": 0.9979
+  },
+  {
+    "page": 25,
+    "text": "아h",
+    "score": 0.5384
+  },
+  {
+    "page": 25,
+    "text": "2",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "정보보호",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "계획",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "수립",
+    "score": 0.9998
+  },
+  {
+    "page": 25,
+    "text": "프로젝트",
+    "score": 0.9998
+  },
+  {
+    "page": 25,
+    "text": "구성",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "1>",
+    "score": 0.7783
+  },
+  {
+    "page": 25,
+    "text": "[1]",
+    "score": 0.947
+  },
+  {
+    "page": 25,
+    "text": "유사대책의",
+    "score": 0.9975
+  },
+  {
+    "page": 25,
+    "text": "종류",
+    "score": 0.9971
+  },
+  {
+    "page": 25,
+    "text": "6",
+    "score": 0.9525
+  },
+  {
+    "page": 25,
+    "text": "분야별",
+    "score": 0.9996
+  },
+  {
+    "page": 25,
+    "text": "정보보호",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "시스템",
+    "score": 0.9999
+  },
+  {
+    "page": 25,
+    "text": "도입",
+    "score": 0.9998
+  },
+  {
+    "page": 25,
+    "text": "및",
+    "score": 0.9999
+  },
+  {
+    "page": 25,
+    "text": "관련",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "교육",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "개별",
+    "score": 0.9999
+  },
+  {
+    "page": 25,
+    "text": "정보보호",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "시스템은",
+    "score": 0.9996
+  },
+  {
+    "page": 25,
+    "text": "수행",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "관리의",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "효율성을",
+    "score": 0.9999
+  },
+  {
+    "page": 25,
+    "text": "위해",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "네트워크",
+    "score": 0.9998
+  },
+  {
+    "page": 25,
+    "text": "서버P0",
+    "score": 0.7627
+  },
+  {
+    "page": 25,
+    "text": "응용",
+    "score": 0.9885
+  },
+  {
+    "page": 25,
+    "text": "시스템",
+    "score": 0.9999
+  },
+  {
+    "page": 25,
+    "text": "관련",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "등으로",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "분류하여",
+    "score": 0.9999
+  },
+  {
+    "page": 25,
+    "text": "별도",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "프로젝트로",
+    "score": 0.9996
+  },
+  {
+    "page": 25,
+    "text": "설정하고",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "각각의",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "정보보호",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "도입에는",
+    "score": 0.9999
+  },
+  {
+    "page": 25,
+    "text": "시스템",
+    "score": 0.9999
+  },
+  {
+    "page": 25,
+    "text": "관련자",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "교육이",
+    "score": 0.9999
+  },
+  {
+    "page": 25,
+    "text": "포함되어야함",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "4",
+    "score": 0.6268
+  },
+  {
+    "page": 25,
+    "text": "모니터링",
+    "score": 0.9999
+  },
+  {
+    "page": 25,
+    "text": "및",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "감사관련",
+    "score": 0.9999
+  },
+  {
+    "page": 25,
+    "text": "사항",
+    "score": 0.9999
+  },
+  {
+    "page": 25,
+    "text": "-",
+    "score": 0.8129
+  },
+  {
+    "page": 25,
+    "text": "모니터링",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "감사에",
+    "score": 0.9999
+  },
+  {
+    "page": 25,
+    "text": "필요한",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "사항모니터링",
+    "score": 0.9997
+  },
+  {
+    "page": 25,
+    "text": "감사를",
+    "score": 0.9994
+  },
+  {
+    "page": 25,
+    "text": "및",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "위한",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "정책",
+    "score": 0.9998
+  },
+  {
+    "page": 25,
+    "text": "절차",
+    "score": 0.8926
+  },
+  {
+    "page": 25,
+    "text": "책임",
+    "score": 0.9999
+  },
+  {
+    "page": 25,
+    "text": "설정",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "모니터링",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "또는",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "감사용",
+    "score": 0.9999
+  },
+  {
+    "page": 25,
+    "text": "시스템",
+    "score": 0.9999
+  },
+  {
+    "page": 25,
+    "text": "도입",
+    "score": 0.9999
+  },
+  {
+    "page": 25,
+    "text": "등]",
+    "score": 0.9145
+  },
+  {
+    "page": 25,
+    "text": "결정",
+    "score": 0.9999
+  },
+  {
+    "page": 25,
+    "text": "정보보호",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "대책",
     "score": 0.9947
+  },
+  {
+    "page": 25,
+    "text": "별로",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "감사하여야",
+    "score": 0.9997
+  },
+  {
+    "page": 25,
+    "text": "할",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "사항들을",
+    "score": 1.0
+  },
+  {
+    "page": 25,
+    "text": "작성하이",
+    "score": 0.9103
+  },
+  {
+    "page": 25,
+    "text": "감사",
+    "score": 0.9998
+  },
+  {
+    "page": 25,
+    "text": "체크리스트에",
+    "score": 0.9997
+  },
+  {
+    "page": 25,
+    "text": "포함시킴",
+    "score": 0.9987
+  },
+  {
+    "page": 25,
+    "text": "25",
+    "score": 1.0
+  },
+  {
+    "page": 26,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 26,
+    "text": "프로세스",
+    "score": 0.9992
+  },
+  {
+    "page": 26,
+    "text": "h",
+    "score": 0.908
+  },
+  {
+    "page": 26,
+    "text": "정보보호",
+    "score": 1.0
+  },
+  {
+    "page": 26,
+    "text": "계획",
+    "score": 1.0
+  },
+  {
+    "page": 26,
+    "text": "수립",
+    "score": 0.9999
+  },
+  {
+    "page": 26,
+    "text": "2",
+    "score": 0.9999
+  },
+  {
+    "page": 26,
+    "text": "2]구현",
+    "score": 0.8904
+  },
+  {
+    "page": 26,
+    "text": "계획수립",
+    "score": 0.9999
+  },
+  {
+    "page": 26,
+    "text": "프로젝트",
+    "score": 0.9998
+  },
+  {
+    "page": 26,
+    "text": "별로",
+    "score": 1.0
+  },
+  {
+    "page": 26,
+    "text": "예산",
+    "score": 0.9999
+  },
+  {
+    "page": 26,
+    "text": "구현",
+    "score": 0.9969
+  },
+  {
+    "page": 26,
+    "text": "일정",
+    "score": 0.9999
+  },
+  {
+    "page": 26,
+    "text": "프로젝트의",
+    "score": 0.9997
+  },
+  {
+    "page": 26,
+    "text": "세부",
+    "score": 0.9999
+  },
+  {
+    "page": 26,
+    "text": "내용",
+    "score": 1.0
+  },
+  {
+    "page": 26,
+    "text": "해당",
+    "score": 0.9999
+  },
+  {
+    "page": 26,
+    "text": "프로젝트",
+    "score": 0.9995
+  },
+  {
+    "page": 26,
+    "text": "수행에",
+    "score": 1.0
+  },
+  {
+    "page": 26,
+    "text": "관한",
+    "score": 1.0
+  },
+  {
+    "page": 26,
+    "text": "책임",
+    "score": 0.9999
+  },
+  {
+    "page": 26,
+    "text": "등이",
+    "score": 0.9999
+  },
+  {
+    "page": 26,
+    "text": "포함된",
+    "score": 1.0
+  },
+  {
+    "page": 26,
+    "text": "정보보호",
+    "score": 1.0
+  },
+  {
+    "page": 26,
+    "text": "계획",
+    "score": 0.9998
+  },
+  {
+    "page": 26,
+    "text": "수립",
+    "score": 0.9998
+  },
+  {
+    "page": 26,
+    "text": "실제",
+    "score": 0.9992
+  },
+  {
+    "page": 26,
+    "text": "프로젝트를",
+    "score": 0.9997
+  },
+  {
+    "page": 26,
+    "text": "수행하고",
+    "score": 0.9994
+  },
+  {
+    "page": 26,
+    "text": "이에",
+    "score": 1.0
+  },
+  {
+    "page": 26,
+    "text": "영향을",
+    "score": 1.0
+  },
+  {
+    "page": 26,
+    "text": "받게",
+    "score": 1.0
+  },
+  {
+    "page": 26,
+    "text": "될부서들의",
+    "score": 0.9998
+  },
+  {
+    "page": 26,
+    "text": "책임자",
+    "score": 0.9999
+  },
+  {
+    "page": 26,
+    "text": "및",
+    "score": 0.9999
+  },
+  {
+    "page": 26,
+    "text": "실무자가",
+    "score": 1.0
+  },
+  {
+    "page": 26,
+    "text": "반드시",
+    "score": 0.9999
+  },
+  {
+    "page": 26,
+    "text": "참여해야",
+    "score": 1.0
+  },
+  {
+    "page": 26,
+    "text": "&",
+    "score": 0.9854
+  },
+  {
+    "page": 26,
+    "text": "인력",
+    "score": 0.9999
+  },
+  {
+    "page": 26,
+    "text": "및자금",
+    "score": 0.9891
+  },
+  {
+    "page": 26,
+    "text": "지원",
+    "score": 0.9991
+  },
+  {
+    "page": 26,
+    "text": "책임의",
+    "score": 0.9999
+  },
+  {
+    "page": 26,
+    "text": "수용구현",
+    "score": 0.9952
+  },
+  {
+    "page": 26,
+    "text": "일정의",
+    "score": 1.0
+  },
+  {
+    "page": 26,
+    "text": "타당성및",
+    "score": 0.9993
+  },
+  {
+    "page": 26,
+    "text": "-",
+    "score": 0.8367
+  },
+  {
+    "page": 26,
+    "text": "실행가능성등을",
+    "score": 0.9996
+  },
+  {
+    "page": 26,
+    "text": "검토하거나피드백을",
+    "score": 0.9952
+  },
+  {
+    "page": 26,
+    "text": "제공해야",
+    "score": 0.9999
+  },
+  {
+    "page": 26,
+    "text": "실제구현",
+    "score": 0.9987
+  },
+  {
+    "page": 26,
+    "text": "-",
+    "score": 0.9021
+  },
+  {
+    "page": 26,
+    "text": "가능한계획이",
+    "score": 0.9999
+  },
+  {
+    "page": 26,
+    "text": "작성될수있음",
+    "score": 0.9972
+  },
+  {
+    "page": 26,
+    "text": "26",
+    "score": 0.9999
+  },
+  {
+    "page": 27,
+    "text": "핵심요약",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "개념",
+    "score": 0.9999
+  },
+  {
+    "page": 27,
+    "text": "7",
+    "score": 0.9995
+  },
+  {
+    "page": 27,
+    "text": "1>",
+    "score": 0.7511
+  },
+  {
+    "page": 27,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "조직의",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "자산에",
+    "score": 0.9999
+  },
+  {
+    "page": 27,
+    "text": "대한",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "위험을",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "감수할",
+    "score": 0.9999
+  },
+  {
+    "page": 27,
+    "text": "수",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "있는",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "수준으로",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "유지하기",
+    "score": 0.9998
+  },
+  {
+    "page": 27,
+    "text": "위하",
+    "score": 0.9981
+  },
+  {
+    "page": 27,
+    "text": "여",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "자산에",
+    "score": 0.9999
+  },
+  {
+    "page": 27,
+    "text": "대한",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "위협을",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "분석하고",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "이러한",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "위협으로부터",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "자산을",
+    "score": 0.9999
+  },
+  {
+    "page": 27,
+    "text": "보호",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "하기",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "위한",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "비용",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "대비",
+    "score": 0.9998
+  },
+  {
+    "page": 27,
+    "text": "효과적인",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "보호대책을",
+    "score": 0.9997
+  },
+  {
+    "page": 27,
+    "text": "마련하는",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "일련의",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "과정",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "2]",
+    "score": 0.9661
+  },
+  {
+    "page": 27,
+    "text": "전략과",
+    "score": 0.9999
+  },
+  {
+    "page": 27,
+    "text": "계획을",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "수립",
+    "score": 0.9999
+  },
+  {
+    "page": 27,
+    "text": "위협을",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "구성하는",
+    "score": 0.9999
+  },
+  {
+    "page": 27,
+    "text": "요소",
+    "score": 0.9999
+  },
+  {
+    "page": 27,
+    "text": "분석",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "분석에",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "기초하야",
+    "score": 0.8549
+  },
+  {
+    "page": 27,
+    "text": "위험을",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "평가",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "필요한",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "대책을",
+    "score": 0.9962
+  },
+  {
+    "page": 27,
+    "text": "선정",
+    "score": 0.9998
+  },
+  {
+    "page": 27,
+    "text": "보호대책을",
+    "score": 0.9995
+  },
+  {
+    "page": 27,
+    "text": "구현할계획수립",
+    "score": 0.9999
+  },
+  {
+    "page": 27,
+    "text": "등의",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "활동수행",
+    "score": 0.9999
+  },
+  {
+    "page": 27,
+    "text": "3]",
+    "score": 0.9123
+  },
+  {
+    "page": 27,
+    "text": "위험분석",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "방법론",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "위험분석",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "방법론은",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "과학적이고",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "정형적인",
+    "score": 0.9996
+  },
+  {
+    "page": 27,
+    "text": "과정으로",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "위험을",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "알아내고",
+    "score": 0.9999
+  },
+  {
+    "page": 27,
+    "text": "측정하려는",
+    "score": 0.9996
+  },
+  {
+    "page": 27,
+    "text": "방법을",
+    "score": 0.9996
+  },
+  {
+    "page": 27,
+    "text": "제시",
+    "score": 0.9991
+  },
+  {
+    "page": 27,
+    "text": "4]",
+    "score": 0.9618
+  },
+  {
+    "page": 27,
+    "text": "접근방식에",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "따른",
+    "score": 0.9997
+  },
+  {
+    "page": 27,
+    "text": "위험분석",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "방법",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "기준선",
+    "score": 0.9998
+  },
+  {
+    "page": 27,
+    "text": "접근법[Baseline",
+    "score": 0.9706
+  },
+  {
+    "page": 27,
+    "text": "Approach?",
+    "score": 0.9665
+  },
+  {
+    "page": 27,
+    "text": "전문가",
+    "score": 0.9999
+  },
+  {
+    "page": 27,
+    "text": "판단법Qnforma",
+    "score": 0.9344
+  },
+  {
+    "page": 27,
+    "text": "Approach",
+    "score": 0.9999
+  },
+  {
+    "page": 27,
+    "text": "-",
+    "score": 0.8593
+  },
+  {
+    "page": 27,
+    "text": "상세위험",
+    "score": 0.9998
+  },
+  {
+    "page": 27,
+    "text": "접근법Detailed",
+    "score": 0.9378
+  },
+  {
+    "page": 27,
+    "text": "Risk",
+    "score": 0.9997
+  },
+  {
+    "page": 27,
+    "text": "Approach?",
+    "score": 0.9505
+  },
+  {
+    "page": 27,
+    "text": "복합적",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "접근법Combined",
+    "score": 0.9946
+  },
+  {
+    "page": 27,
+    "text": "Approach?",
+    "score": 0.9888
+  },
+  {
+    "page": 27,
+    "text": "중",
+    "score": 0.9999
+  },
+  {
+    "page": 27,
+    "text": "선택적으로",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "적용",
+    "score": 1.0
+  },
+  {
+    "page": 27,
+    "text": "27-",
+    "score": 0.9639
+  },
+  {
+    "page": 28,
+    "text": "핵심요약",
+    "score": 1.0
+  },
+  {
+    "page": 28,
+    "text": "2",
+    "score": 1.0
+  },
+  {
+    "page": 28,
+    "text": "위험관리",
+    "score": 1.0
+  },
+  {
+    "page": 28,
+    "text": "프로세스",
+    "score": 0.9997
+  },
+  {
+    "page": 28,
+    "text": "정보보호",
+    "score": 1.0
+  },
+  {
+    "page": 28,
+    "text": "계획",
+    "score": 0.9999
+  },
+  {
+    "page": 28,
+    "text": "수립의",
+    "score": 0.9997
+  },
+  {
+    "page": 28,
+    "text": "프로젝트",
+    "score": 0.9996
+  },
+  {
+    "page": 28,
+    "text": "1>",
+    "score": 0.7511
+  },
+  {
+    "page": 28,
+    "text": "구성",
+    "score": 1.0
+  },
+  {
+    "page": 28,
+    "text": "특성과목적이",
+    "score": 0.9488
+  },
+  {
+    "page": 28,
+    "text": "유사한",
+    "score": 1.0
+  },
+  {
+    "page": 28,
+    "text": "대책들을",
+    "score": 0.9986
+  },
+  {
+    "page": 28,
+    "text": "하나의",
+    "score": 1.0
+  },
+  {
+    "page": 28,
+    "text": "프로젝트로",
+    "score": 0.9996
+  },
+  {
+    "page": 28,
+    "text": "묶어구현계획",
+    "score": 0.9976
+  },
+  {
+    "page": 28,
+    "text": "수립",
+    "score": 0.9998
+  },
+  {
+    "page": 28,
+    "text": "2]",
+    "score": 0.9129
+  },
+  {
+    "page": 28,
+    "text": "구현계획",
+    "score": 1.0
+  },
+  {
+    "page": 28,
+    "text": "'수립",
+    "score": 0.7908
+  },
+  {
+    "page": 28,
+    "text": "프로젝트",
+    "score": 0.9995
+  },
+  {
+    "page": 28,
+    "text": "별로",
+    "score": 1.0
+  },
+  {
+    "page": 28,
+    "text": "예산",
+    "score": 0.9999
+  },
+  {
+    "page": 28,
+    "text": "구현",
+    "score": 0.9997
+  },
+  {
+    "page": 28,
+    "text": "일정",
+    "score": 0.9999
+  },
+  {
+    "page": 28,
+    "text": "프로젝트의",
+    "score": 0.9994
+  },
+  {
+    "page": 28,
+    "text": "세부",
+    "score": 0.9999
+  },
+  {
+    "page": 28,
+    "text": "내용",
+    "score": 1.0
+  },
+  {
+    "page": 28,
+    "text": "해당",
+    "score": 0.9999
+  },
+  {
+    "page": 28,
+    "text": "프로젝트",
+    "score": 0.9995
+  },
+  {
+    "page": 28,
+    "text": "수행에",
+    "score": 1.0
+  },
+  {
+    "page": 28,
+    "text": "관한",
+    "score": 1.0
+  },
+  {
+    "page": 28,
+    "text": "책임",
+    "score": 0.9999
+  },
+  {
+    "page": 28,
+    "text": "등이",
+    "score": 1.0
+  },
+  {
+    "page": 28,
+    "text": "포함된",
+    "score": 1.0
+  },
+  {
+    "page": 28,
+    "text": "정보보호",
+    "score": 1.0
+  },
+  {
+    "page": 28,
+    "text": "계획을수립",
+    "score": 0.9988
+  },
+  {
+    "page": 28,
+    "text": "위험분석범위",
+    "score": 1.0
+  },
+  {
+    "page": 28,
+    "text": "취약성분석",
+    "score": 0.9998
+  },
+  {
+    "page": 28,
+    "text": "선정",
+    "score": 0.9997
+  },
+  {
+    "page": 28,
+    "text": "위험분석방법정의",
+    "score": 1.0
+  },
+  {
+    "page": 28,
+    "text": "우려사항분석",
+    "score": 0.9998
+  },
+  {
+    "page": 28,
+    "text": "자산분석",
+    "score": 0.9999
+  },
+  {
+    "page": 28,
+    "text": "위험도산정",
+    "score": 1.0
+  },
+  {
+    "page": 28,
+    "text": "위협분석",
+    "score": 1.0
+  },
+  {
+    "page": 28,
+    "text": "보호대책의",
+    "score": 0.9995
+  },
+  {
+    "page": 28,
+    "text": "선정",
+    "score": 0.9997
+  },
+  {
+    "page": 28,
+    "text": "28",
+    "score": 0.9973
   }
 ]

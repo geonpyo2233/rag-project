@@ -1,32 +1,142 @@
 [
   {
+    "page": 1,
+    "text": "보안위협관리통제\n보안위협\n탐지하가\nPart\n개요\n위험관리\n-h\n-\nehte\nerye\n-\n-\n75%\n25로\n한국기술교육대학교\n|\n온라인평생교육원\n0티",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
+  },
+  {
+    "page": 2,
+    "text": "학습내용\n위험관리\n개념\n0\n위험관리\n프로세스\n0\n학습목표\n위험관리에\n대한\n기본개념을\n설명할\n0\n수\n있다\n-\n프로세스\n별\n단계의\n특징을\n설명할\n수\n있다",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
+  },
+  {
+    "page": 3,
+    "text": "위험관리\n개념\n위험관리셰<\nManagement?\n정의\n물리적\n위협에만\n적용이\n되었음\n과거초기의\n위험분석은\n일반적으로\n위협의\n발생\n가능성에\n따른\n잠재적인\n손실을\n계산하는\n것으로\n사용되었음\n이것을\n산업에서\n채택하여\n위험의\n보험\n개념을\n정립하였음\n이\n개념이\n분야에\n||\n적용되었음\n1]\n위험관리이s\nManagement?\n조직의\n자산에\n대한\n위험을\n감수할\n있는\n수준으로\n유지하기\n위하여\n수\n자산에\n대한\n이러한\n위협으로부터\n자산을\n위한\n위협을\n분석하고\n보호하기\n비용\n대비\n효과적인\n보호대책을\n마련하는\n일련의\n과정\n2]\n위험관리의\n과정\n전략과계획수립\n위협\n구성요소\n분석\n위험을\n식별하는\n단계\n위험분석\n분석에\n기초하여\n위험\n평가\n위험평가\n위험의\n규모를\n결정하는\n단계\n필요한\n보호대책\n선정\n정보보호계획수립\n새로이\n필요한\n대응책을\n식별하는\n단계\n보호대책\n구현계획\n수립\n3",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
+  },
+  {
+    "page": 4,
+    "text": "개념\n위험관리\n위험의\n2\n개념\nRisk\n1[자산\n위협\n-\n취약성]\n위험의\n크기르\n발생가능성\n손실\n[예]\n주사위를\n던져\n6이\n나오면\n600원을\n얻는다고\n가정을\n해\n보죠\n6이\n나올\n확률은\n1/6이기\n때문에\n1/6\n600원\n100원\n이므로\n-\n기댓값은\n00원이\n손실발생\n손실의\n위험\n가능성\n정도\n위험은\n손실을\n미치는\n사건이\n발생할\n가능성과\n그때\n발생하는\n손실의\n정도의\n곱으로\n평가될\n수\n있음",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
+  },
+  {
+    "page": 5,
+    "text": "위험관리\n개념\n위험의\n개념\n2\n'정의\n조직이\n보호해야\n할\n대상\n자산\n'종류\n정보\n하드웨어\n소프트웨어\n시설\n등\nAsset]\n'특징\n관련\n인력\n기업\n이미지\n등의\n무형자산\n포함\n취약성\n\"정의\n자산의\n잠재적\n속성이나\n처한\n환경\nVulnerab\n\"위협의\n이용\n대상\n관리적\n물리적'\n기술적\n약점\nility\n위협\n\"정의\n자산에\n손실을\n초래할\n수\n있는\n원치\n않는\n사건의\nThreat?\n잠재적인\n원인이나\n행위자",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
+  },
+  {
+    "page": 6,
+    "text": "위험관리\n개념\n위험의\n2\n개념\n1]\n위험관리\n측면에서의\n취약성과\n위협이란?\n[1]\n취약성Vulnerability\n정의\n자산이\n가지고\n있는\n약점\n취약성\n자체로\n인해서는\n위험을\n발생시키지\n않음\n2]\n위협Threat\n정의\n외부의\n공격\n가능성\n취약성\n위협\n'위험'\n발생\n+\n-\n취약한\n부분에\n위협요소가\n정보자산의\n발생하여\n위험\n자산의\n손실\n손상을\n유발하는\n잠재성\n위협에\n대응하여\n자산을\n보호하기\n위한\n관리적\n정보보호대책\n물리적\n기술적\n대책\n잔여위험\n정보보호대책을\n구현한\n후\n남아있는\n위험\n-o",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
+  },
+  {
+    "page": 7,
+    "text": "개념\nOh?\n위험관리\n위험의\n2\n개념\n공격\n위협\n취약성\n도츠\n방어대상\n증가\n증가\n보안\n감소\n위험\n자산\n대책\n현시\n증가\n충족\n보유\n보안요구\n가치\n사항\n사업영향]\n정보보호대책\n위협을\n방어함으로써\n위험을\n감소시키는\n것\n-\n체계적인\n과정\n없이\n위험분석\n보호대책\n수립할\n경우?\n'취약성과\n위협에\n대한\n우선순위가\n설정되지\n못해서\n불필요하거나\n과도한\n투자\n발생\n보호대책을\n불구하고\n위협에\n대처하지\n못하는\n수립하였음에도\n경우\n발생\n/-",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
+  },
+  {
+    "page": 8,
+    "text": "위험관리\n개념\n3\n위험분석\n방법론\n과학적이고\n정형적인\n과정으로\n위험을\n알아내고\n측정하려는\n방법을\n제시함\n방법론\n자체는\n전\n세계적으로\n아주\n다양한\n방법론들이\n존재함\n하는\n위험분석을\n수행하고자\n대상\n조직및\n'특징'\n요구사항\n수행기간\n상황과\n여건을\n적정한\n방법론을\n등\n고려하여\n선택하여\n적용함\n8",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
+  },
+  {
+    "page": 9,
+    "text": "위험관리\n개념\nOh?\n3\n위험분석\n방법론\n1]\n계량화\n여부에\n따른분류\n[1]\n정량적\n기법\n정의\n손실\n및\n위험의\n크기를\n금액으로\n나타내는기법\n종류과거자료\n접근법\n수학공식\n접근법\n확률분포\n추정법등\n[위험'을\n정량적으로\n표현하는\n예시]\n조직의\n연간\n예상\n손실액Anua\nLoss\nExpectancy\n특정\n사건에\n대한\n위험의\n정도\n해킹에\n따른\n위험이\n높다\n등으로\n표현될\n수도\n있음\n0\n장점\n자료의\n사용으로\n비용\n효과\n분석\n예산\n용이함\n정량화된\n및\n계획이\n수리적\n방법의\n사용으로\n계산이\n논리적임\n2\n단점\n정확한\n정량화\n수치를\n구하기가\n어려움\n수리계산에\n많은\n시간과\n노력이\n필요함\n9",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
+  },
+  {
     "page": 10,
-    "text": "|러군미능\n매\n굴\n(L\n계량화\n여부에\n따른\n분류\n(2)\n정성적 기법\n정의:분석자의 경험 및\n및 지식에>\n기초한 위험분석 방법\n손실크기를 측정할 수 없어서\n위험을 구간 및 기술변수\n(예:H:3,M:2,L:1)로 표현함\n종류:델파이법,시나리오법,순위결정법 등\n장점\n1\n정량화하기O\n어려운\n정보의 평가에 용이함\n용어의\n이해가\n쉬움\n분석의\n소요시간이\n짧을\n2\n단점\n2\n주관적 판단의\n남용\n여지가\n있을\n-\n비용-효과 분석이 어려움",
-    "source": "/Users/imgeonpyo/rag-project/backend/experiments/lim/data/raw_data/[교안_강의]11_보안위헙관리통제 part1_02회차.pdf"
+    "text": "위험관리\n개념\n3\n위험분석\n방법론\n1]\n계량화\n여부에\n따른분류\n2]\n정성적기법\n정의\n분석자의\n경험\n및\n지식에\n기초한\n위험분석\n방법\n손실크기를\n측정할\n수\n없어서\n위험을\n구간\n및\n기술변수\n-\n[예:\n표현함\nH:3\nM:2\nㄴ:1>로\n종류\n델파이법\n시나리오법\n순위결정법\n등\n0\n장점\n정량화하기\n어려운\n정보의\n평가에\n용이함\n용어의\n이해가\n쉬움\n분석의\n소요시간이\n짧음\n2\n단점\n주관적\n판단의\n남용\n여지가\n있음\n비용효과\n분석이\n어려움\n-10-",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
   },
   {
     "page": 11,
-    "text": "적정 보안수준보다도높게 혹은 낮게 보안통제를\n를 적용\n을 고려하지 않았기 때문에 조직 내에 부서별로\n조직의 특성을\n단점\nI 선택 가능\n필요한 보호대책의\n시간과 비용이 많이 들지 않고 모든 조직에서 기본적으로\n장점\nㄷ\n1\n선택함\n보호대책을\n일련의\n위하여\n정하고 이를 달성하기\n보호의 기본수준을\n대하여\n시스템에\n모든\n방식\n제공하는\n형태로지\n체크리스트\n보안대책의 세트를\n표준화된\n대하여\n시스템에\n모든\n기준선 접근법(BaselineApproach)\n(1)\n겨 적절한 접근방식 선택\n어야ㄷ통\n플 이근\n(Z\n매디러군의능",
-    "source": "/Users/imgeonpyo/rag-project/backend/experiments/lim/data/raw_data/[교안_강의]11_보안위헙관리통제 part1_02회차.pdf"
+    "text": "위험관리\n개념\nOh?\n3\n위험분석\n방법론\n2]\n접근방식에\n따른\n분류\n위험분석\n및\n평가\n대상\n조직의\n보안요구사항\n가용자원\n전문\n인력\n기간\n예산\n등]\n규모\n등을\n고려하여\n적절한\n접근방식\n선택\n[1]\n기준선\n접근법<Baseline\nApproach?\n모든\n시스템에\n대하여\n보안대책의\n세트를\n표준화된\n체크리스트\n형태로\n제공하는\n방식\n모든\n시스템에\n대하여\n보호의\n기본수준을\n정하고\n이를\n달성하기\n위하여\n일련의\n보호대책을\n선택함\n0\n장점\n시간과\n비용이\n많이\n들지\n않고\n모든\n조직에서\n기본적으로\n필요한\n보호대책의\n선택가능\n2\n단점\n조직의\n특성을\n고려하지\n않았기\n때문에\n조직\n내에\n부서별로\n적정\n보안수준보다도\n높게\n혹은\n낯게\n보안통제를\n적용\n-11-",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
   },
   {
     "page": 12,
-    "text": "위험관리\n개념\n3.위험분석\n석 방법론\n2)집\n접근방식에 따른\n(Z)\n|\n|z은융Y\n나 경험에 따라서\n위험을 분석하는\n방법\n장점\n1\n작은 조직에 비용-효과적임\n단점\n2\n위험을\n제대로\n평가하기\n어려움\n보호대책의\n선택\n및\n소요비용을\n도출하기 어려움\n합리적으로\n계속적으로\n반복되는\n보안관리의\n보안감사\n및\n사후관리가\n제한됨",
-    "source": "/Users/imgeonpyo/rag-project/backend/experiments/lim/data/raw_data/[교안_강의]11_보안위헙관리통제 part1_02회차.pdf"
+    "text": "위험관리\n개념\n3\n위험분석\n방법론\n2]\n접근방식에\n따른\n분류\n[2]\n전문가\n판단법Qnformal\nApproach?\n정형화된\n방법을\n사용하지\n않고\n전문가의\n지식과\n경험에\n따라서\n위험을\n분석하는\n방법\n0\n장점\n작은\n조직에\n비용효과적임\n2\n단점\n위험을\n제대로\n평가하기\n어려움\n보호대책의\n소요비용을\n선택\n및\n합리적으로\n도출하기\n어려움\n계속적으로\n반복되는\n보안관리의\n보안감사\n및\n사후관리가\n제한됨\n12",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
   },
   {
     "page": 13,
-    "text": "|러군미송\n매\n굴\n분류\n(3)상세위험\n접근법(Detailed Risk Approach)\n자산의\n가치를 측정하고\n자산에 대한\n|야이하\n를려\n결정하는\n방법\n조직의\n자산\n및\n보안요구사항을 구체적으로\n분석\n가장\n적절한\n대책을\n수립!\n장점\n1\n자산,위협,취약성의\n목록이 작성 및 검토되었으므로 이후 변경\n이 발생하였을 때 조직\n1내에\n적절한\n보안수준\n마련이\n이 가능함\n단점\n전문적인\n지식이\n필요함\n시간과\n노력이\n음\n|0\n움영",
-    "source": "/Users/imgeonpyo/rag-project/backend/experiments/lim/data/raw_data/[교안_강의]11_보안위헙관리통제 part1_02회차.pdf"
+    "text": "위험관리\n개념\n3\n위험분석\n방법론\n2]\n접근방식에\n따른\n분류\nRisk\n[3]\n상세위험\n접근법Detailed\nApproach?\n자산의\n가치를\n측정하고\n자산에\n대한\n위협의\n정도와\n취약성을\n분석하여\n위험의\n정도를\n결정하는\n방법\n조직의\n자산\n및\n보안요구사항을\n구체적으로\n분석\n5가장\n적절한\n대책을\n수립!\n0\n장점\n자산\n위협\n취약성의\n목록이\n작성\n및\n검토되었으므로\n이후\n변경\n발생하였을\n때\n조직\n내에\n이\n적절한\n보안수준\n마련이\n가능함\n2\n단점\n전문적인\n지식이\n필요함\n시간과\n노력이\n많이\n소요됨\n-13-",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
   },
   {
     "page": 14,
-    "text": "위험관리\n개념\n위험분석\n3.\n방법론\n2)\n접근방식에 따른\n분류\n(4) 복합적\n접근법(Combined Approach)\n조직활동에 대해 필수적이고 위험이 높은\n시스템 식별\n별방법\n식별된\n시스템:상세위험\n접근법\n적용\n나머지\n시스템:기준선\n접근법\n적용\n장점\n1\n보안전략을\n구축할 수 있음\n빠르게\n상대적으로\n융를\n시스템을\n잘못 식별하였을\n경우\n자원의 낭비\n|발생\n가능성이\n있을\n썼",
-    "source": "/Users/imgeonpyo/rag-project/backend/experiments/lim/data/raw_data/[교안_강의]11_보안위헙관리통제 part1_02회차.pdf"
+    "text": "위험관리\n개념\n3\n위험분석\n방법론\n2]\n접근방식에\n따른\n분류\n[4]\n복합적\n접근법[Combined\nApproach?\n조직활동에\n대해\n필수적이고\n위험이\n높은\n시스템\n식별\n방법\n식별된\n시스템\n상세위험\n접근법\n적용\n나머지\n시스템:\n기준선\n접근법\n적용\n0\n장점\n보안전략을\n빠르게\n구축할\n수\n있음\n시간과\n노력을\n효율적으로\n상대적으로\n활용가능\n2\n단점\n위험이\n필수적이고\n높은\n시스템을\n잘못\n식별하였을\n경우\n자원의\n낭비\n발생\n가능성이\n있음\n14",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
   },
   {
     "page": 15,
-    "text": "뉴곰\n분석\n분석\n방법\n범위\n대책\n사항\n히는\n뉴곰\n뉴곰\n보호\n우려\n위험\n위험\n보안정책\n보안계획\nㅠT시스템\nㅠ\nYES\n위험수용\nNO\n위협평가\n선택\n평가\n대책\n위험\n취약성평가\n|\n|\n|\nFz\n제약\n1.위험관리 단계\n위험관리 프로세스",
-    "source": "/Users/imgeonpyo/rag-project/backend/experiments/lim/data/raw_data/[교안_강의]11_보안위헙관리통제 part1_02회차.pdf"
+    "text": "프로세스\n위험관리\n위험관리\n단계\n제약\n자산가치의존도평가\n조건\n검토\n자산\n기본보안대책평가\n범위\n식별\n취약성평가\n위험\n대책\n평가\n선택\n위협평가\nNo\n위험수용\nYEs\n뜨시스템\n보안계획\n보안정책\n위험\n위험\n우려\n보호\n분석\n분석\n자산\n위협\n취약성\n위험도\n사항\n대책\n범위\n방법\n분석\n분석\n분석\n산정\n분석\n선정\n선정\n정의\n-15-",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
+  },
+  {
+    "page": 16,
+    "text": "위험관리\n프로세스\n위험관리\n단계\n범위\n1>\n위험분적\n선정\n내용\n업무조직위치자산밑기술적\n특성에\n따라\n위험분석\n범위선정\n조직의\n사업서비스에\n영향을출수있는\n핵심자산\n방법\n<임직원\n정보시스템\n정보\n시설등유\n무형의\n핵심자산]\n포함시킴\n주요\n서비스사업]\n현황\n등\n예\n주요\n정보통신\n설비의\n목록과\n시스템\n및\n네트워크\n구성도\n기업이\n내부감사이력등\n준수해야\n할\n법적\n요구사항\n현황\n정책지침'\n절차\n기록\n밑로그등\n주요문서목록\n-16",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
+  },
+  {
+    "page": 17,
+    "text": "위험관리\n프로세스\n위험관리\n단계\n2위험분석\n방법\n정의\n영역에\n내용\n관리적기술적물리적\n법적분야등\n조직의전\n대한위험식별\n밑평가가가능하도록\n각영역별특성을\n반영하여\n방법\n선정\n관리적\n물리적\n법적\n분야의\n방법론\n예\n베이스라인\n접근법\n적용\n기술적분야의\n방법론\n상세위험분석\n또는\n복합적\n접근법\n적용\n핵심자산에\n대한기술적위험분석\n상세\n위험분석자산\n중요도\n위협\n취약성]\n수행\n외부전문가활용\n전문가별로\n위험관리\n방법론이\n변경되는\n것\n방지\n'조직내\n정의된\n위험관리방법론에\n따라\n자문\n받음\n17-",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
+  },
+  {
+    "page": 18,
+    "text": "위험관리\n프로세스\n위험관리\n단계\n3]자산분석\n조직의\n업무와\n연관된\n정보\n및\n정보시스템을\n포함하는\n내용\n정보자산을\n식별하고\n해당\n자산의\n기밀성\n무결성\n가용성이\n상실되었을\n때의\n결과가\n조직에\n미칠\n수있는\n-\n영향을\n고려하여\n가치\n평가\n관련응용\n서비스또는\n업무의\n가용성중요도중\n-\n가장\n높은\n것을\n따라결정\n기밀성\n무결성\n가용성\n데이터에\n의해\n결정\n서비스에\n의해\n결정\n자산에\n관련된\n데이터의\n기밀성과\n무결성\n결정이\n중요도\n중가장높은\n것을\n모호한\n경우\n-\n따름\n-18",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
+  },
+  {
+    "page": 19,
+    "text": "위험관리\n프로세스\n위험관리\n단계\n4]\n위협분석\n자산에\n대한\n위협의\n식별\n및\n발생\n가능성\n정도를\n인터뷰\n내용\n실사를\n통하여\n측정함\n또는\n환경적\n요인\n자연재해\n장비\n고장\n등\n위협\n의도적인\n위협\n인간적\n요인\n우연한\n위협\n위협이\n발생했다고\n반드시\n피해가\n발생하는\n것은\n아니며\n자산이\n위협에\n취약한지'\n그취약성을\n그\n보호할\n대책이\n있는지'에\n따라\n달라지게됨\n많이\n발생하는\n위협을\n중심으로\n담당자\n및\n책임자가\n우려하는\n위협을\n추가적으로\n고려해보자!\n-19-",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
+  },
+  {
+    "page": 20,
+    "text": "위험관리\n프로세스\n위험관리\n단계\n5]취약성\n분석\n식별된\n위협에\n대하여\n자산이\n어느\n내용\n정도\n취약한가를\n인터뷰\n또는\n실사를\n통하여\n판명함\n'자산의\n잠재적\n속성으로서\n위협의\n이용\n대상이\n취약성\n되는\n것\n'자산에\n취약성이\n없다면\n위협이\n발생해도\n손실이\n나타나지\n않음\n발생할\n자산에\n자산의\n가치와\n특정\n위협이\n때\n특정\n방법\n관련하여\n어느\n정도의\n피해가\n발생할\n지를\n취약성\n노출\n정도라는\n값으로\n나타냄\n20",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
+  },
+  {
+    "page": 21,
+    "text": "위험관리\n프로세스\n위험관리\n단계\n6]\n우려사항\n분석\n위협과\n취약성의\n구분이\n내용\n어려운\n경우는\n우려사항이라는\n용어의\n정의로서\n이용가능\n자산의\n보호\n요구사항이\n낯을\n경우\n방법\n대책이\n없음에도\n취약성이\n낮다고\n평가\n자산의\n가치가높을경우\n대책이\n존재함에도\n취약성이\n높다라고\n평가\n이러한\n경향을\n고려하여\n위협과\n취약성을\n통합적으로\n평가\n가능성\n설명\n예\n높음\n어떠한문제점이\n나타날\n가능성이\n높다\n중간\n어떠한문제점이\n어느\n정도\n나타날\n가능성이\n있다\n낮음\n어떠한\n문제점이\n나타날\n가능성이\n거의\n없다\n21-",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
+  },
+  {
+    "page": 22,
+    "text": "위험관리\n프로세스\n위험관리\n단계\n7위험도\n산정\n식별된\n내용\n자산\n위협\n및\n취약성을\n기준으로\n위험도를\n산출하고\n기존의보호대책을\n파악함\n해당\n정보자산의\n가치와\n위협\n및\n취약성의\n정도에\n방법\n따라\n기밀성무결성\n가용성\n손상에\n따른\n잠재적\n손실의\n규모\n평가\n0\n정량적\n방식\n산출방법\n자산\n수에\n대한위협\n7가연간\n발생시킬수\n있는\n연간\n예산손실\n자산소의가치원\n위협\n7의\n연간\n발생횟수*\n7에대한스의취약성[%]\n자산의가치금액\n위협연간발생횟수\n취약성%로평가\n2\n정성적\n방식\n산출방법자산\n위협\n취약성의\n값을\n곱하거나\n더함\n방법론에\n따라\n약간의\n차이는\n있음]\n22",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
+  },
+  {
+    "page": 23,
+    "text": "위험관리\n프로세스\n단계\n위험관리\n|\n8]\n보호대책\n선정\n내용\n위험도\n평가결과를\n토대로\n해당\n위험도를\n수용가능한\n위험수준까지\n낮추기\n위한\n보호대책\n선정\n방법\n식별된\n위험과\n각위험도\n검토\n위험을\n받아들이고\n비용을\n감수하는것\n수용가능한\n목표\n위험수준\nDoA:\nDegree\nAssurance\n결정\n이f\n목표\n위험수준을\n초과하는\n위험\n식별\n있는\n1000원의\n가치가\n자산을\n보호하기\n위해서\n예\n2000원을\n투자하는\n비효율적!\n것은\n감소를\n목표로\n위험관리\n전략을\n것이\n고려사항\n위험수준\n수립하는\n일반적\n위험수용\n위험을\n받아들이고비용을감수함\n위험감소\n위험을\n감소시킬수있는대책을채택하여\n구현함\n-\n위험회피\n위험이존재하는프로세스나사업을포기함\n위험전가\n잠재적\n비용을제3자에게이전하거나할당함\n'이후의\n원활한\n운영을\n위해각단계별로\n관련자들의\n이해와\n동의를\n얻는\n것이\n필수적!'\n23",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
+  },
+  {
+    "page": 24,
+    "text": "위험관리\n프로세스\n정보보호\n계획\n수립\n2\n프로젝트\n구성\n|\n위험수준의\n감소를\n위해\n선정한\n정보보호대책을\n위험처리의\n시급성\n예산\n구현에\n요구되는\n할당\n기간에\n따라\n우선순위를\n정하고\n계획을\n수립하여\n지속적으로\n관리\n수행\n[1]\n유사\n대책의\n종류\n0\n즉시\n교정\n가능한\n취약성\n제거\n내용\n빠른\n시간\n내에\n처리할수\n있는\n사항들\n종류\n시스템이나\n장비의구성\n설정\n변경\n파일\n등의\n권한\n변경\n취약한\n패스워드\n변경등\n-\n고려사항변경에\n따른영향등\n2\n정책밑절차수립\n내용'\n정책을\n'우선'\n수립하고\n이를\n준수하기\n위한\n절차를\n마련\n특징\n다른\n업무보다\n높은\n우선순위를가짐\n-\n'이후의\n원활한\n운영을\n위해\n단계별로\n관련자들의\n이해와\n&\n동의를\n얻는\n것이\n필수적!\n24",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
+  },
+  {
+    "page": 25,
+    "text": "위험관리\n프로세스\n2\n정보보호\n계획\n수립\n프로젝트\n구성\n1>\n[1]\n유사대책의\n종류\n6\n분야별\n정보보호\n시스템\n도입\n및\n관련\n교육\n개별\n정보보호\n시스템은\n수행\n관리의\n효율성을\n위해\n네트워크\n서버P0\n응용\n시스템\n관련\n등으로\n분류하여\n별도\n프로젝트로\n설정하고\n각각의\n정보보호\n도입에는\n시스템\n관련자\n교육이\n포함되어야함\n4\n모니터링\n및\n감사관련\n사항\n-\n모니터링\n감사에\n필요한\n사항모니터링\n감사를\n및\n위한\n정책\n절차\n책임\n설정\n모니터링\n또는\n감사용\n시스템\n도입\n등]\n결정\n정보보호\n대책\n별로\n감사하여야\n할\n사항들을\n작성하이\n감사\n체크리스트에\n포함시킴\n25",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
+  },
+  {
+    "page": 26,
+    "text": "위험관리\n프로세스\nh\n정보보호\n계획\n수립\n2\n2]구현\n계획수립\n프로젝트\n별로\n예산\n구현\n일정\n프로젝트의\n세부\n내용\n해당\n프로젝트\n수행에\n관한\n책임\n등이\n포함된\n정보보호\n계획\n수립\n실제\n프로젝트를\n수행하고\n이에\n영향을\n받게\n될부서들의\n책임자\n및\n실무자가\n반드시\n참여해야\n&\n인력\n및자금\n지원\n책임의\n수용구현\n일정의\n타당성및\n-\n실행가능성등을\n검토하거나피드백을\n제공해야\n실제구현\n-\n가능한계획이\n작성될수있음\n26",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
+  },
+  {
+    "page": 27,
+    "text": "핵심요약\n위험관리\n개념\n7\n1>\n위험관리\n조직의\n자산에\n대한\n위험을\n감수할\n수\n있는\n수준으로\n유지하기\n위하\n여\n자산에\n대한\n위협을\n분석하고\n이러한\n위협으로부터\n자산을\n보호\n하기\n위한\n비용\n대비\n효과적인\n보호대책을\n마련하는\n일련의\n과정\n2]\n전략과\n계획을\n수립\n위협을\n구성하는\n요소\n분석\n분석에\n기초하야\n위험을\n평가\n필요한\n대책을\n선정\n보호대책을\n구현할계획수립\n등의\n활동수행\n3]\n위험분석\n방법론\n위험분석\n방법론은\n과학적이고\n정형적인\n과정으로\n위험을\n알아내고\n측정하려는\n방법을\n제시\n4]\n접근방식에\n따른\n위험분석\n방법\n기준선\n접근법[Baseline\nApproach?\n전문가\n판단법Qnforma\nApproach\n-\n상세위험\n접근법Detailed\nRisk\nApproach?\n복합적\n접근법Combined\nApproach?\n중\n선택적으로\n적용\n27-",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
+  },
+  {
+    "page": 28,
+    "text": "핵심요약\n2\n위험관리\n프로세스\n정보보호\n계획\n수립의\n프로젝트\n1>\n구성\n특성과목적이\n유사한\n대책들을\n하나의\n프로젝트로\n묶어구현계획\n수립\n2]\n구현계획\n'수립\n프로젝트\n별로\n예산\n구현\n일정\n프로젝트의\n세부\n내용\n해당\n프로젝트\n수행에\n관한\n책임\n등이\n포함된\n정보보호\n계획을수립\n위험분석범위\n취약성분석\n선정\n위험분석방법정의\n우려사항분석\n자산분석\n위험도산정\n위협분석\n보호대책의\n선정\n28",
+    "source": "C:\\Users\\2class_13\\RAG_project\\rag-project\\backend\\experiments\\lim\\data\\security_part1_02.pdf"
   }
 ]
