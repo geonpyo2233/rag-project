@@ -1,0 +1,33 @@
+# Python cache / build
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Virtual env
+.venv/
+venv/
+
+# Local env files
+.env
+backend/.env
+frontend/.env
+frontend/.env.local
+
+# Runtime data / DB / uploads
+backend/data/
+backend/data/chroma/
+backend/data/uploads/
+backend/data/work/
+
+# Frontend artifacts
+frontend/node_modules/
+frontend/dist/
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

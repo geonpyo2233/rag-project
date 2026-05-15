@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #dbe3ef;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.dropzone {
+  border: 2px dashed #9db3d8;
+  border-radius: 8px;
+  padding: 14px;
+  background: #f8fbff;
+}
+
+.dropzone.dragOver {
+  border-color: #2563eb;
+  background: #eef4ff;
+}
+
+.selectedFile {
+  margin: 8px 0 0;
+  color: #334155;
+  font-size: 14px;
+}
+
+button {
+  margin-top: 12px;
+  height: 40px;
+  padding: 0 14px;
+}
+
+input[type="text"] {
+  height: 40px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.searchRow {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  align-items: center;
+}
+
+.searchRow button {
+  margin-top: 0;
+}
+
+.hits {
+  margin-top: 12px;
+}
+
+.hit {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.error {
+  color: #b91c1c;
+}
