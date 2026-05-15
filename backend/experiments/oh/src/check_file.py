@@ -1,19 +1,19 @@
 from pathlib import Path
 
 
-def check_input_file(data_dir: Path):
+def check_input_files(data_dir: Path):
+    """
+    data 폴더 안 파일 목록 확인 함수
+    """
+
     print("\n===== STEP 01 : INPUT FILE CHECK =====")
 
-    
     files = list(data_dir.glob("*"))
 
     if not files:
         raise FileNotFoundError(
-            f"data 폴더에 파일이 없습니다.\n경로: {data_dir}"
+            f"data 폴더에 파일이 없습니다:\n{data_dir}"
         )
-
-    print(f"\ndata 폴더 경로:")
-    print(data_dir)
 
     print("\n발견된 파일 목록:")
 
@@ -21,7 +21,5 @@ def check_input_file(data_dir: Path):
         print(f"{idx}. {file.name}")
 
     print(f"\n총 파일 개수: {len(files)}")
-
-   
 
     return files
