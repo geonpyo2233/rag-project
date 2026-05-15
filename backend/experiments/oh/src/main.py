@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from check_file import check_input_file
+from check_file import check_input_files
 from pipelines.docx_pipeline import run_docx_hybrid_pipeline
 
 
@@ -13,15 +13,22 @@ OUTPUT_DIR = BASE_DIR / "output"
 def main():
     print("===== OCR PIPELINE START =====")
 
-    selected_file = check_input_file(DATA_DIR)
+    selected_files = check_input_files(DATA_DIR)
 
-    result_path = run_docx_hybrid_pipeline(
-        selected_file,
-        OUTPUT_DIR
-    )
+    for selected_file in selected_files:
+        print("\n====================================")
+        print(f"처리 시작: {selected_file.name}")
+        print("====================================")
 
-    print("\n===== COMPLETE =====")
-    print(f"최종 결과 파일: {result_path}")
+        if selected_file.suffix.lower() == ".docx":
+            result_path = run_docx_hybrid_pipeline(
+                selected_file,
+                OUTPUT_DIR
+            )
+
+            print(f"처리 완료: {result_path}")
+        else:
+            print(f"지원하지 않는 파일 형식이라 건너뜀: {selected_file.name}")
 
 
 if __name__ == "__main__":

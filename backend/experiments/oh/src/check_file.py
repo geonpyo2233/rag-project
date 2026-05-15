@@ -4,6 +4,7 @@ from pathlib import Path
 def check_input_file(data_dir: Path):
     print("\n===== STEP 01 : INPUT FILE CHECK =====")
 
+    
     files = list(data_dir.glob("*"))
 
     if not files:
@@ -21,12 +22,6 @@ def check_input_file(data_dir: Path):
 
     print(f"\n총 파일 개수: {len(files)}")
 
-    selected_file = files[0]
+   
 
-    print("\n선택된 테스트 파일:")
-    print(selected_file.name)
-
-    print("\n전체 경로:")
-    print(selected_file)
-
-    return selected_file
+    return files
