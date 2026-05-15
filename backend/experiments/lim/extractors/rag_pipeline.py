@@ -8,6 +8,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceBgeEmbeddings
 # 임베딩된 벡터를 저장하고 검색할 수 있는 DB
 from langchain_community.vectorstores import Chroma
+# 아마도 변경사항이 
 
 # 매번 긴 경로를 작성하기 귀찮아 변수에 저장
 # document할 파일 경로
