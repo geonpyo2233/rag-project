@@ -26,7 +26,7 @@ def extract(pdf_path, output_path, threshold=50):
     print(f'[추출 시작] {pdf_path}')
 
     # PDF를 이미지로 변환 (OCR 폴백용)
-    images = convert_from_path(pdf_path)
+    images = convert_from_path(pdf_path, dpi=400, grayscale=True)
     results = []
 
     with pdfplumber.open(pdf_path) as pdf:
