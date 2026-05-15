@@ -4,7 +4,7 @@ from paddleocr import PaddleOCR
 import json
 import numpy as np
 
-pdf_path = r"C:\Users\2class_13\RAG_project\rag-project\backend\experiments\lim\data\test.pdf"
+pdf_path = r"C:\Users\2class_13\RAG_project\rag-project\backend\experiments\lim\data\testing.pdf"
 threshold = 50
 output = r'C:\Users\2class_13\RAG_project\rag-project\backend\experiments\lim\data\ocr_output\test\output.json'
 

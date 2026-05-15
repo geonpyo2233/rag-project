@@ -1,53 +1,57 @@
-# json 파일 읽고 쓰는 라이브러리
 import json
-# 허깅페이스에 있는 임베딩 모델 불러오기
-from langchain_community.embeddings import HuggingFaceBgeEmbeddings
-# 벡터를 저장하고 검색할 수 있게
-from langchain_community.vectorstores import Chroma
-# Ollama LLM을 Langchain에서 쓸 수 있게 하기 위함
 from langchain_community.llms import Ollama
-# 프롬프트 템플릿을 만드는 도구 현재는 사용 안함
-from langchain_core.prompts import PromptTemplate
 
-base_dir   = r"C:\Users\2class_13\RAG_project\rag-project\backend\experiments\lim"
-json_path  = r"C:\Users\2class_13\RAG_project\rag-project\backend\experiments\lim\data\ocr_output\test\output.json"
-chroma_dir = f"{base_dir}\data\chroma_db"
+json_path = r"C:\Users\2class_13\RAG_project\rag-project\backend\experiments\lim\data\ocr_output\test\output.json"
 
-print('준비중')
-# 허깅페이스에서 한국어 임베딩 모델을 로드 
-embeddings = HuggingFaceBgeEmbeddings(model_name = 'jhgan/ko-sroberta-multitask')
-# rag_pipeline,py에서 저장해둔 ChromaDB를 불러온다 
-# from_documents가 아니라 Chroma만 쓰는 이유가 새로 만드는게 아니기 때문
-vectorstore = Chroma(persist_directory=chroma_dir, embedding_function=embeddings)
-# Ollama에 실행중인 qwen3:8b연결 temperature=0.3은 창의성 수치인데, 0에 가까울수록 일관되고 안정적인 답변
-llm = Ollama(model="qwen3:8b", temperature = 0.3)
-print('준완\n')
+print('모델 준비중...')
+# Ollama에 실행중인 qwen3:8b 연결, temperature=0.3은 창의성 수치 (0에 가까울수록 일관되고 안정적인 답변)
+llm = Ollama(model="qwen3:8b", temperature=0.3)
+print('준비 완료\n')
 
-# 질문을 받아 답변을 돌려주는 함수
-def ask(query) :
-    # Chroma DB에서 질문이랑 가장 유사한 청크 3개를 찾아온다
-    all_pages = json.load(open(json_path, 'r', encoding='utf-8'))
-    context = '\n\n'.join([p['content'] for p in all_pages])
 
-    # LLM한테 보낼 최종 텍스트
-    prompt = f""" 아래 문서 전체 내용을 빠짐없이 요약해주고 + 카테고리 : 예를들어) 축구 
-                이런식으로 정리해줘
+def run():
+    # JSON에서 모든 페이지 텍스트 읽어오기
+    with open(json_path, 'r', encoding='utf-8') as f:
+        all_pages = json.load(f)
 
-    [문서 내용]
-    {context}
+    # 전체 페이지 내용을 하나의 context로 합치기
+    context = '\n\n'.join([f"[{p['page']}페이지]\n{p['content']}" for p in all_pages])
 
-   
+    prompt = f"""
+당신은 참고자료 기반 문서 요약 시스템입니다.
 
-    [답변]
+반드시 아래 문서 내용에 포함된 정보만 사용하세요.
+
+금지사항:
+- 참고자료에 없는 정보 추가 금지
+- 법률 해석 금지
+- 추론 금지
+- 일반 상식 추가 금지
+- 해외 사례 추가 금지
+- 통계 추가 금지
+
+문서 내용을 있는 그대로 요약하세요.
+
+[출력 형식]
+
+카테고리 : (한 단어 또는 짧은 구)
+
+요약 :
+- 핵심 내용
+- 핵심 내용
+- 핵심 내용
+
+[문서 내용]
+{context}
+
+[답변]
 """
-    # 완성된 프롬프트를 모델한테 던져 답변을 받아오는 코드
-    # invoke는 실행 해줘라는 뜻
+
+    # 프롬프트를 LLM에 전달하고 답변 받기
     answer = llm.invoke(prompt)
     return answer
 
 
-while True :
-    query = input('질문 : ').strip()
-    if query == 'q':
-        break
-    print('\n'+ask(query)+'\n')
+# 실행
+result = run()
+print(result)
