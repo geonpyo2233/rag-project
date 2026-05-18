@@ -1,13 +1,6 @@
 import { useEffect, useState } from "react";
-import { getProcessStatus, processFile, searchDocuments } from "./api";
+import { getProcessStatus, processFile } from "./api";
 
-/**
- * 메인 화면:
- * - 파일 업로드(드래그 앤 드롭 포함)
- * - 처리 진행률 조회
- * - 요약/분류 결과 표시 및 다운로드
- * - 벡터 검색
- */
 function App() {
   const [file, setFile] = useState(null);
   const [dragOver, setDragOver] = useState(false);
@@ -18,10 +11,6 @@ function App() {
   const [progress, setProgress] = useState(0);
   const [stage, setStage] = useState("");
   const [message, setMessage] = useState("");
-  const [query, setQuery] = useState("");
-  const [searching, setSearching] = useState(false);
-  const [searchError, setSearchError] = useState("");
-  const [hits, setHits] = useState([]);
 
   // 작업 시작 후 주기적으로 상태 폴링
   useEffect(() => {
@@ -88,21 +77,6 @@ function App() {
     const validationError = validateFile(dropped);
     if (validationError) return setError(validationError);
     setFile(dropped);
-  };
-
-  const onSearch = async (e) => {
-    e.preventDefault();
-    setSearchError("");
-    if (!query.trim()) return setSearchError("검색어를 입력해 주세요.");
-    try {
-      setSearching(true);
-      const data = await searchDocuments(query, 5);
-      setHits(data.hits || []);
-    } catch (err) {
-      setSearchError(err?.response?.data?.detail || "검색 중 오류가 발생했습니다.");
-    } finally {
-      setSearching(false);
-    }
   };
 
   const downloadText = (filename, content) => {
@@ -176,29 +150,12 @@ function App() {
           <pre>{result.raw_text}</pre>
           <h3>OCR Text</h3>
           <pre>{result.ocr_text}</pre>
+          <h3>Merged Text</h3>
+          <pre>{result.merged_text}</pre>
         </section>
       )}
 
-      <section className="panel">
-        <h2>문서 검색</h2>
-        <form onSubmit={onSearch} className="searchRow">
-          <input type="text" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="검색어 입력" />
-          <button type="submit" disabled={searching}>
-            {searching ? "검색 중..." : "검색"}
-          </button>
-        </form>
-        {searchError && <p className="error">{searchError}</p>}
-        <div className="hits">
-          {hits.map((hit) => (
-            <article key={hit.id} className="hit">
-              <p><strong>문서:</strong> {hit.metadata?.filename || "-"}</p>
-              <p><strong>거리:</strong> {hit.distance ?? "-"}</p>
-              <pre>{hit.document}</pre>
-            </article>
-          ))}
-          {!hits.length && <p>검색 결과가 없습니다.</p>}
-        </div>
-      </section>
+      {/* 검색 기능은 현재 미사용 */}
     </main>
   );
 }

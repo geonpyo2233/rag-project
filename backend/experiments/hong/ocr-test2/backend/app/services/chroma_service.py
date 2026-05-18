@@ -21,25 +21,37 @@ class ChromaService:
         self.summary_collection = self.client.get_or_create_collection(name=self.summary_collection_name)
 
     def save_raw(self, filename: str, raw_text: str, ocr_text: str, merged_text: str) -> str:
-        """원문(병합 텍스트)을 벡터와 함께 저장한다."""
-        doc_id = str(uuid4())
-        embedding = self._embed_document(merged_text)
+        """원문(병합 텍스트)을 문장 단위로 청킹하여 저장한다."""
+        source_id = str(uuid4())
+
+        chunks = self._split_sentences(merged_text)
+        if not chunks:
+            chunks = [merged_text.strip()] if merged_text.strip() else [""]
+
+        ids = [str(uuid4()) for _ in chunks]
+        embeddings = [self._embed_document(chunk) for chunk in chunks]
+        metadatas = [
+            {
+                "source_id": source_id,
+                "filename": filename,
+                "raw_text": raw_text,
+                "ocr_text": ocr_text,
+                "chunk_type": "sentence",
+                "chunk_index": idx,
+            }
+            for idx, _ in enumerate(chunks)
+        ]
+
         self.raw_collection.add(
-            ids=[doc_id],
-            documents=[merged_text],
-            embeddings=[embedding],
-            metadatas=[
-                {
-                    "filename": filename,
-                    "raw_text": raw_text,
-                    "ocr_text": ocr_text,
-                }
-            ],
+            ids=ids,
+            documents=chunks,
+            embeddings=embeddings,
+            metadatas=metadatas,
         )
-        return doc_id
+        return source_id
 
     def save_summary(self, source_id: str, filename: str, summary: str, category: str) -> str:
-        """요약/카테고리 결과를 벡터와 함께 저장한다."""
+        """요약/카테고리 결과를 벡터로 변환해 저장한다."""
         summary_id = str(uuid4())
         embedding = self._embed_document(summary)
         self.summary_collection.add(
@@ -94,3 +106,11 @@ class ChromaService:
         self.summary_collection_name = f"summary_documents_{dim}"
         self.raw_collection = self.client.get_or_create_collection(name=self.raw_collection_name)
         self.summary_collection = self.client.get_or_create_collection(name=self.summary_collection_name)
+
+    def _split_sentences(self, text: str) -> list[str]:
+        """간단 규칙 기반 문장 분리."""
+        if not text:
+            return []
+        parts = re.split(r"(?<=[.!?])\s+|\n+", text)
+        sentences = [p.strip() for p in parts if p and p.strip()]
+        return [s for s in sentences if len(s) >= 5]

@@ -159,7 +159,7 @@ class OCRService:
         variant_lines: list[list[dict[str, Any]]] = []
 
         for arr in variants.values():
-            raw = self._ocr.ocr(arr, cls=True)
+            raw = self._ocr.ocr(arr, cls=False)
             if not raw or raw[0] is None:
                 continue
             tokens: list[dict[str, Any]] = []
