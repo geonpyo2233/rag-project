@@ -27,7 +27,9 @@ def run(json_path):
     문서 내용을 있는 그대로 요약하세요.
 
     [출력 형식]
-    카테고리 : (한 단어 또는 짧은 구)
+    카테고리 : "문서의 주제나 분야를 한 단어 또는 짧은 구로 표현하세요. 
+명시적인 카테고리가 없으면 문서 제목이나 핵심 주제를 기반으로 
+직접 생성하세요. 절대 빈 값으로 두지 마세요."
     요약 :
     - 핵심 내용
     - 핵심 내용
@@ -43,8 +45,9 @@ def run(json_path):
     print(f'[LLM 완료]')
 
     # 카테고리와 요약을 파싱해서 딕셔너리로 반환
-    category = ""
-    summary  = ""
+    main_category = ""
+    sub_category  = ""
+    summary       = ""
 
     for line in answer.splitlines():
         if line.startswith("카테고리 :"):
@@ -55,5 +58,5 @@ def run(json_path):
     return {
         "category": category,
         "summary" : summary.strip(),
-        "raw"     : answer  # 파싱 실패 대비 원본도 같이 반환
-    }
+        "sub_category" : sub_category    
+        }
