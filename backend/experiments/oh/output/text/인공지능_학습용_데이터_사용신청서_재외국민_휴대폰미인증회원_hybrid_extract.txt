@@ -159,5 +159,5 @@ AI 허브는 다음의 개인정보 항목을 처리하고 있습니다.
 
 
 ===== IMAGE OCR 1: image1.png =====
+Al
 Hub
-A
