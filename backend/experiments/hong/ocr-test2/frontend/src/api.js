@@ -22,8 +22,8 @@ export async function getProcessStatus(jobId) {
   return data;
 }
 
-// 저장된 문서 유사도 검색
-export async function searchDocuments(query, limit = 5) {
-  const { data } = await api.post("/api/search", { query, limit });
-  return data;
-}
+// 검색 기능은 현재 미사용으로 주석 처리
+// export async function searchDocuments(query, limit = 5) {
+//   const { data } = await api.post("/api/search", { query, limit });
+//   return data;
+// }

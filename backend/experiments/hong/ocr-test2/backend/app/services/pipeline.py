@@ -23,6 +23,7 @@ from app.config import settings
 from app.schemas import JobStatusResponse, ProcessResponse
 from app.services.chroma_service import ChromaService
 from app.services.file_parser import (
+    build_merged_text_in_order,
     clean_work_dir,
     extract_direct_text,
     extract_embedded_images_with_hwp_extract,
@@ -100,10 +101,16 @@ class PipelineService:
             self.logger.info("[JOB %s] extracted image files: %s", job_id, len(image_paths))
 
             self._update_job(job_id, status="running", progress=55, stage="ocr", message="OCR 처리 중")
-            ocr_text = self.ocr_service.ocr_images(image_paths) if image_paths else ""
+            ocr_by_image = self.ocr_service.ocr_images_map(image_paths) if image_paths else {}
+            ocr_text = "\n\n".join(t for t in ocr_by_image.values() if t).strip()
             self.logger.info("[JOB %s] ocr text length: %s", job_id, len(ocr_text))
 
-            merged_text = "\n\n".join([t for t in [raw_text, ocr_text] if t]).strip()
+            merged_text = build_merged_text_in_order(
+                source_path=saved_path,
+                raw_text=raw_text,
+                image_paths=image_paths,
+                ocr_by_image=ocr_by_image,
+            )
             if not merged_text:
                 self._update_job(
                     job_id,

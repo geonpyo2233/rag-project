@@ -5,9 +5,9 @@ from app.config import settings
 from app.schemas import (
     JobStatusResponse,
     ProcessStartResponse,
-    SearchHit,
-    SearchRequest,
-    SearchResponse,
+    # SearchHit,
+    # SearchRequest,
+    # SearchResponse,
 )
 from app.services.pipeline import PipelineService
 
@@ -45,25 +45,26 @@ def get_process_status(job_id: str) -> JobStatusResponse:
     return pipeline.get_job(job_id)
 
 
-@app.post("/api/search", response_model=SearchResponse)
-def search_documents(req: SearchRequest) -> SearchResponse:
-    """저장된 원문 벡터 컬렉션에서 유사 문서를 검색한다."""
-    result = pipeline.chroma_service.search_raw(query=req.query, limit=req.limit)
-
-    ids = result.get("ids", [[]])[0]
-    docs = result.get("documents", [[]])[0]
-    metas = result.get("metadatas", [[]])[0]
-    dists = result.get("distances", [[]])[0] if result.get("distances") else []
-
-    hits: list[SearchHit] = []
-    for i, doc_id in enumerate(ids):
-        hits.append(
-            SearchHit(
-                id=doc_id,
-                document=docs[i] if i < len(docs) else "",
-                metadata=metas[i] if i < len(metas) else {},
-                distance=dists[i] if i < len(dists) else None,
-            )
-        )
-
-    return SearchResponse(query=req.query, hits=hits)
+# 검색 기능은 현재 미사용으로 주석 처리
+# @app.post("/api/search", response_model=SearchResponse)
+# def search_documents(req: SearchRequest) -> SearchResponse:
+#     """저장된 원문 벡터 컬렉션에서 유사 문서를 검색한다."""
+#     result = pipeline.chroma_service.search_raw(query=req.query, limit=req.limit)
+#
+#     ids = result.get("ids", [[]])[0]
+#     docs = result.get("documents", [[]])[0]
+#     metas = result.get("metadatas", [[]])[0]
+#     dists = result.get("distances", [[]])[0] if result.get("distances") else []
+#
+#     hits: list[SearchHit] = []
+#     for i, doc_id in enumerate(ids):
+#         hits.append(
+#             SearchHit(
+#                 id=doc_id,
+#                 document=docs[i] if i < len(docs) else "",
+#                 metadata=metas[i] if i < len(metas) else {},
+#                 distance=dists[i] if i < len(dists) else None,
+#             )
+#         )
+#
+#     return SearchResponse(query=req.query, hits=hits)

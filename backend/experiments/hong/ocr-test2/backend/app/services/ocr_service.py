@@ -159,7 +159,7 @@ class OCRService:
         variant_lines: list[list[dict[str, Any]]] = []
 
         for arr in variants.values():
-            raw = self._ocr.ocr(arr, cls=True)
+            raw = self._ocr.ocr(arr, cls=False)
             if not raw or raw[0] is None:
                 continue
             tokens: list[dict[str, Any]] = []
@@ -183,3 +183,11 @@ class OCRService:
     def ocr_images(self, image_paths: list[Path]) -> str:
         texts = [self.ocr_image(p) for p in image_paths]
         return "\n".join(t for t in texts if t).strip()
+
+    def ocr_images_map(self, image_paths: list[Path]) -> dict[str, str]:
+        """이미지 절대경로 -> OCR 텍스트 맵."""
+        result: dict[str, str] = {}
+        for path in image_paths:
+            text = self.ocr_image(path).strip()
+            result[str(path.resolve())] = text
+        return result
