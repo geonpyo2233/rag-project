@@ -8,12 +8,12 @@ import json
 import numpy as np
 
 # 이미지를 읽는 PaddleOCR을 선언해주는거
-ocr = PaddleOCR(use_angle_cls = True, lang='korean')
+ocr = PaddleOCR(lang='korean')
 
 # 이미지를 OCR해서 텍스트로 바꾸는 과정
 def get_text_by_ocr(image):
     image_np = np.array(image) # PIL 이미지를 OCR이 못읽으니까 numpy배열로 변환
-    result = ocr.ocr(image_np, cls=True) # 실제 이미지를 OCR하는 곳
+    result = ocr.ocr(image_np) # 실제 이미지를 OCR하는 곳
 
     # OCR한 결과값을 저장하기 위한 빈 리스트 준비 
     texts = []
@@ -35,7 +35,7 @@ def extract(pdf_path, output_path, threshold=50):
 
     # convert_from_path로 pdf를 이미지로 변환하는데
     # 이때 선명도는 400, 색감은 흑백으로 설정한다
-    images = convert_from_path(pdf_path, dpi=400, grayscale=True)
+    images = convert_from_path(pdf_path, dpi=400)
 
     results = []
 
