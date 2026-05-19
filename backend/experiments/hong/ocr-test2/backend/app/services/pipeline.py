@@ -80,7 +80,7 @@ class PipelineService:
                 status="failed",
                 progress=100,
                 stage="failed",
-                message="hwp, hwpx 파일만 업로드 가능합니다.",
+                message="hwp, hwpx, pdf, docx, ppt, pptx 파일만 업로드 가능합니다.",
             )
             return
 

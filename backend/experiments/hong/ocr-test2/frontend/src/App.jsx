@@ -54,8 +54,8 @@ function App() {
   const validateFile = (candidate) => {
     if (!candidate) return "파일을 선택해 주세요.";
     const name = candidate.name.toLowerCase();
-    if (!(name.endsWith(".hwp") || name.endsWith(".hwpx"))) {
-      return "hwp 또는 hwpx 파일만 업로드할 수 있습니다.";
+    if (!(name.endsWith(".hwp") || name.endsWith(".hwpx") || name.endsWith(".pdf") || name.endsWith(".docx") || name.endsWith(".ppt") || name.endsWith(".pptx"))) {
+      return "hwp, hwpx, pdf, docx, ppt, pptx 파일만 업로드할 수 있습니다.";
     }
     return "";
   };
@@ -154,7 +154,7 @@ function App() {
               <p>파일을 끌어놓거나 아래에서 선택해 주세요.</p>
               <input
                 type="file"
-                accept=".hwp,.hwpx"
+                accept=".hwp,.hwpx,.pdf,.docx,.ppt,.pptx"
                 onChange={(e) => setFile(e.target.files?.[0] ?? null)}
               />
               <p className="selectedFile">{file ? file.name : "선택된 파일 없음"}</p>
@@ -257,4 +257,5 @@ function App() {
 }
 
 export default App;
+
 
