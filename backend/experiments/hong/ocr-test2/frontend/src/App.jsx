@@ -9,6 +9,7 @@ const TEXT_TABS = [
   // { key: "merged_text", label: "Merged Text" },
 ];
 
+
 function App() {
   const [file, setFile] = useState(null);
   const [dragOver, setDragOver] = useState(false);
@@ -256,3 +257,4 @@ function App() {
 }
 
 export default App;
+
