@@ -1,16 +1,22 @@
-# ==============================
-# document_pipeline.py
-# ==============================
-
 from pathlib import Path
+
+from extractors.docx_ext.docx_extractor import (
+    docx_extractor
+)
+from extractors.pdf_ext.pdf_extractor import (
+    pdf_extractor
+)
+
+from extractors.ppt_ext.ppt_extractor import (
+    ppt_extractor
+)
+
+from extractors.hwp_ext.hwp_extractor import (
+    hwp_extractor
+)
 
 
 def run_document_pipeline(file_path: Path):
-    """
-    문서 확장자에 따라
-    적절한 파이프라인으로 분기하는 함수
-    """
-
     extension = file_path.suffix.lower()
 
     print("\n==============================")
@@ -18,38 +24,17 @@ def run_document_pipeline(file_path: Path):
     print(f"확장자: {extension}")
     print("==============================")
 
-    # ==============================
-    # DOCX
-    # ==============================
-
     if extension == ".docx":
-        print(".docx 실행")
-
-    # ==============================
-    # PDF
-    # ==============================
+        docx_extractor(file_path)
 
     elif extension == ".pdf":
-        print(".pdf 실행")
+        pdf_extractor(file_path)
 
-    # ==============================
-    # PPTX
-    # ==============================
+    elif extension in [".ppt", ".pptx"]:
+        ppt_extractor(file_path)
 
-    elif extension == ".pptx":
-        print(".pptx 실행")
-
-    # ==============================
-    # HWPX
-    # ==============================
-
-    elif extension == ".hwpx":
-        print(".hwpx 실행")
-
-    
-    # ==============================
-    # 지원하지 않는 파일
-    # ==============================
+    elif extension in [".hwp", ".hwpx"]:
+        hwp_extractor(file_path)
 
     else:
         print("지원하지 않는 확장자")
