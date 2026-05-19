@@ -6,7 +6,7 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
 
     app_name: str = "HWP OCR Pipeline"
-    allowed_extensions: str = ".hwp,.hwpx"
+    allowed_extensions: str = ".hwp,.hwpx,.pdf,.docx,.ppt,.pptx"
     upload_dir: str = "./data/uploads"
     work_dir: str = "./data/work"
     chroma_dir: str = "./data/chroma"
