@@ -1,11 +1,12 @@
-import { useEffect, useState } from "react";
+﻿import { useEffect, useState } from "react";
 import { getProcessStatus, processFile } from "./api";
 
 const TEXT_TABS = [
   { key: "summary", label: "요약" },
-  { key: "raw_text", label: "Direct Text" },
-  { key: "ocr_text", label: "OCR Text" },
-  { key: "merged_text", label: "Merged Text" },
+  // 개발용 원문 탭 (운영 화면 비노출)
+  // { key: "raw_text", label: "Direct Text" },
+  // { key: "ocr_text", label: "OCR Text" },
+  // { key: "merged_text", label: "Merged Text" },
 ];
 
 function App() {
@@ -118,13 +119,14 @@ function App() {
         <div className="brand">
           <span className="brandMark">OCR</span>
           <div>
-            <h1>OCR Test2</h1>
-            <p>HWP/HWPX 문서 처리 파이프라인</p>
+            <h1>AI기반</h1>
+            <h1>문서 요약 및 카테고리 분류</h1>
+            <h1>RAG 시스템</h1>
           </div>
         </div>
         <div className="sidebarHint">
           <p>1) 파일 업로드</p>
-          <p>2) 객체 OCR 처리</p>
+          <p>2) OCR</p>
           <p>3) 결과 확인</p>
         </div>
       </aside>
@@ -229,20 +231,23 @@ function App() {
               </p>
             </div>
 
-            <div className="tabRow">
-              {TEXT_TABS.map((tab) => (
-                <button
-                  key={tab.key}
-                  type="button"
-                  className={`tabBtn ${activeTab === tab.key ? "active" : ""}`}
-                  onClick={() => setActiveTab(tab.key)}
-                >
-                  {tab.label}
-                </button>
-              ))}
-            </div>
+            {/*
+              개발/디버깅용 탭 UI (운영 비노출)
+              <div className="tabRow">
+                {TEXT_TABS.map((tab) => (
+                  <button
+                    key={tab.key}
+                    type="button"
+                    className={`tabBtn ${activeTab === tab.key ? "active" : ""}`}
+                    onClick={() => setActiveTab(tab.key)}
+                  >
+                    {tab.label}
+                  </button>
+                ))}
+              </div>
+            */}
 
-            <pre>{getTabContent()}</pre>
+            <pre>{result.summary || ""}</pre>
           </section>
         )}
       </main>
