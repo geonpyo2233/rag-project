@@ -62,5 +62,5 @@ async def upload_file(file: UploadFile = File(...)):
         "filename" : file.filename,
         "category" : result["category"],
         "summary"  : result["summary"],
-        "raw"      : result["raw"], 
+        "sub_category" : result["sub_category"]
     })
