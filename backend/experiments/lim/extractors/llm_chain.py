@@ -50,13 +50,15 @@ def run(json_path):
     summary       = ""
 
     for line in answer.splitlines():
-        if line.startswith("카테고리 :"):
-            category = line.replace("카테고리 :", "").strip()
+        if line.startswith("대분류 :"):
+            main_category = line.replace("대분류 :", "").strip()
+        elif line.startswith("소분류 :"):
+            sub_category = line.replace("소분류 :", "").strip()
         elif line.startswith("요약 :") or line.startswith("-"):
             summary += line + "\n"
 
     return {
-        "category": category,
+        "main_category": main_category,
         "summary" : summary.strip(),
         "sub_category" : sub_category    
         }
