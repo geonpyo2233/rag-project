@@ -1,0 +1,22 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual env
+.venv/
+venv/
+
+# Frontend deps/build
+frontend/node_modules/
+frontend/dist/
+
+# Runtime artifacts
+output/
+data/uploads/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/

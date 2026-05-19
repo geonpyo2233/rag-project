@@ -1,0 +1,58 @@
+===== SLIDE 1 =====
+0장독자 가이드(Reader’s Guide)
+
+===== SLIDE 2 =====
+목차
+0.1 이 책의 구성
+0.2 관련 자료
+0.3 표준
+
+===== SLIDE 3 =====
+이 책의 구성
+구성
+컴퓨터보안 및 암호
+1부: 대칭키 암호
+3부: 암호학적 데이터 무결성 알고리즘
+5부: 네트워크 보안 및 인터넷 보안
+7부: 법 및 윤리적인 이슈
+네트워크 보안 프로토콜
+전송계층 보안
+무선 네트워크 보안
+전자메일 보안 등
+고전/현대 암호
+DES, AES
+RC4, PRNG
+해쉬 함수
+MAC
+디지털 서명
+보안 관련 법 및 관련 이슈
+4부: 상호 신뢰
+6부: 시스템 보안
+2부: 비대칭키 암호
+키 관리 및 분배
+사용자 인증
+IDS, 바이러스, 웜
+방화벽
+RSA
+ECC
+
+===== SLIDE 4 =====
+관련 자료 – 인터넷 및 웹 자료
+책 관련 웹 사이트
+http://williamstallings.com/Cryptography/index.html
+책의 각 chapter별  추가 정보 제공
+http://williamstallings.com/Cryptography/Crypto5e-Student/index.html
+학생들로 하여금 본 책을 공부하는데 도움이 될만한 참고 자료 제공
+기타 자료
+각 chapter별로 추천 웹사이트 정보 제공
+USENET 뉴스그룹(sci.crypt, sci.crypt.research, alt.security 등)
+그 외 다양한 웹 사이트 참고
+
+===== SLIDE 5 =====
+표준
+보안 기법, 암호, 네트워크 보안 프로토콜, 보안 관리 방법, 보안 서비스 구조, 매커니즘 등은 표준 대상이며, 표준화 된 사례가 많음
+대표적인 표준 기관
+NIST(National Institute of Standards and Technology) http://www.nist.gov
+ISOC(Internet Society) : http://www.isoc.org
+ITU-T(International Telecommunication Union-Telecommunication Standardization Sector) : http://www.itu.int
+ISO(International Organization for Standardization) : http://www.iso.org

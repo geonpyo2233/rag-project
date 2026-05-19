@@ -1,0 +1,14 @@
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+python-multipart==0.0.12
+pydantic==2.10.3
+pydantic-settings==2.6.1
+httpx==0.28.0
+chromadb==0.5.23
+olefile==0.47
+paddleocr==2.8.1
+paddlepaddle==2.6.2
+Pillow==11.0.0
+hwp-extract==0.1.0
+sentence-transformers==3.3.1
+torch==2.5.1
