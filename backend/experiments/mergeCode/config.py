@@ -4,6 +4,8 @@
 
 OCR_LANGUAGE = "korean"
 OCR_USE_GPU = False
+DOCX_OCR_UPSCALE_ENABLED = True
+DOCX_OCR_UPSCALE_FACTOR = 2
 
 
 # ==============================
