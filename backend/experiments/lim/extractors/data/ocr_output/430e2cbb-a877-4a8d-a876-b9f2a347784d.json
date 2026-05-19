@@ -1,0 +1,37 @@
+[
+  {
+    "page": 1,
+    "method": "ocr",
+    "content": "터y이l어\n타키\n패킷\n분석\n전역\n환경\n환경설정과\n설정\n한국기술교육대학교\n2\n온라인평생교육원\n0L티"
+  },
+  {
+    "page": 2,
+    "method": "text",
+    "content": "▣ 패킷 캡처 환경설정\n1. 캡처 환경설정의 개요\n캡처 환경설정 편집 윈도\n캡처 환경설정은 캡처를 위한 기본 인터페이스를 선택하고,\n패킷 캡처에 적당한 환경설정을 적용하기 위해 실시함\n- 2 -"
+  },
+  {
+    "page": 3,
+    "method": "text",
+    "content": "▣ 패킷 캡처 환경설정\n1. 캡처 환경설정의 개요\n캡처 환경설정 기능\n기능 항목 설명\n[Default interface] 기본 인터페이스 선택\n[Interfaces: Edit] 인터페이스 속성 편집\n[Capture packets in\npcapng 포맷으로 캡처 파일 생성\npcapng format]\n[Update list of\n패킷 목록 표시를 실시간으로 업데이트\npackets in real time]\n[Automatic scrolling\n캡처 표시 영역을 필요에 따라 자동으로 스크롤\nin live capture]\n[Hide capture info\n캡처 정보 대화윈도를 숨김\ndialog]\n[Columns: Edit] 패킷 목록에 표시되는 칼럼 설정을 편집\n- 3 -"
+  },
+  {
+    "page": 4,
+    "method": "ocr",
+    "content": "패킷\n春처\n환경설정\n春처\n인터페이스\n환경설정\n2\n기본\n인터페이스\nHay\nDefaul nterfdda\nImt리nawes\nCepture packet h promltuois mode Dn alretwor!\n기본\n인터페이스를\n어유나고\n春처\n작업을\n신속하게진행함\nUpd ata ehol packets n're?\n만약기본인터페이스가선택되어\n있다면\n를건머러으니들터이어\nututatrsuruhu m re\n시작할수있음\nHiderantire rfe\nCohrrns!\nRealtrk Mlgibre alllc\nPelEeigabit Ethernet Mt\nHDa\nDeraurlerfale\nRcalek atleleadallle\ncigablt Ethermet Nic\nMDece\nIrlerfare\nDefault interface\n필드의드롭다운버튼을\naplure batkets h prdrrscipls mde on al nelwo\nH]르는른\n나타나는\n인터페이스리스트에서\nDackets r ntad-n\n만라\nUahe\nHide wupture mrd da o"
+  },
+  {
+    "page": 5,
+    "method": "text",
+    "content": "▣ 패킷 캡처 환경설정\n2. 캡처 인터페이스 환경설정\n인터페이스 속성 편집 윈도\n▶ [Wireshark: Preferences: Interface Options]\n- 5 -"
+  },
+  {
+    "page": 6,
+    "method": "text",
+    "content": "▣ 패킷 캡처 환경설정\n3. 캡처 저장 및 표시 환경설정\npcapng\n▶ pcapng\n 차세대 캡처 파일 포맷\n 캡처 파일의 확장성, 이식성, 데이터 병합 및 추가 능력을 강화한 데이터 포맷\n 향후 네트워크 트래픽 캡처 분야에서 표준이 되는 추세\n▶ [Capture packets in pcapng format] 체크 박스 메뉴\n- 6 -"
+  },
+  {
+    "page": 7,
+    "method": "ocr",
+    "content": "패킷\n春처\n환경설정\n3프로토콜\n운크료\n[Automatic scrolling in live capture]\n-\n콥처된패킷목록자동스크롤\n이물트야능&표굴아워러매프룹표0늄으공레마야&표눌늄페프\n항상새로이랩처된패킷목록이화면에나타날수있도록함\n새로운랩천패킷이너무빠르게표시되는경우에는이전에컴처된패킷을미처보기도전에\n표시영역에서사라지게하고찾기어렵게할수있으끔로\n콥처패킷의수를\n미리제한해두고\n갑처를수행하는경우에유용함\n자동스쿠롤기능은와이어샤크성능에영향을주어패킷\n春처를\n실패하게\n할수도\n있으므로\n흔애의는\nWreal thre?\nWtontetk sudh!"
+  }
+]

@@ -1,0 +1,87 @@
+[
+  {
+    "page": 1,
+    "method": "ocr",
+    "content": "파이씬\n프로그래밍\n함수\n제어문과\n기초\n한국기술교육대학교\n온라인평생교육원\n0L타"
+  },
+  {
+    "page": 2,
+    "method": "text",
+    "content": "▣ 파이썬 제어문\n1. 들여쓰기와 제어문\n•파이썬은 들여쓰기를 강제하여 코드의 가독성을 높인다.\n•가장 바깥쪽의 코드는 반드시 1열에 시작한다.\n•블록 내부에 있는 statement들은 동일한 열에 위치해야 한다.\n•블록의 끝은 들여쓰기가 끝나는 부분으로 간주된다.\n- python에는 {, }, begin, end 등의 키워드가 존재하지 않는다.\n•들여쓰기를 할 때에는 탭과 공백을 섞어 쓰지 않는다.\n 들여쓰기를 강제하여 코드의 가독성 높임\na = 1 # 성공\na = 1 # 실패\nFile \"<ipython-input-160-0453a5e2fe16>\", line 2\na = 1 # 실패 ^\nIndentationError: unexpected indent\n a와 b가 같은 column(컬럼) 에 존재 X → 에러가 발생\n a = 1과 b = 2는 같은 블록이 존재하는 코드\n 같은 블록이 존재하면 반드시 들여쓰기가 일치해야 함\n- 2 -"
+  },
+  {
+    "page": 3,
+    "method": "text",
+    "content": "▣ 파이썬 제어문\n1. 들여쓰기와 제어문\nif a > 1:\nprint 'big'\nprint 'really?'\nFile \"<ipython-input-161-96672a766929>\", line 3\nprint 'really?' ^ I\nndentationError: unexpected indent\n 첫번째 라인은 실행하는 함수문의 헤더 역할 수행\n 밑 라인은 함수문의 몸체 역할 수행\n 몸체: 새로운 블록이 시작되는 것으로 새 블록에서 코딩\n 메인 블록과 다르게 새 블록은 반드시 들여쓰기 해야 함\n : 을 넣어 새블록의 시작을 알림\n : 이 아래의 새 블록은 반드시 들여쓰기 필요\n 일반적 메인블록은 반드시 1열에서 시작\n 헤더의 마지막에는 ;(콜론)으로 마무리\n ; 뒤쪽에서 엔터키를 누르면 들여쓰기로 들어감\n Tap키를 누르면 동일한 컬럼에서 제어문의 몸체가 시작\n f=10 까지가 if절의 블록 = if문의 몸체는 한줄\n g=10은 바깥쪽에 있는 if절의 블록\n backspace나 delete 키를 눌러 뒤쪽으로 이동\n a=1, b=2, if a<10;, 과 x=10은 같은 레벨 → statement가 총 4개\n 들여쓰기가 들쑥날쑥하면 파이썬에서는 ‘문법적 에러’로 간주\n 들여쓰기가 강제화(문법 안에 들여쓰기가 포함됨)\n ‘들여쓰기’는 개발자가 가지고 가야 할 중요한 원칙\n 들여쓰기를 하면 → 깔끔하고 이해하기 쉬운 코딩 가능\n 들여쓰기르 올바르게 하지 않으면? → syntax 에러 발생\n- 3 -"
+  },
+  {
+    "page": 4,
+    "method": "text",
+    "content": "▣ 파이썬 제어문\n2. if문\n•if문의 형식\nif 조건식1:\nstatements\nelif 조건식2:\nstatements\nelif 조건식3:\nstatements\nelse:\nstatements\n•조건식이나 else 다음에 콜론(:) 표기 필요\n•들여쓰기(indentation)를 잘 지켜야 함\n statements: 조건이 만족될 때 수행되어야 하는 문장들\n elif, else문은 있어도 되고 없어도 되는 문법들\n elif: elseif의 약자\n elif: 위 조건식 1이 만족 안되었다면 elif의 조건식2 확인 후 수행\n elif 문은 여러 개 삽입 가능\n 조건식 1,2,3이 모두 불만족 시 else의 statement 수행\n- 4 -"
+  },
+  {
+    "page": 5,
+    "method": "text",
+    "content": "▣ 파이썬 제어문\n2. if문\nscore = 90\nif score >= 90:\nprint 'Congratulations!!! '\nCongratulations!!!\n score가 90과 같으니까 ‘True’’로 Congratulations!!!’출력\na = 10\nif a > 5:\nprint 'Big'\nelse:\nprint 'Small‘\nBig\n 만약 if문 조건이 만족되지 않으면 else문 statement 수행\n elif문이 없어도 바로 else문 삽입 가능\n•statement가 1개인 경우 조건식과 한 줄에 위치 가능 (추천하지는 않음)\na = 10\nif a > 5: print 'Big'\nelse: print 'Small'\nBig\n- 5 -"
+  },
+  {
+    "page": 6,
+    "method": "text",
+    "content": "▣ 파이썬 제어문\n2. if문\nn = -2\nif n > 0:\nprint 'Positive'\nelif n < 0:\nprint 'Negative'\nelse:\nprint 'Zero'\nNegative\n 조건이 2가지로 각각의 경우에 따라 프린트 내용이 다르도록 코딩\n 두 조건 불만족 시 else문의 statement 수행\norder = 'spagetti'\nif order == 'spam':\nprice = 500\nelif order == 'ham':\nprice = 700\nelif order == 'egg':\nprice = 300\nelif order == 'spagetti':\nprice = 900\nprint price\n900\n- 6 -"
+  },
+  {
+    "page": 7,
+    "method": "text",
+    "content": "▣ 파이썬 제어문\n2. if문\n•위 코드와 동일한 dictionary 자료구조를 사용한 코드\norder = 'spagetti'\nmenu = {'spam':500, 'ham':700, 'egg':300, 'spagetti':900}\nprice = menu[order]\nprint price\n900\n 메뉴가 사전으로 구성되어 있음\n spam, ham, egg, spaghetti→ key\n 500, 700, 300, 900 → 각 key에 대응하는 value\n order가 spaghetti니까 spaghetti key에 value값이 price에 할당됨\n- 7 -"
+  },
+  {
+    "page": 8,
+    "method": "text",
+    "content": "▣ 파이썬 제어문\n3. for문\n•for문의 형식\nfor <타겟> in <컨테이너 객체>:\nstatements\nelse:\nstatements\n 컨테이너 객체에서 원소를 꺼내 타겟에 삽입\n statement는 타겟의 value를 활용하여 코딩\na = ['cat', 'cow', 'tiger']\nfor x in a:\nprint len(x), x\n3 cat\n3 cow\n5 tiger\n a는 리스트 → 리스트, 문자, 듀플, 사전은 콘테이너 객체\n len(x)의 x자리에 a 리스트의 첫번째 원소가 들어감\n len: 문자열의 길이를 구하는 내장함수\nfor x in [1,2,3]:\nprint x,\n1 2 3\n- 8 -"
+  },
+  {
+    "page": 9,
+    "method": "text",
+    "content": "▣ 파이썬 제어문\n3. for문\nprint range(10)\nfor x in range(10):\nprint x,\n[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n0 1 2 3 4 5 6 7 8 9\n range 내장함수가 반환해주는 것은 list\n range(10) = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\nsum = 0\nfor x in range(1, 11):\nsum = sum + x\nprint sum\n55\n range(1, 11): 1은 start값, 11은 end 값\n range(1, 11) = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nprod = 1\nfor x in range(1, 11):\nprod = prod * x\nprint prod\n3628800\n prod * x : prod라는 변수에 곱하기의 누적\n 1 * 2=결과 * 3 = 결과 * 4=……= 결과 * 10\n- 9 -"
+  },
+  {
+    "page": 10,
+    "method": "text",
+    "content": "▣ 파이썬 제어문\n3. for문\n•enumerate() 내장 함수: 컨테이너 객체가 지닌 각 요소값뿐만 아니라 인덱스 값도 함께\n반환한다.\nl = ['cat', 'dog', 'bird', 'pig']\nfor k, animal in enumerate(l):\nprint k, animal\n0 cat\n1 dog\n2 bird\n3 pig\n k → enumerate하고 있는 컨테이너 객체의 index\n animal → 실제 값 들어옴\n 앞에 있는 0, 1, 2, 3이 그대로 각각의 문자열에 대한 index 역할 수행\n enumerate: key와 실제 그 값을 같이 가져옴\n key: 컨테이너 객체가 지니고 있는 index값\nt = ('cat', 'dog', 'bird', 'pig')\nfor k, animal in enumerate(t):\nprint k, animal\n0 cat\n1 dog\n2 bird\n3 pig\n- 10 -"
+  },
+  {
+    "page": 11,
+    "method": "text",
+    "content": "▣ 파이썬 제어문\n3. for문\nd = {'c':'cat', 'd':'dog', 'b':'bird', 'p':'pig'}\nfor k, key in enumerate(d):\nprint k, key, d[key]\n0 p pig\n1 c cat\n2 b bird\n3 d dog\n dictionary 자체가 index를 관리하지 않아 index 바로 나오진 않음\n k에는 반드시 0부터 시작되는 index가 들어감\n k → 0, 1, 2, 3\n key → 하나의 문자로 이루어진 문자열(c, d, b, p)이 하나씩 들어감\n d[key]: 키워드 index\n d[c] → cat, d[d] → dog\n- 11 -"
+  },
+  {
+    "page": 12,
+    "method": "text",
+    "content": "▣ 파이썬 제어문\n3. for문\n•break: 루프를 빠져나간다.\nfor x in range(10):\nif x > 3:\nbreak\nprint x\nprint 'done'\n0\n1\n2\n3\ndone\n break, continue\n range (10)→ [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n break: 현재 수행중인 for문 또는 while문 반복 하지 않음\n x가 4가 되어 3보다 커지는 순간 for문 수행 중지 (break)\n- 12 -"
+  },
+  {
+    "page": 13,
+    "method": "text",
+    "content": "▣ 파이썬 제어문\n3. for문\n• continue: 루프 블록 내의 continue 이후 부분은 수행하지 않고 루프의 시작부분으로\n이동한다.\nfor x in range(10):\nif x < 8:\ncontinue\nprint x\nprint 'done'\n8\n9\ndone\n continue: 특정 조건이 만족되었을 때 continue하면서 하위 코드 무시\n x자리에 0~7까지는 continue가 수행되어 print X 무시\n• else: 루프가 break에 의한 중단 없이 정상적으로 모두 수행되면 else 블록이\n수행된다.\nfor x in range(10):\nprint x, # 콤마(,) 때문에 줄이 바뀌지 않는다.\nelse:\nprint 'else block'\nprint 'done'\n0 1 2 3 4 5 6 7 8 9 else block\ndone\n ,(콤마)가 들어가 있어서 원소들이 바로 옆에 프린트 됨\n else black에는 콤마가 없어서 done은 아래 블록에 프린트\n- 13 -"
+  },
+  {
+    "page": 14,
+    "method": "text",
+    "content": "▣ 파이썬 제어문\n3. for문\n• break에 의하여 루프를 빠져나가면 else 블록도 수행되지 않는다.\nfor x in range(10):\nbreak\nprint x,\nelse:\nprint 'else block'\nprint 'done'\ndone\n 아무 조건 없는 break → 0부터 break 걸려 print X, else문 무시\n else 블록은 for문이 break 걸리지 않고 정상적 수행 시 수행 가능\n- 14 -"
+  },
+  {
+    "page": 15,
+    "method": "text",
+    "content": "▣ 파이썬 제어문\n3. for문\n• for 루프의 중첩\nfor x in range(2, 4):\nfor y in range(2, 10):\nprint x, '*', y, '=', x*y\nprint\n2 * 2 = 4\n2 * 3 = 6\n2 * 4 = 8\n2 * 5 = 10\n2 * 6 = 12\n2 * 7 = 14\n2 * 8 = 16\n2 * 9 = 18\n3 * 2 = 6\n3 * 3 = 9\n3 * 4 = 12\n3 * 5 = 15\n3 * 6 = 18\n3 * 7 = 21\n3 * 8 = 24\n3 * 9 = 27\n for 루프를 여러 개 중첩하여 사용 가능\n x가 2일 때 y가 2, 3, 4, 5, 6, 7, 8, 9 수행\n x가 3일 때 y가 역시 2, 3, 4, 5, 6, 7, 8, 9 수행\n- 15 -"
+  },
+  {
+    "page": 16,
+    "method": "text",
+    "content": "▣ 파이썬 제어문\n4. While문\n• while 조건식이 만족하는 동안 while 블록내의 statements 들을 반복 수행한다.\ncount = 1\nwhile count < 11:\nprint count\ncount = count + 1\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nsum = 0\na = 0\nwhile a < 10:\na = a + 1\nsum = sum + a\nprint sum\n55\n a가 10이 되어 조건 불만족 시 중단되고 현재 누적 값 출력\n- 16 -"
+  },
+  {
+    "page": 17,
+    "method": "text",
+    "content": "▣ 파이썬 제어문\n4. While문\nx = 0\nwhile x < 10:\nprint x, # 콤마(,) 때문에 줄이 바뀌지 않는다.\nx = x + 1\nelse:\nprint 'else block'\nprint 'done'\n0 1 2 3 4 5 6 7 8 9 else block\ndone\n 콤마가 있으므로 옆으로 값 프린트\n while문 끝내기 직전에 else문 수행\n else문은 while문에서도 쓰일 수 있고, for문에서도 쓰일 수 있음\n- 17 -"
+  }
+]

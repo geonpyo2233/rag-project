@@ -21,8 +21,7 @@ DB_주소 = os.getenv(
 엔진 = create_engine(DB_주소, echo=False)
 
 # 세션 - DB랑 대화할 때 쓰는 창구
-세션만들기 = sessionmaker(autocommit=False, autoflush=False, bind=엔진)
-
+세션만들기 = SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=엔진)
 # 모든 테이블 클래스가 상속받을 베이스
 Base = declarative_base()
 

@@ -1,3 +1,4 @@
+import json
 import os
 import uuid
 from fastapi import FastAPI, UploadFile, File
@@ -6,8 +7,12 @@ from fastapi.responses import JSONResponse
 from pdf_extractor import extract
 from rag_pipeline import build_vectorstore
 from llm_chain import run
+from database import SessionLocal, 엔진, Base  # ← 여기로
+from models import Category, Document           # ← 여기로
 
 app = FastAPI()
+
+Base.metadata.create_all(bind=엔진)
 
 # 파일이랑 결과물 저장할 폴더
 UPLOAD_DIR = "data/uploads"
@@ -58,9 +63,41 @@ async def upload_file(file: UploadFile = File(...)):
     build_vectorstore(json_path, chroma_dir)
     result = run(json_path)
 
+
+    db = SessionLocal()
+    try:
+        # 카테고리 저장
+        category = Category(
+            main=result["main_category"],
+            sub=result["sub_category"],
+            extension=ext
+        )
+        db.add(category)
+        db.flush()  # cat_id 먼저 받아오기
+
+        with open(json_path, encoding='utf-8') as f:
+            pages = json.load(f)
+        full_text = '\n\n'.join([p['content'] for p in pages])
+
+
+        # 문서 저장
+        document = Document(
+            file_name=file.filename,
+            file_type=ext,
+            file_size=str(os.path.getsize(file_path)),
+            cat_id=category.cat_id,
+            content_full=full_text,
+            content_sum=result["summary"]
+        )
+        db.add(document)
+        db.commit()
+        print("[DB 저장 완료]")
+    finally:
+        db.close()
+
     return JSONResponse(content={
         "filename" : file.filename,
-        "category" : result["category"],
+        "main_category" : result["main_category"],
         "summary"  : result["summary"],
         "sub_category" : result["sub_category"]
     })
