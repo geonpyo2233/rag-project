@@ -4,7 +4,7 @@
 
 from pathlib import Path
 from paddleocr import PaddleOCR
-# from ocr.image_preprocessor import upscale_image_for_ocr
+#from ocr.image_preprocessor import upscale_image_for_ocr
 
 
 # ==============================

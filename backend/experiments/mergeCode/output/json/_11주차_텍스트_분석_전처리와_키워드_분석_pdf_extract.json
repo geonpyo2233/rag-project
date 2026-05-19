@@ -1,0 +1,202 @@
+[
+  {
+    "page": 1,
+    "method": "ocr",
+    "content": "[11주차]\n분석\n텍스트\n분석:\n비정형\n전처리와\n키워드\nShin\nO Kyung-shik:"
+  },
+  {
+    "page": 2,
+    "method": "ocr",
+    "content": "텍스트\n분석\n기법들\nShin\nO Kyung-shik"
+  },
+  {
+    "page": 3,
+    "method": "text",
+    "content": "텍스트 붂석기법들\n자연어 처리/젂처리\n\n토픽모델링\n\n텍스트 크러스터링\n\n감성붂석\n\n소셜 네트워크 붂석 등\n"
+  },
+  {
+    "page": 4,
+    "method": "text",
+    "content": "자연어 처리/젂처리\n텍스트 붂석을 위한 젂단계 작업으로\n\n자연어(natural language)로 표현된 텍스트 데이터에서\n\n컴퓨터가 이해할 수 있도록 단어들을 식별하고\n도메인에 적합한 의미 정보로 변홖하여\n\n대표적인 단어를 추출하는 것\n형태소 붂석, 불용어 처리, 어갂처리,\n\n가중치와 Term-Document Matrix도출 등"
+  },
+  {
+    "page": 5,
+    "method": "text",
+    "content": "자연어 처리/젂처리\n텍스트 젂처리의 예\n\nUnstructured Document\nDoc 1 : deposit the cash and check in the bank!!\nDoc 2 : the river boat is on the bank\nDoc 3 : borrow based on credit\nDoc 4 : river boat floats up the river\nDoc 5 : boat is by the dock near the bank\nStructured Matrix\nP\ne r Term-by-Document Frequency Matrix\n-\np\nr d1 d2 d3 d4 d5\no\nc\ne cash 1 0 0 0 0\ns\ns\nn i check 1 0 0 0 0\ng\nbank 1 1 0 0 1\nriver 0 1 0 2 0\ncredit 0 0 1 0 0"
+  },
+  {
+    "page": 6,
+    "method": "text",
+    "content": "토픽(Topic) 모델링\n텍스트 문서 집합 내에 잠재된 주제를 도출하는 붂\n\n석 기법\n개별 문서는 다수의 주제, 혹은 토픽을 다룰 수 있다\n\n는 점을 가정\n수집된 텍스트를 토픽의 확률적 혼합체로 갂주하고,\n\n각 토픽을 추출된 키워드들의 붂포로 나타냄으로써\n텍스트 내의 구조를 파악\n뉴스 등 대용량의 텍스트 데이터로 부터 주요 이슈\n\n들을 도출해 내는데 홗용"
+  },
+  {
+    "page": 7,
+    "method": "text",
+    "content": "텍스트 클러스터링\n텍스트 문서에 군집붂석을 적용하는 것\n\n문서별로 도출되는 주요 단어를 중심으로\n\n유사 문서군을 도출하고\n각 집단의 성격을 파악함으로써\n\n텍스트 젂체 구조를 이해하는 탐색적 붂석기법\n계층적 클러스터링과 비계층적 클러스터링으로 구붂됨\n"
+  },
+  {
+    "page": 8,
+    "method": "text",
+    "content": "감성붂석\n사람들이 작성한 텍스트를 붂석하여\n\n특정 주제에 대해 의견이 긍정, 부정,\n또는 중립인지를 붂류하는 방법\n트위터나 페이스북과 같은 SNS 및 인터넷 댓글 등\n\n특정 사앆에 대한 오피니언(Opinion)이 잠재되어 있는\n문서들을 주로 붂석\n오피니언 마이닝(opinion mining)이라고도 불림\n"
+  },
+  {
+    "page": 9,
+    "method": "ocr",
+    "content": "감성분석\nSentiment140\n'아이폰6'\n탐색어\n여론\n中아요\nG+!\n2다교\nIiphone6\nEnglish\nSearch\n0\n궁/부정\n연관어\nSentiment\nanalysis for\niphone6\n매체선택\nㅂ확대보기\n15개\n확인\nSentiment by Percen\nSentimert by Coun!\nNegatlVe 40\n전체\n디궁정\nNooatlyo t6\n피부점\nPogfive 0%\n다립\n든기타\nTweets\nabout iphone6\nTPu case\nRhettSilcock:\nElectroplating\nSoft\nClear\nRose\nGold For ir\n파림\n마음마프디\nhttps IIt cO/uyOUMiwiCO\n고차\nPosted52 seconds ag!\nKeepingupw kira:\nIphone6 plus but I'm coming\nback for you 6s\nPosted 28 minutes ago\n스페이스레이"
+  },
+  {
+    "page": 10,
+    "method": "text",
+    "content": "소셜 네트워크 붂석\n개인과 집단들 갂의 사회적 관계를 노드와 링크로서\n\n구조적으로 붂석하여 내재된 관계를 파악하는 기법\n구성원들 갂의 연결 구조 및 연결 강도 등을\n\n정량적인 방법으로 붂석함으로써 내재된 현상을 찾아냄"
+  },
+  {
+    "page": 11,
+    "method": "ocr",
+    "content": "텍스트의\n분석\n전처리와\n키워드\n2\nShin\nO Kyung-shik"
+  },
+  {
+    "page": 12,
+    "method": "ocr",
+    "content": "텍스트의\n전처리\n21\nShin\nO Kyung-shik"
+  },
+  {
+    "page": 13,
+    "method": "text",
+    "content": "텍스트 젂처리(Preprocessing)란?\n텍스트 젂처리란?\n\n텍스트 붂석을 위한 젂 단계 작업으로\n\n자연어(natural language)로 표현된 텍스트 데이터에서\n\n컴퓨터가 이해할 수 있도록 단어들을 식별하고\n도메인에 적합한 의미 정보로 변홖하여 대표적인 단어를 추출하는 것\n\n이를 표준화, 또는 정규화하는 과정을 포함\n"
+  },
+  {
+    "page": 14,
+    "method": "text",
+    "content": "텍스트 젂처리(Preprocessing)란?\n주요 과업\n\n• 형태소 붂리\n형태소 붂석\n• 품사 부착\n• 불용어(Stopword) 처리\n의미정보 변홖과 • 어갂처리(Stemming)\n추출 • 가중치의 도출\n• Feature selection\n텍스트\n• Term-Document Matrix\n표준화/정규화"
+  },
+  {
+    "page": 15,
+    "method": "text",
+    "content": "미리보기\n텍스트 젂처리의 예\n\nUnstructured Document\nDoc 1 : deposit the cash and check in the bank!!\nDoc 2 : the river boat is on the bank\nDoc 3 : borrow based on credit\nDoc 4 : river boat floats up the river\nDoc 5 : boat is by the dock near the bank\nStructured Matrix\nP\ne r Term-by-Document Frequency Matrix\n-\np\nr d1 d2 d3 d4 d5\no\nc\ne cash 1 0 0 0 0\ns\ns\nn i check 1 0 0 0 0\ng\nbank 1 1 0 0 1\nriver 0 1 0 2 0\ncredit 0 0 1 0 0"
+  },
+  {
+    "page": 16,
+    "method": "text",
+    "content": "형태소 붂석이란?\n형태소(morpheme)란?\n\n의미를 가지는 가장 최소의 단위\n\n형태소 붂석 단계에서는…\n\n단어(또는 어젃)를 구성하는 각 형태소를 붂리\n\n각 단어에 대한 품사 부착 수행\n\n구두점, 숫자 등 의미를 가지지 않는 요소들을 제거하고,\n\n오탈자, 띄어쓰기 등 기본적인 텍스트에 대한 기본적인 처리 수행"
+  },
+  {
+    "page": 17,
+    "method": "text",
+    "content": "형태소 붂석 예시\nⅤ Ⅴ Ⅴ Ⅴ\n아이폰6의 세련된 디자인이 정말 기대됩니다\n(1) 띄어쓰기\n아이폰6의 세련된 디자인이 정말 기대됩니다\n(2) 형태소 분리\n(조사 처리)\n아이폰6 세련된 디자인 정말 기대하다\n(3) 품사부착\n명사 형용사 명사 부사 동사"
+  },
+  {
+    "page": 18,
+    "method": "text",
+    "content": "의미정보 변홖과 추출이란?\n의미 있는 형태소 정보를 선별하여 저장하는 단계\n\n텍스트 데이터를 검토하여 정보나 지식을 추출 할 수 있는 기반을 잡아가는\n\n과정\n세부 내용\n\n불용어 (Stopword) 처리\n\n어갂처리 (Stemming)\n\n가중치의 도출\n\n특성(용어)추출(Feature selection)\n"
+  },
+  {
+    "page": 19,
+    "method": "text",
+    "content": "불용어 (Stopword) 처리\n불용어 처리란?\n\n제거할 용어를 지정하는 작업을 말함\n\n불용어 처리 방법\n\n형태소 붂리된 데이터를 처리자가 보면서 판단하여 제거하는 방법\n\n의미 없는 단어, 사용하지 않는 단어 등 제거\n\n미리 정해진 단어 리스트에 대조하여 제거하는 방법\n\n기타 자동으로 제거하는 여러 가지 방법이 개발되어 있음\n"
+  },
+  {
+    "page": 20,
+    "method": "text",
+    "content": "어갂 처리 (Stemming)\n어갂 처리란?\n\n어갂 (Stem) 파악을 통해서 동일한 어갂을 가지고 있는 단어는\n\n하나의 단어로 처리하는 작업\n같은 어근을 가진 다른 용어를 같게 취급할지 다르게 취급할지를 정함\n\n어갂 처리의 예\n\nconnected connecting connection\nStem: connect connection"
+  },
+  {
+    "page": 21,
+    "method": "text",
+    "content": "중요도의 산출: TF-IDF란?\nTerm Frequency-Inverse Document Frequency의 약자로\n\n“단어 빈도”-”역문서 빈도”를 의미\n여러 문서의 집합에서 특정 단어가 얼마나 중요한가를 판단할 수 있는 값\n\n정보 추출(Information Retrieval) 붂야에서 단어별 가중치 산출을 위해 범\n\n용적으로 사용되고 있음 (Salton & McGill, 1983)\n생각해 봅시다!\n\n어떤 단어가 자주 나오면?\n\n어떤 단어가 거의 앆 나오면?\n\n어떤 단어가 여러 문서에서 나오면?\n"
+  },
+  {
+    "page": 22,
+    "method": "text",
+    "content": "중요도의 산출: TF-IDF란?\nTF (단어 빈도, Term Frequency)\n\n•\n특정 키워드가 문서 내에 얼마나 자주 등장하는지를 나타내는 값\n•\n이 값이 클수록 문서에서 중요한 키워드라고 볼 수 있음\nDF (문서 빈도, Document Frequency)\n\n•\n특정 단어가 문서 집합 내에서 얼마나 공통으로 출현하는지를 나타내는 값\n•\n어떤 단어가 문서 집합 내에서 빈번하게 사용되는 것은\n그 단어가 흔하다는 것을 의미하기도 함\nIDF (문서 빈도의 역수, Inverse Document Frequency)\n"
+  },
+  {
+    "page": 23,
+    "method": "text",
+    "content": "중요도의 산출: TF-IDF란?\n산식\n\nTF-IDF = TF × log(n/DF)\n•\nTF = 문서 내 특정 키워드의 빈도수\n•\nn = 젂체 문서 빈도수\n•\nDF = 단어가 출현한 문서의 빈도수\n•\nIDF = DF의 역수"
+  },
+  {
+    "page": 24,
+    "method": "text",
+    "content": "단어-문서 행렬(Term-Document Matrix)\n젂처리 과정을 통하여 “비구조적인” 문서 집합은\n\n“구조화”된 단어-문서 행렬(Term-Document Matrix)로 변홖\nm개의 단어와 n개의 문서로 이루어진 행렬, dij는\n\ni단어와 j문서에 포함되어 있는지의 여부나 빈도수를 의미\n단어와 문서 갂 관계를 나타내기 위해 TF-IDF 가중치를 사용하기도 함\n\n문서1 문서2 문서3 문서n\n단어1 d d d … d\n11 12 13 1n\n단어2 d d d … d\n21 22 23 2n\n단어3 d d d … d\n31 32 33 3n\n. . . .\n. . . .\n. . . .\n단어m d d d … d\nm1 m2 m3 mn"
+  },
+  {
+    "page": 25,
+    "method": "text",
+    "content": "다시 보기\n텍스트 젂처리의 예\n\nUnstructured Document\nDoc 1 : deposit the cash and check in the bank!!\nDoc 2 : the river boat is on the bank\nDoc 3 : borrow based on credit\nDoc 4 : river boat floats up the river\nDoc 5 : boat is by the dock near the bank\nStructured Matrix\nP\ne r Term-by-Document Frequency Matrix\n-\np\nr d1 d2 d3 d4 d5\no\nc\ne cash 1 0 0 0 0\ns\ns\nn i check 1 0 0 0 0\ng\nbank 1 1 0 0 1\nriver 0 1 0 2 0\ncredit 0 0 1 0 0"
+  },
+  {
+    "page": 26,
+    "method": "text",
+    "content": "텍스트의 표준화/정규화\n문서의 길이가 긴 문서일수록…\n\n추출될 수 있는 단어의 수가 많고,\n\n각 단어의 출현 빈도 또한 높아서\n\n길이가 짧은 문서에 비해 중요하다고 갂주될 가능성이 높음\n\n문서의 길이에 대한 영향력을 감소시키기 위해…\n\nTF에 대한 표준화(standardization) 또는 정규화(normalization) 수행\n"
+  },
+  {
+    "page": 27,
+    "method": "text",
+    "content": "텍스트의 표준화/정규화\n표준화 TF 산식\n\nX를 TF라고 하면 표준화 변수 z는 다음과 같음\n\nX: 각 문서에서의 평균\nS: 표준편차\n정규화 TF 산식\n\nX를 TF라고 하면 정규화 변수 z는 다음과 같음\n\nZ = (1+log X)/n\n2 i\nTF=0이면 위 식의 값은 0으로 정의\nni : 문서i 에서 총 단어의 빈도수"
+  },
+  {
+    "page": 28,
+    "method": "text",
+    "content": "텍스트의 표준화/정규화\nTerm-Document Matrix\n\nTF 정규화 TF-IDF\ndoc 1 doc 2 doc 3 doc 1 doc 2 doc 3\nAaa 2 2 2 0 0 0\n(=0.4*log (3/3)) (=0.4*log (3/3)) (=0.4*log (3/3))\n2 2 2\nBbb 1 0 1 0.117 0 0.117\n(=0.2*log (3/2)) (=0.2*log (3/2))\n2 2\nCcc 1 1 1 0 0 0\n(=0.2*log (3/3)) (=0.2*log (3/3)) (=0.2*log (3/3))\n2 2 2\nDdd 1 0 0 0.317 0 0\n(=0.2*log (3/1))\n2\nEee 0 0 1 0 0 0.317\n(=0.2*log (3/1))\n2\nFff 0 1 0 0 0.317 0\n(=0.2*log (3/1))\n2\nGgg 0 1 0 0 0.317 0\n(=0.2*log (3/1))\n2"
+  },
+  {
+    "page": 29,
+    "method": "text",
+    "content": "정리하기\n텍스트 젂처리의 예\n\nUnstructured Document\nDoc 1 : deposit the cash and check in the bank!!\nDoc 2 : the river boat is on the bank\nDoc 3 : borrow based on credit\nDoc 4 : river boat floats up the river\nDoc 5 : boat is by the dock near the bank\nStructured Matrix\nP\ne r Term-by-Document Frequency Matrix\n-\np\nr d1 d2 d3 d4 d5\no\nc\ne cash 1 0 0 0 0\ns\ns\nn i check 1 0 0 0 0\ng\nbank 1 1 0 0 1\nriver 0 1 0 2 0\ncredit 0 0 1 0 0"
+  },
+  {
+    "page": 30,
+    "method": "ocr",
+    "content": "워드\n키워드\n분석과\n22\n크라우드\nShin\nO Kyung-shik"
+  },
+  {
+    "page": 31,
+    "method": "text",
+    "content": "키워드 붂석이란?\n문서의 주제를 알기 위해 원본 텍스트 내의 단어\n\n를 붂석하는 통계적인 방법\n텍스트에서 사용된 단어들의 출연 빈도에 따라\n\n의미 또는 트렌드를 파악하는 붂석 방법\n빈도에 기초한 가장 기초적인 텍스트 붂석 기법\n"
+  },
+  {
+    "page": 32,
+    "method": "text",
+    "content": "키워드 붂석 방법\n• 문서 데이터\n데이터 수집\n• 웹 상의 데이터\n• 형태소 붂리\n형태소 붂석\n• 품사 부착\n의미정보 변홖과 • 불용어(Stopword) 처리\n추출 • 어갂처리(Stemming)\n• 그래프\n붂석 및 시각화\n• 워드 크라우드(Word Cloud) 등"
+  },
+  {
+    "page": 33,
+    "method": "text",
+    "content": "예시_워드 크라우드\n기본적인 텍스트 데이터의 시각화 방법롞\n\n텍스트에 포함된 주요 단어나 어젃의 중요도를\n\n폰트의 사이즈나 색으로 표현\n문서 상 가장 중요한 용어들에 대한 인식 용이\n"
+  },
+  {
+    "page": 34,
+    "method": "text",
+    "content": "예시_워드 크라우드\n• 빅데이터란 무엇인가?\n• 연관된 주요 요소들은?\n• 빅데이터로 할 수 있는 일은?\n• 관련하여 제기되는 이슈들은?"
+  },
+  {
+    "page": 35,
+    "method": "ocr",
+    "content": "R을\n활용한\n실습\n23\n워드클라우드\nShin\nO Kyung-shik"
+  },
+  {
+    "page": 36,
+    "method": "text",
+    "content": "키워드 붂석 – 실습 예제\n„곡성„ 영화평에 대한 키워드 붂석을 수행하고자 한다.\n\n(데이터: 개봉 젂 150개 / 개봉 후 150개의 게시글)\n<수집된 데이터 예시>"
+  },
+  {
+    "page": 37,
+    "method": "text",
+    "content": "키워드 붂석 – 실습 예제…\n 키워드 분석과 시각화 (워드 클라우드)를 구\n현하기 위해 필요한 패키지를 설치하고 라\n이브러리 호출한다.\n 분석에 필요한 데이터 불러오기\n 한글을 분석하기 위한 세종 사전 불러오기\n 한글사전에 연구자가 필요로 하는 단어를\n추가 할 수 있다. 2개 이상의 단어를 추가 할\n때 c로 묶어서 추가 가능하다"
+  },
+  {
+    "page": 38,
+    "method": "text",
+    "content": "키워드 붂석 – 실습 예제…\n 불러온 파일에서 text변수에 있는 내용으로\n부터 단어를 추출한다. apply함수를 단순화\n한 sapply()함수(simplify apply)를 사용\n 두 글자부터 다섯 글자의 단어를 추출해서\n새로운 데이터로 저장하고 head()함수로 확\n인한다. 즉, 한 글자의 단어나, 여섯 글자 이\n상의 단어는 키워드로 보기 어렵다고 가정\n한다.\n#엔터 표시 제거\n#숫자 제거\n#마침표 제거\n gsub(“”)함수를 사용하여 필요 없는 단어를\n제거하거나 변경한다.\nX <- gsub(“제거할 단어“,”변경할 단어“, X)"
+  },
+  {
+    "page": 39,
+    "method": "text",
+    "content": "키워드 붂석 – 실습 예제…\n 1차 정제된 파일을 txt 형태로 저장 가능하\n다.\n 생성할 워드 클라우드를 구성하는 단어에\n대한 색과 폰트를 설정한다.\n 워드 클라우드 그리기\n#scale = 출력되는 단어 갂의 크기 비율\n#rot.per = 단어들 갂 갂격 조정\n#min.feq = 텍스트 문서 집합 내 단어 출현 횟수"
+  },
+  {
+    "page": 40,
+    "method": "ocr",
+    "content": "분석-실습\n예제\n키워드\n개봉\n전\n개봉\n후\n평점\n해서\n강궁장\n스토리\n충분\n평균\n주증\n해석\n이름\n스토\n준비\n<\n절대\n내작\n관람\n촬영\n평\n후회\n릴러\n이번\n줄거\n마\n장감\n찬자\n스릴런\n신작\n|\n0로\n사\n불과\n-\n>\n재\n아\n관각\n부\n하기\n개봉\n다섯\n화\n오프\n영\n진심\n영화\n작품\n행성집\n율요로이아\n-\n'당황\n종류\n산은\n토\n이동\n갠봉\n상상\n개연성\n반전\n진내\n감독\n만루유증\n사람\n뚜\nH원\no요\n절방야기\n오늘'\n미스\n설명'\n이전\n대한\n황정민\n극장\n처음\n엔등\n추격\n곽도원\n왔고\n현혹\n장르\n이후\n취급\n탄생\n스릴러\n화이팅\n기대작들\n신기\n압도\n하나\n유명\n윌리티를\n천우희면"
+  }
+]

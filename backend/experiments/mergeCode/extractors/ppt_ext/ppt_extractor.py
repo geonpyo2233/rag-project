@@ -39,28 +39,40 @@ def ppt_extractor(file_path: Path):
     if (extension == ".pptx") :
         ordered_text_per_slide = extract_text_ordered_by_position(file_path)
     else :
-        ordered_text_per_slide = process(file_path)
+        # FIX: process() returns metadata + content for .ppt files, so use only
+        # the extracted slide/text content when building the final result.
+        ppt_result = process(file_path)
+        ordered_text_per_slide = ppt_result.get("content", {})
 
-    slide_texts = {}
+    # FIX: append() is a list method. This used to be {}, which caused
+    # AttributeError: 'dict' object has no attribute 'append'.
+    slide_texts = []
     for slide_number in sorted(ordered_text_per_slide):
         slide_text = ordered_text_per_slide[slide_number]
+        slide_texts.append(f"Slide {slide_number}:\n{slide_text}\n\n")
 
-    slide_texts.append(f"Slide {slide_number}:\n{slide_text}\n\n")
+    # FIX: Printing the full extracted text can fail on Windows cp949 consoles
+    # when slides contain special Unicode characters. Print only a safe summary.
+    print(f"extracted slides: {len(slide_texts)}")
 
-    print(slide_texts)
-
-    return slide_texts
+    #return slide_texts
     
-    """
+    
     #슬라이드의 모든 문자열 긁어오기 후 파일명.txt 문서로 출력
     
-    txt_file_name = pptx_file.rsplit('.', 1)[0] + '.txt'
-    if txt_file_name:
-        with open(txt_file_name, "w", encoding="utf-8") as f:
-            for slide_number in sorted(ordered_text_per_slide):
-                slide_text = ordered_text_per_slide[slide_number]
-                f.write(f"Slide {slide_number}:\n{slide_text}\n\n")
-    """
+    output_dir = Path("./output/text")
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    txt_file_name = output_dir / f"{file_path.stem}.txt"
+
+    with open(txt_file_name, "w", encoding="utf-8") as f:
+        for slide_number in sorted(ordered_text_per_slide):
+            slide_text = ordered_text_per_slide[slide_number]
+            f.write(f"Slide {slide_number}:\n{slide_text}\n\n")
+
+    print(f"TXT 저장 완료: {txt_file_name}")
+
+    return slide_texts
 
 def extract_text_from_shape(shape, slide_items):
 
@@ -83,8 +95,11 @@ def extract_text_from_shape(shape, slide_items):
             output_dir.mkdir(parents=True, exist_ok=True)
             preds = ocr.predict(img_np)
 
+            # FIX: initialize rec_texts first so OCR images with no detected
+            # text do not raise an UnboundLocalError.
+            rec_texts = []
             for pred in preds:
-                rec_texts = pred['rec_texts']
+                rec_texts.extend(pred.get('rec_texts', []))
 
             texcon = ' '.join(rec_texts)
 

@@ -1,0 +1,677 @@
+[11주차]
+분석
+텍스트
+분석:
+비정형
+전처리와
+키워드
+Shin
+O Kyung-shik:
+
+텍스트
+분석
+기법들
+Shin
+O Kyung-shik
+
+텍스트 붂석기법들
+자연어 처리/젂처리
+
+토픽모델링
+
+텍스트 크러스터링
+
+감성붂석
+
+소셜 네트워크 붂석 등
+
+
+자연어 처리/젂처리
+텍스트 붂석을 위한 젂단계 작업으로
+
+자연어(natural language)로 표현된 텍스트 데이터에서
+
+컴퓨터가 이해할 수 있도록 단어들을 식별하고
+도메인에 적합한 의미 정보로 변홖하여
+
+대표적인 단어를 추출하는 것
+형태소 붂석, 불용어 처리, 어갂처리,
+
+가중치와 Term-Document Matrix도출 등
+
+자연어 처리/젂처리
+텍스트 젂처리의 예
+
+Unstructured Document
+Doc 1 : deposit the cash and check in the bank!!
+Doc 2 : the river boat is on the bank
+Doc 3 : borrow based on credit
+Doc 4 : river boat floats up the river
+Doc 5 : boat is by the dock near the bank
+Structured Matrix
+P
+e r Term-by-Document Frequency Matrix
+-
+p
+r d1 d2 d3 d4 d5
+o
+c
+e cash 1 0 0 0 0
+s
+s
+n i check 1 0 0 0 0
+g
+bank 1 1 0 0 1
+river 0 1 0 2 0
+credit 0 0 1 0 0
+
+토픽(Topic) 모델링
+텍스트 문서 집합 내에 잠재된 주제를 도출하는 붂
+
+석 기법
+개별 문서는 다수의 주제, 혹은 토픽을 다룰 수 있다
+
+는 점을 가정
+수집된 텍스트를 토픽의 확률적 혼합체로 갂주하고,
+
+각 토픽을 추출된 키워드들의 붂포로 나타냄으로써
+텍스트 내의 구조를 파악
+뉴스 등 대용량의 텍스트 데이터로 부터 주요 이슈
+
+들을 도출해 내는데 홗용
+
+텍스트 클러스터링
+텍스트 문서에 군집붂석을 적용하는 것
+
+문서별로 도출되는 주요 단어를 중심으로
+
+유사 문서군을 도출하고
+각 집단의 성격을 파악함으로써
+
+텍스트 젂체 구조를 이해하는 탐색적 붂석기법
+계층적 클러스터링과 비계층적 클러스터링으로 구붂됨
+
+
+감성붂석
+사람들이 작성한 텍스트를 붂석하여
+
+특정 주제에 대해 의견이 긍정, 부정,
+또는 중립인지를 붂류하는 방법
+트위터나 페이스북과 같은 SNS 및 인터넷 댓글 등
+
+특정 사앆에 대한 오피니언(Opinion)이 잠재되어 있는
+문서들을 주로 붂석
+오피니언 마이닝(opinion mining)이라고도 불림
+
+
+감성분석
+Sentiment140
+'아이폰6'
+탐색어
+여론
+中아요
+G+!
+2다교
+Iiphone6
+English
+Search
+0
+궁/부정
+연관어
+Sentiment
+analysis for
+iphone6
+매체선택
+ㅂ확대보기
+15개
+확인
+Sentiment by Percen
+Sentimert by Coun!
+NegatlVe 40
+전체
+디궁정
+Nooatlyo t6
+피부점
+Pogfive 0%
+다립
+든기타
+Tweets
+about iphone6
+TPu case
+RhettSilcock:
+Electroplating
+Soft
+Clear
+Rose
+Gold For ir
+파림
+마음마프디
+https IIt cO/uyOUMiwiCO
+고차
+Posted52 seconds ag!
+Keepingupw kira:
+Iphone6 plus but I'm coming
+back for you 6s
+Posted 28 minutes ago
+스페이스레이
+
+소셜 네트워크 붂석
+개인과 집단들 갂의 사회적 관계를 노드와 링크로서
+
+구조적으로 붂석하여 내재된 관계를 파악하는 기법
+구성원들 갂의 연결 구조 및 연결 강도 등을
+
+정량적인 방법으로 붂석함으로써 내재된 현상을 찾아냄
+
+텍스트의
+분석
+전처리와
+키워드
+2
+Shin
+O Kyung-shik
+
+텍스트의
+전처리
+21
+Shin
+O Kyung-shik
+
+텍스트 젂처리(Preprocessing)란?
+텍스트 젂처리란?
+
+텍스트 붂석을 위한 젂 단계 작업으로
+
+자연어(natural language)로 표현된 텍스트 데이터에서
+
+컴퓨터가 이해할 수 있도록 단어들을 식별하고
+도메인에 적합한 의미 정보로 변홖하여 대표적인 단어를 추출하는 것
+
+이를 표준화, 또는 정규화하는 과정을 포함
+
+
+텍스트 젂처리(Preprocessing)란?
+주요 과업
+
+• 형태소 붂리
+형태소 붂석
+• 품사 부착
+• 불용어(Stopword) 처리
+의미정보 변홖과 • 어갂처리(Stemming)
+추출 • 가중치의 도출
+• Feature selection
+텍스트
+• Term-Document Matrix
+표준화/정규화
+
+미리보기
+텍스트 젂처리의 예
+
+Unstructured Document
+Doc 1 : deposit the cash and check in the bank!!
+Doc 2 : the river boat is on the bank
+Doc 3 : borrow based on credit
+Doc 4 : river boat floats up the river
+Doc 5 : boat is by the dock near the bank
+Structured Matrix
+P
+e r Term-by-Document Frequency Matrix
+-
+p
+r d1 d2 d3 d4 d5
+o
+c
+e cash 1 0 0 0 0
+s
+s
+n i check 1 0 0 0 0
+g
+bank 1 1 0 0 1
+river 0 1 0 2 0
+credit 0 0 1 0 0
+
+형태소 붂석이란?
+형태소(morpheme)란?
+
+의미를 가지는 가장 최소의 단위
+
+형태소 붂석 단계에서는…
+
+단어(또는 어젃)를 구성하는 각 형태소를 붂리
+
+각 단어에 대한 품사 부착 수행
+
+구두점, 숫자 등 의미를 가지지 않는 요소들을 제거하고,
+
+오탈자, 띄어쓰기 등 기본적인 텍스트에 대한 기본적인 처리 수행
+
+형태소 붂석 예시
+Ⅴ Ⅴ Ⅴ Ⅴ
+아이폰6의 세련된 디자인이 정말 기대됩니다
+(1) 띄어쓰기
+아이폰6의 세련된 디자인이 정말 기대됩니다
+(2) 형태소 분리
+(조사 처리)
+아이폰6 세련된 디자인 정말 기대하다
+(3) 품사부착
+명사 형용사 명사 부사 동사
+
+의미정보 변홖과 추출이란?
+의미 있는 형태소 정보를 선별하여 저장하는 단계
+
+텍스트 데이터를 검토하여 정보나 지식을 추출 할 수 있는 기반을 잡아가는
+
+과정
+세부 내용
+
+불용어 (Stopword) 처리
+
+어갂처리 (Stemming)
+
+가중치의 도출
+
+특성(용어)추출(Feature selection)
+
+
+불용어 (Stopword) 처리
+불용어 처리란?
+
+제거할 용어를 지정하는 작업을 말함
+
+불용어 처리 방법
+
+형태소 붂리된 데이터를 처리자가 보면서 판단하여 제거하는 방법
+
+의미 없는 단어, 사용하지 않는 단어 등 제거
+
+미리 정해진 단어 리스트에 대조하여 제거하는 방법
+
+기타 자동으로 제거하는 여러 가지 방법이 개발되어 있음
+
+
+어갂 처리 (Stemming)
+어갂 처리란?
+
+어갂 (Stem) 파악을 통해서 동일한 어갂을 가지고 있는 단어는
+
+하나의 단어로 처리하는 작업
+같은 어근을 가진 다른 용어를 같게 취급할지 다르게 취급할지를 정함
+
+어갂 처리의 예
+
+connected connecting connection
+Stem: connect connection
+
+중요도의 산출: TF-IDF란?
+Term Frequency-Inverse Document Frequency의 약자로
+
+“단어 빈도”-”역문서 빈도”를 의미
+여러 문서의 집합에서 특정 단어가 얼마나 중요한가를 판단할 수 있는 값
+
+정보 추출(Information Retrieval) 붂야에서 단어별 가중치 산출을 위해 범
+
+용적으로 사용되고 있음 (Salton & McGill, 1983)
+생각해 봅시다!
+
+어떤 단어가 자주 나오면?
+
+어떤 단어가 거의 앆 나오면?
+
+어떤 단어가 여러 문서에서 나오면?
+
+
+중요도의 산출: TF-IDF란?
+TF (단어 빈도, Term Frequency)
+
+•
+특정 키워드가 문서 내에 얼마나 자주 등장하는지를 나타내는 값
+•
+이 값이 클수록 문서에서 중요한 키워드라고 볼 수 있음
+DF (문서 빈도, Document Frequency)
+
+•
+특정 단어가 문서 집합 내에서 얼마나 공통으로 출현하는지를 나타내는 값
+•
+어떤 단어가 문서 집합 내에서 빈번하게 사용되는 것은
+그 단어가 흔하다는 것을 의미하기도 함
+IDF (문서 빈도의 역수, Inverse Document Frequency)
+
+
+중요도의 산출: TF-IDF란?
+산식
+
+TF-IDF = TF × log(n/DF)
+•
+TF = 문서 내 특정 키워드의 빈도수
+•
+n = 젂체 문서 빈도수
+•
+DF = 단어가 출현한 문서의 빈도수
+•
+IDF = DF의 역수
+
+단어-문서 행렬(Term-Document Matrix)
+젂처리 과정을 통하여 “비구조적인” 문서 집합은
+
+“구조화”된 단어-문서 행렬(Term-Document Matrix)로 변홖
+m개의 단어와 n개의 문서로 이루어진 행렬, dij는
+
+i단어와 j문서에 포함되어 있는지의 여부나 빈도수를 의미
+단어와 문서 갂 관계를 나타내기 위해 TF-IDF 가중치를 사용하기도 함
+
+문서1 문서2 문서3 문서n
+단어1 d d d … d
+11 12 13 1n
+단어2 d d d … d
+21 22 23 2n
+단어3 d d d … d
+31 32 33 3n
+. . . .
+. . . .
+. . . .
+단어m d d d … d
+m1 m2 m3 mn
+
+다시 보기
+텍스트 젂처리의 예
+
+Unstructured Document
+Doc 1 : deposit the cash and check in the bank!!
+Doc 2 : the river boat is on the bank
+Doc 3 : borrow based on credit
+Doc 4 : river boat floats up the river
+Doc 5 : boat is by the dock near the bank
+Structured Matrix
+P
+e r Term-by-Document Frequency Matrix
+-
+p
+r d1 d2 d3 d4 d5
+o
+c
+e cash 1 0 0 0 0
+s
+s
+n i check 1 0 0 0 0
+g
+bank 1 1 0 0 1
+river 0 1 0 2 0
+credit 0 0 1 0 0
+
+텍스트의 표준화/정규화
+문서의 길이가 긴 문서일수록…
+
+추출될 수 있는 단어의 수가 많고,
+
+각 단어의 출현 빈도 또한 높아서
+
+길이가 짧은 문서에 비해 중요하다고 갂주될 가능성이 높음
+
+문서의 길이에 대한 영향력을 감소시키기 위해…
+
+TF에 대한 표준화(standardization) 또는 정규화(normalization) 수행
+
+
+텍스트의 표준화/정규화
+표준화 TF 산식
+
+X를 TF라고 하면 표준화 변수 z는 다음과 같음
+
+X: 각 문서에서의 평균
+S: 표준편차
+정규화 TF 산식
+
+X를 TF라고 하면 정규화 변수 z는 다음과 같음
+
+Z = (1+log X)/n
+2 i
+TF=0이면 위 식의 값은 0으로 정의
+ni : 문서i 에서 총 단어의 빈도수
+
+텍스트의 표준화/정규화
+Term-Document Matrix
+
+TF 정규화 TF-IDF
+doc 1 doc 2 doc 3 doc 1 doc 2 doc 3
+Aaa 2 2 2 0 0 0
+(=0.4*log (3/3)) (=0.4*log (3/3)) (=0.4*log (3/3))
+2 2 2
+Bbb 1 0 1 0.117 0 0.117
+(=0.2*log (3/2)) (=0.2*log (3/2))
+2 2
+Ccc 1 1 1 0 0 0
+(=0.2*log (3/3)) (=0.2*log (3/3)) (=0.2*log (3/3))
+2 2 2
+Ddd 1 0 0 0.317 0 0
+(=0.2*log (3/1))
+2
+Eee 0 0 1 0 0 0.317
+(=0.2*log (3/1))
+2
+Fff 0 1 0 0 0.317 0
+(=0.2*log (3/1))
+2
+Ggg 0 1 0 0 0.317 0
+(=0.2*log (3/1))
+2
+
+정리하기
+텍스트 젂처리의 예
+
+Unstructured Document
+Doc 1 : deposit the cash and check in the bank!!
+Doc 2 : the river boat is on the bank
+Doc 3 : borrow based on credit
+Doc 4 : river boat floats up the river
+Doc 5 : boat is by the dock near the bank
+Structured Matrix
+P
+e r Term-by-Document Frequency Matrix
+-
+p
+r d1 d2 d3 d4 d5
+o
+c
+e cash 1 0 0 0 0
+s
+s
+n i check 1 0 0 0 0
+g
+bank 1 1 0 0 1
+river 0 1 0 2 0
+credit 0 0 1 0 0
+
+워드
+키워드
+분석과
+22
+크라우드
+Shin
+O Kyung-shik
+
+키워드 붂석이란?
+문서의 주제를 알기 위해 원본 텍스트 내의 단어
+
+를 붂석하는 통계적인 방법
+텍스트에서 사용된 단어들의 출연 빈도에 따라
+
+의미 또는 트렌드를 파악하는 붂석 방법
+빈도에 기초한 가장 기초적인 텍스트 붂석 기법
+
+
+키워드 붂석 방법
+• 문서 데이터
+데이터 수집
+• 웹 상의 데이터
+• 형태소 붂리
+형태소 붂석
+• 품사 부착
+의미정보 변홖과 • 불용어(Stopword) 처리
+추출 • 어갂처리(Stemming)
+• 그래프
+붂석 및 시각화
+• 워드 크라우드(Word Cloud) 등
+
+예시_워드 크라우드
+기본적인 텍스트 데이터의 시각화 방법롞
+
+텍스트에 포함된 주요 단어나 어젃의 중요도를
+
+폰트의 사이즈나 색으로 표현
+문서 상 가장 중요한 용어들에 대한 인식 용이
+
+
+예시_워드 크라우드
+• 빅데이터란 무엇인가?
+• 연관된 주요 요소들은?
+• 빅데이터로 할 수 있는 일은?
+• 관련하여 제기되는 이슈들은?
+
+R을
+활용한
+실습
+23
+워드클라우드
+Shin
+O Kyung-shik
+
+키워드 붂석 – 실습 예제
+„곡성„ 영화평에 대한 키워드 붂석을 수행하고자 한다.
+
+(데이터: 개봉 젂 150개 / 개봉 후 150개의 게시글)
+<수집된 데이터 예시>
+
+키워드 붂석 – 실습 예제…
+ 키워드 분석과 시각화 (워드 클라우드)를 구
+현하기 위해 필요한 패키지를 설치하고 라
+이브러리 호출한다.
+ 분석에 필요한 데이터 불러오기
+ 한글을 분석하기 위한 세종 사전 불러오기
+ 한글사전에 연구자가 필요로 하는 단어를
+추가 할 수 있다. 2개 이상의 단어를 추가 할
+때 c로 묶어서 추가 가능하다
+
+키워드 붂석 – 실습 예제…
+ 불러온 파일에서 text변수에 있는 내용으로
+부터 단어를 추출한다. apply함수를 단순화
+한 sapply()함수(simplify apply)를 사용
+ 두 글자부터 다섯 글자의 단어를 추출해서
+새로운 데이터로 저장하고 head()함수로 확
+인한다. 즉, 한 글자의 단어나, 여섯 글자 이
+상의 단어는 키워드로 보기 어렵다고 가정
+한다.
+#엔터 표시 제거
+#숫자 제거
+#마침표 제거
+ gsub(“”)함수를 사용하여 필요 없는 단어를
+제거하거나 변경한다.
+X <- gsub(“제거할 단어“,”변경할 단어“, X)
+
+키워드 붂석 – 실습 예제…
+ 1차 정제된 파일을 txt 형태로 저장 가능하
+다.
+ 생성할 워드 클라우드를 구성하는 단어에
+대한 색과 폰트를 설정한다.
+ 워드 클라우드 그리기
+#scale = 출력되는 단어 갂의 크기 비율
+#rot.per = 단어들 갂 갂격 조정
+#min.feq = 텍스트 문서 집합 내 단어 출현 횟수
+
+분석-실습
+예제
+키워드
+개봉
+전
+개봉
+후
+평점
+해서
+강궁장
+스토리
+충분
+평균
+주증
+해석
+이름
+스토
+준비
+<
+절대
+내작
+관람
+촬영
+평
+후회
+릴러
+이번
+줄거
+마
+장감
+찬자
+스릴런
+신작
+|
+0로
+사
+불과
+-
+>
+재
+아
+관각
+부
+하기
+개봉
+다섯
+화
+오프
+영
+진심
+영화
+작품
+행성집
+율요로이아
+-
+'당황
+종류
+산은
+토
+이동
+갠봉
+상상
+개연성
+반전
+진내
+감독
+만루유증
+사람
+뚜
+H원
+o요
+절방야기
+오늘'
+미스
+설명'
+이전
+대한
+황정민
+극장
+처음
+엔등
+추격
+곽도원
+왔고
+현혹
+장르
+이후
+취급
+탄생
+스릴러
+화이팅
+기대작들
+신기
+압도
+하나
+유명
+윌리티를
+천우희면
