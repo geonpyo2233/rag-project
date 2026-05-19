@@ -1,12 +1,14 @@
-import { useEffect, useState } from "react";
+﻿import { useEffect, useState } from "react";
 import { getProcessStatus, processFile } from "./api";
 
 const TEXT_TABS = [
   { key: "summary", label: "요약" },
-  { key: "raw_text", label: "Direct Text" },
-  { key: "ocr_text", label: "OCR Text" },
-  { key: "merged_text", label: "Merged Text" },
+  // 개발용 원문 탭 (운영 화면 비노출)
+  // { key: "raw_text", label: "Direct Text" },
+  // { key: "ocr_text", label: "OCR Text" },
+  // { key: "merged_text", label: "Merged Text" },
 ];
+
 
 function App() {
   const [file, setFile] = useState(null);
@@ -52,8 +54,8 @@ function App() {
   const validateFile = (candidate) => {
     if (!candidate) return "파일을 선택해 주세요.";
     const name = candidate.name.toLowerCase();
-    if (!(name.endsWith(".hwp") || name.endsWith(".hwpx"))) {
-      return "hwp 또는 hwpx 파일만 업로드할 수 있습니다.";
+    if (!(name.endsWith(".hwp") || name.endsWith(".hwpx") || name.endsWith(".pdf") || name.endsWith(".docx") || name.endsWith(".ppt") || name.endsWith(".pptx"))) {
+      return "hwp, hwpx, pdf, docx, ppt, pptx 파일만 업로드할 수 있습니다.";
     }
     return "";
   };
@@ -118,13 +120,14 @@ function App() {
         <div className="brand">
           <span className="brandMark">OCR</span>
           <div>
-            <h1>OCR Test2</h1>
-            <p>HWP/HWPX 문서 처리 파이프라인</p>
+            <h1>AI기반</h1>
+            <h1>문서 요약 및 카테고리 분류</h1>
+            <h1>RAG 시스템</h1>
           </div>
         </div>
         <div className="sidebarHint">
           <p>1) 파일 업로드</p>
-          <p>2) 객체 OCR 처리</p>
+          <p>2) OCR</p>
           <p>3) 결과 확인</p>
         </div>
       </aside>
@@ -151,7 +154,7 @@ function App() {
               <p>파일을 끌어놓거나 아래에서 선택해 주세요.</p>
               <input
                 type="file"
-                accept=".hwp,.hwpx"
+                accept=".hwp,.hwpx,.pdf,.docx,.ppt,.pptx"
                 onChange={(e) => setFile(e.target.files?.[0] ?? null)}
               />
               <p className="selectedFile">{file ? file.name : "선택된 파일 없음"}</p>
@@ -229,20 +232,23 @@ function App() {
               </p>
             </div>
 
-            <div className="tabRow">
-              {TEXT_TABS.map((tab) => (
-                <button
-                  key={tab.key}
-                  type="button"
-                  className={`tabBtn ${activeTab === tab.key ? "active" : ""}`}
-                  onClick={() => setActiveTab(tab.key)}
-                >
-                  {tab.label}
-                </button>
-              ))}
-            </div>
+            {/*
+              개발/디버깅용 탭 UI (운영 비노출)
+              <div className="tabRow">
+                {TEXT_TABS.map((tab) => (
+                  <button
+                    key={tab.key}
+                    type="button"
+                    className={`tabBtn ${activeTab === tab.key ? "active" : ""}`}
+                    onClick={() => setActiveTab(tab.key)}
+                  >
+                    {tab.label}
+                  </button>
+                ))}
+              </div>
+            */}
 
-            <pre>{getTabContent()}</pre>
+            <pre>{result.summary || ""}</pre>
           </section>
         )}
       </main>
@@ -251,3 +257,5 @@ function App() {
 }
 
 export default App;
+
+
