@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import re
 from uuid import uuid4
@@ -11,17 +11,17 @@ from app.config import settings
 
 class ChromaService:
     def __init__(self) -> None:
-        """임베딩 모델과 Chroma 컬렉션을 초기화한다."""
+        """?꾨쿋??紐⑤뜽怨?Chroma 而щ젆?섏쓣 珥덇린?뷀븳??"""
         self.client = chromadb.PersistentClient(path=settings.chroma_dir)
         self.embedder = SentenceTransformer(settings.embedding_model_name)
-        sample_dim = len(self.embedder.encode("차원 확인", normalize_embeddings=True).tolist())
+        sample_dim = len(self.embedder.encode("李⑥썝 ?뺤씤", normalize_embeddings=True).tolist())
         self.raw_collection_name = f"raw_documents_{sample_dim}"
         self.summary_collection_name = f"summary_documents_{sample_dim}"
         self.raw_collection = self.client.get_or_create_collection(name=self.raw_collection_name)
         self.summary_collection = self.client.get_or_create_collection(name=self.summary_collection_name)
 
     def save_raw(self, filename: str, raw_text: str, ocr_text: str, merged_text: str) -> str:
-        """원문(병합 텍스트)을 문장 단위로 청킹하여 저장한다."""
+        """?먮Ц(蹂묓빀 ?띿뒪????臾몄옣 ?⑥쐞濡?泥?궧?섏뿬 ??ν븳??"""
         source_id = str(uuid4())
 
         chunks = self._split_sentences(merged_text)
@@ -50,20 +50,20 @@ class ChromaService:
         )
         return source_id
 
-    def save_summary(self, source_id: str, filename: str, summary: str, category: str) -> str:
-        """요약/카테고리 결과를 벡터로 변환해 저장한다."""
+    def save_summary(self, source_id: str, filename: str, summary: str, category: str, main_category: str = "기타", sub_category: str = "미상", confidence: float = 0.0, category_reason: str = "") -> str:
+        """?붿빟/移댄뀒怨좊━ 寃곌낵瑜?踰≫꽣濡?蹂?섑빐 ??ν븳??"""
         summary_id = str(uuid4())
         embedding = self._embed_document(summary)
         self.summary_collection.add(
             ids=[summary_id],
             documents=[summary],
             embeddings=[embedding],
-            metadatas=[{"source_id": source_id, "filename": filename, "category": category}],
+            metadatas=[{"source_id": source_id, "filename": filename, "category": category, "main_category": main_category, "sub_category": sub_category, "confidence": confidence, "category_reason": category_reason}],
         )
         return summary_id
 
     def search_raw(self, query: str, limit: int = 5) -> dict:
-        """질의 벡터 기반 유사 문서 검색."""
+        """吏덉쓽 踰≫꽣 湲곕컲 ?좎궗 臾몄꽌 寃??"""
         query_embedding = self._embed_query(query)
         try:
             return self.raw_collection.query(
@@ -108,9 +108,10 @@ class ChromaService:
         self.summary_collection = self.client.get_or_create_collection(name=self.summary_collection_name)
 
     def _split_sentences(self, text: str) -> list[str]:
-        """간단 규칙 기반 문장 분리."""
+        """媛꾨떒 洹쒖튃 湲곕컲 臾몄옣 遺꾨━."""
         if not text:
             return []
         parts = re.split(r"(?<=[.!?])\s+|\n+", text)
         sentences = [p.strip() for p in parts if p and p.strip()]
         return [s for s in sentences if len(s) >= 5]
+

@@ -1,15 +1,15 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 """
-문서 처리 파이프라인 서비스.
+Document processing pipeline service.
 
-역할:
-1) 업로드 파일 저장
-2) direct text 추출
-3) 객체 이미지 추출 + OCR
-4) LLM 요약/분류
-5) ChromaDB 저장
-6) 진행 상태(job) 관리
+Flow:
+1) Validate uploaded file
+2) Extract direct text
+3) Extract embedded images and run OCR
+4) Generate summary/categories via LLM
+5) Save raw and summary data to ChromaDB
+6) Track async job status
 """
 
 import asyncio
@@ -42,7 +42,7 @@ class PipelineService:
         self.jobs: dict[str, JobStatusResponse] = {}
 
     def start_job(self, filename: str, file_bytes: bytes) -> str:
-        """비동기 작업을 시작하고 job_id를 반환한다."""
+        """Start async processing job and return job_id."""
         job_id = str(uuid4())
         self.jobs[job_id] = JobStatusResponse(
             job_id=job_id,
@@ -56,14 +56,14 @@ class PipelineService:
         return job_id
 
     def get_job(self, job_id: str) -> JobStatusResponse:
-        """현재 작업 상태를 조회한다."""
+        """Return current job status."""
         job = self.jobs.get(job_id)
         if not job:
-            raise HTTPException(status_code=404, detail="존재하지 않는 job_id 입니다.")
+            raise HTTPException(status_code=404, detail="존재하지 않는 job_id 입니다")
         return job
 
     def _update_job(self, job_id: str, *, status: str, progress: int, stage: str, message: str) -> None:
-        """메모리 상태와 터미널 로그를 함께 업데이트한다."""
+        """Update in-memory job status and write logs."""
         job = self.jobs[job_id]
         job.status = status
         job.progress = progress
@@ -72,7 +72,7 @@ class PipelineService:
         self.logger.info("[JOB %s] %s%% %s - %s", job_id, progress, stage, message)
 
     async def _run_job(self, job_id: str, filename: str, file_bytes: bytes) -> None:
-        """실제 파이프라인 본문."""
+        """Pipeline execution body."""
         ext = Path(filename).suffix.lower()
         if ext not in settings.allowed_ext_set:
             self._update_job(
@@ -123,7 +123,9 @@ class PipelineService:
 
             self._update_job(job_id, status="running", progress=70, stage="llm", message="요약/분류 생성 중")
             try:
-                summary, category = await self.llm_service.summarize_and_categorize(merged_text)
+                summary, main_category, sub_category, confidence, category_reason = (
+                    await self.llm_service.summarize_and_categorize(merged_text)
+                )
             except RuntimeError as exc:
                 code = str(exc)
                 if code == "OLLAMA_TIMEOUT":
@@ -139,7 +141,16 @@ class PipelineService:
             source_id = self.chroma_service.save_raw(filename, raw_text, ocr_text, merged_text)
 
             self._update_job(job_id, status="running", progress=95, stage="db_summary", message="요약/분류 DB 저장 중")
-            self.chroma_service.save_summary(source_id, filename, summary, category)
+            self.chroma_service.save_summary(
+                source_id,
+                filename,
+                summary,
+                main_category,
+                main_category,
+                sub_category,
+                confidence,
+                category_reason,
+            )
 
             result = ProcessResponse(
                 filename=filename,
@@ -147,7 +158,11 @@ class PipelineService:
                 ocr_text=ocr_text,
                 merged_text=merged_text,
                 summary=summary,
-                category=category,
+                category=main_category,
+                main_category=main_category,
+                sub_category=sub_category,
+                confidence=confidence,
+                category_reason=category_reason,
             )
             self.jobs[job_id].result = result
             self._update_job(job_id, status="completed", progress=100, stage="completed", message="처리 완료")

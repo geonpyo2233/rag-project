@@ -214,7 +214,7 @@ function App() {
                   onClick={() =>
                     downloadText(
                       "category.txt",
-                      `filename: ${result.filename}\ncategory: ${result.category}\n`,
+                      `filename: ${result.filename}\nmain_category: ${result.main_category || result.category || "기타"}\nsub_category: ${result.sub_category || "미상"}\n`,
                     )
                   }
                 >
@@ -228,7 +228,10 @@ function App() {
                 <b>파일명:</b> {result.filename}
               </p>
               <p>
-                <b>카테고리:</b> {result.category}
+                <b>메인 카테고리:</b> {result.main_category || result.category || "기타"}
+              </p>
+              <p>
+                <b>서브 카테고리:</b> {result.sub_category || "미상"}
               </p>
             </div>
 

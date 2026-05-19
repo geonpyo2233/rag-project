@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+﻿from pydantic import BaseModel
 
 
 # 문서 처리 완료 응답
@@ -8,7 +8,13 @@ class ProcessResponse(BaseModel):
     ocr_text: str
     merged_text: str
     summary: str
+    # 하위 호환용 (기존 프론트에서 사용)
     category: str
+    # 신규 분류 필드
+    main_category: str = "기타"
+    sub_category: str = "미상"
+    confidence: float = 0.0
+    category_reason: str = ""
 
 
 # 검색 요청/응답
