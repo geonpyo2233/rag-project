@@ -31,7 +31,7 @@ Base.metadata.create_all(bind=엔진)
 
 # ── 폴더 자동 생성 ───────────────────────────────────────────────────────
 UPLOAD_DIR = Path(settings.upload_dir)
-JSON_DIR   = Path("./data/ocr_output")
+JSON_DIR   = Path(settings.ocr_output_dir)
 CHROMA_DIR = Path(settings.chroma_dir)
 
 for _d in [UPLOAD_DIR, JSON_DIR, CHROMA_DIR]:

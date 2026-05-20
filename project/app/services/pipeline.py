@@ -44,7 +44,7 @@ class PipelineService:
 
         # 필요한 폴더 자동 생성
         for d in [settings.upload_dir, settings.work_dir, settings.chroma_dir,
-                  "./data/ocr_output"]:
+                  settings.ocr_output_dir]:
             Path(d).mkdir(parents=True, exist_ok=True)
 
     # ------------------------------------------------------------------
@@ -99,7 +99,7 @@ class PipelineService:
             return
 
         upload_dir = Path(settings.upload_dir)
-        json_dir   = Path("./data/ocr_output")
+        json_dir   = Path(settings.ocr_output_dir)
         chroma_dir = Path(settings.chroma_dir) / job_id
         saved_path = upload_dir / f"{job_id}.{ext}"
         json_path  = json_dir  / f"{job_id}.json"
