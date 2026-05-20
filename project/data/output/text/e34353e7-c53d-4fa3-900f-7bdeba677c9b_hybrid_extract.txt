@@ -1,0 +1,903 @@
+Interested in learning
+more about security?
+SANS Institute
+InfoSec Reading Room
+This paper is from the SANS Institute Reading Room site. Reposting is not permitted without express written permission.
+Linux RootKits For Beginners - From Prevention to
+Removal
+One day while reading a mail list for the Linux Users Group in my hometown I discovered a call for help. It
+was a posting from a novice Linux user with a disturbing issue. While doing some routine checks on a Linux
+system, he found a user that had been added to the system with the user id of 0 (root). His first thought was
+that it might be a rootkit. He wanted to know what he could do to verify it was a rootkit and how to remove it
+from the system. He further asked for suggestions on preventative measures to ensure thi...
+Copyright SANS Institute
+Author Retains Full Rights
+DA
+
+Linux RootKits For Beginners – From Prevention to Removal
+Jeromey Hannel
+GIAC Security Essentials Certification
+Practical Assignment Version 1.4b
+s
+t
+January 23, 2003 h
+g
+i
+r
+Key fingerprint = AF19 FA27 2F94 998D FDB5 DE3D F8B5 0l6E4 A169 4E46
+l
+u
+f
+s
+n
+i
+a
+t
+e
+r
+r
+o
+h
+t
+u
+A
+,
+3
+0
+0
+2
+e
+t
+u
+t
+i
+t
+s
+n
+I
+S
+N
+A
+S
+©
+Key fingerprint = AF19 FA27 2F94 998D FDB5 DE3D F8B5 06E4 A169 4E46
+© SANS Institute 2003, As part of the Information Security Reading Room. Author retains full rights.
+
+Linux RootKits For Beginners – From Prevention to Removal
+Introduction
+One day while reading a mail list for the Linux Users Group in my hometown I
+discovered a call for help. It was a posting from a novice Linux user with a
+disturbing issue.
+While doing some routine checks on a Linux system, he found as user that had
+t
+been added to the system with the user id of 0 (root). His firsth thought was that it
+g
+might be a rootkit. He wanted to know what he could do to verify it was a rootkit
+i
+and how to remove it from the system. He further asked fo
+r
+r suggestions on
+Kpreeyv efinngtaertipvrein mt =e AasFu1r9e sFA to2 7e 2nFs9u4re 9 9th8iDs kFiDndB 5o fD aEtt3aDc kF 8dBoe5s
+l
+0l 6nEot4 rAe1o6c9c u4rE. 46
+u
+f
+That situation prompted me to write this paper to ans u nderstanding of rootkits
+and its effects. This paper will also discuss how to
+n
+monitor for a rootkit, and the
+i
+steps that need to be taken to remove one. a
+t
+e
+r
+What is a Rootkit?
+r
+o
+According to http://www.whatis.com: “A rhootkit is a collection of tools (programs)
+that a hacker uses to mask intrusion an
+t
+d obtain administrator-level access to a
+u
+computer or computer network”. A
+,
+Rootkits are commonly written for
+3
+variations of the Unix operating systems
+0
+including Linux, BSD, and Sun0Os, but have also been written for the Windows
+operating systems as well. T2his paper will focus on rootkits written for the Linux
+operating systems. e
+t
+u
+There are many differen
+t
+t versions of rootkits that perform basically the same
+i
+t
+function. Well knowns Linux rootkits include LRK, tOrn, and Adore and some
+n
+Windows Rootkits include NTROOT, NTKap, and Nullsys. More information as
+I
+well as copies of t hese files can be found on Packet Storm’s site.
+S
+N
+http://packeAtstormsecurity.nl/UNIX/penetration/rootkits/
+S
+Not only ar e rootkits designed to hide the presence of an attacker; they are also
+©
+used to gain future administrator-level (root) access, launch distributed denial of
+service (ddos), or obtain financial or confidential information.
+Because rootkits are designed to hide the presence of an attacker, it is
+necessary to understand how a rootkit functions.
+K ey fingerprint = AF19 FA27 2F94 998D FDB5 DE3D F8B5 06E4 A169 4E46
+When a rootkit is installed, it overwrites many commands used on a daily basis
+such as ls, ps, or netstat. By overwriting such commands, the intrusion can be
+masked from the administrators.
+© SANS Institute 2003, As part of the Information Security Reading Room. Author retains full rights.
+
+Take the following scenario; an intruder just gained access to a system through a
+recently published vulnerability in an un-patched application. The intruder then
+launches the rootkit installer. This rootkit just over wrote the ls command. By
+doing this, any time the trojaned ls command is ran, all files installed by the
+rootkit are hidden from view. This rootkit also installed a trojaned version of the
+ps command ultimately hiding the sniffer, backdoor, and log parsing processes
+from view. The ls and ps commands are not the only commands that can get
+over written by the rootkit. The following is a list of common commands that can
+be overwritten by a rootkit. s
+t
+h
+netstat: A useful tool used to display information about currgent network
+i
+connections, routing tables, and interface statistics. Netstrat can be altered by
+Kroeoyt kfiintsg etrop rhiindte = t AheF 1c9o nFnAe2c7t i2oFn9s4 m 99a8dDe FbDy Bth5e D inEt3ruDd Fe8r Bto5 a0l6ndE 4fr Aom16 9th 4eE s4y6s tem.
+l
+u
+f
+du: A command used to display file space usage. M uch like the ls command, du
+s
+makes hierarchical directory tree but displays hown much disk space each file or
+i
+directory is using. The du command is trojaned amainly to hide files and
+t
+directories installed by the rootkit.
+e
+r
+find: Used to find files in a directory hierarcrhy. By altering the find command,
+o
+intruders make it harder for administratohrs to search for known files installed by
+rootkits. Much like the ls and du commtands, find is trojaned to hide the presence
+u
+of rootkit files. A
+,
+ifconfig: Used to configure and 3display information about network interfaces. If
+0
+a sniffer is installed and running, the network interface is placed in promiscuous
+0
+mode. Placing an interface in2 promiscuous mode enables the network interface
+to intercept and read packeets on the network. Ifconfig is most commonly altered
+t
+to conceal the evidence ouf an interface in promiscuous mode thus hiding the
+presence of a sniffer or ptassword grabber.
+i
+s
+t
+n
+inetd (xinetd): A super server designed to start programs that provide Internet
+I
+services. (x)inetd then spawns the appropriate server to accept the connections.
+S
+Many rootkits add their applications to the configuration file causing rootkit
+N
+services to be spawned when a specific port is accessed. This is done to hide
+A
+the process from administrators until the attacker calls it.
+S
+©
+killall: A command used to stop processes. Killall is trojaned in most rootkits so
+administrators cannot stop certain processes that have been installed by the
+rootkit.
+login: A daemon that is used when signing onto a system. The login daemon
+Kcaeny fbineg merpordiniftie =d A toF 1d9o FcAum27e 2nFt 9a4ll 9u9s8eDrn FaDmBe5s DaEnd3 Dp aFs8sBw5 o0r6dEs4 t yAp1e6d9 i4nEto4 6th e
+system. This documented list can be saved to a directory to be accessed for
+later use, sent to another system, or displayed on an alternative source such as a
+chat server or news group.
+© SANS Institute 2003, As part of the Information Security Reading Room. Author retains full rights.
+
+lsof: A command that is used to list open files. The lsof command is overwritten
+to hide any file or process that is open by the rootkit.
+Not all rootkits were designed to overwrite commands. Rootkits such as Adore
+Knark were designed as a loadable kernel modules or LKM for short. LKM
+rootkits take advantage of system calls changing the behavior of the command
+without actually modifying the command. In laymen’s terms, a system call is the
+way a user level application asks the operating system to perforsm a function for
+t
+it. The system call table contains a list of each of the system hcalls.
+g
+i
+Since rootkits are designed to hide their presence, any comrmand affected by any
+Kroeoyt kfiint gsehrporuilndt s=t iAll Ffu1n9 cFtAio2n7 a 2sF 9it4 d 9id9 8bDe fFoDreB t5h eD Ein3tDru sFi8oBn5. 0l6E4 A169 4E46
+l
+u
+f
+Rootkit Prevention
+s
+n
+i
+Rootkit prevention as well as preventing any othaer type of attack starts at the
+t
+basics of system security. A basic system sec
+e
+urity plan should include items
+such as firewalls, VPN’s, as well as updating rapplications with vendor patches.
+By implementing basic security measures, radministrators can assure a relatively
+o
+secure network. h
+t
+u
+Security Basics A
+,
+Firewall all networks. 3
+0
+It is always a good practice to make sure all networks are protected from the
+0
+Internet by using a firewall. K2eep in mind that a firewall is not the only
+preventative measure an adeministrator can take to deter intruders.
+t
+u
+Know exactly what is runtning on all systems.
+i
+After a system is insta
+s
+ltled, take inventory of what is running. Turn off any
+n
+services that are not needed. Perform periodic audits of system processes to
+I
+ensure that no una uthorized applications are running.
+S
+N
+Grant access to users that are needed to perform their jobs.
+A
+Never give a user more access to network services than he or she needs. Only
+S
+grant perm ission to services that the user needs to perform his or her job and
+©
+nothing more.
+Enable secure communications such as VPNs and Secure Shell.
+By implementing VPN’s, administrators ensure that all data transmitted across
+Wide Area Network(s) (WAN) are encrypted. Secure Shell or SSH is an
+Kaletey rfninagtievrep rtiont t =h eA tFe1ln9 eFtA p2r7o t2oFc9o4l. 9 S98SDH F eDnBc5ry DptEs3 aDll Fd8aBta5 t0r6aEn4sm Ai1tt6e9d 4 dEu4r6in g a
+session including usernames and password.
+© SANS Institute 2003, As part of the Information Security Reading Room. Author retains full rights.
+
+Keep up to date on all vendor updates.
+Security and bug patches are frequently released for operating systems as well
+as applications. Keep systems up to date with the latest vendor releases that
+resolve security issues. Many attackers gain administrative level access by
+exploiting vulnerabilities in applications used everyday. It is good practice to
+belong to newsletters such as CERT or BUGTRAQ. These types of newsletters
+inform administrators of recent vulnerabilities, what systems are affected and
+where to go for patches.
+s
+t
+Install host and network based intrusion detection systems. h
+Knowing what is going on within your network is very importgant. If an intruder
+i
+tries to gain access, let your IDS application notify you. r
+K ey fingerprint = AF19 FA27 2F94 998D FDB5 DE3D F8B5 0l6E4 A169 4E46
+l
+u
+Monitor all log files.
+f
+Monitoring log files will give administrators the upper hand since most system
+s
+activities are logged. It is a good idea to automaten this task using a log-checking
+i
+program such as Logwatch or LogSentry. Monitaoring log files will not notify
+t
+administrators of a rootkit attack, however it w
+e
+ill also inform them of unusual
+system activity such as successful and unsucrcessful login attempts.
+r
+o
+Implementing basic security precautionsh is the first step in keeping intruders off
+systems and preventing any kind of attatck(s). An administrator can also prevent
+u
+rootkit attacks by ensuring file securAity.
+,
+File Attribute Security 3
+0
+There are a few steps that an administrator can take to implement file security.
+0
+One such way is to ensure th2at common files cannot be overwritten or changed.
+This can be accomplished bey setting the immutable flag on important system
+t
+files. u
+t
+i
+Using the Immutable
+s
+Ftlag
+n
+The term immutable means unable to change. By setting the immutable flag on
+I
+a file it cannot be c hanged, renamed, deleted, or even linked to.
+S
+N
+To set the immutable flag on a file, use the “chattr” command found in most Linux
+A
+distributions.
+S
+©
+· chattr +i <file>: sets the immutable flag.
+· chattr -i <file>: unsets the immutable flag.
+· lsattr <file>: displays attributes set to a file.
+Setting the immutable flag on some common files will cause most rootkits to fail
+since the file is marked as unchangeable. This procedure may not stop LKM
+Key fingerprint = AF19 FA27 2F94 998D FDB5 DE3D F8B5 06E4 A169 4E46
+rootkits as the kernel cannot be set as unchangeable. The list of files starting on
+page 2 is a good starting point when deciding which files to set the immutable
+flag on.
+© SANS Institute 2003, As part of the Information Security Reading Room. Author retains full rights.
+
+The immutable flag can only be set and unset by root. Remember that the flag
+can be removed as easily as it was added. Meaning should an attacker have
+access to a machine, he would be able to find the set flag then unset it. After the
+immutable flag is unset, then he would be able to install a rootkit. With this said,
+do not rely on the immutable flag as the only defense against rootkits.
+It is important to remember that following basic security guidelines is always
+good practice. After security measures are in place, administrators should begin
+to implement detection and monitoring practices on their systemss.
+t
+h
+Rootkit Detection and Monitoring g
+i
+r
+KHeoyw f icnagenr parnin at d=m AinFi1s9t rFaAto2r7 m 2oFn94it o9r9 f8oDr sFoDmBe5t hDiEng3 Dth Fa8t Bh5a s0l 6bEe4e nA 1d6e9s i4gEn4e6d to hide
+l
+u
+its existence?
+f
+s
+Basically there are applications that have been wrnitten to assist administrators to
+i
+monitor system activities. Such applications alsao assist administrators in
+t
+detecting rootkits.
+e
+r
+Tripwire and AIDE r
+o
+Both Tripwire and AIDE are utilities usedh to monitor the integrity of files. They
+both create a secure password protectetd database of file and directory attributes
+u
+that is used to compare against the Acurrent files and directories for changes.
+They use MD5 to check the integrity of the file. MD5 sums are a hash function
+,
+that transforms a string of data of3 any length into a shorter fixed-length value. It
+0
+is believed that no two strings of data will have the same MD5 value.
+0
+2
+Output of an md5sum againest netstat and ls on a Linux RedHat 7.1 system
+t
+u
+dc1961b6ce3ff6d6fe2tc89c8603f4985 ls
+i
+30286974e55bb9f9et82f93cc44c39492 netstat
+s
+n
+Notice the MD5 valIue is not the same for these commands. If files being
+monitored are mSodified in any way, Tripwire and AIDE will notify administrators of
+N
+the change.
+A
+S
+Both applications have been widely accepted in the security industry. I
+recomme©nd learning more about it and using it throughout your enterprise.
+Tripwire is available in both commercial and GNU licensing. AIDE is also
+available in GNU licensing.
+http://www.tripwire.com commercial license
+http://www.tripwire.org gnu license
+Khtetyp f:i/ng/ewrwpwr.incts =. tAuFt1.9f iF/A~2r7a m2mFe9r4/ 9a9i8dDe. FhDtmBl5 DE3 D F8B5 06E4 A169 4E46
+© SANS Institute 2003, As part of the Information Security Reading Room. Author retains full rights.
+
+RedHat Package Manager
+Much like Tripwire and AIDE, Redhat Package Mangager (rpm) can be used to
+verify the checksum of installed applications. Not only does it verify the
+checksum, it can also verify other file discrepancies such as permissions and file
+size. The rpm command with the –V option is used to check the signature of any
+installed rpm package. Using the –Va option will check all installed packages.
+Running “rpm –V util-linux” on a test system returned the following is the result:
+s
+t
+.......T c /etc/fdprm h
+.......T c /etc/pam.d/chfn g
+.......T c /etc/pam.d/chsh i
+r
+S.5....T c /etc/pam.d/login
+Key fingerprint = AF19 FA27 2F94 998D FDB5 DE3D F8B5 0l6E4 A169 4E46
+l
+u
+Using the excerpt from the man page found below, yofu could interpret the above
+results of the rpm command. Based on the results, sit can be determined that
+n
+mTime (T) has changed on all files. The mTime is the file modification date and
+i
+a
+time. It can also be said that the file size (S) and MD5 checksum (5) of the login
+t
+file has also changed. With this information ane administrator would be able to
+r
+research why the files have changed.
+r
+o
+From the RPM man page: h
+t
+u
+S file Size differs A
+M Mode differs (includes perm issions and file type)
+,
+5 MD5 sum differs 3
+D Device major/minor numbe0r mis-match
+0
+L readLink(2) path mis-match
+2
+U User ownership differs
+G Group ownership diffeers
+t
+T mTime differs u
+t
+i
+Another application c
+s
+atlled Chkrootkit can be used to assist administrators in
+monitoring for rootkint signatures.
+I
+S
+Chkrootkit
+N
+Chkrootkit is a shell script that checks system binaries for rootkit modification. It
+A
+can also detect some well-known LKM rootkits. Chkrootkit is written and
+S
+maintained by Neslon Murilo and can be found at www.chkrootkit.org.
+©
+Using the following command files, chkrootkit searches for common files and
+directories that rootkits place on the system.
+· awk
+Key · f ingceurtp rint = AF19 FA27 2F94 998D FDB5 DE3D F8B5 06E4 A169 4E46
+· echo
+· egrep
+· find
+· head
+© SANS Institute 2003, As part of the Information Security Reading Room. Author retains full rights.
+
+· id
+· ls
+· netstat
+· ps
+· strings
+· sed
+· uname
+Chkrootkit also checks for hidden processes by checking the oustput of ps with
+t
+the /proc directory. Many rootkits may run sniffers and backdhoors as hidden
+processes. On a system that is very busy, this process mayg generate false
+i
+positives because the system will have a process that finisrhes running before the
+Kcoemy fpinagreer pcrainnt c=o AmFp1le9t FeA. 27 2F94 998D FDB5 DE3D F8B5 0l6E4 A169 4E46
+l
+u
+f
+Chkrootkit also verifies that the network interfaces ar e not in promiscuous mode.
+s
+Promiscuous mode allows a network device to intenrcept and read each network
+i
+packet that arrives in its entirety. This mode proavides the sniffer program all
+packets for analysis.
+e
+t
+r
+Chkrootkit has the ability to use command friles from an alternate path. With this
+o
+option, administrators can place files from
+h
+the above list to a write protected file
+system, compact disk, or floppy diskettet. If these files cannot be copied out,
+u
+setting the immutable flag can assur
+A
+e files do not get overwritten. This ensures
+that chkrookit is using uninfected fil es. Using infected files defeats the purpose
+,
+of utilizing this application. 3
+0
+0
+As mentioned before, chkroot2kit monitors and detects for well-known LKM
+rootkits. In addition, utilizineg commands such as lsmod and kstat will aide
+t
+administrators monitoring
+u
+against these types of rootkits.
+t
+i
+LSMOD
+s
+t
+Lsmod is a utility usned to list modules loaded into the kernel. An administrator
+I
+should become fam iliar with the output of this command. The following is a
+S
+sample output of lsmod command ran on a RedHat 7.2 system. The following
+N
+output displays the module, module size, use count, and the list of referring
+A
+modules.
+S
+©
+3c59x 28424 1
+cdrom 31936 0 (autoclean) [sr_mod]
+sr_mod 16056 10 (autoclean)
+ext3 64768 2
+usb-uhci 24324 0 (unused)
+usbcore 71072 1 [usb-uhci]
+ext3 64768 2
+Key fingerprint = AF19 FA27 2F94 998D FDB5 DE3D F8B5 06E4 A169 4E46
+jbd 47892 2 [ext3]
+aic7xxx 128256 3
+sd_mod 12832 6
+scsi_mod 104800 4 [sr_mod aha1542 aic7xxx
+sd_mod]
+© SANS Institute 2003, As part of the Information Security Reading Room. Author retains full rights.
+
+Keeping track of all modules that are loaded into the kernel is a good step to
+monitoring against LKM rookits.
+It is important to remember that the lsmod command may be manipulated into
+hiding the rootkit module by the rootkit module. There is however another
+command that can be run to list what modules are loaded into the kernel. This
+command is called cat.
+s
+t
+Cat is a command that concatenates files and displays them tho screen or some
+other output. Using the cat command against /proc/modulesg will display the
+i
+same information as lsmod. r
+K ey fingerprint = AF19 FA27 2F94 998D FDB5 DE3D F8B5 0l6E4 A169 4E46
+l
+u
+KSTAT
+f
+To assist in the detection of LKM rootkits, a program has been written by the
+s
+softproject group called Kernel Security Therapy Annti Trolls (KSTAT). KSTAT
+i
+has been written for both the 2.2.x and 2.4.x keranels.
+t
+e
+Running kstat with the –s option will display irnformation about the system call
+table (sys_call_table). Kstat will display driscrepancies in the memory address
+o
+results. h
+t
+u
+The following is an example of a kstAat -s warning. It indicates that the memory
+address in the system call table has changed thus indicating an LKM rootkit.
+,
+3
+0
+sys_fork 0xc4051428 WARNING! Should be at 0xc0108c88
+0
+sys_write 0xc40515920 WARNING! Should be at 0xc01269b8
+sys_close 0xc405163 c WARNING! Should be at 0xc01264a4
+e
+sys_kill 0xc40514d0 WARNING! Should be at 0xc011060c
+t
+sys_mkdir 0xc405u172c WARNING! Should be at 0xc012e540
+sys_clone 0xc40t5147c WARNING! Should be at 0xc0108ca4
+i
+sys_getdents 0x
+s
+ct40512a4 WARNING! Should be at 0xc013022c
+n
+It is strongly recomImend that all the above applications be run automatically on a
+S
+nightly basis through cron and the results be emailed to the IT staff. This will
+N
+ensure that the applications are run thus minimizing the effects should such an
+A
+attack happen.
+S
+©
+If a rootkit still finds its way onto a system, using all of the above applications
+should indicate what rootkit is installed on the system giving administrators the
+upper hand in removing the rootkit.
+A lesson that should be taken from this paper when trying to remove a rootkit
+from a system is it is never known the effects of the rootkit. Should an
+Key fingerprint = AF19 FA27 2F94 998D FDB5 DE3D F8B5 06E4 A169 4E46
+administrator try and remove the rootkit he may miss something important
+allowing the intruder to gain future access to the machine. It is necessary to
+thoroughly analyze the entire system after a rootkit compromise. A system may
+never be the same after this kind of attack.
+© SANS Institute 2003, As part of the Information Security Reading Room. Author retains full rights.
+
+Should an administrator decide to try and resolve the issue, the following section
+will assist him in such a task.
+Rootkit Removal
+Many articles on rootkits and rootkit removal state that the first step to removing
+a rootkit is to disconnect the infected system from the network completely. CERT
+also recommends removing the system from the network. It is msy belief that
+t
+before removing the system from the network, the first step shhould be to evaluate
+the situation. g
+i
+r
+KIf ethy efi nsgyesrtpermin ti s= mAFis1s9io FnA c2r7it i2cFa9l 4a n99d8 iDs tFaDkeBn5 oDfEf t3hDe Fn8eBtw5 o0lr6kE, 4h oAw16 m9 u4cEh4 6m oney
+l
+u
+will the company or client lose? This is a very important question that every
+f
+administrator should ask before taking the system off the network.
+s
+n
+i
+Taking the system off the network would removea any active sessions open by an
+t
+attacker causing the intruder to be disconnecte
+e
+d. Since most rootkits also run a
+sniffer or password grabber, disconnecting thre system from the network will
+ensure that any communication to the outsirde world will fail.
+o
+h
+If a system is mission critical and time ist of the essence to get the system back
+u
+up and running, I would recommendA replacing the infected hard drive in order to
+get the system back into production . Keeping the infected hard drive will give
+,
+administrators the ability to look a3t the attack in greater detail without
+0
+compromising the productivity of the business. If the hard drive cannot be
+0
+replaced, use the dd or mkiso2fs command to make an iso image of the entire
+system. After an image is meade of the hard drive, then begin formatting and
+t
+reinstalling the operating usystem and application software. Having some sort of
+backup of an infected sytstem will assist with any legal proceedings that may
+i
+occur. The backup o
+s
+r tbackup image can also be used for training other
+n
+employees on intrusions and rootkits.
+I
+S
+When reviewing the compromised system, next the administrator needs to find
+N
+out the extent of the rootkit damage. Utilize all the applications mentioned in the
+A
+paper to begin searching for the rootkit. Using these applications, an
+S
+administrat or can find out what rootkit may be on the system. Remember
+©
+running chkrootkit at this time may fail unless the administrator has placed the
+proper commands in a read only location. If an administrator has not properly
+setup chkrookit the administrator can use the RPM command to get the original
+commands placed back on the system.
+KEeayrl ifeinrg ienr pthrien tp =a pAeFr1, 9I dFiAs2c7u s2sFe9d4 t9h9e8 Dus FaDgBe 5o Df REP3DM F t8oB m5 o0n6iEto4r Afo1r6 f9il e4 Ein4t6e grity
+changes. At this point an administrator will want to utilize this command to find
+out exactly what packages will need to be reinstalled. By reinstalling the infected
+applications, chkrootkit will now function. It is recommended to start installing the
+© SANS Institute 2003, As part of the Information Security Reading Room. Author retains full rights.
+
+following packages. Please note that the following packages may be RedHat
+specific and may be different in other Linux distrobutions.
+Fileutils: contains common file management utilities such as ls, cp, chown,
+chgrp, and du.
+Procps: contains system and process monitoring utilities such as ps, top, and w.
+Net-tools: contain basic networking tools such as ifconfig and snetstat
+t
+h
+Findutils: contains the find command that will assist locatingg files on a system.
+i
+r
+KBeiny ufitnilgse:r p crionnt t=a iAnsF 1t9h eF Ast2in7g 2sF c94o m99m8Dan FdD thBa5t DisE u3sDe dF8 wBi5th 0l c6hEk4r oAo1k6i9t t4oE e4x6a mine
+l
+u
+binary files.
+f
+s
+When removing and restoring infected files, try notn to restore files from a backup
+i
+tape unless it can be guaranteed that files on thea tape have not been altered. It
+t
+is recommended that the files being restored c
+e
+ome from the original copies of the
+distribution installation media. r
+r
+o
+After restoring commonly used commanhds, use them to find what files and
+processes are on the system. Use the tps command to show rootkit processes.
+u
+After finding these processes, use thAe killall command to stop them. After they
+have stopped, next step is to find o ut how they got started. Look in the init
+,
+scripts directory on the system. R3edHat systems init scripts are found in
+0
+/etc/rc.d/init.d/.
+0
+2
+As mentioned before, somee rootkits are designed as a Loadable Kernel Module
+t
+(LKM). Because these rouotkits are loaded using kernel modules, these modules
+can be removed from thte kernel and then deleted from the system. To remove a
+i
+module from the kern
+s
+etl, use the rmmod command. Remember that LKM rootkits
+n
+can change the behavior of a command, which means if an administrator tries to
+I
+remove a module by running rmmod, the module may not be removed. The sure
+S
+fire way to make sure that a kernel module is no longer loaded is to reinstall the
+N
+kernel from a backup or the distribution media.
+A
+S
+After the ro otkit is cleaned up and there is no trace of it, find out how the intruder
+©
+gained entry. Maybe your intrusion detection program needs to be evaluated or
+your patches have to be installed sooner.
+Key fingerprint = AF19 FA27 2F94 998D FDB5 DE3D F8B5 06E4 A169 4E46
+© SANS Institute 2003, As part of the Information Security Reading Room. Author retains full rights.
+
+Conclusion
+In conclusion, it is a good practice to secure your system from intruders, but it is
+important to know the effects of the intrusion. Protecting your systems requires
+more than a single tool. It also requires pre-planning when installing new
+systems, maintaining backups, keeping up-to-date with the latest system and/or
+security patches, as well as performing regular audits. As long as there is a
+possibility of system vulnerabilities, security will continue to challenge IT
+professionals. s
+t
+h
+g
+i
+r
+Key fingerprint = AF19 FA27 2F94 998D FDB5 DE3D F8B5 0l6E4 A169 4E46
+l
+u
+f
+s
+n
+i
+a
+t
+e
+r
+r
+o
+h
+t
+u
+A
+,
+3
+0
+0
+2
+e
+t
+u
+t
+i
+t
+s
+n
+I
+S
+N
+A
+S
+©
+Key fingerprint = AF19 FA27 2F94 998D FDB5 DE3D F8B5 06E4 A169 4E46
+© SANS Institute 2003, As part of the Information Security Reading Room. Author retains full rights.
+
+References:
+Altunergil, O. (2001, December 14). Understanding Rootkits. Retrieved from the
+World Wide Web on October 5, 2002:
+http://linux.oreillynet.com/pub/a/linux/2001/12/14/rootkit.html
+Brumley, D. (1999, September). Rootkits - How Intruders Hide. Retrieved from
+the World Wide Web on October 5, 2002: s
+t
+http://www.theorygroup.com/Theory/rootkits.html h
+g
+i
+Steps for Recovering from a UNIX or NT System Compromrise. (2000, April 17).
+Key fiRngeetrrpiervinetd = f rAoFm1 9t hFeA W27o 2rFld9 4W 9i9d8eD W FeDbB o5n D NEo3vDe mF8bBe5r 0l36, E240 0A21:6 9 4E46
+l
+u
+http://www.cert.org/tech_tips/root_compromise.html
+f
+s
+Drake, J. (2001, October 12). How to tell if your Linnux box has been cracked.
+i
+Retrieved from the World Wide Web on Octaober 18, 2002:
+t
+http://www.linuxworld.com/site-stories/20
+e
+01/1012.cracked.html
+r
+Galitz, G. (2001). Rootkits: Hiding a Succesrsful System Compromise. Retrieved
+o
+from the World Wide Web on Novemhber 19, 2002:
+http://www.iwar.org.uk/comsec/restources/root-berkeley/rootkit.htm
+u
+A
+Miller, T. (2000). Detecting Loadab le Kernel Modules. Retrieved from the World
+,
+Wide Web on January 1, 20303:
+0
+http://www.incident-response.org/LKM.htm
+0
+2
+Project: Tripwire: Summarye. (2002, February 28). Retrieved from the World Wide
+t
+Web on October 4, 2u002: http://sourceforge.net/projects/tripwire
+t
+i
+Prosise, C. and Shah
+s
+, tS, (2001, January 25). At the root of rootkits. Retrieved
+n
+from the World Wide Web on October 15, 2002:
+I
+http://builder. cnet.com/webbuilding/0-7532-8-4561014-
+S
+1.html?tag=st.bl.7532.edt.7532-8-4561014
+N
+A
+Somer, L. (
+S
+2002, February 11). Unix rootkits and backdoors. Retrieved from the
+World Wide Web on October 15, 2002:
+©
+http://packetstormsecurity.nl/UNIX/penetration/rootkits/
+What's chkrootkit? (2002, September 16). Retrieved from the World Wide Web
+on October 15, 2002: http://www.chkrootkit.org
+KWeiyn dfionwgesr pNriTn/t2 =K A RFo1o9t FkiAts2.7 R2Fe9tr4i e9v9e8dD f rFoDmB t5h De EW3Dor lFd8 WB5i d0e6 EW4 eAb1 o6n9 4DEe4c6e mber 31,
+2002:
+http://www.rootkit.com/softwaremap/trove_list.php?form_cat=22&discrim=22
+© SANS Institute 2003, As part of the Information Security Reading Room. Author retains full rights.
+
+Last Updated: March 11th, 2016
+Upcoming SANS Training
+Click Here for a full list of all Upcoming SANS Events by Location
+ICS410 Dubai 2016 Dubai, AE Mar 13, 2016 - Mar 17, 2016 Live Event
+NetWars @ NSM Conference '16 Oslo, NO Mar 16, 2016 - Mar 17, 2016 Live Event
+SANS Secure Singapore 2016 Singapore, SG Mar 28, 2016 - Apr 09, 2016 Live Event
+SANS Secure Europe 2016 Amsterdam, NL Apr 04, 2016 - Apr 16, 2016 Live Event
+SANS Northern Virginia - Reston 2016 Reston, VAUS Apr 04, 2016 - Apr 09, 2016 Live Event
+SANS Atlanta 2016 Atlanta, GAUS Apr 04, 2016 - Apr 09, 2016 Live Event
+Threat Hunting and Incident Response Summit New Orleans, LAUS Apr 12, 2016 - Apr 19, 2016 Live Event
+SANS Secure Canberra 2016 Canberra, AU Apr 18, 2016 - Apr 23, 2016 Live Event
+SANS Pen Test Austin Austin, TXUS Apr 18, 2016 - Apr 23, 2016 Live Event
+SANS SEC301 London '16 London, GB Apr 18, 2016 - Apr 22, 2016 Live Event
+ICS Amsterdam 2016 Amsterdam, NL Apr 18, 2016 - Apr 23, 2016 Live Event
+SANS Copenhagen 2016 Copenhagen, DK Apr 25, 2016 - Apr 30, 2016 Live Event
+SANS Security West 2016 San Diego, CAUS Apr 29, 2016 - May 06, 2016 Live Event
+SANS SEC542 Budapest Budapest, HU May 02, 2016 - May 07, 2016 Live Event
+SANS FOR508 Hamburg in German Hamburg, DE May 09, 2016 - May 14, 2016 Live Event
+SANS Prague 2016 Prague, CZ May 09, 2016 - May 14, 2016 Live Event
+SANS Houston 2016 Houston, TXUS May 09, 2016 - May 14, 2016 Live Event
+SANS Stockholm 2016 Stockholm, SE May 09, 2016 - May 14, 2016 Live Event
+SANS Baltimore Spring 2016 Baltimore, MDUS May 09, 2016 - May 14, 2016 Live Event
+SANS Melbourne 2016 Melbourne, AU May 16, 2016 - May 21, 2016 Live Event
+Beta 2 Cincinnati - ICS456 Covington, KYUS May 16, 2016 - May 20, 2016 Live Event
+Security Operations Center Summit & Training Crystal City, VAUS May 19, 2016 - May 26, 2016 Live Event
+SANS SEC401 Luxembourg en francais Luxembourg, LU May 30, 2016 - Jun 04, 2016 Live Event
+SANS 2016 OnlineFLUS Mar 12, 2016 - Mar 21, 2016 Live Event
+SANS OnDemand Books & MP3s OnlyUS Anytime Self Paced

@@ -1,0 +1,12 @@
+[
+  {
+    "page": 1,
+    "method": "ocr",
+    "content": "사물인터넷\n사물인터넷\n표준화\n동향"
+  },
+  {
+    "page": 2,
+    "method": "text",
+    "content": "▣ 표준화 방법\nPlanning and Organizing\n배포와 운영\n인터넷 CORE\n모바일\n캐이블 네트워크\n네트워크\nLOCAL (ethernet/DSL)\nRFID and W\n와이파이\nSN\n태그 센서 유저\n기타 요소\n서브 게이트웨이와 센서 서비스와\nIPv6 코어망\n네트워크 프록시 네트워크 요구조건\n- 2 -"
+  }
+]
