@@ -12,10 +12,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # DB 접속 주소 (없으면 기본값 사용)
-DB_주소 = os.getenv(
-    "DATABASE_URL",
-    "postgresql+psycopg2://postgres:3583@localhost:5432/rag_db"
-)
+DB_주소 = os.getenv("DATABASE_URL")
+if not DB_주소:
+    raise RuntimeError("DATABASE_URL is required in environment (.env)")
 
 # DB 엔진 생성 - 실제로 PostgreSQL에 연결하는 객체
 엔진 = create_engine(DB_주소, echo=False)

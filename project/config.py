@@ -50,7 +50,7 @@ OLLAMA_TIMEOUT = int(os.getenv("OLLAMA_TIMEOUT_SEC", "300"))
 # ── DB 설정 ───────────────────────────────────────────────────────────
 DATABASE_URL = os.getenv(
     "DATABASE_URL",
-    "postgresql+psycopg2://postgres:3583@localhost:5432/rag_db"
+    "postgresql+psycopg2://postgres:1234@localhost:5432/rag_db"
 )
 
 # ── 임베딩 설정 ───────────────────────────────────────────────────────

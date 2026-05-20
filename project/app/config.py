@@ -1,8 +1,10 @@
-from pydantic_settings import BaseSettings, SettingsConfigDict
+﻿from pydantic_settings import BaseSettings, SettingsConfigDict
+
+
 
 
 class Settings(BaseSettings):
-    """환경변수(.env) 기반 애플리케이션 설정."""
+    """환경변수(.env) 기반 애플리케이션 설정"""
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
 
     app_name: str = "HWP OCR Pipeline"
@@ -12,7 +14,7 @@ class Settings(BaseSettings):
     chroma_dir: str = "./data/chroma_db"
     ocr_output_dir: str = "./data/ocr_output"
     ollama_url: str = "http://localhost:11434"
-    ollama_model: str = "llama3:8b"
+    ollama_model: str = "qwen3:8b"
     ollama_timeout_sec: int = 300
     hwp_extract_bin: str = "hwp-extract"
     hwp_extract_args: str = ""
@@ -22,7 +24,7 @@ class Settings(BaseSettings):
 
     @property
     def allowed_ext_set(self) -> set[str]:
-        """허용 확장자를 set 형태로 변환한다."""
+        """허용 확장자를 set 형태로 변환한 것"""
         return {e.strip().lower() for e in self.allowed_extensions.split(",") if e.strip()}
 
 
