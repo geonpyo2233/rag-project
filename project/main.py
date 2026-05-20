@@ -14,10 +14,11 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.config import settings
 from app.schemas import JobStatusResponse, ProcessStartResponse, ProcessResponse
 from database import Base, 엔진, SessionLocal
-from models import Category, Document
+from models import Category, Document, Job
 from document_pipeline import run_document_pipeline
 from rag_pipeline import build_vectorstore
 from llm_chain import run as llm_run
+from datetime import datetime
 
 # ── 로깅 ────────────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -72,6 +73,7 @@ async def _run_pipeline(job_id: str, filename: str, file_bytes: bytes) -> None:
     4) llm_chain         → 요약 + 카테고리 분류
     5) DB 저장           → Category + Document
     """
+    job_start_time = datetime.now()
     ext = Path(filename).suffix.lower().lstrip(".")
     saved_path = UPLOAD_DIR / f"{job_id}.{ext}"
     json_path  = JSON_DIR   / f"{job_id}.json"
@@ -153,6 +155,17 @@ async def _run_pipeline(job_id: str, filename: str, file_bytes: bytes) -> None:
                 content_sum=summary,
             )
             db.add(document)
+            db.flush()
+            
+
+            
+            job_record = Job(
+                job_start=job_start_time,
+                job_finish=datetime.now(),
+                doc_id=document.doc_id,
+                status=True  # 완료
+            )
+            db.add(job_record)
             db.commit()
             logger.info("[JOB %s] DB 저장 완료", job_id)
         except Exception:

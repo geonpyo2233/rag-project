@@ -1,7 +1,7 @@
 import json
 from langchain_community.llms import Ollama
 from app.config import settings
- 
+
 # LLM은 한 번만 로드
 llm = Ollama(base_url=settings.ollama_url, model=settings.ollama_model, temperature=0.3)
  
