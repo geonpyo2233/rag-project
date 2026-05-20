@@ -1,0 +1,37 @@
+[
+  {
+    "page": 1,
+    "method": "ocr",
+    "content": "사물인터넷\n시장\n동향\n사물인터넷\n한국기술교육대학교\n온라인평생교육원\nOLEI"
+  },
+  {
+    "page": 2,
+    "method": "text",
+    "content": "사물인터넷(기본)\n▣ 사물인터넷 시장 동향\n1. 시장의 규모\n사물인터넷 시장의 규모\n(자료 : 미래창조과학부)\n▶ IBM\nThink smart Smart Planet\n시장을 예측하고 전략을 짜는데\n있어서 중요한 실마리임\n• IBM의 리더십은 약해졌지만 그들의 100년 동안 행적 또한 정보 통신에 있어 기술적으로\n사업적으로 음미해 볼만한 자료임\n세상이 더 똑똑해지기 위해서는 시스템과 프로세스가 보다\n기능화, 지능화되어야 하고 상호연결 되어야 한다\n기능화 상호 연결 지능화\n• 세상의 모든 사물이 식별 가능한 태그와 센서가 부착되어 사물간의 상호연결되어 정보를\n통찰로 변환하는 것\n- 2 -"
+  },
+  {
+    "page": 3,
+    "method": "text",
+    "content": "사물인터넷(기본)\n▣ 사물인터넷 시장 동향\n1. 시장의 규모\n▶ 스웨덴의 통신장비 제조사인 에릭슨(Ericsson)\n• 2011년에 네트워크 사회(Networked society)라는 또 다른 버전의\n사물인터넷의 미래를 제시\n• 정보통신기술(ICT) 분야의 사물인터넷 버전임\nMaersk\nVOLVO Cisco\nline\nConnected Vehicle Connected Vessel Internet of\nCloud(CVC) Everything\n사물인터넷 플랫폼을 기반으로\n산업 생태계를 이루는 미래에 대한 방향을 제시\n▶ CISCO\n• 사물인터넷에서 향후 10년간 공공 및 기업에서 창출할 수 있는\n경제적 가치가 무려 19조 달러에 달할 것\n인천 송도의 “스마트시티 글로벌 연구개발센터”에 참여\n사물인터넷 환경에서 사물이 생성하는 대규모의 데이터를 효과적으로 처리하기 위한\n분산 컴퓨팅 인프라가 필요함을 주장(포그 컴퓨팅)\n- 3 -"
+  },
+  {
+    "page": 4,
+    "method": "text",
+    "content": "사물인터넷(기본)\n▣ 사물인터넷 시장 동향\n2. 전망과 근거\n세계 인터넷 디바이스 보급 전망\n(자료 : Business Insider, 2013.11.13)\n• 2010년을 기점으로 PC보다 사물 인터넷 디바이스의 수가 증가함\n- 4 -"
+  },
+  {
+    "page": 5,
+    "method": "text",
+    "content": "사물인터넷(기본)\n▣ 사물인터넷 시장 동향\n2. 전망과 근거\n최근 연구 동향\n EXI\n CoAP\n UDP\n 6LoWPAN\n사물인터넷 디바이스 예측 웹 기술\n 인터넷(Internet)   HTTP/XML  CoAP/EXI\n사물인터넷(Internet of Things)  제약적인 디바이스를 위한 IoT\n 100억 개 디바이스 적용가능 웹 기술\n핵심 부품 확보\nEXI Efficient XML Interchange\nCoAP Constrained Application Protocol\nUDP User Datagram Protocol\n센서 네트워크 위에서 인터넷 프로토콜을 사용하기 위한 아키텍처 등을\n6LoWPAN\n표준화하고 있는 단체\n- 5 -"
+  },
+  {
+    "page": 6,
+    "method": "text",
+    "content": "사물인터넷(기본)\n▣ 사물인터넷 시장 동향\n2. 전망과 근거\n국제 인터넷 디바이스 설치 기반\n(출처 : BI Intelligence Estimates)\n2017년을 기점으로\n사물인터넷 > PC, 태블릿, 모바일 시장\n사물인터넷으로 투자된 벤처 자금의 흐름\n(출처 : News Reports, Company Releases)\n- 6 -"
+  },
+  {
+    "page": 7,
+    "method": "text",
+    "content": "사물인터넷(기본)\n▣ 사물인터넷 시장 동향\n2. 전망과 근거\n사물인터넷 관련 시장 예측\n2013년 2022년\n구분\n세계 시장 국내시장 세계 시장 국내시장\n(억 달러) (억 원) (억 달러) (억 원)\n단말 장치\n1,888 22,169 4,450 102,199\n(Devices)\n이동통신망\n95 162 391 6,075\n(Networks)\n시스템사업자\n(Solution Providers 37 335 3,555 44,493\n/ System Integrators)\n애플리케이션 / 서비스\n11 161 3,552 75,433\n(Application / Services)\n(출처 : Machina Research, STRACORP. 2013)\n현재에는 시장규모가 작지만,\nICT 산업의 새로운 시장으로 발전 가능성이 큼\n- 7 -"
+  }
+]

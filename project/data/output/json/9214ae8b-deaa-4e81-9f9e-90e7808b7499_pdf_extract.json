@@ -1,0 +1,142 @@
+[
+  {
+    "page": 1,
+    "method": "ocr",
+    "content": "Week 1"
+  },
+  {
+    "page": 2,
+    "method": "ocr",
+    "content": "Lesson\nBig\nIntroduction\nto\nData"
+  },
+  {
+    "page": 3,
+    "method": "ocr",
+    "content": "Topic\nBig\nWhat\nis\nData?"
+  },
+  {
+    "page": 4,
+    "method": "text",
+    "content": "1 1-1. Big Data is Everywhere!\nLesson 01\n• Big data in the movies\nIntroduction to Big Data"
+  },
+  {
+    "page": 5,
+    "method": "text",
+    "content": "1 1-1. Big Data is Everywhere!\nLesson 01\n• Big data in the sports\nIntroduction to Big Data"
+  },
+  {
+    "page": 6,
+    "method": "text",
+    "content": "1 1-1. Big Data is Everywhere!\nLesson 01\n• Big data in hospitals\nIntroduction to Big Data\n\nWhat would be volume and financial impact be if we were to\nhire\nanother cardiovascular surgeon?\n What are re-admission patterns for heart failure patients?\n For a specific diagnosis, what are core interventions that\nimproves the outcomes?"
+  },
+  {
+    "page": 7,
+    "method": "text",
+    "content": "1 1-1. Big Data is Everywhere!\nLesson 01\n• Big data in hospitals\nIntroduction to Big Data\n\nWhat would be volume and financial impact be if we were to\nhire\nanother cardiovascular surgeon?\n What are re-admission patterns for heart failure patients?\n For a specific diagnosis, what are core interventions that\nimproves the outcomes?"
+  },
+  {
+    "page": 8,
+    "method": "text",
+    "content": "1 1-1. Big Data is Everywhere!\nLesson 01\n• Big data in hospitals\nIntroduction to Big Data\n\nWhat would be volume and financial impact be if we were to\nhire\nanother cardiovascular surgeon?\n What are re-admission patterns for heart failure patients?\n For a specific diagnosis, what are core interventions that\nimproves the outcomes?"
+  },
+  {
+    "page": 9,
+    "method": "text",
+    "content": "1 1-1. Big Data is Everywhere!\nLesson 01\n• Big data in industries\nIntroduction to Big Data\npredict geographical epidemic flu (trajectory) via search engine log\nGoogle\nanalysis\nGoogle real time road traffic service\nPOSCO determine the purchase time and price of raw materials\nmovie recommendation via taste analysis (no 1., larger than Naver\nWatcha\nmovies\n• It 1) prompts response to commercial condition\nchanges,\n2) improves credibility and image,\n3) reduces expenses,\n4) improves productivity,\n5) and facilitates administration"
+  },
+  {
+    "page": 10,
+    "method": "text",
+    "content": "1 1-2. What is Big Data?\nLesson 01\nIntroduction to Big Data\n• Too large to store, manage, and\nExtremely large data analyze in existing ways using\n(Wikipedia, Mckinsey) existing storage and existing\nDBMS SWs\n• Information technology to\npredict trends and respond\nGovernment and\nproactively\nIndustry\n• Technology to collect, store,\nmanage, search, and analyze\nlarge scale data"
+  },
+  {
+    "page": 11,
+    "method": "text",
+    "content": "1-3. Evolution of Sciences\n• Each discipline has grown a theoretical component.\n• Over the last 50 years, most disciplines have grown a third, computational\nbranch(e.g. empirical, theoretical, and computational ecology, or physics, or\nlinguistics.)\n• The flood of data from new scientific instruments and simulations\n• The ability to economically store and manage petabytes of data online\nJim Gray and Alex Szalay, The World Wide Telescope: An Archetype for Online Science, Comm. ACM, 45(11): 50-54, Nov. 2002"
+  },
+  {
+    "page": 12,
+    "method": "text",
+    "content": "1-3. Evolution of Sciences\n• Each discipline has grown a theoretical component.\n• Over the last 50 years, most disciplines have grown a third, computational\nbranch(e.g. empirical, theoretical, and computational ecology, or physics, or\nlinguistics.)\n• The flood of data from new scientific instruments and simulations\n• The ability to economically store and manage petabytes of data online\nJim Gray and Alex Szalay, The World Wide Telescope: An Archetype for Online Science, Comm. ACM, 45(11): 50-54, Nov. 2002"
+  },
+  {
+    "page": 13,
+    "method": "text",
+    "content": "1-3. Evolution of Sciences\n• Each discipline has grown a theoretical component.\n• Over the last 50 years, most disciplines have grown a third, computational\nbranch(e.g. empirical, theoretical, and computational ecology, or physics, or\nlinguistics.)\n• The flood of data from new scientific instruments and simulations\n• The ability to economically store and manage petabytes of data online\nJim Gray and Alex Szalay, The World Wide Telescope: An Archetype for Online Science, Comm. ACM, 45(11): 50-54, Nov. 2002"
+  },
+  {
+    "page": 14,
+    "method": "text",
+    "content": "1-3. Evolution of Sciences\n• Each discipline has grown a theoretical component.\n• Over the last 50 years, most disciplines have grown a third, computational\nbranch(e.g. empirical, theoretical, and computational ecology, or physics, or\nlinguistics.)\n• The flood of data from new scientific instruments and simulations\n• The ability to economically store and manage petabytes of data online\nJim Gray and Alex Szalay, The World Wide Telescope: An Archetype for Online Science, Comm. ACM, 45(11): 50-54, Nov. 2002"
+  },
+  {
+    "page": 15,
+    "method": "text",
+    "content": "1 1-4. Big Data History\nLesson 01\nIntroduction to Big Data\nInternet, Mobile\ncomputing, SNS, …\nRelational Database\nManagement Data Mining\nBig\nData\nData Warehousing\nBrown, from BridgeGate LLC\nsaid,\n“Many companies have\nimplemented a data\nwarehouse (…)\nstarting to look at what they\ncan do with all that data”"
+  },
+  {
+    "page": 16,
+    "method": "text",
+    "content": "1 1-4. Big Data History\nLesson 01\nIntroduction to Big Data\nInternet, Mobile\ncomputing, SNS, …\nRelational Database\nManagement Data Mining\nBig\nData\nData Warehousing\nBrown, from BridgeGate LLC\nsaid,\n“Many companies have\nimplemented a data\nwarehouse (…)\nstarting to look at what they\ncan do with all that data”"
+  },
+  {
+    "page": 17,
+    "method": "text",
+    "content": "1 1-4. Big Data History\nLesson 01\nIntroduction to Big Data\nInternet, Mobile\ncomputing, SNS, …\nRelational Database\nManagement Data Mining\nBig\nData\nData Warehousing\nBrown, from BridgeGate LLC\nsaid,\n“Many companies have\nimplemented a data\nwarehouse (…)\nstarting to look at what they\ncan do with all that data”"
+  },
+  {
+    "page": 18,
+    "method": "text",
+    "content": "1 1-4. Big Data History\nLesson 01\nIntroduction to Big Data\nInternet, Mobile\ncomputing, SNS, …\nRelational Database\nManagement Data Mining\nBig\nData\nData Warehousing\nBrown, from BridgeGate LLC\nsaid,\n“Many companies have\nimplemented a data\nwarehouse (…)\nstarting to look at what they\ncan do with all that data”"
+  },
+  {
+    "page": 19,
+    "method": "ocr",
+    "content": "Topic\nProspects\nOf\nBig\n2\nData"
+  },
+  {
+    "page": 20,
+    "method": "text",
+    "content": "2 2-1. Business Intelligence\nLesson 01\nIntroduction to Big Data\nIncreasing potential\nto support\nEnd User\nbusiness decisions\nBusiness Intelligence Business Analyst\nData Analyst\nDBA"
+  },
+  {
+    "page": 21,
+    "method": "text",
+    "content": "2 2-1. Business Intelligence\nLesson 01\nIntroduction to Big Data\nData Analysts and Data Base\nAdministrators are promising job!\nEvery Business Needs DA or DBA"
+  },
+  {
+    "page": 22,
+    "method": "text",
+    "content": "2 2-1. Business Intelligence\nLesson 01\n2. Michel J-P, Shen YK, Aiden AP, Veres A, Gray MK, et al. (2011) Quantitative analysis of\nIntroduction to Big Data\nculture using millions of digitized books. Science 331: 176–182. doi:\n10.1126/science.1199644. Find this article online\n3. Lieberman E, Michel J-P, Jackson J, Tang T, Nowak MA (2007) Quantifying the evolutionary\ndynamics of language. Nature 449: 713– 716. doi: 10.1038/nature06137. Find this article\nonline\n4. Pagel M, Atkinson QD, Meade A (2007) Frequency of word-use predicts rates of lexical\nevolution throughout Indo-European history. Nature 449: 717–720. doi: 10.1038/nature06176.\nFind this article online\n6. DeWall CN, Pond RS Jr, Campbell WK, Twenge JM (2011) Tuning in to Psychological\nChange: Linguistic Markers of Psychological Traits and Emotions Over Time in Popular U.S.\nSong Lyrics. Psychology of Aesthetics, Creativity and the Arts 5: 200–207. doi:\n10.1037/a0023195. Find this article online"
+  },
+  {
+    "page": 23,
+    "method": "text",
+    "content": "2 2-2. Big Data Demands\n• McKinsey Report, 2011\n0.5 million\ndemanded\n predicts rapid growth of Big data industry\n0.3 million\n In USA at 2018, 0.5 million big data experts\nsupplied\ndemanded but only 0.3 million supplied\n0.2 million\nshortage\nUS Bureau of Labor Statistics; US Census; Dun & Bradstreet; company interviews; McKinsey Global\nInstitute analysis"
+  },
+  {
+    "page": 24,
+    "method": "text",
+    "content": "2 2-3. Data Science\nLesson 01\n• Drew Conway’s data science venn diagram\nIntroduction to Big Data"
+  },
+  {
+    "page": 25,
+    "method": "text",
+    "content": "2 2-3. Data Science\nLesson 01\nIf you’re a DBA, you need to learn to deal with\nIntroduction to Big Data\nunstructured data\nIf you’re a statistician, you need to learn to deal with\ndata that does not fit in memory\nIf you’re a software engineer, you need to learn\nstatistical modeling and how to communicate results\nIf you’re a business analyst, you need to learn about\nalgorithms and programmings"
+  },
+  {
+    "page": 26,
+    "method": "text",
+    "content": "2 2-3. Data Science\nLesson 01\nIf you’re a DBA, you need to learn to deal with\nIntroduction to Big Data\nunstructured data\nIf you’re a statistician, you need to learn to deal with\ndata that does not fit in memory\nIf you’re a software engineer, you need to learn\nstatistical modeling and how to communicate results\nIf you’re a business analyst, you need to learn about\nalgorithms and programmings"
+  },
+  {
+    "page": 27,
+    "method": "text",
+    "content": "2 2-3. Data Science\nLesson 01\nIf you’re a DBA, you need to learn to deal with\nIntroduction to Big Data\nunstructured data\nIf you’re a statistician, you need to learn to deal with\ndata that does not fit in memory\nIf you’re a software engineer, you need to learn\nstatistical modeling and how to communicate results\nIf you’re a business analyst, you need to learn about\nalgorithms and programmings"
+  },
+  {
+    "page": 28,
+    "method": "text",
+    "content": "2 2-3. Data Science\nLesson 01\nIf you’re a DBA, you need to learn to deal with\nIntroduction to Big Data\nunstructured data\nIf you’re a statistician, you need to learn to deal with\ndata that does not fit in memory\nIf you’re a software engineer, you need to learn\nstatistical modeling and how to communicate results\nIf you’re a business analyst, you need to learn about\nalgorithms and programmings"
+  }
+]

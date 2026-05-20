@@ -1,0 +1,93 @@
+Slide 1:
+부록 A암호학과 네트워크 보안 교육을 위한 프로젝트
+2011년  2학기
+홍길동
+
+Slide 2:
+목차
+A.1 Sage 컴퓨터 대수학 프로젝트
+A.2 해킹 프로젝트
+A.3 블록 암호 프로젝트
+A.4 실험 과제
+A.5 연구 프로젝트
+A.6 프로그래밍 프로젝트
+A.7 실용적인 보안 평가
+A.8 문서 작성 과제
+A.9 문헌조사/리포트 과제
+
+Slide 3:
+이 책에 대한 Instructor's Resource Center(IRC)에 제시된 지원 자료의 내용
+http://williamstallings.com/Cryptography/Crypto5e-Instructor/
+http://www.pearsonhighered.com/educator/academic/product/0,3110,0136097049,00.html#resources
+
+Slide 4:
+Sage 컴퓨터 대수학 프로젝트
+Sage
+강력하고 유연하며 배우기 쉬운 수학 및 컴퓨터 대수학 시스템을 제공하는 오픈 소스, 다중 플랫폼, 프리웨어 패키지
+컴퓨터 대수학 시스템(CAS: Computer Algebra System)는 숫자를 이용한 계산뿐만 아니라 심볼을 이용한 계산도 수행할 수 있는 시스템
+Sage 웹 사이트(http://www.sagemath.org)에는 다양한 컴퓨터에서 Sage를 설치하고 설정하며 사용하는 방법과 온라인에서 Sage를 사용하는 방법에 관한 많은 설명이 제공
+부록 B와 부록 C의 예제와 과제들은 마이크로소프트와 University of Washington에 제직중인 Dan Shumow가 개발
+
+Slide 5:
+해킹 프로젝트
+목표
+몇 가지의 단계를 거쳐서 어떤 회사의 네트워크에 침입하는 것
+Extreme In Security Corporation
+세 가지 방법
+전혀 도움을 받지 않음
+제시된 힌트를 사용함
+정확한 단계별 지시를 따름
+IRC에는 이 프로젝트를 수행하기 위한 파일들이 제공
+Dakota State University의 Sreekanth Malladi 교수가 설계하고 구현
+
+Slide 6:
+블록 암호 프로젝트
+AES 및 DES 암호 알고리즘의 수행을 단계별로 따라가고, 한 라운드를 수작업으로 계산하며, 다양한 블록 암호 모드를 조사
+과제는 세 부분으로 구성
+블록 암호 내부
+블록 암호 라운드
+블록 암호 사용 모드
+Australian Defense Force Academy의 Lawrie Brown이 개발
+
+Slide 7:
+실험 과제
+Purdue University의 Sanjay Rao 교수와 Ruben Torres는 IRC에 포함된 몇 가지 실험 과제를 준비하였다. 이 실험 과제들은 Linux에서 프로그래밍 할 수 있도록 설계된 것이지만 다른 Unix 환경에서도 사용할 수 있을 것이다. 이 실험 과제들은 암호 기능과 응용들을 구현하는 데 있어서 현실적인 경험을 제공할 것이다.
+
+Slide 8:
+연구 프로젝트
+프로젝트는 기업 생산품, 연구 활동 및 표준화 노력에 대한 인터넷 검색뿐만 아니라 문헌 조사도 포함
+팀별 혹은 개인
+배포자료 내용
+제안서의 포맷
+최종 보고서의 포맷
+중간 및 최종 마감시한의 스케줄
+가능한 프로젝트 주제들
+IRC는 제안서와 최종 보고서를 위한 예제 포맷과 15개의 가능한 연구 과제의 주제가 제시됨
+
+Slide 9:
+프로그래밍 프로젝트
+장점
+1. 강사가 상당히 넓은 범위에서 암호학 및 네트워크 보안의 개념을 골라서 과제를 지정할 수 있음
+1. 프로젝트를 어떤 컴퓨터나 어떤 언어를 이용하여서도 수행할 수 있다. 즉, 플랫폼과 언어에 독립적
+1. 독립적 과제를 위해서는 강사가 어떤 시스템을 다운로드 하거나 설치하거나 설정할 필요가 없음
+학생은 우선 제안서 제출
+IRC에는 12개의 가능한 프로그래밍 프로젝트가 제시됨
+
+Slide 10:
+실용적인 보안 평가
+현존하는 기관단체의 인프라와 업무 및 그 보안 수준 평가
+절한 작은 크기 혹은 중간 크기의 단체를 선택
+보안 위협 평가와 조사 업무를 적절히 선택
+Australian Defence Force Academy의 Lawrie Brown에 의해 개발
+
+Slide 11:
+문서 작성 과제
+Writing Across the Curriculum(WAC, http://wac.colostate.edu) 활동의 주창자들은 학습의 과정에서 문서작성 과제가 가지는 상당한 수준의 이점들을 제시
+IRC에는 장 별로 정리된 문서작성 과제가 여러 가지 제시
+
+Slide 12:
+문헌조사/리포트 과제
+문헌상에 존재하는 논문들을 할당하여 읽고 분석
+할당된 논문에 대한 간단한 리포트를 작성
+IRC에는 장별로 한두 개 정도씩의 할당 가능한 논문들이 제시
+
