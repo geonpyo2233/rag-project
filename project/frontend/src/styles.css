@@ -1,4 +1,4 @@
-* {
+﻿* {
   box-sizing: border-box;
 }
 
@@ -16,6 +16,10 @@ body {
 }
 
 .sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
   background: #0f172a;
   color: #cbd5e1;
   padding: 24px 18px;
@@ -48,17 +52,12 @@ body {
   color: #f8fafc;
 }
 
-.brand p {
-  margin: 4px 0 0;
-  font-size: 12px;
-  color: #94a3b8;
-}
-
 .sidebarHint {
   padding: 14px;
   border-radius: 8px;
   border: 1px solid #334155;
   background: #111c31;
+  margin-bottom: 16px;
 }
 
 .sidebarHint p {
@@ -68,6 +67,70 @@ body {
 
 .sidebarHint p:last-child {
   margin-bottom: 0;
+}
+
+.historyPanel {
+  margin-top: 8px;
+  background: rgba(148, 163, 184, 0.04);
+  border: 1px solid #22314f;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.historyPanel h3 {
+  margin: 0 0 10px;
+  color: #f8fafc;
+  font-size: 14px;
+}
+
+.historyList {
+  display: grid;
+  gap: 6px;
+  max-height: 56vh;
+  overflow-y: auto;
+  padding-right: 4px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE, Edge legacy */
+}
+
+.historyList::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.historyEmpty {
+  margin: 0;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.historyItem {
+  border: 1px solid transparent;
+  background: transparent;
+  color: #cbd5e1;
+  border-radius: 8px;
+  padding: 9px 10px;
+  text-align: left;
+  cursor: pointer;
+  display: block;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.historyItem strong {
+  color: #dbe5f4;
+  font-size: 13px;
+  word-break: break-word;
+  font-weight: 500;
+}
+
+.historyItem.active {
+  border-color: #2b4f8a;
+  background: #172847;
+}
+
+.historyItem:hover {
+  background: #12213b;
 }
 
 .content {
@@ -223,27 +286,9 @@ progress {
   cursor: pointer;
 }
 
-.tabRow {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-bottom: 8px;
-}
-
-.tabBtn {
-  border: 1px solid #cbd5e1;
-  background: #ffffff;
-  color: #334155;
-  border-radius: 8px;
-  min-height: 34px;
-  padding: 0 12px;
-  cursor: pointer;
-}
-
-.tabBtn.active {
-  border-color: #2563eb;
-  color: #1d4ed8;
-  background: #eff6ff;
+.actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 pre {
@@ -274,8 +319,14 @@ pre {
   }
 
   .sidebar {
+    position: static;
+    height: auto;
     border-right: 0;
     border-bottom: 1px solid #1e293b;
+  }
+
+  .historyList {
+    max-height: 240px;
   }
 
   .statusGrid {

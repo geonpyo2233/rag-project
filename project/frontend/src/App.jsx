@@ -1,26 +1,54 @@
-﻿import { useEffect, useState } from "react";
+﻿import { useEffect, useMemo, useState } from "react";
 import { getProcessStatus, processFile } from "./api";
 
-const TEXT_TABS = [
-  { key: "summary", label: "요약" },
-  // 개발용 원문 탭 (운영 화면 비노출)
-  // { key: "raw_text", label: "Direct Text" },
-  // { key: "ocr_text", label: "OCR Text" },
-  // { key: "merged_text", label: "Merged Text" },
-];
-
+const HISTORY_STORAGE_KEY = "rag_history_items_v1";
+const HISTORY_SELECTED_KEY = "rag_history_selected_v1";
 
 function App() {
   const [file, setFile] = useState(null);
   const [dragOver, setDragOver] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-  const [result, setResult] = useState(null);
   const [jobId, setJobId] = useState("");
-  const [progress, setProgress] = useState(0);
-  const [stage, setStage] = useState("");
-  const [message, setMessage] = useState("");
-  const [activeTab, setActiveTab] = useState("summary");
+
+  const [historyItems, setHistoryItems] = useState([]);
+  const [selectedHistoryId, setSelectedHistoryId] = useState("");
+
+  const selectedItem = useMemo(
+    () => historyItems.find((item) => item.jobId === selectedHistoryId) || null,
+    [historyItems, selectedHistoryId],
+  );
+  const selectedResult = selectedItem?.result || null;
+
+  useEffect(() => {
+    try {
+      const savedItems = localStorage.getItem(HISTORY_STORAGE_KEY);
+      const savedSelected = localStorage.getItem(HISTORY_SELECTED_KEY);
+      if (savedItems) {
+        const parsed = JSON.parse(savedItems);
+        if (Array.isArray(parsed)) {
+          setHistoryItems(parsed);
+          if (savedSelected && parsed.some((item) => item.jobId === savedSelected)) {
+            setSelectedHistoryId(savedSelected);
+          } else if (parsed[0]?.jobId) {
+            setSelectedHistoryId(parsed[0].jobId);
+          }
+        }
+      }
+    } catch {
+      // localStorage parsing fallback
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem(HISTORY_STORAGE_KEY, JSON.stringify(historyItems));
+  }, [historyItems]);
+
+  useEffect(() => {
+    if (selectedHistoryId) {
+      localStorage.setItem(HISTORY_SELECTED_KEY, selectedHistoryId);
+    }
+  }, [selectedHistoryId]);
 
   useEffect(() => {
     if (!jobId || !loading) return;
@@ -28,12 +56,24 @@ function App() {
     const timer = setInterval(async () => {
       try {
         const status = await getProcessStatus(jobId);
-        setProgress(status.progress ?? 0);
-        setStage(status.stage ?? "");
-        setMessage(status.message ?? "");
+
+        setHistoryItems((prev) =>
+          prev.map((item) =>
+            item.jobId === jobId
+              ? {
+                  ...item,
+                  status: status.status ?? item.status,
+                  progress: status.progress ?? item.progress,
+                  stage: status.stage ?? item.stage,
+                  message: status.message ?? item.message,
+                  result: status.result ?? item.result,
+                  updatedAt: new Date().toISOString(),
+                }
+              : item,
+          ),
+        );
 
         if (status.status === "completed") {
-          setResult(status.result);
           setLoading(false);
           clearInterval(timer);
         } else if (status.status === "failed") {
@@ -54,7 +94,16 @@ function App() {
   const validateFile = (candidate) => {
     if (!candidate) return "파일을 선택해 주세요.";
     const name = candidate.name.toLowerCase();
-    if (!(name.endsWith(".hwp") || name.endsWith(".hwpx") || name.endsWith(".pdf") || name.endsWith(".docx") || name.endsWith(".ppt") || name.endsWith(".pptx"))) {
+    if (
+      !(
+        name.endsWith(".hwp") ||
+        name.endsWith(".hwpx") ||
+        name.endsWith(".pdf") ||
+        name.endsWith(".docx") ||
+        name.endsWith(".ppt") ||
+        name.endsWith(".pptx")
+      )
+    ) {
       return "hwp, hwpx, pdf, docx, ppt, pptx 파일만 업로드할 수 있습니다.";
     }
     return "";
@@ -63,11 +112,6 @@ function App() {
   const onSubmit = async (e) => {
     e.preventDefault();
     setError("");
-    setResult(null);
-    setProgress(0);
-    setStage("");
-    setMessage("");
-    setActiveTab("summary");
 
     const validationError = validateFile(file);
     if (validationError) {
@@ -79,6 +123,21 @@ function App() {
       setLoading(true);
       const data = await processFile(file);
       setJobId(data.job_id);
+
+      const newHistory = {
+        jobId: data.job_id,
+        filename: file.name,
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString(),
+        status: "queued",
+        progress: 0,
+        stage: "queued",
+        message: "작업 대기 중",
+        result: null,
+      };
+
+      setHistoryItems((prev) => [newHistory, ...prev]);
+      setSelectedHistoryId(data.job_id);
     } catch (err) {
       setError(err?.response?.data?.detail || "처리 시작 중 오류가 발생했습니다.");
       setLoading(false);
@@ -109,11 +168,6 @@ function App() {
     URL.revokeObjectURL(url);
   };
 
-  const getTabContent = () => {
-    if (!result) return "";
-    return result[activeTab] || "";
-  };
-
   return (
     <div className="page">
       <aside className="sidebar">
@@ -125,11 +179,32 @@ function App() {
             <h1>RAG 시스템</h1>
           </div>
         </div>
+
         <div className="sidebarHint">
           <p>1) 파일 업로드</p>
           <p>2) OCR</p>
           <p>3) 결과 확인</p>
         </div>
+
+        <section className="historyPanel">
+          <h3>처리 이력</h3>
+          <div className="historyList">
+            {historyItems.length === 0 && (
+              <p className="historyEmpty">아직 처리 이력이 없습니다.</p>
+            )}
+            {historyItems.map((item) => (
+              <button
+                type="button"
+                key={item.jobId}
+                className={`historyItem ${selectedHistoryId === item.jobId ? "active" : ""}`}
+                onClick={() => setSelectedHistoryId(item.jobId)}
+                title={item.filename}
+              >
+                <strong>{item.filename}</strong>
+              </button>
+            ))}
+          </div>
+        </section>
       </aside>
 
       <main className="content">
@@ -171,39 +246,42 @@ function App() {
         <section className="card statusCard">
           <div className="cardHeader">
             <h2>진행 상태</h2>
-            <span className="jobId">{jobId ? `job_id: ${jobId}` : "job_id 없음"}</span>
+            <span className="jobId">
+              {selectedItem?.jobId ? `job_id: ${selectedItem.jobId}` : "job_id 없음"}
+            </span>
           </div>
 
           <div className="statusGrid">
             <div className="metric">
               <span>진행률</span>
-              <strong>{progress}%</strong>
+              <strong>{selectedItem?.progress ?? 0}%</strong>
             </div>
             <div className="metric">
               <span>단계</span>
-              <strong>{stage || "-"}</strong>
+              <strong>{selectedItem?.stage || "-"}</strong>
             </div>
             <div className="metric">
               <span>메시지</span>
-              <strong>{message || "-"}</strong>
+              <strong>{selectedItem?.message || "-"}</strong>
             </div>
           </div>
-          <progress value={progress} max="100" />
+          <progress value={selectedItem?.progress ?? 0} max="100" />
         </section>
 
         {error && <p className="error">{error}</p>}
 
-        {result && (
+        {selectedItem && (
           <section className="card resultCard">
             <div className="cardHeader">
               <h2>처리 결과</h2>
               <div className="actions">
                 <button
                   type="button"
+                  disabled={!selectedResult?.summary}
                   onClick={() =>
                     downloadText(
                       "summary.txt",
-                      `filename: ${result.filename}\n\nsummary:\n${result.summary}\n`,
+                      `filename: ${selectedResult?.filename || selectedItem.filename}\n\nsummary:\n${selectedResult?.summary || ""}\n`,
                     )
                   }
                 >
@@ -211,10 +289,11 @@ function App() {
                 </button>
                 <button
                   type="button"
+                  disabled={!selectedResult}
                   onClick={() =>
                     downloadText(
                       "category.txt",
-                      `filename: ${result.filename}\nmain_category: ${result.main_category || result.category || "기타"}\nsub_category: ${result.sub_category || "미상"}\n`,
+                      `filename: ${selectedResult?.filename || selectedItem.filename}\nmain_category: ${selectedResult?.main_category || selectedResult?.category || "기타"}\nsub_category: ${selectedResult?.sub_category || "미상"}\n`,
                     )
                   }
                 >
@@ -225,33 +304,20 @@ function App() {
 
             <div className="metaRow">
               <p>
-                <b>파일명:</b> {result.filename}
+                <b>파일명:</b> {selectedResult?.filename || selectedItem.filename}
               </p>
               <p>
-                <b>메인 카테고리:</b> {result.main_category || result.category || "기타"}
+                <b>메인 카테고리:</b> {selectedResult?.main_category || selectedResult?.category || "분류 대기"}
               </p>
               <p>
-                <b>서브 카테고리:</b> {result.sub_category || "미상"}
+                <b>서브 카테고리:</b> {selectedResult?.sub_category || "미상"}
+              </p>
+              <p>
+                <b>진행 상태:</b> {selectedItem.status}
               </p>
             </div>
 
-            {/*
-              개발/디버깅용 탭 UI (운영 비노출)
-              <div className="tabRow">
-                {TEXT_TABS.map((tab) => (
-                  <button
-                    key={tab.key}
-                    type="button"
-                    className={`tabBtn ${activeTab === tab.key ? "active" : ""}`}
-                    onClick={() => setActiveTab(tab.key)}
-                  >
-                    {tab.label}
-                  </button>
-                ))}
-              </div>
-            */}
-
-            <pre>{result.summary || ""}</pre>
+            <pre>{selectedResult?.summary || "요약 결과가 아직 없습니다."}</pre>
           </section>
         )}
       </main>
@@ -260,5 +326,3 @@ function App() {
 }
 
 export default App;
-
-
