@@ -169,14 +169,33 @@ copy .env.example .env
 - `OLLAMA_URL`
 - `OLLAMA_MODEL`
 
-### 3) Ollama 모델 준비
+### 3) Poppler 설치 (Windows, PDF OCR 필수)
+
+`pdf2image`는 내부적으로 Poppler의 `pdfinfo`, `pdftoppm` 실행파일이 필요합니다.
+
+1. Poppler for Windows 다운로드 후 압축 해제
+2. 아래 경로를 Windows PATH에 추가
+
+```text
+C:\Users\<사용자명>\Downloads\Release-26.02.0-0\poppler-26.02.0\Library\bin
+```
+
+3. 새 터미널을 열고 인식 확인
+
+```bash
+where.exe pdfinfo
+where.exe pdftoppm
+python -c "import shutil; print(shutil.which('pdfinfo'))"
+```
+
+### 4) Ollama 모델 준비
 
 ```bash
 ollama pull llama3.1:8b
 # 또는 .env의 OLLAMA_MODEL에 맞는 모델
 ```
 
-### 4) 서버 실행
+### 5) 서버 실행
 
 ```bash
 uvicorn main:app --reload --port 8000
@@ -186,7 +205,7 @@ uvicorn main:app --reload --port 8000
 
 - `GET http://localhost:8000/health`
 
-### 5) 프론트 실행
+### 6) 프론트 실행
 
 ```bash
 cd frontend
@@ -279,6 +298,23 @@ python -m pip install pydantic-settings
 1. PostgreSQL 실행 확인
 2. `DATABASE_URL` 형식 점검
 3. 계정/비밀번호/DB명 확인
+
+### 4) `PDFInfoNotInstalledError` (pdf2image / poppler)
+
+에러 예시:
+
+- `Unable to get page count. Is poppler installed and in PATH?`
+
+원인:
+
+- Poppler 미설치 또는 `Library/bin` 경로가 PATH에 없음
+- PATH 추가 후 기존 터미널/서버를 재시작하지 않음
+
+해결:
+
+1. Poppler 설치 후 `...\Library\bin`을 PATH에 추가
+2. 터미널/uvicorn 프로세스 완전 종료 후 재실행
+3. `where.exe pdfinfo`로 인식 여부 확인
 
 ---
 
