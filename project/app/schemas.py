@@ -1,4 +1,4 @@
-﻿from pydantic import BaseModel
+from pydantic import BaseModel
 
 
 # 문서 처리 완료 응답
@@ -47,3 +47,17 @@ class JobStatusResponse(BaseModel):
     stage: str
     message: str = ""
     result: ProcessResponse | None = None
+
+
+# 처리 이력 조회 응답 스키마
+# - 사이드바 이력 목록 + 우측 상세 카드 표시용
+# - PostgreSQL 조회 결과를 프론트에서 바로 사용하도록 정규화한 형태
+class HistoryItemResponse(BaseModel):
+    id: int
+    filename: str
+    processed_at: str
+    main_category: str = "기타"
+    sub_category: str = "미상"
+    summary: str = ""
+    status: str = "completed"
+    progress: int = 100

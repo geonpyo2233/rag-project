@@ -1,7 +1,9 @@
-﻿* {
+/* ===== 공통 리셋 / 기본 ===== */
+* {
   box-sizing: border-box;
 }
 
+/* 페이지 기본 배경/글꼴 */
 body {
   margin: 0;
   background: #f1f5f9;
@@ -9,12 +11,16 @@ body {
   font-family: "Pretendard", "Noto Sans KR", "Segoe UI", Arial, sans-serif;
 }
 
+/* ===== 전체 레이아웃 ===== */
+/* 좌측 사이드바 + 우측 본문 2단 구성 */
 .page {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 260px 1fr;
 }
 
+/* ===== 사이드바 ===== */
+/* 고정형 네비게이션 영역 */
 .sidebar {
   position: sticky;
   top: 0;
@@ -26,6 +32,7 @@ body {
   border-right: 1px solid #1e293b;
 }
 
+/* 브랜드(로고/타이틀) */
 .brand {
   display: flex;
   gap: 12px;
@@ -33,6 +40,7 @@ body {
   margin-bottom: 28px;
 }
 
+/* OCR 배지 */
 .brandMark {
   width: 42px;
   height: 42px;
@@ -46,12 +54,14 @@ body {
   color: #ffffff;
 }
 
+/* 브랜드 텍스트 */
 .brand h1 {
   margin: 0;
   font-size: 15px;
   color: #f8fafc;
 }
 
+/* 단계 안내 박스 */
 .sidebarHint {
   padding: 14px;
   border-radius: 8px;
@@ -69,6 +79,8 @@ body {
   margin-bottom: 0;
 }
 
+/* ===== 처리 이력 패널 ===== */
+/* 처리 이력 카드 영역 */
 .historyPanel {
   margin-top: 8px;
   background: rgba(148, 163, 184, 0.04);
@@ -83,6 +95,41 @@ body {
   font-size: 14px;
 }
 
+/* 검색 입력 + 검색 버튼 */
+.historySearchWrap {
+  display: grid;
+  grid-template-columns: 1fr 38px;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.historySearch {
+  width: 100%;
+  border: 1px solid #334155;
+  background: #0b1529;
+  color: #e2e8f0;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+.historySearch::placeholder {
+  color: #94a3b8;
+}
+
+.historySearchBtn {
+  border: 1px solid #334155;
+  background: #132341;
+  color: #dbe5f4;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.historySearchBtn:hover {
+  background: #173055;
+}
+
+
+/* 이력 목록 (스크롤 숨김 포함) */
 .historyList {
   display: grid;
   gap: 6px;
@@ -133,6 +180,8 @@ body {
   background: #12213b;
 }
 
+/* ===== 본문 카드 ===== */
+/* 우측 컨텐츠 배치 */
 .content {
   padding: 24px;
   display: grid;
@@ -140,6 +189,7 @@ body {
   align-content: start;
 }
 
+/* 공통 카드 */
 .card {
   border: 1px solid #e2e8f0;
   background: #ffffff;
@@ -147,6 +197,7 @@ body {
   padding: 18px;
 }
 
+/* 카드 헤더(제목 + 우측 정보) */
 .cardHeader {
   display: flex;
   align-items: center;
@@ -177,6 +228,8 @@ body {
   background: #dbeafe;
 }
 
+/* ===== 업로드 영역 ===== */
+/* 파일 드롭존 */
 .dropzone {
   border: 2px dashed #94a3b8;
   border-radius: 8px;
@@ -230,6 +283,8 @@ input[type="file"] {
   font-size: 12px;
 }
 
+/* ===== 상태/결과 ===== */
+/* 진행 상태 3열 메트릭 */
 .statusGrid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -255,6 +310,7 @@ input[type="file"] {
   font-size: 14px;
 }
 
+/* 진행률 바 */
 progress {
   width: 100%;
   height: 10px;
@@ -291,6 +347,7 @@ progress {
   cursor: not-allowed;
 }
 
+/* 결과 요약 텍스트 박스 */
 pre {
   white-space: pre-wrap;
   word-break: break-word;
@@ -304,6 +361,7 @@ pre {
   overflow: auto;
 }
 
+/* 에러 메시지 */
 .error {
   margin: 0;
   color: #b91c1c;
@@ -313,6 +371,8 @@ pre {
   padding: 10px 12px;
 }
 
+/* ===== 반응형 ===== */
+/* 모바일/태블릿에서 1열 전환 */
 @media (max-width: 980px) {
   .page {
     grid-template-columns: 1fr;

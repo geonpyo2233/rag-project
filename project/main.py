@@ -1,4 +1,4 @@
-# ==============================
+﻿# ==============================
 # main.py  –  FastAPI 서버 진입점
 # ==============================
 import asyncio
@@ -8,17 +8,18 @@ import os
 import uuid
 from pathlib import Path
 
-from fastapi import FastAPI, File, UploadFile
+from fastapi import FastAPI, File, Query, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import settings
-from app.schemas import JobStatusResponse, ProcessStartResponse, ProcessResponse
+from app.schemas import JobStatusResponse, ProcessStartResponse, ProcessResponse, HistoryItemResponse
 from database import Base, 엔진, SessionLocal
 from models import Category, Document, Job
 from document_pipeline import run_document_pipeline
 from rag_pipeline import build_vectorstore
 from llm_chain import run as llm_run
 from datetime import datetime
+from sqlalchemy import or_
 
 # ── 로깅 ────────────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -238,3 +239,91 @@ def get_process_status(job_id: str) -> JobStatusResponse:
         from fastapi import HTTPException
         raise HTTPException(status_code=404, detail="존재하지 않는 job_id 입니다.")
     return job
+
+
+# DB 조인 결과(Document/Category/Job)를 프론트 이력 응답 스키마로 변환
+# - 처리 시각: job_finish 우선, 없으면 document.saved_time 사용
+# - 상태/진행률: 완료 기본값(100), 진행 중이면 running(50)으로 표시
+# - 카테고리 누락 시 기본값으로 안전하게 대체
+def _history_item_from_row(document: Document, category: Category | None, job: Job | None) -> HistoryItemResponse:
+    processed_at_dt = None
+    if job and job.job_finish:
+        processed_at_dt = job.job_finish
+    elif document.saved_time:
+        processed_at_dt = document.saved_time
+    else:
+        processed_at_dt = datetime.now()
+
+    status = "completed"
+    progress = 100
+    if job is not None and job.status is False:
+        status = "running"
+        progress = 50
+
+    return HistoryItemResponse(
+        id=document.doc_id,
+        filename=document.file_name or "unknown",
+        processed_at=processed_at_dt.isoformat(),
+        main_category=(category.main if category and category.main else "기타"),
+        sub_category=(category.sub if category and category.sub else "미상"),
+        summary=document.content_sum or "",
+        status=status,
+        progress=progress,
+    )
+
+
+@app.get("/api/history", response_model=list[HistoryItemResponse])
+def get_history(limit: int = Query(default=50, ge=1, le=200)) -> list[HistoryItemResponse]:
+    # 처리 이력 목록 조회 API
+    # - Document 기준으로 Category/Job을 LEFT OUTER JOIN
+    # - 최신순 정렬 후 limit 개수만 반환
+    db = SessionLocal()
+    try:
+        rows = (
+            db.query(Document, Category, Job)
+            .outerjoin(Category, Document.cat_id == Category.cat_id)
+            .outerjoin(Job, Job.doc_id == Document.doc_id)
+            .order_by(Document.saved_time.desc(), Document.doc_id.desc())
+            .limit(limit)
+            .all()
+        )
+        return [_history_item_from_row(document, category, job) for document, category, job in rows]
+    finally:
+        # DB 세션은 항상 정리
+        db.close()
+
+
+@app.get("/api/history/search", response_model=list[HistoryItemResponse])
+def search_history(
+    q: str = Query(..., min_length=1),
+    limit: int = Query(default=50, ge=1, le=200),
+) -> list[HistoryItemResponse]:
+    # 처리 이력 검색 API (PostgreSQL 필터 조회)
+    # - 검색 대상: 파일명, 요약, 메인/서브 카테고리
+    # - ILIKE + %키워드% 부분 일치 검색
+    # - 최신순 정렬 후 limit 개수만 반환
+    db = SessionLocal()
+    try:
+        like_q = f"%{q}%"
+        rows = (
+            db.query(Document, Category, Job)
+            .outerjoin(Category, Document.cat_id == Category.cat_id)
+            .outerjoin(Job, Job.doc_id == Document.doc_id)
+            .filter(
+                or_(
+                    Document.file_name.ilike(like_q),
+                    Document.content_sum.ilike(like_q),
+                    Category.main.ilike(like_q),
+                    Category.sub.ilike(like_q),
+                )
+            )
+            .order_by(Document.saved_time.desc(), Document.doc_id.desc())
+            .limit(limit)
+            .all()
+        )
+        return [_history_item_from_row(document, category, job) for document, category, job in rows]
+    finally:
+        # DB 세션은 항상 정리
+        db.close()
+
+

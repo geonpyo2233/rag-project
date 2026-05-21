@@ -1,19 +1,25 @@
-﻿import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { getProcessStatus, processFile } from "./api";
+import { getHistory, searchHistory } from "./api";
 
+// localStorage 키 (새로고침 복원용)
 const HISTORY_STORAGE_KEY = "rag_history_items_v1";
 const HISTORY_SELECTED_KEY = "rag_history_selected_v1";
 
 function App() {
+  // 업로드/처리 상태
   const [file, setFile] = useState(null);
   const [dragOver, setDragOver] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [jobId, setJobId] = useState("");
 
+  // 처리 이력/선택/검색어 상태
   const [historyItems, setHistoryItems] = useState([]);
   const [selectedHistoryId, setSelectedHistoryId] = useState("");
+  const [searchText, setSearchText] = useState("");
 
+  // 현재 선택된 이력과 결과 파생값
   const selectedItem = useMemo(
     () => historyItems.find((item) => item.jobId === selectedHistoryId) || null,
     [historyItems, selectedHistoryId],
@@ -40,16 +46,24 @@ function App() {
     }
   }, []);
 
+  // 최초 진입 시 localStorage 이력 복원
+  useEffect(() => {
+    loadHistoryFromDb(true).catch(() => {});
+  }, []);
+
+  // 이력 변경 시 localStorage 저장
   useEffect(() => {
     localStorage.setItem(HISTORY_STORAGE_KEY, JSON.stringify(historyItems));
   }, [historyItems]);
 
+  // 선택 항목 변경 시 선택 ID 저장
   useEffect(() => {
     if (selectedHistoryId) {
       localStorage.setItem(HISTORY_SELECTED_KEY, selectedHistoryId);
     }
   }, [selectedHistoryId]);
 
+  // 업로드 후 job 상태 폴링 (완료/실패 시 타이머 해제)
   useEffect(() => {
     if (!jobId || !loading) return;
 
@@ -91,6 +105,7 @@ function App() {
     return () => clearInterval(timer);
   }, [jobId, loading]);
 
+  // 업로드 가능 확장자 검증
   const validateFile = (candidate) => {
     if (!candidate) return "파일을 선택해 주세요.";
     const name = candidate.name.toLowerCase();
@@ -109,6 +124,7 @@ function App() {
     return "";
   };
 
+  // 업로드/처리 시작
   const onSubmit = async (e) => {
     e.preventDefault();
     setError("");
@@ -144,6 +160,7 @@ function App() {
     }
   };
 
+  // 드래그앤드롭 업로드 처리
   const onDrop = (e) => {
     e.preventDefault();
     setDragOver(false);
@@ -158,6 +175,66 @@ function App() {
     setFile(dropped);
   };
 
+
+  // PostgreSQL 이력 조회 후 사이드바 표시용 형태로 매핑
+  const loadHistoryFromDb = async (forceSelectLatest = false) => {
+    const items = await getHistory(100);
+    if (!Array.isArray(items)) return;
+    setHistoryItems(items.map((it) => ({
+      jobId: String(it.id),
+      filename: it.filename,
+      createdAt: it.processed_at,
+      updatedAt: it.processed_at,
+      status: it.status || "completed",
+      progress: Number.isFinite(it.progress) ? it.progress : 100,
+      stage: it.status || "completed",
+      message: "DB 조회",
+      result: {
+        filename: it.filename,
+        summary: it.summary || "",
+        main_category: it.main_category || "??",
+        sub_category: it.sub_category || "??",
+        category: it.main_category || "??",
+      },
+    })));
+
+    if (items.length > 0 && (forceSelectLatest || !selectedHistoryId)) {
+      setSelectedHistoryId(String(items[0].id));
+    }
+  };
+
+  // 검색어 기준 이력 필터 조회 (파일명/요약/카테고리)
+  const runDbBackedSearch = async () => {
+    const q = searchText.trim();
+    if (!q) {
+      await loadHistoryFromDb(false);
+      return;
+    }
+
+    const rows = await searchHistory(q, 100);
+
+    const mapped = (rows || []).map((it) => ({
+      jobId: String(it.id),
+      filename: it.filename,
+      createdAt: it.processed_at,
+      updatedAt: it.processed_at,
+      status: it.status || "completed",
+      progress: Number.isFinite(it.progress) ? it.progress : 100,
+      stage: it.status || "completed",
+      result: {
+        filename: it.filename,
+        summary: it.summary || "",
+        main_category: it.main_category || "??",
+        sub_category: it.sub_category || "??",
+        category: it.main_category || "??",
+      },
+    }));
+
+    setHistoryItems(mapped);
+    if (mapped[0]?.jobId) setSelectedHistoryId(mapped[0].jobId);
+  };
+
+  // 텍스트 파일 다운로드 유틸
   const downloadText = (filename, content) => {
     const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
     const url = URL.createObjectURL(blob);
@@ -188,6 +265,24 @@ function App() {
 
         <section className="historyPanel">
           <h3>처리 이력</h3>
+          <div className="historySearchWrap">
+            <input
+              type="text"
+              className="historySearch"
+              placeholder="파일명/요약/카테고리 검색"
+              value={searchText}
+              onChange={(e) => setSearchText(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  e.preventDefault();
+                  runDbBackedSearch();
+                }
+              }}
+            />
+            <button type="button" className="historySearchBtn" aria-label="검색" onClick={runDbBackedSearch}>
+              🔍
+            </button>
+          </div>
           <div className="historyList">
             {historyItems.length === 0 && (
               <p className="historyEmpty">아직 처리 이력이 없습니다.</p>
