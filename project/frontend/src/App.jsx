@@ -34,13 +34,9 @@ function App() {
         const parsed = JSON.parse(savedItems);
         if (Array.isArray(parsed)) {
           setHistoryItems(parsed);
-          if (savedSelected && parsed.some((item) => item.jobId === savedSelected)) {
-            setSelectedHistoryId(savedSelected);
-          } else if (parsed[0]?.jobId) {
-            setSelectedHistoryId(parsed[0].jobId);
-          }
         }
       }
+      setSelectedHistoryId("");
     } catch {
       // localStorage parsing fallback
     }
@@ -48,7 +44,7 @@ function App() {
 
   // 최초 진입 시 localStorage 이력 복원
   useEffect(() => {
-    loadHistoryFromDb(true).catch(() => {});
+    loadHistoryFromDb(false).catch(() => {});
   }, []);
 
   // 이력 변경 시 localStorage 저장
@@ -198,7 +194,7 @@ function App() {
       },
     })));
 
-    if (items.length > 0 && (forceSelectLatest || !selectedHistoryId)) {
+    if (items.length > 0 && (forceSelectLatest)) {
       setSelectedHistoryId(String(items[0].id));
     }
   };
